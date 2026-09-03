@@ -72,7 +72,7 @@ vacuous.
 | `*.py` | 74 | constructions, three verifiers, search lanes, tooling |
 | `test_*.py` | 77 | the gates |
 | `figures/` | 12 | SVG + TikZ, computed from the certificates |
-| `paper/` | 1 | manuscript, **draft — never compiled** |
+| `paper/` | 3 | manuscript: `apg.tex`, the compiled `apg.pdf` (11 pp.), and a README. **Draft — compiles, but unrefereed** |
 | `results/` | 614 | run artifacts, provenance only |
 
 ---
@@ -93,8 +93,8 @@ vacuous.
 
 ## Honest limits
 
-- **The manuscript has never been compiled.** There was no TeX installation on
-  the machine it was drafted on. It is a draft and is labelled as one.
+- **The manuscript is a draft and has had no peer review.** It compiles as of
+  1.0.1 and the PDF ships in `paper/`, but nothing about it has been refereed.
 - **Three claims made here were false and were withdrawn**, plus a certificate
   misidentified as not 3-connected. All four are recorded at the files that made
   them rather than quietly deleted.

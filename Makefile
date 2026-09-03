@@ -48,3 +48,8 @@ deps-optional:
 clean:
 	rm -rf .pytest_cache
 	find . -name __pycache__ -type d -exec rm -rf {} +
+
+artifact-pdf:
+	python3 render_artifact_pdf.py
+
+.PHONY: artifact-pdf

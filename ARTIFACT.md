@@ -140,7 +140,7 @@ published `planar_code` corpus is not included, each of its graphs is
 re-expressed in this repository's own format, and the digests of the originals
 are kept for verification. See [`NOTICE.md`](NOTICE.md).
 
-What remains is editorial. The manuscript in [`paper/`](paper/) has never been
-compiled -- there is no TeX installation on the machine it was drafted on -- and
-its density section paraphrases the source problem rather than quoting it. See
-[`paper/README.md`](paper/README.md).
+What remains is editorial. The manuscript in [`paper/`](paper/) now compiles --
+[`paper/apg.pdf`](paper/apg.pdf), 11 pages, built with Tectonic -- but it has had
+no peer review and its density section paraphrases the source problem rather than
+quoting it. See [`paper/README.md`](paper/README.md).

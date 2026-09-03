@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three conjectures on alternating plane graphs, settled | Althöfer et al., Section 10</title>
+<link rel="canonical" href="https://severinvisionary.github.io/alternating-plane-graphs/">
+<meta name="description" content="Conjectures 10.1, 10.2 and 10.3 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput, Alternating plane graphs (2015), settled: 10.1 proved unconditionally, 10.2 closed at all 26 remaining orders plus a proved periodic capping lemma, 10.3 closed by a 3-connected witness at every order from 19 up. Every certificate is a rotation system re-verified by three independent decision procedures.">
+<meta name="keywords" content="alternating plane graphs, APG, plane graphs, rotation systems, planar graphs, 3-connected, combinatorics, computer-assisted proof, certificate verification, Althofer, Ars Mathematica Contemporanea, discharging, Euler formula">
+<meta name="author" content="Hanyu Yang">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+<!-- Google Scholar / Highwire Press -->
+<meta name="citation_title" content="Settling Conjectures 10.1, 10.2 and 10.3 on alternating plane graphs">
+<meta name="citation_author" content="Yang, Hanyu">
+<meta name="citation_author_orcid" content="0009-0005-0419-4070">
+<meta name="citation_publication_date" content="2026/09/02">
+<meta name="citation_online_date" content="2026/09/02">
+<meta name="citation_doi" content="10.5281/zenodo.22269200">
+<meta name="citation_abstract_html_url" content="https://severinvisionary.github.io/alternating-plane-graphs/">
+<meta name="citation_public_url" content="https://severinvisionary.github.io/alternating-plane-graphs/">
+<meta name="citation_technical_report_institution" content="Independent researcher">
+<meta name="citation_language" content="en">
+<meta name="citation_keywords" content="alternating plane graphs; rotation systems; plane graphs; computer-assisted proof; certificate verification">
+
+<!-- Dublin Core -->
+<meta name="DC.title" content="Settling Conjectures 10.1, 10.2 and 10.3 on alternating plane graphs">
+<meta name="DC.creator" content="Yang, Hanyu">
+<meta name="DC.date" content="2026-09-02">
+<meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.22269200">
+<meta name="DC.rights" content="MIT (code and certificates); CC BY 4.0 (prose)">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Three conjectures on alternating plane graphs, settled">
+<meta property="og:description" content="Conjectures 10.1, 10.2 and 10.3 of Althöfer et al. (2015) settled, with machine-checked certificates. The fourth problem stays open, and we say why.">
+<meta property="og:url" content="https://severinvisionary.github.io/alternating-plane-graphs/">
+<meta property="og:site_name" content="Alternating plane graphs">
+<meta name="twitter:card" content="summary">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Settling Conjectures 10.1, 10.2 and 10.3 on alternating plane graphs",
+  "name": "Settling Conjectures 10.1, 10.2 and 10.3 on alternating plane graphs",
+  "author": {
+    "@type": "Person",
+    "name": "Hanyu Yang",
+    "identifier": "https://orcid.org/0009-0005-0419-4070",
+    "url": "https://orcid.org/0009-0005-0419-4070"
+  },
+  "datePublished": "2026-09-02",
+  "inLanguage": "en",
+  "identifier": "https://doi.org/10.5281/zenodo.22269200",
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.22269200",
+    "https://github.com/SeverinVisionary/alternating-plane-graphs"
+  ],
+  "license": "https://opensource.org/licenses/MIT",
+  "keywords": "alternating plane graphs, rotation systems, plane graphs, computer-assisted proof, certificate verification, combinatorics",
+  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved unconditionally: the published definition is ambiguous at a bridge, and the discharging argument closes under either reading. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating order 48 and every order n >= 50. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, is settled by a verified witness at every such order. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
+  "isBasedOn": {
+    "@type": "SoftwareSourceCode",
+    "codeRepository": "https://github.com/SeverinVisionary/alternating-plane-graphs",
+    "programmingLanguage": ["Python"],
+    "license": "https://opensource.org/licenses/MIT"
+  },
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "name": "Alternating plane graphs",
+    "identifier": "https://doi.org/10.26493/1855-3974.584.09a"
+  }
+}
+</script>
+
+<style>
+  :root{
+    color-scheme: light;
+    --bg:#fbfbfa; --panel:#fff; --ink:#1a1d21; --ink2:#4a5158; --ink3:#767e86;
+    --rule:#dfe3e7; --accent:#14563d; --accent-soft:#e3f0e9; --mono-bg:#f2f4f5;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      color-scheme: dark;
+      --bg:#111417; --panel:#181c20; --ink:#e6e9ec; --ink2:#a9b1b8; --ink3:#7d868e;
+      --rule:#2b3238; --accent:#6fc79c; --accent-soft:#152a21; --mono-bg:#1e2429;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --bg:#111417; --panel:#181c20; --ink:#e6e9ec; --ink2:#a9b1b8; --ink3:#7d868e;
+    --rule:#2b3238; --accent:#6fc79c; --accent-soft:#152a21; --mono-bg:#1e2429;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  code,pre,.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  main{max-width:820px;margin:0 auto;padding:40px 20px 80px}
+  h1{font-size:28px;line-height:1.25;margin:0 0 12px;text-wrap:balance}
+  h2{font-size:20px;margin:40px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  p{margin:0 0 14px;max-width:68ch}
+  a{color:var(--accent)}
+  .sub{color:var(--ink2);font-size:17px;margin-bottom:22px}
+  .meta{font-size:14px;color:var(--ink3);border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);padding:12px 0;margin:22px 0}
+  .headline{background:var(--accent-soft);border:1px solid var(--rule);
+    padding:16px 18px;margin:22px 0;font-size:18px}
+  .headline .m{font-weight:600;font-size:20px}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;margin:8px 0 4px}
+  .wrap{overflow-x:auto}
+  th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink3);white-space:nowrap}
+  td.n{text-align:right;font-variant-numeric:tabular-nums;font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
+  td.s{white-space:nowrap}
+  pre{background:var(--mono-bg);border:1px solid var(--rule);padding:14px 16px;
+    overflow-x:auto;font-size:13.5px;margin:0 0 14px}
+  ul{padding-left:22px;max-width:68ch}
+  li{margin-bottom:7px}
+  footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--rule);
+    font-size:13.5px;color:var(--ink3)}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Three conjectures on alternating plane graphs, settled</h1>
+<p class="sub">Section 10 of Althöfer, Haugland, Scherer, Schneider and Van
+Cleemput leaves four problems open. Three are now closed, each with a
+machine-checked certificate; the fourth is not, and this page says why.</p>
+
+<div class="meta">
+  <strong>Hanyu Yang</strong> · ORCID <a href="https://orcid.org/0009-0005-0419-4070">0009-0005-0419-4070</a><br>
+  DOI <a href="https://doi.org/10.5281/zenodo.22269200">10.5281/zenodo.22269200</a> ·
+  <a href="https://github.com/SeverinVisionary/alternating-plane-graphs">source repository</a> ·
+  supplements <a href="https://doi.org/10.26493/1855-3974.584.09a">Ars Math. Contemp. <strong>8</strong> (2015) 337–363</a> ·
+  2 September 2026
+</div>
+
+<h2>Abstract</h2>
+<p>An <strong>alternating plane graph</strong> is a plane graph of minimum
+degree 3 and minimum face size 3 in which adjacent vertices differ in degree and
+adjacent faces differ in size. An <span class="m">X,Y</span>-APG is one
+realising exactly <span class="m">X</span> distinct degrees and
+<span class="m">Y</span> distinct face sizes. The 2015 paper of Althöfer,
+Haugland, Scherer, Schneider and Van Cleemput introduces these graphs and closes
+with four open problems.</p>
+
+<p>This deposit settles three of them. The results below are stated as they are
+proved: <strong>Conjecture 10.1 is a theorem</strong>, while Conjectures 10.2
+and 10.3 are settled in the sense their statements ask for — an explicit
+alternating plane graph at every order the conjecture claims one for, each
+witness re-verified from its rotation system rather than asserted.</p>
+
+<div class="wrap">
+<table>
+  <thead><tr><th>problem</th><th>statement</th><th>status</th></tr></thead>
+  <tbody>
+    <tr>
+      <td class="s"><strong>Conjecture 10.1</strong></td>
+      <td>No <span class="m">2,Y</span>-APG and no <span class="m">X,2</span>-APG exists</td>
+      <td><strong>Proved, unconditionally.</strong></td>
+    </tr>
+    <tr>
+      <td class="s"><strong>Conjecture 10.2</strong></td>
+      <td>A <span class="m">(3,4,5)</span>-APG exists at every order <span class="m">n ≥ 20</span></td>
+      <td><strong>Settled.</strong> 26 orders certified, plus a proved capping lemma</td>
+    </tr>
+    <tr>
+      <td class="s"><strong>Conjecture 10.3</strong></td>
+      <td>A 3-connected APG exists at every order <span class="m">n ≥ 19</span></td>
+      <td><strong>Settled.</strong> A verified witness at every such order</td>
+    </tr>
+    <tr>
+      <td class="s">Fourth problem</td>
+      <td>The asymptotic distribution of <span class="m">v₄/v₃</span></td>
+      <td><strong>Open.</strong> Out of reach of these methods</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Conjecture 10.1, and an ambiguity in the definition</h2>
+<p>The proof is a discharging argument over edges. Working it through exposed a
+genuine gap in the published definition: at a <strong>bridge</strong>, the same
+face lies on both sides of the edge, so the requirement that adjacent faces
+differ in size is either violated by every bridge or vacuous at every bridge,
+depending on how one reads it. The paper does not say which.</p>
+
+<p>Rather than choose, the argument is made to close <strong>under either
+reading</strong>. The strict reading forbids bridges outright. The permissive
+reading allows them, and is handled by a parity lemma — for any plane graph
+whose faces admit a proper 2-colouring, <span class="m">deg(v) −
+bridges_at(v)</span> is even — which pins each degree-3 endpoint onto exactly
+one bridge and lets the discharging close with room to spare.</p>
+
+<div class="headline">The result does not depend on the interpretation.</div>
+
+<p>The slack is measured rather than asserted: the argument still closes when
+the bridge-face bound is weakened from 8 to 7, and fails at 6.</p>
+
+<h2>Conjecture 10.2: the orders that were open</h2>
+<p>Conjecture 10.2 was open at exactly 26 orders. All now carry certificates.</p>
+
+<div class="wrap">
+<table>
+  <thead><tr><th>block</th><th>orders open</th></tr></thead>
+  <tbody>
+    <tr><td class="s">46–56</td><td class="n">11</td></tr>
+    <tr><td class="s">67–74</td><td class="n">8</td></tr>
+    <tr><td class="s">88–92</td><td class="n">5</td></tr>
+    <tr><td class="s">109, 110</td><td class="n">2</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>A finite list would settle the conjecture only up to the largest order in it.
+It is therefore accompanied by a <strong>proved periodic capping lemma</strong>:
+one certificate per residue class mod 3 splices into an arbitrarily long
+periodic strip, generating a <span class="m">(3,4,5)</span>-APG at order 48 and
+at <em>every</em> order <span class="m">n ≥ 50</span>. The certificates close the
+gap below that floor; the lemma removes any dependence on the list above it.</p>
+
+<h2>A counterexample worth having</h2>
+<p>The natural shortcut from 10.2 to 10.3 is to hope every
+<span class="m">(3,4,5)</span>-APG is already 3-connected. It is not. The
+deposit contains a <span class="m">(3,4,5)</span>-alternating plane graph on
+<strong>46 vertices with a separating pair</strong>, which refutes that and is
+why Conjecture 10.3 needs witnesses of its own.</p>
+
+<h2>What the certificates actually contain</h2>
+<p><strong>Rotation systems, and nothing else.</strong> No file in the deposit
+records a claim that a graph <em>is</em> an alternating plane graph. Degrees,
+faces, face sizes, bridges, connectivity and both alternation conditions are
+recomputed on every run by <strong>three independently written decision
+procedures</strong>, and each gate is paired with a control that must fail — so
+a check cannot pass by being vacuous.</p>
+
+<h2>Reproducing it</h2>
+<pre>git clone https://github.com/SeverinVisionary/alternating-plane-graphs
+cd alternating-plane-graphs
+make deps          # pytest, and nothing else
+make verify-fast   # load-bearing gates, about a minute
+make verify        # everything, about 13 minutes</pre>
+<p><strong>1253 passed, 13 skipped</strong> on Python 3.9.6, macOS. Nothing the
+settled results depend on needs a package outside the standard library. The 13
+skips are declared rather than hidden: 11 need a third-party corpus that is not
+redistributed here, one needs the optional <span class="m">python-sat</span>,
+and one follows from the first.</p>
+
+<h2>What is not established</h2>
+<ul>
+  <li>The <strong>fourth problem stays open.</strong> It asks for the limiting
+  density of <span class="m">v₄/v₃</span> on the interval
+  <span class="m">[1, 1.5]</span> — a distributional question, not a counting
+  one, and nothing here bears on it. The ratio measured across the 26
+  certificates lands in <span class="m">[1.000, 1.125]</span> and drifts toward
+  1, but those graphs were selected by the search that found them, so that
+  number is a <strong>selection effect and not evidence</strong>. It is written
+  up as a caution, not a result.</li>
+  <li>The manuscript in <span class="m">paper/</span> is a
+  <strong>draft and has never been compiled.</strong></li>
+  <li><strong>Three claims made during this work were false and were
+  withdrawn</strong>, and one certificate was misidentified as not 3-connected.
+  All four are recorded at the files that made them rather than quietly deleted.</li>
+  <li><strong>No third-party bytes are redistributed.</strong> No licence
+  statement was found at the source of the published corpus, so each of its
+  graphs is re-expressed in this repository's own format, with the SHA-256 of
+  every original preserved so the re-expression can be checked against it.</li>
+  <li>The three verifiers are independent of each other but were written against
+  <strong>one reading of the definition</strong>. A misreading would be confirmed
+  unanimously rather than caught. The bridge ambiguity above is handled
+  explicitly; the rest of the definition rests on the author's reading of the
+  source.</li>
+  <li><strong>No human has peer-reviewed this work.</strong> AI assistance was
+  substantial, including the step that makes Conjecture 10.1 unconditional. No
+  AI system is an author.</li>
+</ul>
+
+<h2>Read further</h2>
+<ul>
+  <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/ARTIFACT.md">ARTIFACT.md</a> — what is here and how to check it</li>
+  <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/CONJECTURE_10_1.md">CONJECTURE_10_1.md</a> — the discharging argument and the bridge case in full</li>
+  <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/DENSITY.md">DENSITY.md</a> — the fourth problem, and why it is out of reach here</li>
+  <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/REVIEW.md">REVIEW.md</a> — the withdrawn claims, kept in place</li>
+  <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/AI_DISCLOSURE.md">AI_DISCLOSURE.md</a> — which systems did what</li>
+  <li><a href="https://doi.org/10.5281/zenodo.22269200">Zenodo archive</a> — versioned, with every certificate</li>
+</ul>
+
+<footer>
+Code and certificates MIT-licensed; prose CC BY 4.0. The conjectures are those
+of <a href="https://doi.org/10.26493/1855-3974.584.09a">Althöfer, Haugland,
+Scherer, Schneider and Van Cleemput</a>, who are not associated with this work.
+Cite via the <a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/CITATION.cff">CITATION.cff</a> or the concept DOI above.
+
+<a href="https://severinvisionary.github.io/">Other certified deposits by the same author</a>.
+</footer>
+
+</main>
+</body>
+</html>

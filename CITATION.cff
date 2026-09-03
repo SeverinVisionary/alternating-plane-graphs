@@ -11,6 +11,8 @@ authors:
     email: hanyu.yang.92@gmail.com
     orcid: https://orcid.org/0009-0005-0419-4070
 repository-code: https://github.com/SeverinVisionary/alternating-plane-graphs
+version: 1.0.0
+date-released: 2026-09-02
 abstract: >-
   Machine-checked settlement of three of the four open problems in Section 10 of
   Althofer, Haugland, Scherer, Schneider and Van Cleemput, "Alternating plane

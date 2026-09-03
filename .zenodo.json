@@ -26,5 +26,7 @@
       "scheme": "doi"
     }
   ],
-  "notes": "Verification requires only Python and pytest. The manuscript is a draft and has never been compiled. AI assistance was substantial and is disclosed in AI_DISCLOSURE.md; no AI system is an author."
+  "notes": "Verification requires only Python and pytest. The manuscript is a draft and has never been compiled. AI assistance was substantial and is disclosed in AI_DISCLOSURE.md; no AI system is an author.",
+  "version": "1.0.0",
+  "publication_date": "2026-09-02"
 }

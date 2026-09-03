@@ -22,8 +22,10 @@ abstract: >-
   a proved periodic capping lemma that generates a (3,4,5)-alternating plane
   graph at order 48 and every order at least 50. Conjecture 10.3 is settled by a
   3-connected witness at every order from 19 up. Conjecture 10.1 is proved,
-  unconditionally: the definition is ambiguous at a bridge, and a counterexample
-  is shown to be bridgeless under either reading. The asymptotic degree
+  without relying on the bridge convention: Definition 2.1 is silent about
+  bridges and the paper rules them out a few lines later by asserting
+  2-edge-connectivity, but the argument closes under the permissive reading
+  too, in which bridges are allowed. The asymptotic degree
   distribution is left open. This work was produced with substantial AI assistance,
   disclosed in AI_DISCLOSURE.md; no AI system is an author.
 keywords:

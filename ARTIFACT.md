@@ -29,9 +29,14 @@ taken on trust, is stated in [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
 
 The (C2) qualification on 10.1 was removed on 2026-09-02. It had been the
 paper's reading of Definition 2.1 at a bridge rather than a hypothesis written
-into it; [`bridge_lemma.py`](bridge_lemma.py) supplies the parity lemma and
+into it -- Definition 2.1 lists four conditions and says nothing about bridges,
+but p. 339 asserts that an APG "is always at least 2-edge-connected, since
+plane graph with edge connectivity 1 contains a face that is adjacent to
+itself", which is the strict reading stated as a consequence in passing.
+[`bridge_lemma.py`](bridge_lemma.py) supplies the parity lemma and
 `conjecture_10_1.py` the count that closes it, so the theorem now holds under
-either reading.
+either reading, and does not depend on that sentence. This is a robustness
+result, not the closing of a gap the authors left open.
 
 ## Verifying it
 

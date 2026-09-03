@@ -11,7 +11,7 @@ Scherer, Schneider & Van Cleemput, *Alternating plane graphs*,
 
 | | |
 | --- | --- |
-| ✅ **Conjecture 10.1** | **Proved, unconditionally.** The definition is ambiguous at a bridge; a counterexample is shown bridgeless under *either* reading, so the result does not depend on the interpretation. |
+| ✅ **Conjecture 10.1** | **Proved, and not resting on an interpretation.** Definition 2.1 is silent about bridges; the paper rules bridges out a few lines later, asserting that an alternating plane graph "is always at least 2-edge-connected, since plane graph with edge connectivity 1 contains a face that is adjacent to itself" (p. 339). The proof here does not use that sentence — it closes under the permissive reading too, in which bridges are allowed. |
 | ✅ **Conjecture 10.2** | **Settled.** Certificates for all **26** previously open orders, plus a *proved* periodic capping lemma generating order 48 and **every** order ≥ 50. |
 | ✅ **Conjecture 10.3** | **Settled.** A verified 3-connected witness at **every** order ≥ 19. |
 | ⬜ **Fourth problem** | **Open.** The asymptotic distribution of `v₄/v₃` on `[1, 1.5]`. Out of reach of these methods, and we say why. |

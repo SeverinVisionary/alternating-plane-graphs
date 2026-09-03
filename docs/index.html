@@ -59,7 +59,7 @@
   ],
   "license": "https://opensource.org/licenses/MIT",
   "keywords": "alternating plane graphs, rotation systems, plane graphs, computer-assisted proof, certificate verification, combinatorics",
-  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved unconditionally: the published definition is ambiguous at a bridge, and the discharging argument closes under either reading. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating order 48 and every order n >= 50. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, is settled by a verified witness at every such order. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
+  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved without relying on the bridge convention: Definition 2.1 is silent about bridges and the paper rules them out a few lines later by asserting 2-edge-connectivity (p. 339), but the discharging argument closes under the permissive reading too. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating order 48 and every order n >= 50. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, is settled by a verified witness at every such order. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
   "isBasedOn": {
     "@type": "SoftwareSourceCode",
     "codeRepository": "https://github.com/SeverinVisionary/alternating-plane-graphs",
@@ -180,21 +180,29 @@ witness re-verified from its rotation system rather than asserted.</p>
 </table>
 </div>
 
-<h2>Conjecture 10.1, and an ambiguity in the definition</h2>
-<p>The proof is a discharging argument over edges. Working it through exposed a
-genuine gap in the published definition: at a <strong>bridge</strong>, the same
-face lies on both sides of the edge, so the requirement that adjacent faces
-differ in size is either violated by every bridge or vacuous at every bridge,
-depending on how one reads it. The paper does not say which.</p>
+<h2>Conjecture 10.1, and the bridge convention</h2>
+<p>The proof is a discharging argument over edges. It turns on how the
+definition behaves at a <strong>bridge</strong>, where the same face lies on both
+sides of the edge, so "adjacent faces differ in size" is either violated at every
+bridge or vacuous at every bridge.</p>
 
-<p>Rather than choose, the argument is made to close <strong>under either
-reading</strong>. The strict reading forbids bridges outright. The permissive
-reading allows them, and is handled by a parity lemma — for any plane graph
-whose faces admit a proper 2-colouring, <span class="m">deg(v) −
-bridges_at(v)</span> is even — which pins each degree-3 endpoint onto exactly
-one bridge and lets the discharging close with room to spare.</p>
+<p><strong>The paper settles this, and we should be clear that it does.</strong>
+Definition 2.1 itself lists four conditions and says nothing about bridges, but a
+few lines further down (p. 339) the authors assert that an alternating plane
+graph <em>"is always at least 2-edge-connected, since plane graph with edge
+connectivity 1 contains a face that is adjacent to itself."</em> That is the
+strict reading, stated as a consequence in passing rather than proved or written
+into the definition.</p>
 
-<div class="headline">The result does not depend on the interpretation.</div>
+<p>The argument here does not lean on that sentence. It closes under the
+<strong>permissive</strong> reading as well, in which bridges are allowed, by way
+of a parity lemma — for any plane graph whose faces admit a proper
+2-colouring, <span class="m">deg(v) − bridges_at(v)</span> is even —
+which pins each degree-3 endpoint onto exactly one bridge and lets the
+discharging close with room to spare.</p>
+
+<div class="headline">A robustness result, not a gap in the paper: the authors
+chose the strict reading, and the proof holds either way.</div>
 
 <p>The slack is measured rather than asserted: the argument still closes when
 the bridge-face bound is weakened from 8 to 7, and fails at 6.</p>
@@ -269,7 +277,7 @@ and one follows from the first.</p>
   every original preserved so the re-expression can be checked against it.</li>
   <li>The three verifiers are independent of each other but were written against
   <strong>one reading of the definition</strong>. A misreading would be confirmed
-  unanimously rather than caught. The bridge ambiguity above is handled
+  unanimously rather than caught. The bridge convention above is handled
   explicitly; the rest of the definition rests on the author's reading of the
   source.</li>
   <li><strong>No human has peer-reviewed this work.</strong> AI assistance was

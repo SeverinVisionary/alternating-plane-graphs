@@ -1,0 +1,56 @@
+{
+  "claim_scope": "Deterministic setup checkpoint for the public order-34 near-opening seed. This is not a strict block witness. No rematching or search transition was run.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "kernel": "Linux-6.18.35-x86_64-with-glibc2.39"
+  },
+  "ranking": {
+    "disjoint_fan_pairs": 53,
+    "fan_candidates": 13,
+    "file": "results/logs/near_opening_rankings/51_34-34.json",
+    "record_index": 0,
+    "sha256": "fcffa1d449ab53f01a1c2837acd9fad25710492c1d74f94c252cd6447649b5d0",
+    "verified_against_seed": true
+  },
+  "rematching_enumerated": false,
+  "replay": "python3 near_opening.py certificates/search_seeds/upstream/51_34-34.plc --sha256 1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76 --source-url https://www.althofer.de/apg/apgs/51_34-34.plc --fan 8:6,10 --fan 32:33,34 --output results/near_openings/order34_51_fans_8_32.replayed.json && cmp results/near_openings/order34_51_fans_8_32.json results/near_openings/order34_51_fans_8_32.replayed.json",
+  "search_compute_started": false,
+  "seed": {
+    "fans": [
+      {"hub": 8, "leaves": [6, 10]},
+      {"hub": 32, "leaves": [33, 34]}
+    ],
+    "file": "results/near_openings/order34_51_fans_8_32.json",
+    "hexagons": [[5, 6, 7, 8, 11, 10], [20, 33, 27, 34, 31, 32]],
+    "score_breakdown": {
+      "abstract_graph": 160,
+      "equal_face": 0,
+      "face_distribution": 0,
+      "hex": 120,
+      "total": 460,
+      "white": 180
+    },
+    "sha256": "2d86c0b12ac046602516c435c319ef87efe98d6bac837546fb775f6fdf71178e",
+    "state_sha256": "938ee94260c196b7f4fb9aef81ca3fab0aaeb67b92dc2bf520cb087a029aaa93"
+  },
+  "source": {
+    "file": "certificates/search_seeds/upstream/51_34-34.plc",
+    "order": 34,
+    "sha256": "1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76",
+    "url": "https://www.althofer.de/apg/apgs/51_34-34.plc",
+    "verified_apg": true
+  },
+  "structural_repair": {
+    "degree5_endpoints_required": 2,
+    "degree_3_5_donor_edges": 12,
+    "defect_edges": [[5, 6], [5, 10]],
+    "future_donor_pairs": 66,
+    "future_perfect_rematchings_per_pair": 105,
+    "k3_impossible": true,
+    "minimal_endpoint_feasible_k": 4,
+    "offending_white_vertices": [6, 10],
+    "recipe": "Retain mandatory edges (5,6) and (5,10), add two distinct degree-(3,5) donor edges, then enumerate perfect rematchings of the eight selected darts in a future checkpoint.",
+    "shared_boundary_vertex": 5,
+    "shared_boundary_vertex_degree": 4
+  }
+}

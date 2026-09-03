@@ -1,0 +1,17 @@
+Integrated milestone parent:
+  85e4a5bd938e31e199f8c09d9c3238227641b980
+
+Environment:
+  kernel: Linux 6.18.35 x86_64
+  hostname: 76a7bdc81cdd
+
+Replay:
+  cd 
+  python3 -m unittest -v
+
+Result:
+  Ran 27 tests in 3.880s
+  OK
+
+New gate:
+  test_block_two_edge_switches_is_exact_and_instrumented ... ok

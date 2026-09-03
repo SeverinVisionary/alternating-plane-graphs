@@ -1,0 +1,19 @@
+Step 0 and prior-result replay:
+hostname
+uname -a
+git status --porcelain
+git rev-parse HEAD
+git ls-remote origin refs/heads/apg-345-conjecture-10-2
+sha256sum results/logs/mandatory_defect_26_29_33_result.json
+python3 -m unittest discover -v
+
+D24 predicted-object calibration (bounded; not target compute):
+python3 five_edge_rematch.py --base results/blocks/D24.json --four-edge-state results/calibration/D24_four_edge_positive.json --state-output results/calibration/D24_five_edge_positive.json --certificate results/calibration/D24_five_edge_recovered.json --log results/logs/D24_five_edge_calibration.json
+
+Pre-compute target staging (executes zero target rematchings):
+python3 mandatory_defect_k5.py stage --spec jobs/mandatory_defect_26_29_33_k5.json
+
+Focused and full gates:
+python3 -m unittest test_five_edge_rematch test_mandatory_defect_k5 -v
+python3 -m unittest discover -v
+git diff --check

@@ -1,0 +1,27 @@
+{
+  "certificates": {},
+  "complete": true,
+  "focused_suite": "21/21",
+  "format": "apg-mandatory-defect-k5-result-postpush-v1",
+  "full_suite": "179/179",
+  "git_diff_check": "pass",
+  "remote_byte_equality": true,
+  "remote_commit": "1098d7f057beafa0eb2938ad3e29bdd45b18ad37",
+  "remote_utf8_blobs": {
+    "SEARCH_STATUS.md": [6852, "9808fac56d99e8fc403eedcdbb86f84d26ca33edb3fd7b8bcb75c022cc84e08f"],
+    "results/logs/mandatory_defect_26_29_33_k5_result.json": [28857, "393f4493bc8e18afd1af053e030d9aff58d69ee62d0364492d915cd787710e27"],
+    "results/logs/mandatory_defect_26_29_33_k5_result_D24_replay_console.txt": [114, "2457d921151fdda318c3beeed65c86a6df6b027be6e5a426192631c3c1ffde0e"],
+    "results/logs/mandatory_defect_26_29_33_k5_result_console.txt": [30, "85a89493099d81a165bb84efb9228117db5b0faac75ba8cb680b78bf3ec50568"],
+    "results/logs/mandatory_defect_26_29_33_k5_result_environment.json": [559, "974bf8136287c57c5c4ed88ae117fc0367ed43253bbb545cb385e94114774003"],
+    "results/logs/mandatory_defect_26_29_33_k5_result_focused_tests.txt": [3718, "851e019d31a13d833c98d29fd6eb65a286aeb1f6492020013037cb3bf7405599"],
+    "results/logs/mandatory_defect_26_29_33_k5_result_full_tests.txt": [29989, "a58ba8aae013d5a44a92328a430988a92f89c87c7134628aa124996cdfe90613"],
+    "results/logs/mandatory_defect_26_29_33_k5_result_precompute_tests.txt": [29233, "925d93fe738150585eefabbffc1167da4a62b18934052f709b21e97fb25ac2ec"],
+    "results/logs/mandatory_defect_26_29_33_k5_result_replay.txt": [680, "c64eab5c2f222e9c06a05f09e74b37c5f21dde8f3d23c879c53354280f0a14a5"],
+    "test_mandatory_defect_k5_result.py": [4951, "2614c637d31fc7d586f5316d24856ca23ccc57a983e7b799a2104eaeb0a249e4"]
+  },
+  "result_sha256": "393f4493bc8e18afd1af053e030d9aff58d69ee62d0364492d915cd787710e27",
+  "result_size": 28857,
+  "spec_sha256": "a18ea38665b2dc6c4b66d1e50f9644bcaa535eb4a678164e37161da82d68c0c4",
+  "target_manifest_sha256": "a7d3190ce26764995c6080a9b7dd28d1a27f10864570549b1fbba069a3f8d50e",
+  "target_state_sha256": "2ac057daf35896a46711ef4d8b6a5fc10720d885fd08fd59289da6cf862ad28b"
+}

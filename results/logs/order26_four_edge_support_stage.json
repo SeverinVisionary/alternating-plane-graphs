@@ -1,0 +1,35 @@
+{
+  "claim_scope": "Pre-compute stage only; no localized k4 target enumeration was run.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname": {
+      "machine": "x86_64",
+      "node": "76a7bdc81cdd",
+      "processor": "x86_64",
+      "release": "6.18.35",
+      "system": "Linux",
+      "version": "#1 SMP Fri Aug 21 00:36:21 UTC 2026"
+    }
+  },
+  "format": "apg-four-edge-order26-support-stage-v1",
+  "identities": {
+    "bad_white_vertices_per_parent": 4,
+    "equal_face_edges_per_parent": 6,
+    "matchings_per_quadruple": 60,
+    "parents": 56,
+    "quadruples_per_parent": 495,
+    "score_histogram": {
+      "510": 56
+    },
+    "support_edges_per_parent": 12,
+    "total_attempts": 1663200,
+    "total_quadruples": 27720
+  },
+  "parent_manifest_sha256": "10e474800e632b44767b6dfd2137594d14db2eb87f96e22de6f717251fb112b7",
+  "replay": "python3 order26_four_edge_support.py stage --spec jobs/order26_four_edge_support.json",
+  "spec": "jobs/order26_four_edge_support.json",
+  "spec_sha256": "0b9e7152a329f811e6deae549d26f7d548bcbd705a7685087b220cfeaf8cd9f1",
+  "support_manifest_sha256": "7dadec97c34866026d2394bfa3c81d3ef1e7d47bda57cdfd03f8a093555ed2f1",
+  "target_state_file": "results/targets/order26_four_edge_support_parents.json",
+  "target_state_sha256": "93f9ec18ff60744b691da9ea3743ef4efa505e570ace71f5e8b26aef4c68b5e2"
+}

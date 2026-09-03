@@ -1,0 +1,195 @@
+{
+  "claim_scope": "Known-answer search-quality gate only. It starts from a fixed positive-score perturbation and requires strict independent recovery; it is not an order-25 search result.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "kernel": "Linux",
+    "kernel_release": "6.18.35"
+  },
+  "gate": "non-vacuous D24 production annealing recovery",
+  "graph_valid_mode": {
+    "budget_steps": 100000,
+    "log": "results/logs/map_search_recovery_D24_seed0_graph_valid.json",
+    "log_raw_sha256": "9b66e6da69ef345d84180ee0f9258435c64f90f0a9b0e7ec5b2845280648851c",
+    "replay": "python3 map_search.py --base results/blocks/D24.json --order 24 --initial-switches 1 --graph-valid --seed 0 --steps 100000 --output results/calibration/map_search_recovery_D24_seed0_graph_valid.json --log results/logs/map_search_recovery_D24_seed0_graph_valid.json",
+    "stats": {
+      "accepted": 1,
+      "best_components": {
+        "abstract_graph": 0,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 0,
+        "total": 0,
+        "white": 0
+      },
+      "best_score": 0,
+      "current_components": {
+        "abstract_graph": 0,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 0,
+        "total": 0,
+        "white": 0
+      },
+      "elapsed_seconds": 1.3132728710006631,
+      "graph_rejections": 216,
+      "graph_valid_mode": true,
+      "improvements": 1,
+      "initial_components": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 240,
+        "hex": 0,
+        "total": 820,
+        "white": 420
+      },
+      "initial_score": 820,
+      "initial_switches": 1,
+      "order": 24,
+      "seed": 0,
+      "steps": 217,
+      "zero_score_states": 1,
+      "zero_score_validation_rejections": 0
+    },
+    "success": true
+  },
+  "ordinary_metropolis": {
+    "budget_steps": 100000,
+    "log": "results/logs/map_search_recovery_D24_seed0.json",
+    "log_raw_sha256": "3c199953788d178a26b7b63b303a8e22245419ffc1183c230014e2deb5274814",
+    "stats": {
+      "accepted": 2837,
+      "best_components": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 240,
+        "hex": 0,
+        "total": 820,
+        "white": 420
+      },
+      "best_score": 820,
+      "current_components": {
+        "abstract_graph": 240,
+        "equal_face": 20,
+        "face_distribution": 240,
+        "hex": 180,
+        "total": 1070,
+        "white": 390
+      },
+      "elapsed_seconds": 6.2024172590026865,
+      "graph_rejections": 0,
+      "improvements": 0,
+      "initial_components": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 240,
+        "hex": 0,
+        "total": 820,
+        "white": 420
+      },
+      "initial_score": 820,
+      "initial_switches": 1,
+      "order": 24,
+      "seed": 0,
+      "steps": 100000,
+      "zero_score_states": 0,
+      "zero_score_validation_rejections": 0
+    },
+    "success": false
+  },
+  "parent_checkpoint": "634d2b65dbe43a31ea18891a030594ca8fb93dbc",
+  "recovered": {
+    "block_tools_validation": {
+      "closed_summary": {
+        "edges": 46,
+        "face_counts": {
+          "3": 10,
+          "4": 8,
+          "5": 6
+        },
+        "faces": 24,
+        "order": 24,
+        "vertex_counts": {
+          "3": 10,
+          "4": 8,
+          "5": 6
+        }
+      },
+      "edges": 42,
+      "faces": 20,
+      "order": 24
+    },
+    "blocks_validation": {
+      "passed": true,
+      "socket_boundaries": [
+        [
+          3,
+          9,
+          11,
+          8,
+          6,
+          7
+        ],
+        [
+          4,
+          16,
+          18,
+          17,
+          14,
+          15
+        ]
+      ],
+      "socket_whites": [
+        [
+          9,
+          8,
+          7
+        ],
+        [
+          16,
+          17,
+          15
+        ]
+      ]
+    },
+    "closed_block_tools_raw_sha256": "1c71aad91383bbd6d6aa5dabc7a6332a249a5189c611495b402273f743684263",
+    "closed_blocks_raw_sha256": "1c71aad91383bbd6d6aa5dabc7a6332a249a5189c611495b402273f743684263",
+    "closed_outputs_identical": true,
+    "exact_known_D24_rotation": true,
+    "known_D24_rotation_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+    "path": "results/calibration/map_search_recovery_D24_seed0_graph_valid.json",
+    "raw_sha256": "f2c9e2d316b77472dad85b594389729dbe5a7f29261c6a5f1e212b3ac6051d11",
+    "rotation_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+    "verify_results": [
+      {
+        "closer": "block_tools",
+        "path": "results/calibration/map_search_recovery_D24_seed0_graph_valid_closed_block_tools.json",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "PASS results/calibration/map_search_recovery_D24_seed0_graph_valid_closed_block_tools.json: order=24 edges=46 faces=24 vertex_counts={3: 10, 4: 8, 5: 6} face_counts={3: 10, 4: 8, 5: 6}\n"
+      },
+      {
+        "closer": "blocks",
+        "path": "results/calibration/map_search_recovery_D24_seed0_graph_valid_closed_blocks.json",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "PASS results/calibration/map_search_recovery_D24_seed0_graph_valid_closed_blocks.json: order=24 edges=46 faces=24 vertex_counts={3: 10, 4: 8, 5: 6} face_counts={3: 10, 4: 8, 5: 6}\n"
+      }
+    ]
+  },
+  "start": {
+    "alpha_sha256": "2847ed3d2d64043d6a126b312a751e8b578c21b2fa945a2ffb059b3888887033",
+    "base": "results/blocks/D24.json",
+    "base_rotation_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+    "initial_components": {
+      "abstract_graph": 160,
+      "equal_face": 0,
+      "face_distribution": 240,
+      "hex": 0,
+      "total": 820,
+      "white": 420
+    },
+    "initial_score": 820,
+    "initial_switches": 1,
+    "seed": 0
+  }
+}

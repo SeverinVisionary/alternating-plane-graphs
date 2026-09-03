@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "candidate_validation_attempts": 1512,
+    "candidate_validation_failures": 1512,
+    "disjoint_edge_pairs": 54,
+    "edge_pair_combinations": 66,
+    "pairing_attempts": 108,
+    "pruned_equal_endpoint_degree": 54,
+    "pruned_existing_edge": 12,
+    "pruned_shared_endpoint": 12,
+    "splice_attempts": 1512
+  },
+  "distinct_survivor_hashes": [],
+  "distinct_survivors": 0,
+  "eligible_edges": 12,
+  "raw_survivor_hashes": [],
+  "validation_prune_reasons": {
+    "block rotation is not spherical": 1512
+  },
+  "wall_seconds": 0.33492988600119133
+}

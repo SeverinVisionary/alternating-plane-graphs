@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+title: >-
+  Settling Conjectures 10.1, 10.2 and 10.3 on alternating plane graphs
+message: >-
+  If you use this software or its certificates, please cite it, and cite the
+  paper whose conjectures it settles.
+type: software
+authors:
+  - given-names: Hanyu
+    family-names: Yang
+    email: hanyu.yang.92@gmail.com
+    orcid: https://orcid.org/0009-0005-0419-4070
+repository-code: https://github.com/SeverinVisionary/alternating-plane-graphs
+abstract: >-
+  Machine-checked settlement of three of the four open problems in Section 10 of
+  Althofer, Haugland, Scherer, Schneider and Van Cleemput, "Alternating plane
+  graphs". Conjecture 10.2 is settled by 26 verified certificates together with
+  a proved periodic capping lemma that generates a (3,4,5)-alternating plane
+  graph at order 48 and every order at least 50. Conjecture 10.3 is settled by a
+  3-connected witness at every order from 19 up. Conjecture 10.1 is proved,
+  unconditionally: the definition is ambiguous at a bridge, and a counterexample
+  is shown to be bridgeless under either reading. The asymptotic degree
+  distribution is left open. This work was produced with substantial AI assistance,
+  disclosed in AI_DISCLOSURE.md; no AI system is an author.
+keywords:
+  - alternating plane graphs
+  - plane graphs
+  - rotation systems
+  - combinatorics
+  - computer-assisted proof
+  - certificate verification
+license: MIT
+references:
+  - type: article
+    title: Alternating plane graphs
+    authors:
+      - given-names: Ingo
+        family-names: Althofer
+      - given-names: Jan Kristian
+        family-names: Haugland
+      - given-names: Karl
+        family-names: Scherer
+      - given-names: Frank
+        family-names: Schneider
+      - given-names: Nico
+        family-names: Van Cleemput
+    journal: Ars Mathematica Contemporanea
+    volume: 8
+    start: 337
+    end: 363
+    year: 2015
+    doi: 10.26493/1855-3974.584.09a

@@ -1,0 +1,13 @@
+test_builder_exactly_reproduces_committed_spherical_state (test_order26_three_edge_spherical.Order26ThreeEdgeSphericalTests.test_builder_exactly_reproduces_committed_spherical_state) ... ok
+test_complete_spherical_radius2_result_is_frozen (test_order26_three_edge_spherical.Order26ThreeEdgeSphericalTests.test_complete_spherical_radius2_result_is_frozen) ... ok
+test_genus_one_parent_is_rejected_from_spherical_frontier (test_order26_three_edge_spherical.Order26ThreeEdgeSphericalTests.test_genus_one_parent_is_rejected_from_spherical_frontier) ... ok
+test_legacy_score470_parents_are_abstract_valid_genus_one_not_plane (test_order26_three_edge_spherical.Order26ThreeEdgeSphericalTests.test_legacy_score470_parents_are_abstract_valid_genus_one_not_plane) ... ok
+test_spec_hash_parent_provenance_and_budget_are_frozen (test_order26_three_edge_spherical.Order26ThreeEdgeSphericalTests.test_spec_hash_parent_provenance_and_budget_are_frozen) ... ok
+test_spherical_parent_state_replays_all_alphas_scores_and_euler (test_order26_three_edge_spherical.Order26ThreeEdgeSphericalTests.test_spherical_parent_state_replays_all_alphas_scores_and_euler) ... ok
+test_stage_log_replays_spherical_state_and_exact_budget (test_order26_three_edge_spherical.Order26ThreeEdgeSphericalTests.test_stage_log_replays_spherical_state_and_exact_budget) ... ok
+test_status_note_freezes_semantic_correction (test_order26_three_edge_spherical.Order26ThreeEdgeSphericalTests.test_status_note_freezes_semantic_correction) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.014s
+
+OK

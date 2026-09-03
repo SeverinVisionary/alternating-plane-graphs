@@ -1,0 +1,303 @@
+{
+  "archive": {
+    "path": "results/bool_r12_residual_h55_baa349135fc9.tar.gz",
+    "readable": true,
+    "sha256": "06439313a9b069906acac8ac6c0d35e268039cbdad6118a501e1fa59dd5a8391"
+  },
+  "block_certificate_count": 0,
+  "controls": {
+    "20": {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "passed": true,
+          "returncode": 0
+        },
+        {
+          "checker": "verify_darts.py",
+          "passed": true,
+          "returncode": 0
+        }
+      ],
+      "passed": true
+    },
+    "21": {
+      "fresh_closures": [
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            0,
+            0
+          ],
+          "passed": true,
+          "sha256": "79b36a2fa268d770cec5b03c6468be7506cc3eef75585a5971a15a9edf377e09"
+        },
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            0,
+            1
+          ],
+          "passed": true,
+          "sha256": "e6d6e7760bb0b5d339d310059129078c04b52e9564227539c51e14008dd1d674"
+        },
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            0,
+            2
+          ],
+          "passed": true,
+          "sha256": "9b72e82ac714858aeb9e66f4b3f540d15255e7829db67730efa5cfe9316c6e56"
+        },
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            1,
+            0
+          ],
+          "passed": true,
+          "sha256": "42e9b5bdbf20726033878adb93e989c17dde857d64ecca0166b5b89adb86970d"
+        },
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            1,
+            1
+          ],
+          "passed": true,
+          "sha256": "b9ff1b362aefda8df2c3288f37242be73d5a964e0aa356a900dda9bd0ab55bff"
+        },
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            1,
+            2
+          ],
+          "passed": true,
+          "sha256": "723b9b46d5de80d563c15b72ee3c2b49626176c7812579f3850c9cf12d75507f"
+        },
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            2,
+            0
+          ],
+          "passed": true,
+          "sha256": "c4ba1f134870ba0d9c1aa9c85a59ce53e07be9cabf76d2cfe06dfdc33e9eafc3"
+        },
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            2,
+            1
+          ],
+          "passed": true,
+          "sha256": "24e1be59fa675d39edc284d1b49afe478ac2de2bd64181e4bb29ede2af676dfc"
+        },
+        {
+          "checker_runs": [
+            {
+              "checker": "verify.py",
+              "passed": true,
+              "returncode": 0
+            },
+            {
+              "checker": "verify_darts.py",
+              "passed": true,
+              "returncode": 0
+            }
+          ],
+          "hub_indices": [
+            2,
+            2
+          ],
+          "passed": true,
+          "sha256": "221940bf5a60d4c0450aa2f1036dc2d4eab905ab036fdb0f4f6c3e66e58a82fb"
+        }
+      ],
+      "passed": true,
+      "postprocess_sha256": "c9f1e482de8b97df76e1f4256bc1d8f23ea2321b11408290eb4a1bb2ed103018"
+    }
+  },
+  "disposition": "VALIDATED_INCOMPLETE",
+  "format": "apg-bool-r12-residual-h55-intake-audit-v1",
+  "log_dir": "results/logs/bool_r12_residual_h55_baa349135fc9",
+  "manifest": {
+    "artifact_paths": [
+      "results/bool_r12_residual_h55_baa349135fc9.tar.gz",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/RUN_REPORT.md",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/candidate.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_0.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_1.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_2.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_0.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_1.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_2.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_0.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_1.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_2.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_order20.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_order20.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_order20.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_28_r12_t0_seed0.exit_status",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_28_r12_t0_seed0.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_28_r12_t0_seed0.resources.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_28_r12_t0_seed0.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_28_r12_t0_seed0.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_29_r12_t0_seed0.exit_status",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_29_r12_t0_seed0.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_29_r12_t0_seed0.resources.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_29_r12_t0_seed0.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_29_r12_t0_seed0.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_31_r12_t0_seed0.exit_status",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_31_r12_t0_seed0.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_31_r12_t0_seed0.resources.json",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_31_r12_t0_seed0.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/bool_r12_h55_b_31_r12_t0_seed0.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/commands.sh",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/jq_A21.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/jq_A21.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/jq_A21_postprocess.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/jq_A21_postprocess.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/jq_order20.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/jq_order20.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/pre_job_environment.log",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/source_gate.log",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/verify_darts_order20.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/verify_darts_order20.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/verify_order20.stderr",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/verify_order20.stdout",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/z3_install.log",
+      "results/logs/bool_r12_residual_h55_baa349135fc9/z3_version_after_install.log"
+    ],
+    "entries": 51,
+    "passed": true,
+    "path": "results/bool_r12_residual_h55_baa349135fc9_SHA256SUMS",
+    "sha256": "0db18318fd32aadd6ca599d9f7df50e44d9f8f5fb1c86b9a4ca045d34f5559c5"
+  },
+  "nonexistence_claimed": false,
+  "source_commit": "baa349135fc965f150460994bbb48ab8bec4707c",
+  "source_tree": "57858f688bd168e0cb0476ff12fee7a6ec0bc85b",
+  "target_certificate_exists": false,
+  "targets": {
+    "28": {
+      "block_certificate_exists": false,
+      "nonexistence_claimed": false,
+      "raw_disposition": "INCOMPLETE",
+      "raw_record_sha256": "684d3a32e453c4f8cce9db5c0878f8b099af904d4161a5fb5ab963ddd4125b4b",
+      "target_certificate_exists": false,
+      "z3_result": "unknown"
+    },
+    "29": {
+      "block_certificate_exists": false,
+      "nonexistence_claimed": false,
+      "raw_disposition": "INCOMPLETE",
+      "raw_record_sha256": "5102a09ba064f16bac41fa693353504c8af9ae37e7bc2041022939641a605e1d",
+      "target_certificate_exists": false,
+      "z3_result": "unknown"
+    },
+    "31": {
+      "block_certificate_exists": false,
+      "nonexistence_claimed": false,
+      "raw_disposition": "INCOMPLETE",
+      "raw_record_sha256": "c46446029c0e1e38d75d8fc689109498186790075c22d62a9a3bdc8fc3c83cda",
+      "target_certificate_exists": false,
+      "z3_result": "unknown"
+    }
+  }
+}

@@ -1,0 +1,2845 @@
+{
+  "block_t_gate": {
+    "observed": [
+      {
+        "hub_indices": [
+          0,
+          0
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      },
+      {
+        "hub_indices": [
+          0,
+          1
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      },
+      {
+        "hub_indices": [
+          0,
+          2
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      },
+      {
+        "hub_indices": [
+          1,
+          0
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      },
+      {
+        "hub_indices": [
+          1,
+          1
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      },
+      {
+        "hub_indices": [
+          1,
+          2
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      },
+      {
+        "hub_indices": [
+          2,
+          0
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      },
+      {
+        "hub_indices": [
+          2,
+          1
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      },
+      {
+        "hub_indices": [
+          2,
+          2
+        ],
+        "t_face": 0,
+        "t_vertex": 0
+      }
+    ],
+    "passed": true,
+    "requested": 0
+  },
+  "block_validation": {
+    "passed": true,
+    "sockets": [
+      {
+        "boundary": [
+          0,
+          15,
+          1,
+          16,
+          2,
+          17
+        ],
+        "whites": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "boundary": [
+          3,
+          18,
+          4,
+          19,
+          5,
+          20
+        ],
+        "whites": [
+          3,
+          4,
+          5
+        ]
+      }
+    ]
+  },
+  "candidate": {
+    "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/candidate.json",
+    "sha256": "754a4d54f287f1efc821829bc468c8375e8ba76a959493f7c38eeb88c00253e3"
+  },
+  "closure_count": 9,
+  "closures": [
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_0.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_0.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_0.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_0.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        0,
+        0
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_0.json",
+      "sha256": "79b36a2fa268d770cec5b03c6468be7506cc3eef75585a5971a15a9edf377e09"
+    },
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_1.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_1.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_1.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_1.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        0,
+        1
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_1.json",
+      "sha256": "e6d6e7760bb0b5d339d310059129078c04b52e9564227539c51e14008dd1d674"
+    },
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_2.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_2.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_2.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_2.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        0,
+        2
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_0_2.json",
+      "sha256": "9b72e82ac714858aeb9e66f4b3f540d15255e7829db67730efa5cfe9316c6e56"
+    },
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_0.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_0.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_0.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_0.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        1,
+        0
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_0.json",
+      "sha256": "42e9b5bdbf20726033878adb93e989c17dde857d64ecca0166b5b89adb86970d"
+    },
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_1.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_1.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_1.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_1.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        1,
+        1
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_1.json",
+      "sha256": "b9ff1b362aefda8df2c3288f37242be73d5a964e0aa356a900dda9bd0ab55bff"
+    },
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_2.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_2.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_2.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_2.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        1,
+        2
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_1_2.json",
+      "sha256": "723b9b46d5de80d563c15b72ee3c2b49626176c7812579f3850c9cf12d75507f"
+    },
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_0.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_0.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_0.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_0.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        2,
+        0
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_0.json",
+      "sha256": "c4ba1f134870ba0d9c1aa9c85a59ce53e07be9cabf76d2cfe06dfdc33e9eafc3"
+    },
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_1.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_1.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_1.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_1.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        2,
+        1
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_1.json",
+      "sha256": "24e1be59fa675d39edc284d1b49afe478ac2de2bd64181e4bb29ede2af676dfc"
+    },
+    {
+      "checker_runs": [
+        {
+          "checker": "verify.py",
+          "command": [
+            "python3",
+            "verify.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_2.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_2.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}\n"
+        },
+        {
+          "checker": "verify_darts.py",
+          "command": [
+            "python3",
+            "verify_darts.py",
+            "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_2.json",
+            "--expect-order",
+            "21"
+          ],
+          "passed": true,
+          "returncode": 0,
+          "stderr": "",
+          "stdout": "PASS results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_2.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6}\n"
+        }
+      ],
+      "hub_indices": [
+        2,
+        2
+      ],
+      "passed": true,
+      "path": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21_postprocess_certificates/closure_2_2.json",
+      "sha256": "221940bf5a60d4c0450aa2f1036dc2d4eab905ab036fdb0f4f6c3e66e58a82fb"
+    }
+  ],
+  "disposition": "CERTIFIED",
+  "expected_block_t": 0,
+  "expected_order": 21,
+  "format": "apg-exact-map-postprocess-v1",
+  "lane": "block",
+  "r": 10,
+  "r_gate": {
+    "observed": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "passed": true,
+    "requested": 10
+  },
+  "solver_disposition": "CANDIDATE",
+  "source_record": "results/logs/bool_r12_residual_h55_baa349135fc9/bool_known_A21.json",
+  "source_record_sha256": "91fddabbfec7263698d6a1e17a48df3e646d2326d6e98ef3aa896364229e9cdc",
+  "structural_audit": {
+    "status": "COMPLETED",
+    "value": {
+      "all_invariants_equal": true,
+      "order": 21,
+      "t0_branches": [
+        {
+          "Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "beta": 6,
+          "epsilon": 0,
+          "gamma": 0,
+          "r": 10
+        }
+      ],
+      "variant_count": 9,
+      "variants": [
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 0,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                1,
+                2
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 3,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                4,
+                5
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                3,
+                4,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                9,
+                10,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            0,
+            0
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "3": 2,
+            "4": 2,
+            "5": 2,
+            "9": 2,
+            "10": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        },
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 0,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                1,
+                2
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 4,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                3,
+                5
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                3,
+                4,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                8,
+                9,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            0,
+            1
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "3": 2,
+            "4": 2,
+            "5": 2,
+            "8": 2,
+            "9": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        },
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 0,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                1,
+                2
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 5,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                3,
+                4
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                3,
+                4,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                8,
+                9,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            0,
+            2
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "3": 2,
+            "4": 2,
+            "5": 2,
+            "8": 2,
+            "9": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        },
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 1,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                0,
+                2
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 3,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                4,
+                5
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                2,
+                3,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                9,
+                10,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            1,
+            0
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "2": 2,
+            "3": 2,
+            "5": 2,
+            "9": 2,
+            "10": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        },
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 1,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                0,
+                2
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 4,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                3,
+                5
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                2,
+                3,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                8,
+                9,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            1,
+            1
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "2": 2,
+            "3": 2,
+            "5": 2,
+            "8": 2,
+            "9": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        },
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 1,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                0,
+                2
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 5,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                3,
+                4
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                2,
+                3,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                8,
+                9,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            1,
+            2
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "2": 2,
+            "3": 2,
+            "5": 2,
+            "8": 2,
+            "9": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        },
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 2,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                0,
+                1
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 3,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                4,
+                5
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                2,
+                3,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                9,
+                10,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            2,
+            0
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "2": 2,
+            "3": 2,
+            "5": 2,
+            "9": 2,
+            "10": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        },
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 2,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                0,
+                1
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 4,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                3,
+                5
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                2,
+                3,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                8,
+                9,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            2,
+            1
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "2": 2,
+            "3": 2,
+            "5": 2,
+            "8": 2,
+            "9": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        },
+        {
+          "all_faces_simple": true,
+          "boundary_edge_count": 12,
+          "cap_edge_count": 4,
+          "cap_motifs": [
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 2,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                0,
+                1
+              ],
+              "port_component": 0
+            },
+            {
+              "cap_edge_face_sizes": [
+                [
+                  3,
+                  4
+                ],
+                [
+                  3,
+                  4
+                ]
+              ],
+              "hub": 5,
+              "hub_degree": 4,
+              "leaf_degrees": [
+                3,
+                3
+              ],
+              "leaves": [
+                3,
+                4
+              ],
+              "port_component": 1
+            }
+          ],
+          "core_edge_count": 24,
+          "core_edge_matrix": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "core_matrix_matches_Y": true,
+          "corner_formula": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "corner_formula_matches": true,
+          "corner_matrix": [
+            [
+              10,
+              10,
+              10
+            ],
+            [
+              10,
+              2,
+              8
+            ],
+            [
+              10,
+              8,
+              12
+            ]
+          ],
+          "edge_formula": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edge_formula_matches": true,
+          "edge_matrix": [
+            [
+              4,
+              6,
+              0
+            ],
+            [
+              6,
+              4,
+              10
+            ],
+            [
+              0,
+              10,
+              0
+            ]
+          ],
+          "edges": 40,
+          "euler": 2,
+          "expected_Y": [
+            [
+              0,
+              6,
+              0
+            ],
+            [
+              6,
+              0,
+              6
+            ],
+            [
+              0,
+              6,
+              0
+            ]
+          ],
+          "face_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "faces": 21,
+          "h55_all_degree_two": true,
+          "h55_component_sizes": [
+            6,
+            6
+          ],
+          "h55_components": [
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                2,
+                3,
+                5
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                15,
+                16,
+                17
+              ]
+            },
+            {
+              "is_cycle": true,
+              "node_count": 6,
+              "node_degrees": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ],
+              "pentagon_count": 3,
+              "pentagons": [
+                8,
+                9,
+                11
+              ],
+              "vertex_count": 3,
+              "vertices": [
+                18,
+                19,
+                20
+              ]
+            }
+          ],
+          "hub_indices": [
+            2,
+            2
+          ],
+          "order": 21,
+          "pentagon_degree5_incidence": {
+            "2": 2,
+            "3": 2,
+            "5": 2,
+            "8": 2,
+            "9": 2,
+            "11": 2
+          },
+          "port_component_indices": [
+            0,
+            1
+          ],
+          "port_components_are_isolated_cycles": true,
+          "port_components_distinct": true,
+          "r": 10,
+          "t_face": 0,
+          "t_vertex": 0,
+          "vertex_counts": {
+            "3": 10,
+            "4": 5,
+            "5": 6
+          },
+          "vertex_pentagon_incidence": {
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "19": 2,
+            "20": 2
+          }
+        }
+      ]
+    }
+  }
+}

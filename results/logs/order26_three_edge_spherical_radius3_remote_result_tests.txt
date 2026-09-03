@@ -1,0 +1,12 @@
+test_all_64_parent_hashes_alphas_breakdowns_and_order_are_frozen (test_order26_three_edge_spherical_radius3.Order26ThreeEdgeSphericalRadius3Tests.test_all_64_parent_hashes_alphas_breakdowns_and_order_are_frozen) ... ok
+test_builder_exactly_reproduces_committed_radius3_state (test_order26_three_edge_spherical_radius3.Order26ThreeEdgeSphericalRadius3Tests.test_builder_exactly_reproduces_committed_radius3_state) ... ok
+test_complete_radius3_result_counters_histogram_and_frontier_are_frozen (test_order26_three_edge_spherical_radius3.Order26ThreeEdgeSphericalRadius3Tests.test_complete_radius3_result_counters_histogram_and_frontier_are_frozen) ... ok
+test_genus_one_state_cannot_enter_radius3_frontier (test_order26_three_edge_spherical_radius3.Order26ThreeEdgeSphericalRadius3Tests.test_genus_one_state_cannot_enter_radius3_frontier) ... ok
+test_no_sampling_cap_or_budget_drift_is_accepted (test_order26_three_edge_spherical_radius3.Order26ThreeEdgeSphericalRadius3Tests.test_no_sampling_cap_or_budget_drift_is_accepted) ... ok
+test_spec_provenance_manifest_and_exact_budget_are_frozen (test_order26_three_edge_spherical_radius3.Order26ThreeEdgeSphericalRadius3Tests.test_spec_provenance_manifest_and_exact_budget_are_frozen) ... ok
+test_stage_log_replays_manifest_state_and_count_identities (test_order26_three_edge_spherical_radius3.Order26ThreeEdgeSphericalRadius3Tests.test_stage_log_replays_manifest_state_and_count_identities) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.068s
+
+OK

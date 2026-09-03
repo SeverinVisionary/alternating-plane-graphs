@@ -1,0 +1,30 @@
+{
+  "bad_white_vertices_per_parent": 4,
+  "base_alpha_sha256": "9115b20cf204b1ff18b321142d6bf5c13eaf0501336382aa98283d69a36ac23b",
+  "certificate_directory": "results/blocks/order26_four_edge_support",
+  "claim_scope": "Complete localized exact k4 support neighborhood of the 56 plane-valid score-510 order-26 radius-4 frontier states; a bounded miss is not nonexistence.",
+  "equal_face_edges_per_parent": 6,
+  "fixed_rotation_hash": "aa82e2d913a9cc4c98a405fba9293a1440ae77f3acc40bbb6c6ff76f6b604346",
+  "fixed_state_file": "results/targets/order26_three_edge_spherical_radius4_parents.json",
+  "fixed_state_sha256": "cfe788abcf2b63585bdcbc1a860ce08dcf7988380437caf5cf41461d36e133c7",
+  "format": "apg-four-edge-order26-support-v1",
+  "frontier_limit": 64,
+  "input_commit": "92fd7808b9dd4c2e44531be10066c8b9c633c3ff",
+  "matchings_per_quadruple": 60,
+  "parent_count": 56,
+  "parent_manifest_sha256": "10e474800e632b44767b6dfd2137594d14db2eb87f96e22de6f717251fb112b7",
+  "parent_result_file": "results/logs/order26_three_edge_spherical_radius4.json",
+  "parent_result_sha256": "06f145c6b4c465c46943bb1f278acac364d8000f969e60f19a0a391646663e8a",
+  "parent_score_histogram": {
+    "510": 56
+  },
+  "quadruples_per_parent": 495,
+  "result_log": "results/logs/order26_four_edge_support_result.json",
+  "stage_log": "results/logs/order26_four_edge_support_stage.json",
+  "support_edges_per_parent": 12,
+  "support_manifest_sha256": "7dadec97c34866026d2394bfa3c81d3ef1e7d47bda57cdfd03f8a093555ed2f1",
+  "target_state_file": "results/targets/order26_four_edge_support_parents.json",
+  "target_state_sha256": "93f9ec18ff60744b691da9ea3743ef4efa505e570ace71f5e8b26aef4c68b5e2",
+  "total_attempts": 1663200,
+  "total_quadruples": 27720
+}

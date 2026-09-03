@@ -1,0 +1,15 @@
+{
+  "bundle_path": "<source-bundle>",
+  "bundle_sha256": "6bcfa9bcd92a3c8ba59e1a69b8a4e1608187e107be3475ce0ce00d2a8d0d1ea7",
+  "advertised_ref": "refs/heads/apg-345-target",
+  "head": "7deedb353ca80d5de61d4bf999310809feea3e4d",
+  "tree": "39d8ff2bbf71eff7b6fe0d3a005464cb4eb835d6",
+  "kernel": "Linux 88ef8c6d385a 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "hostname": "88ef8c6d385a",
+  "non_darwin": true,
+  "bundle_verify": "passed; complete SHA1 history",
+  "fsck": "passed; no dangling objects",
+  "clean_before_compute": true,
+  "python": "3.12.13",
+  "z3": "5.1.0"
+}

@@ -1,0 +1,11 @@
+{
+  "disposition": "INCOMPLETE",
+  "expected_order": 27,
+  "format": "apg-exact-map-postprocess-v1",
+  "lane": "block",
+  "r": 12,
+  "reason": "solver record did not emit a positive candidate",
+  "solver_disposition": "INCOMPLETE",
+  "source_record": "results/logs/reduced_e44699b2_pilot/lane_b_27_r12_seed0.json",
+  "source_record_sha256": "ec128ef2894d5d64bfe75256a9b7af532c990fe4f4822bbffcdd12055ef1f549"
+}

@@ -1,0 +1,15 @@
+{
+  "format": "apg-historical-near-open-topology-audit-environment-v1",
+  "input_commit": "0928583fc81d5e93e1793ef68cf1005ef42164aa",
+  "remote_ref_at_step0": "0928583fc81d5e93e1793ef68cf1005ef42164aa",
+  "remote_ref_equal": true,
+  "checkout_path": "<workspace>/apg-next-clean-eHg0wU",
+  "checkout_mode": "new isolated detached sparse worktree",
+  "initial_git_status_porcelain": "",
+  "hostname": "76a7bdc81cdd",
+  "uname": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "replay": "python3 topology_semantics_audit.py --output results/logs/historical_near_open_topology_audit.json",
+  "audit_sha256": "b75698df1376c900393023323fe324fd4968eae09cd7e7fadca5a95d3ed9eabf",
+  "audit_manifest_sha256": "d7b42e1af79ca7e76f4c9a36baf7bd8e06cca8bc232b1168c0065393a674d594",
+  "tests": "141/141 passed"
+}

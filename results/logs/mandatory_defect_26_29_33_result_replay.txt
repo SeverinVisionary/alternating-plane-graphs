@@ -1,0 +1,5 @@
+cd 
+python3 mandatory_defect_rematch.py run --spec jobs/mandatory_defect_26_29_33.json
+python3 -m unittest -v test_mandatory_defect_rematch
+python3 -m unittest discover -v
+git diff --check

@@ -1,0 +1,13 @@
+DONE state00-cool attempts=250000 accepted=1947 best=470 zero=0
+DONE state00-hot attempts=250000 accepted=5938 best=470 zero=0
+DONE state01-cool attempts=250000 accepted=2153 best=470 zero=0
+DONE state01-hot attempts=250000 accepted=5462 best=470 zero=0
+DONE state02-cool attempts=250000 accepted=2567 best=470 zero=0
+DONE state02-hot attempts=250000 accepted=5500 best=470 zero=0
+DONE state03-cool attempts=250000 accepted=2831 best=470 zero=0
+DONE state03-hot attempts=250000 accepted=5504 best=470 zero=0
+DONE state04-cool attempts=250000 accepted=3311 best=470 zero=0
+DONE state04-hot attempts=250000 accepted=5539 best=470 zero=0
+DONE state05-cool attempts=250000 accepted=2632 best=470 zero=0
+DONE state05-hot attempts=250000 accepted=5420 best=470 zero=0
+PASS jobs=12 attempts=3000000 best=470 success=False

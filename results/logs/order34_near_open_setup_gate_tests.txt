@@ -1,0 +1,45 @@
+Order-34 near-opening setup checkpoint gate
+===========================================
+
+Environment
+-----------
+hostname: 76a7bdc81cdd
+kernel: Linux 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 GNU/Linux
+remote input commit: ab0eccf3b32843768fbe526538a0fa8d31bb3c3b
+
+Pre-setup full gate
+-------------------
+command: python3 -m unittest discover -v
+result: 61 tests passed
+reported test wall time: 7.160s
+
+Upstream byte gate
+------------------
+source URL: https://www.althofer.de/apg/apgs/51_34-34.plc
+byte count: 182
+SHA-256: 1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76
+
+Deterministic seed gate
+-----------------------
+seed SHA-256: 2d86c0b12ac046602516c435c319ef87efe98d6bac837546fb775f6fdf71178e
+state SHA-256: 938ee94260c196b7f4fb9aef81ca3fab0aaeb67b92dc2bf520cb087a029aaa93
+score: 460 = abstract_graph 160 + white 180 + hex 120
+ranking SHA-256: fcffa1d449ab53f01a1c2837acd9fad25710492c1d74f94c252cd6447649b5d0
+
+Targeted replay gate
+--------------------
+command: python3 -m unittest -v test_near_opening_order34
+result: 2 tests passed
+reported test wall time: 0.003s
+
+Post-setup full gate
+--------------------
+command: python3 -m unittest discover -v
+result: 63 tests passed
+reported test wall time: 7.016s
+
+Bounded status
+--------------
+This checkpoint stages and structurally analyzes one public order-34
+near-opening seed. No rematching, local-search transition, or other search
+compute was run. The score ranking is not a block witness.

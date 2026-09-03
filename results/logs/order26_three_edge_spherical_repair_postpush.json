@@ -1,0 +1,38 @@
+{
+  "format": "apg-result-blob-repair-postpush-v1",
+  "claim_scope": "Authenticated remote-byte verification only; no search was run.",
+  "verified_commit": "700156f1a09bf933fde2edeb99881f8e303df28c",
+  "artifact": "results/logs/order26_three_edge_spherical_radius2.json",
+  "retrieval": "authenticated repository fetch_blob API",
+  "remote_git_blob_sha1": "bd3d60e24701eaefed8712b35a9139372ab6b142",
+  "remote_byte_length": 389815,
+  "remote_sha256": "3bae1402ddbe9563494609a16aacd4c5655fdee9ee8e16ab9a7b108aaaa503fa",
+  "remote_matches_source_byte_for_byte": true,
+  "utf8_decode": true,
+  "json_parse": true,
+  "spec_sha256": "b11e30724450ff403e168401b8fb60c348398f434316c41f37cf62fb48ff16ea",
+  "target_state_sha256": "29f82fc0da2285a99346c938cc0af63e225289ee8400b8ee99fec44815ff0e99",
+  "result_accounting": {
+    "attempts": 728640,
+    "plane_gate_prunes": 728466,
+    "raw_plane_valid": 174,
+    "duplicates": 0,
+    "distinct_plane_valid": 174,
+    "minimum_score": 780,
+    "score_zero": 0,
+    "frontier_count": 64,
+    "frontier_truncated": true
+  },
+  "remote_result_tests": {
+    "tests": 8,
+    "result": "OK",
+    "output": "results/logs/order26_three_edge_spherical_repair_remote_result_tests.txt",
+    "output_sha256": "fe0570b790caff66354eb661c22436720470b79deb27f0fbda33743f0a0f691b"
+  },
+  "postpush_full_suite": {
+    "tests": 104,
+    "result": "OK",
+    "output": "results/logs/order26_three_edge_spherical_repair_postpush_full_tests.txt",
+    "output_sha256": "9f13f704851ce3c7b2058ab51f12044bd69bda8b19d0aa068e0d1236476082d8"
+  }
+}

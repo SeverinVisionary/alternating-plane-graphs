@@ -1,0 +1,279 @@
+{
+  "base": {
+    "canonical_rotation_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+    "path": "results/blocks/D24.json",
+    "raw_sha256": "9210f91150f77ec8e951a272816c3d4f736153fbbbfac0e707576e5aec1b6ab8"
+  },
+  "budget": {
+    "runs": 8,
+    "sum_run_elapsed_seconds": 128.45246568500806,
+    "total_steps": 2000000,
+    "tranche_wall_seconds": 32.76174733899825,
+    "worker_count": 4
+  },
+  "claim_scope": "Eight bounded deterministic dart-involution annealing runs at order 25, four in each admissible block profile. Misses and best scores are search evidence only, not nonexistence.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "kernel": "Linux",
+    "kernel_release": "6.18.35",
+    "workers": 4
+  },
+  "implementation": {
+    "map_search_blob_sha": "134d3348d44db0caa155c4d1712652ba8a1eb866",
+    "zero_score_correctness_fix_head": "49ba09ef0b7e08d58ad2b2cedfe183ba37324e81"
+  },
+  "parent_checkpoint": "b8f689d8d856597e49df5ae9dbc372f1262cd1ba",
+  "partition": {
+    "r10": {
+      "method": "grow D24 by one degree-4 vertex",
+      "r_value": 10,
+      "seeds": [
+        1000,
+        1001,
+        1002,
+        1003
+      ]
+    },
+    "r11": {
+      "method": "retarget D24",
+      "r_value": 11,
+      "seeds": [
+        1100,
+        1101,
+        1102,
+        1103
+      ]
+    },
+    "steps_per_seed": 250000,
+    "tranche": "01"
+  },
+  "result": {
+    "best_scores": {
+      "r10": [
+        800,
+        800,
+        860,
+        860
+      ],
+      "r11": [
+        500,
+        1030,
+        780,
+        660
+      ]
+    },
+    "block_hashes": [],
+    "exceptions": [],
+    "successes": 0,
+    "verified_order25_blocks": 0,
+    "zero_score_states": 0,
+    "zero_score_validation_rejections": 0
+  },
+  "runs": [
+    {
+      "log": "results/logs/map_search_order25/tranche01/r10_seed01000.json",
+      "log_raw_sha256": "dc306fccf4b23018f276c4dc77ef35f99f2fd3d4854dee7e41f3f3c39eb67dee",
+      "output": "results/blocks/order25_candidates/tranche01/r10_seed01000.json",
+      "output_exists": false,
+      "profile": "r10",
+      "r_value": 10,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --seed 1000 --steps 250000 --output results/blocks/order25_candidates/tranche01/r10_seed01000.json --log results/logs/map_search_order25/tranche01/r10_seed01000.json",
+      "seed": 1000,
+      "stats": {
+        "accepted": 5702,
+        "best_score": 800,
+        "elapsed_seconds": 16.15897444100119,
+        "graph_rejections": 0,
+        "improvements": 0,
+        "initial_score": 800,
+        "order": 25,
+        "seed": 1000,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche01/r10_seed01001.json",
+      "log_raw_sha256": "36c748dfb4ab80a680bf943a86dc019202bddd9f60daee90deac496e5ece7374",
+      "output": "results/blocks/order25_candidates/tranche01/r10_seed01001.json",
+      "output_exists": false,
+      "profile": "r10",
+      "r_value": 10,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --seed 1001 --steps 250000 --output results/blocks/order25_candidates/tranche01/r10_seed01001.json --log results/logs/map_search_order25/tranche01/r10_seed01001.json",
+      "seed": 1001,
+      "stats": {
+        "accepted": 5721,
+        "best_score": 800,
+        "elapsed_seconds": 15.831602080001176,
+        "graph_rejections": 0,
+        "improvements": 0,
+        "initial_score": 800,
+        "order": 25,
+        "seed": 1001,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche01/r10_seed01002.json",
+      "log_raw_sha256": "aee7b21ea1dc4f8b0b42417bd2a28b6413882f3fe0cc8606744282dabe38f8db",
+      "output": "results/blocks/order25_candidates/tranche01/r10_seed01002.json",
+      "output_exists": false,
+      "profile": "r10",
+      "r_value": 10,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --seed 1002 --steps 250000 --output results/blocks/order25_candidates/tranche01/r10_seed01002.json --log results/logs/map_search_order25/tranche01/r10_seed01002.json",
+      "seed": 1002,
+      "stats": {
+        "accepted": 8076,
+        "best_score": 860,
+        "elapsed_seconds": 15.195439768001961,
+        "graph_rejections": 0,
+        "improvements": 0,
+        "initial_score": 860,
+        "order": 25,
+        "seed": 1002,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche01/r10_seed01003.json",
+      "log_raw_sha256": "28e6550abfb5ced7e5bf05ad5a4065b98e9df4db5d9f17eead9115e8b33b4dda",
+      "output": "results/blocks/order25_candidates/tranche01/r10_seed01003.json",
+      "output_exists": false,
+      "profile": "r10",
+      "r_value": 10,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --seed 1003 --steps 250000 --output results/blocks/order25_candidates/tranche01/r10_seed01003.json --log results/logs/map_search_order25/tranche01/r10_seed01003.json",
+      "seed": 1003,
+      "stats": {
+        "accepted": 11064,
+        "best_score": 860,
+        "elapsed_seconds": 15.437100626000756,
+        "graph_rejections": 0,
+        "improvements": 0,
+        "initial_score": 860,
+        "order": 25,
+        "seed": 1003,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche01/r11_seed01100.json",
+      "log_raw_sha256": "ab2c4141bf19bf4089fa54df68ca06331419fd91ac7009987f91c9dc8c9d0f71",
+      "output": "results/blocks/order25_candidates/tranche01/r11_seed01100.json",
+      "output_exists": false,
+      "profile": "r11",
+      "r_value": 11,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --r 11 --seed 1100 --steps 250000 --output results/blocks/order25_candidates/tranche01/r11_seed01100.json --log results/logs/map_search_order25/tranche01/r11_seed01100.json",
+      "seed": 1100,
+      "stats": {
+        "accepted": 6511,
+        "best_score": 500,
+        "elapsed_seconds": 16.614871523001057,
+        "graph_rejections": 0,
+        "improvements": 0,
+        "initial_score": 500,
+        "order": 25,
+        "seed": 1100,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche01/r11_seed01101.json",
+      "log_raw_sha256": "233dd32d3845a748fbde401abf8fea8fe4d18e7939dfda4a3dc5c85e9fbf20c7",
+      "output": "results/blocks/order25_candidates/tranche01/r11_seed01101.json",
+      "output_exists": false,
+      "profile": "r11",
+      "r_value": 11,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --r 11 --seed 1101 --steps 250000 --output results/blocks/order25_candidates/tranche01/r11_seed01101.json --log results/logs/map_search_order25/tranche01/r11_seed01101.json",
+      "seed": 1101,
+      "stats": {
+        "accepted": 8055,
+        "best_score": 1030,
+        "elapsed_seconds": 16.199429901000258,
+        "graph_rejections": 0,
+        "improvements": 0,
+        "initial_score": 1030,
+        "order": 25,
+        "seed": 1101,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche01/r11_seed01102.json",
+      "log_raw_sha256": "a8ea12c6ef240dec3bbd455e4621c3b5e9bee9b3f031e2bb991d7eded22f5b73",
+      "output": "results/blocks/order25_candidates/tranche01/r11_seed01102.json",
+      "output_exists": false,
+      "profile": "r11",
+      "r_value": 11,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --r 11 --seed 1102 --steps 250000 --output results/blocks/order25_candidates/tranche01/r11_seed01102.json --log results/logs/map_search_order25/tranche01/r11_seed01102.json",
+      "seed": 1102,
+      "stats": {
+        "accepted": 5391,
+        "best_score": 780,
+        "elapsed_seconds": 16.528837903999374,
+        "graph_rejections": 0,
+        "improvements": 0,
+        "initial_score": 780,
+        "order": 25,
+        "seed": 1102,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche01/r11_seed01103.json",
+      "log_raw_sha256": "d4af3a6eb55b0799c0a71f0d1f056640617023cd20fd6636aaf5c6769ccf86d2",
+      "output": "results/blocks/order25_candidates/tranche01/r11_seed01103.json",
+      "output_exists": false,
+      "profile": "r11",
+      "r_value": 11,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --r 11 --seed 1103 --steps 250000 --output results/blocks/order25_candidates/tranche01/r11_seed01103.json --log results/logs/map_search_order25/tranche01/r11_seed01103.json",
+      "seed": 1103,
+      "stats": {
+        "accepted": 4664,
+        "best_score": 660,
+        "elapsed_seconds": 16.48620944200229,
+        "graph_rejections": 0,
+        "improvements": 0,
+        "initial_score": 660,
+        "order": 25,
+        "seed": 1103,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    }
+  ],
+  "unresolved_block_orders": [
+    25,
+    29,
+    34
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "format": "apg-three-edge-target-spec-v1",
+  "claim_scope": "Complete radius-one exact three-edge deranged-rematching neighborhood of six named order-26 parents; a zero-witness result is not nonexistence.",
+  "input_commit": "b9d0c5ec676843a1db2cd0ec38fd4de5089463e1",
+  "source": {
+    "url": "https://www.althofer.de/apg/apgs/27_26-26.plc",
+    "file": "27_26-26.plc",
+    "sha256": "d78efd8db7aa415f36a15a9225cbf0b7c1bacfe096051514a7614edd683c4902",
+    "order": 26
+  },
+  "seed_file": "results/near_openings/order26_27_fans_1_24.json",
+  "seed_file_sha256": "db44db0882c38e98ff94b40e42230c81f57e72d82cb5e0e221a499e57cd280c9",
+  "base_state_sha256": "9115b20cf204b1ff18b321142d6bf5c13eaf0501336382aa98283d69a36ac23b",
+  "fixed_rotation_hash": "aa82e2d913a9cc4c98a405fba9293a1440ae77f3acc40bbb6c6ff76f6b604346",
+  "frontier_log": "results/logs/order26_near_open_radius5.json",
+  "frontier_log_sha256": "e62332c8b3c4524994bf98a7faa25f6afce62ad227b5378dca1f0d3adbe954de",
+  "parent_state_sha256": [
+    "5ea1cc9a0cce8ff69386b3bd0fe623d3efaa8fcdc429319474c9ab67297f1bc4",
+    "a5522bf00ed7e9730583405e6fa72d62ec1fceb9a67638feed413fc9e6fd15f1",
+    "d337ec944b935bb8f473e35269907cbb2413b9fa4488754df52372b9d6ebab4a",
+    "e91984c9ca36143cfb7c128d56bdf7116e6c2d735b69e702b76c6c1fa9e066a8",
+    "ee24f1a2e77f4fadba9904102a91d1670669e1ccaa55693e4fffa69eab652ced",
+    "f47b7c1a84035d3c674dd54575c914dc3f39574251a3439d697d8a71328bac0e"
+  ],
+  "expected_parent_score": 470,
+  "mode": "all-triples",
+  "parent_count": 6,
+  "edges_per_parent": 46,
+  "triples_per_parent": 15180,
+  "total_triples": 91080,
+  "matchings_per_triple": 8,
+  "total_attempts": 728640,
+  "frontier_limit": 64,
+  "target_state_file": "results/targets/order26_three_edge_parents.json",
+  "target_state_sha256": "77b5c304505d43576813bda3feda59d745b36a296d901223f842729dc9d4c1bb",
+  "stage_log": "results/logs/order26_three_edge_stage.json",
+  "result_log": "results/logs/order26_three_edge_all_triples.json",
+  "certificate_directory": "results/blocks/order26_three_edge"
+}

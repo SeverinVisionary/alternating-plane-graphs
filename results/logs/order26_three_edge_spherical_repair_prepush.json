@@ -1,0 +1,34 @@
+{
+  "format": "apg-result-blob-repair-prepush-v1",
+  "claim_scope": "Byte-for-byte repair only; no search was run.",
+  "parent_commit": "bd20d3edb7feb40ce4882d4a52f7a025cd000ede",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname_a": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "artifact": "results/logs/order26_three_edge_spherical_radius2.json",
+  "source_byte_length": 389815,
+  "source_sha256": "3bae1402ddbe9563494609a16aacd4c5655fdee9ee8e16ab9a7b108aaaa503fa",
+  "source_git_blob_sha1": "bd3d60e24701eaefed8712b35a9139372ab6b142",
+  "utf8_decode": true,
+  "json_parse": true,
+  "spec_sha256": "b11e30724450ff403e168401b8fb60c348398f434316c41f37cf62fb48ff16ea",
+  "target_state_sha256": "29f82fc0da2285a99346c938cc0af63e225289ee8400b8ee99fec44815ff0e99",
+  "result_summary": {
+    "attempts": 728640,
+    "distinct_plane_valid": 174,
+    "minimum_score": 780,
+    "score_zero": 0
+  },
+  "prepush_full_suite": {
+    "tests": 104,
+    "result": "OK",
+    "output": "results/logs/order26_three_edge_spherical_repair_prepush_tests.txt",
+    "output_sha256": "3756ec24f421b5308e47fc5d7c827f93f548ddc6a49596eb634fcef7d3966179"
+  },
+  "replaced_remote_blob": {
+    "byte_length": 150060,
+    "sha256": "22ed08df05307cd4f8eeb47526ceb0a4e5a89fdd177300d8a3533f92b5b64757",
+    "utf8_decode": false
+  }
+}

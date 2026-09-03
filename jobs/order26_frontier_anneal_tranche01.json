@@ -1,0 +1,144 @@
+{
+  "format": "apg-frontier-anneal-tranche-v1",
+  "claim_scope": "Bounded order-26 target search over twelve explicitly enumerated lanes; a no-witness result is not nonexistence.",
+  "input_commit": "43b0b4ae86da2f28243ea7d8930b7235e8f73955",
+  "seed_file": "results/near_openings/order26_27_fans_1_24.json",
+  "seed_file_sha256": "db44db0882c38e98ff94b40e42230c81f57e72d82cb5e0e221a499e57cd280c9",
+  "frontier_log": "results/logs/order26_near_open_radius5.json",
+  "expected_initial_score": 470,
+  "total_requested_steps": 3000000,
+  "jobs": [
+    {
+      "job_id": "state00-cool",
+      "state_index": 0,
+      "state_sha256": "5ea1cc9a0cce8ff69386b3bd0fe623d3efaa8fcdc429319474c9ab67297f1bc4",
+      "lane": "cool",
+      "rng_seed": 2600,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 200.0,
+      "temperature_end": 0.5
+    },
+    {
+      "job_id": "state00-hot",
+      "state_index": 0,
+      "state_sha256": "5ea1cc9a0cce8ff69386b3bd0fe623d3efaa8fcdc429319474c9ab67297f1bc4",
+      "lane": "hot",
+      "rng_seed": 3600,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 800.0,
+      "temperature_end": 2.0
+    },
+    {
+      "job_id": "state01-cool",
+      "state_index": 1,
+      "state_sha256": "a5522bf00ed7e9730583405e6fa72d62ec1fceb9a67638feed413fc9e6fd15f1",
+      "lane": "cool",
+      "rng_seed": 2601,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 200.0,
+      "temperature_end": 0.5
+    },
+    {
+      "job_id": "state01-hot",
+      "state_index": 1,
+      "state_sha256": "a5522bf00ed7e9730583405e6fa72d62ec1fceb9a67638feed413fc9e6fd15f1",
+      "lane": "hot",
+      "rng_seed": 3601,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 800.0,
+      "temperature_end": 2.0
+    },
+    {
+      "job_id": "state02-cool",
+      "state_index": 2,
+      "state_sha256": "d337ec944b935bb8f473e35269907cbb2413b9fa4488754df52372b9d6ebab4a",
+      "lane": "cool",
+      "rng_seed": 2602,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 200.0,
+      "temperature_end": 0.5
+    },
+    {
+      "job_id": "state02-hot",
+      "state_index": 2,
+      "state_sha256": "d337ec944b935bb8f473e35269907cbb2413b9fa4488754df52372b9d6ebab4a",
+      "lane": "hot",
+      "rng_seed": 3602,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 800.0,
+      "temperature_end": 2.0
+    },
+    {
+      "job_id": "state03-cool",
+      "state_index": 3,
+      "state_sha256": "e91984c9ca36143cfb7c128d56bdf7116e6c2d735b69e702b76c6c1fa9e066a8",
+      "lane": "cool",
+      "rng_seed": 2603,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 200.0,
+      "temperature_end": 0.5
+    },
+    {
+      "job_id": "state03-hot",
+      "state_index": 3,
+      "state_sha256": "e91984c9ca36143cfb7c128d56bdf7116e6c2d735b69e702b76c6c1fa9e066a8",
+      "lane": "hot",
+      "rng_seed": 3603,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 800.0,
+      "temperature_end": 2.0
+    },
+    {
+      "job_id": "state04-cool",
+      "state_index": 4,
+      "state_sha256": "ee24f1a2e77f4fadba9904102a91d1670669e1ccaa55693e4fffa69eab652ced",
+      "lane": "cool",
+      "rng_seed": 2604,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 200.0,
+      "temperature_end": 0.5
+    },
+    {
+      "job_id": "state04-hot",
+      "state_index": 4,
+      "state_sha256": "ee24f1a2e77f4fadba9904102a91d1670669e1ccaa55693e4fffa69eab652ced",
+      "lane": "hot",
+      "rng_seed": 3604,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 800.0,
+      "temperature_end": 2.0
+    },
+    {
+      "job_id": "state05-cool",
+      "state_index": 5,
+      "state_sha256": "f47b7c1a84035d3c674dd54575c914dc3f39574251a3439d697d8a71328bac0e",
+      "lane": "cool",
+      "rng_seed": 2605,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 200.0,
+      "temperature_end": 0.5
+    },
+    {
+      "job_id": "state05-hot",
+      "state_index": 5,
+      "state_sha256": "f47b7c1a84035d3c674dd54575c914dc3f39574251a3439d697d8a71328bac0e",
+      "lane": "hot",
+      "rng_seed": 3605,
+      "steps": 250000,
+      "schedule": "geometric",
+      "temperature_start": 800.0,
+      "temperature_end": 2.0
+    }
+  ]
+}

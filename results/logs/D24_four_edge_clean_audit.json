@@ -1,0 +1,86 @@
+{
+  "format": "apg-four-edge-clean-audit-v1",
+  "claim_scope": "Evidence-contamination correction and clean committed-tree replay only; no order-26 localized k4 target enumeration was run.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux"
+  },
+  "remote_parent": "ab81937c515ab16d8227db3ae10615266654b22a",
+  "remote_ref": "apg-345-conjecture-10-2",
+  "remote_ref_compare": {
+    "status": "identical",
+    "ahead_by": 0,
+    "behind_by": 0
+  },
+  "dirty_workspace": {
+    "local_git_head": "93c780ecb812fbb28d78f6ed890bd4b6bb4a3c01",
+    "status_empty": false,
+    "status_path": "results/logs/D24_four_edge_dirty_workspace_status.txt",
+    "discrepancy_paths": [
+      {
+        "path": "map_search.py",
+        "status": "workspace byte drift",
+        "remote_blob": "f33f1aacaec601f5132c3b307dfff3e631a58076",
+        "workspace_blob": "78850f131385063740be7af8bc0fdcbe65fcf0bd",
+        "role": "supports workspace-only mixed-span recovery test"
+      },
+      {
+        "path": "test_map_search.py",
+        "status": "workspace byte drift",
+        "remote_blob": "007ea69f3aca3e7c10508bfcad2b4cb450e8f3c7",
+        "workspace_blob": "f5f59833cf672d8db05e01458d0ec6c5e39ebf5a",
+        "workspace_only_tests": [
+          "MapSearchTests.test_mixed_span_mode_recovers_fixed_positive_D24"
+        ]
+      },
+      {
+        "path": "near_opening_rematch.py",
+        "status": "untracked and absent from remote commit",
+        "role": "supports workspace-only near-opening rematch tests"
+      },
+      {
+        "path": "test_near_opening_rematch.py",
+        "status": "untracked and absent from remote commit",
+        "workspace_only_tests": [
+          "NearOpeningRematchTests.test_exact_order26_k4_lane_is_frozen",
+          "NearOpeningRematchTests.test_perfect_matching_count"
+        ]
+      }
+    ]
+  },
+  "clean_checkout": {
+    "head": "ab81937c515ab16d8227db3ae10615266654b22a",
+    "initial_status_porcelain": "",
+    "committed_blobs_checked": 321,
+    "workspace_byte_matches": 318,
+    "remote_retrievals": [
+      ".gitignore",
+      "map_search.py",
+      "test_map_search.py"
+    ]
+  },
+  "calibration_replay": {
+    "command": "python3 four_edge_rematch.py calibrate --base results/blocks/D24.json --state-output $TMPDIR/D24_four_edge_positive.json --certificate $TMPDIR/D24_four_edge_recovered.json --log $TMPDIR/D24_four_edge_calibration.json",
+    "console_path": "results/logs/D24_four_edge_clean_replay_console.txt",
+    "console_sha256": "9b2edd1bd9bfb835d017fd2841f07a4e4a7d3749153849071dbd373909871721",
+    "state_byte_equal": true,
+    "state_sha256": "511237ca6a08a2778f60cd2f71db4140b7cf71aa9c7142d306ebc228242e9577",
+    "certificate_byte_equal": true,
+    "certificate_sha256": "72d4a9dad4ba580c2ae61781cf904ec0511941beb593d62eaaba2a8096b017c0",
+    "construction_equal": true,
+    "scan_counts_equal": true,
+    "inverse_result_equal_except_environment_and_timing": true,
+    "outcome_manifest_sha256": "90d4304a2daf9698f05d76070a69774b964431a2b99d5ee2496d3d6ccf80cd2d",
+    "recovered_D24_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+    "closer_sha256": "2b539972aab8aaf68c72e616e8a62a8736809a958a252b0056471390c81ae0d1"
+  },
+  "suite": {
+    "contaminated_preserved_path": "results/logs/D24_four_edge_full_tests.txt",
+    "contaminated_sha256": "27c272f43ec3d84f929eb90344268f3ff1098d0f6830faf160fc49fa335d2101",
+    "contaminated_claimed_count": 127,
+    "clean_committed_tree_count": 124,
+    "clean_result": "OK",
+    "clean_output_path": "results/logs/D24_four_edge_clean_full_tests.txt",
+    "clean_output_sha256": "61480c1fefb5e914b0f835838e3c02f1b2ad2cad5952dba2a63a983c0ec87a40"
+  }
+}

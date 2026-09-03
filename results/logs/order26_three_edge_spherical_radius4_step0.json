@@ -1,0 +1,18 @@
+{
+  "format": "apg-three-edge-spherical-radius4-step0-v1",
+  "required_parent": "19f0881baf64d6cf9dd5c577a18b91da84c21ae9",
+  "branch": "apg-345-conjecture-10-2",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname_a": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+    "system": "Linux"
+  },
+  "authenticated_ref_compare": {
+    "status": "identical",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "base_commit": "19f0881baf64d6cf9dd5c577a18b91da84c21ae9",
+    "merge_base_commit": "19f0881baf64d6cf9dd5c577a18b91da84c21ae9"
+  },
+  "passed": true
+}

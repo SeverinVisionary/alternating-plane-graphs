@@ -1,0 +1,491 @@
+{
+  "base": {
+    "canonical_rotation_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+    "path": "results/blocks/D24.json",
+    "raw_sha256": "9210f91150f77ec8e951a272816c3d4f736153fbbbfac0e707576e5aec1b6ab8"
+  },
+  "budget": {
+    "runs": 8,
+    "sum_run_elapsed_seconds": 42.00103402500099,
+    "total_steps": 2000000,
+    "tranche_wall_seconds": 12.782426789002784,
+    "worker_count": 4
+  },
+  "claim_scope": "Eight bounded graph-valid dart-involution annealing runs at order 25. Misses, frozen chains, and best scores are search-quality evidence only, not nonexistence.",
+  "disposition": "Do not repeat unchanged: all runs had zero improvements; use component and graph-rejection diagnostics before another order-25 tranche.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "kernel": "Linux",
+    "kernel_release": "6.18.35",
+    "workers": 4
+  },
+  "implementation": {
+    "map_search_blob_sha": "f33f1aacaec601f5132c3b307dfff3e631a58076",
+    "mode": "graph-valid",
+    "recovery_gate_commit": "560ff2f7332afa6de775693c1e174b4606057455"
+  },
+  "parent_checkpoint": "560ff2f7332afa6de775693c1e174b4606057455",
+  "partition": {
+    "r10": {
+      "method": "grow D24 by one degree-4 vertex",
+      "r_value": 10,
+      "seeds": [
+        1000,
+        1001,
+        1002,
+        1003
+      ]
+    },
+    "r11": {
+      "method": "retarget D24",
+      "r_value": 11,
+      "seeds": [
+        1100,
+        1101,
+        1102,
+        1103
+      ]
+    },
+    "steps_per_seed": 250000,
+    "tranche": "gv01"
+  },
+  "result": {
+    "accepted": 11465,
+    "best_scores": {
+      "r10": [
+        800,
+        800,
+        860,
+        860
+      ],
+      "r11": [
+        500,
+        1030,
+        780,
+        660
+      ]
+    },
+    "block_hashes": [],
+    "exceptions": [],
+    "graph_rejections": 1701843,
+    "improvements": 0,
+    "successes": 0,
+    "verified_order25_blocks": 0,
+    "zero_score_states": 0
+  },
+  "runs": [
+    {
+      "log": "results/logs/map_search_order25/tranche_gv01/r10_seed01000.json",
+      "log_raw_sha256": "250cce695a8658140e7dda63faa0ea60714ae8b40507de13b56b789fc6868afd",
+      "output": "results/blocks/order25_candidates/tranche_gv01/r10_seed01000.json",
+      "output_exists": false,
+      "profile": "r10",
+      "r_value": 10,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --graph-valid --seed 1000 --steps 250000 --output results/blocks/order25_candidates/tranche_gv01/r10_seed01000.json --log results/logs/map_search_order25/tranche_gv01/r10_seed01000.json",
+      "seed": 1000,
+      "stats": {
+        "accepted": 3076,
+        "best_components": {
+          "abstract_graph": 0,
+          "equal_face": 80,
+          "face_distribution": 240,
+          "hex": 180,
+          "total": 800,
+          "white": 300
+        },
+        "best_score": 800,
+        "current_components": {
+          "abstract_graph": 0,
+          "equal_face": 160,
+          "face_distribution": 560,
+          "hex": 0,
+          "total": 1530,
+          "white": 810
+        },
+        "elapsed_seconds": 8.217898054997931,
+        "graph_rejections": 174990,
+        "graph_valid_mode": true,
+        "improvements": 0,
+        "initial_components": {
+          "abstract_graph": 0,
+          "equal_face": 80,
+          "face_distribution": 240,
+          "hex": 180,
+          "total": 800,
+          "white": 300
+        },
+        "initial_score": 800,
+        "initial_switches": 0,
+        "order": 25,
+        "seed": 1000,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche_gv01/r10_seed01001.json",
+      "log_raw_sha256": "7d76133a32851c0f956191b6f49808eed7f6f861643c92a37302e1f3c75c84c9",
+      "output": "results/blocks/order25_candidates/tranche_gv01/r10_seed01001.json",
+      "output_exists": false,
+      "profile": "r10",
+      "r_value": 10,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --graph-valid --seed 1001 --steps 250000 --output results/blocks/order25_candidates/tranche_gv01/r10_seed01001.json --log results/logs/map_search_order25/tranche_gv01/r10_seed01001.json",
+      "seed": 1001,
+      "stats": {
+        "accepted": 2432,
+        "best_components": {
+          "abstract_graph": 0,
+          "equal_face": 80,
+          "face_distribution": 240,
+          "hex": 180,
+          "total": 800,
+          "white": 300
+        },
+        "best_score": 800,
+        "current_components": {
+          "abstract_graph": 0,
+          "equal_face": 100,
+          "face_distribution": 400,
+          "hex": 120,
+          "total": 1220,
+          "white": 600
+        },
+        "elapsed_seconds": 9.476758911001525,
+        "graph_rejections": 175351,
+        "graph_valid_mode": true,
+        "improvements": 0,
+        "initial_components": {
+          "abstract_graph": 0,
+          "equal_face": 80,
+          "face_distribution": 240,
+          "hex": 180,
+          "total": 800,
+          "white": 300
+        },
+        "initial_score": 800,
+        "initial_switches": 0,
+        "order": 25,
+        "seed": 1001,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche_gv01/r10_seed01002.json",
+      "log_raw_sha256": "06cdd4c0daef90a4e32cd290c10a47f8d8ea2344ea529d97c9fd3079849c272f",
+      "output": "results/blocks/order25_candidates/tranche_gv01/r10_seed01002.json",
+      "output_exists": false,
+      "profile": "r10",
+      "r_value": 10,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --graph-valid --seed 1002 --steps 250000 --output results/blocks/order25_candidates/tranche_gv01/r10_seed01002.json --log results/logs/map_search_order25/tranche_gv01/r10_seed01002.json",
+      "seed": 1002,
+      "stats": {
+        "accepted": 3058,
+        "best_components": {
+          "abstract_graph": 0,
+          "equal_face": 80,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 860,
+          "white": 540
+        },
+        "best_score": 860,
+        "current_components": {
+          "abstract_graph": 0,
+          "equal_face": 60,
+          "face_distribution": 320,
+          "hex": 120,
+          "total": 920,
+          "white": 420
+        },
+        "elapsed_seconds": 8.646710837001592,
+        "graph_rejections": 176009,
+        "graph_valid_mode": true,
+        "improvements": 0,
+        "initial_components": {
+          "abstract_graph": 0,
+          "equal_face": 80,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 860,
+          "white": 540
+        },
+        "initial_score": 860,
+        "initial_switches": 0,
+        "order": 25,
+        "seed": 1002,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche_gv01/r10_seed01003.json",
+      "log_raw_sha256": "25c7f29d19f8fb536631e2066e838a1d42dd3b67332e5a0ec18a9cc1fed5afff",
+      "output": "results/blocks/order25_candidates/tranche_gv01/r10_seed01003.json",
+      "output_exists": false,
+      "profile": "r10",
+      "r_value": 10,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --graph-valid --seed 1003 --steps 250000 --output results/blocks/order25_candidates/tranche_gv01/r10_seed01003.json --log results/logs/map_search_order25/tranche_gv01/r10_seed01003.json",
+      "seed": 1003,
+      "stats": {
+        "accepted": 2899,
+        "best_components": {
+          "abstract_graph": 0,
+          "equal_face": 80,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 860,
+          "white": 540
+        },
+        "best_score": 860,
+        "current_components": {
+          "abstract_graph": 0,
+          "equal_face": 40,
+          "face_distribution": 320,
+          "hex": 0,
+          "total": 990,
+          "white": 630
+        },
+        "elapsed_seconds": 8.510736260999693,
+        "graph_rejections": 175493,
+        "graph_valid_mode": true,
+        "improvements": 0,
+        "initial_components": {
+          "abstract_graph": 0,
+          "equal_face": 80,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 860,
+          "white": 540
+        },
+        "initial_score": 860,
+        "initial_switches": 0,
+        "order": 25,
+        "seed": 1003,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche_gv01/r11_seed01100.json",
+      "log_raw_sha256": "4e67847e223bcbc719c574527d58a6bed7f67634d9677b3f43763c5fccbc5925",
+      "output": "results/blocks/order25_candidates/tranche_gv01/r11_seed01100.json",
+      "output_exists": false,
+      "profile": "r11",
+      "r_value": 11,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --r 11 --graph-valid --seed 1100 --steps 250000 --output results/blocks/order25_candidates/tranche_gv01/r11_seed01100.json --log results/logs/map_search_order25/tranche_gv01/r11_seed01100.json",
+      "seed": 1100,
+      "stats": {
+        "accepted": 0,
+        "best_components": {
+          "abstract_graph": 320,
+          "equal_face": 20,
+          "face_distribution": 160,
+          "hex": 0,
+          "total": 500,
+          "white": 0
+        },
+        "best_score": 500,
+        "current_components": {
+          "abstract_graph": 320,
+          "equal_face": 20,
+          "face_distribution": 160,
+          "hex": 0,
+          "total": 500,
+          "white": 0
+        },
+        "elapsed_seconds": 1.1541525200009346,
+        "graph_rejections": 250000,
+        "graph_valid_mode": true,
+        "improvements": 0,
+        "initial_components": {
+          "abstract_graph": 320,
+          "equal_face": 20,
+          "face_distribution": 160,
+          "hex": 0,
+          "total": 500,
+          "white": 0
+        },
+        "initial_score": 500,
+        "initial_switches": 0,
+        "order": 25,
+        "seed": 1100,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche_gv01/r11_seed01101.json",
+      "log_raw_sha256": "c903d84871a0be052d566a01a93cc1b591dc95aa51aca240fd64eeabed9b44bc",
+      "output": "results/blocks/order25_candidates/tranche_gv01/r11_seed01101.json",
+      "output_exists": false,
+      "profile": "r11",
+      "r_value": 11,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --r 11 --graph-valid --seed 1101 --steps 250000 --output results/blocks/order25_candidates/tranche_gv01/r11_seed01101.json --log results/logs/map_search_order25/tranche_gv01/r11_seed01101.json",
+      "seed": 1101,
+      "stats": {
+        "accepted": 0,
+        "best_components": {
+          "abstract_graph": 560,
+          "equal_face": 20,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 1030,
+          "white": 210
+        },
+        "best_score": 1030,
+        "current_components": {
+          "abstract_graph": 560,
+          "equal_face": 20,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 1030,
+          "white": 210
+        },
+        "elapsed_seconds": 1.5646702609992644,
+        "graph_rejections": 250000,
+        "graph_valid_mode": true,
+        "improvements": 0,
+        "initial_components": {
+          "abstract_graph": 560,
+          "equal_face": 20,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 1030,
+          "white": 210
+        },
+        "initial_score": 1030,
+        "initial_switches": 0,
+        "order": 25,
+        "seed": 1101,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche_gv01/r11_seed01102.json",
+      "log_raw_sha256": "915a5bd93422a14124194762cf6113264c103220183c69296025db03339c6785",
+      "output": "results/blocks/order25_candidates/tranche_gv01/r11_seed01102.json",
+      "output_exists": false,
+      "profile": "r11",
+      "r_value": 11,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --r 11 --graph-valid --seed 1102 --steps 250000 --output results/blocks/order25_candidates/tranche_gv01/r11_seed01102.json --log results/logs/map_search_order25/tranche_gv01/r11_seed01102.json",
+      "seed": 1102,
+      "stats": {
+        "accepted": 0,
+        "best_components": {
+          "abstract_graph": 560,
+          "equal_face": 60,
+          "face_distribution": 160,
+          "hex": 0,
+          "total": 780,
+          "white": 0
+        },
+        "best_score": 780,
+        "current_components": {
+          "abstract_graph": 560,
+          "equal_face": 60,
+          "face_distribution": 160,
+          "hex": 0,
+          "total": 780,
+          "white": 0
+        },
+        "elapsed_seconds": 1.1702293570015172,
+        "graph_rejections": 250000,
+        "graph_valid_mode": true,
+        "improvements": 0,
+        "initial_components": {
+          "abstract_graph": 560,
+          "equal_face": 60,
+          "face_distribution": 160,
+          "hex": 0,
+          "total": 780,
+          "white": 0
+        },
+        "initial_score": 780,
+        "initial_switches": 0,
+        "order": 25,
+        "seed": 1102,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    },
+    {
+      "log": "results/logs/map_search_order25/tranche_gv01/r11_seed01103.json",
+      "log_raw_sha256": "eb7b07009794e5a98a1b834476eaf3f3d9482a1396d15d0e0fc28498854f2b3b",
+      "output": "results/blocks/order25_candidates/tranche_gv01/r11_seed01103.json",
+      "output_exists": false,
+      "profile": "r11",
+      "r_value": 11,
+      "replay": "python3 map_search.py --base results/blocks/D24.json --order 25 --r 11 --graph-valid --seed 1103 --steps 250000 --output results/blocks/order25_candidates/tranche_gv01/r11_seed01103.json --log results/logs/map_search_order25/tranche_gv01/r11_seed01103.json",
+      "seed": 1103,
+      "stats": {
+        "accepted": 0,
+        "best_components": {
+          "abstract_graph": 400,
+          "equal_face": 20,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 660,
+          "white": 0
+        },
+        "best_score": 660,
+        "current_components": {
+          "abstract_graph": 400,
+          "equal_face": 20,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 660,
+          "white": 0
+        },
+        "elapsed_seconds": 3.259877822998533,
+        "graph_rejections": 250000,
+        "graph_valid_mode": true,
+        "improvements": 0,
+        "initial_components": {
+          "abstract_graph": 400,
+          "equal_face": 20,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 660,
+          "white": 0
+        },
+        "initial_score": 660,
+        "initial_switches": 0,
+        "order": 25,
+        "seed": 1103,
+        "steps": 250000,
+        "zero_score_states": 0,
+        "zero_score_validation_rejections": 0
+      },
+      "steps_budget": 250000,
+      "success": false
+    }
+  ],
+  "unresolved_block_orders": [
+    25,
+    29,
+    34
+  ]
+}

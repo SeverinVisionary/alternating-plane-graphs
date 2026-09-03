@@ -1,0 +1,67 @@
+{
+  "claim_scope": "Bounded zero for same-order embedded black-edge replacements of this exact labelled D24 block, followed by one block_tools.expand_block_once call for each returned canonical-deduplicated neighbor. This is not a nonexistence result for order-25 compatible blocks.",
+  "hostname": "76a7bdc81cdd",
+  "input": "results/blocks/D24.json",
+  "input_sha256": "9210f91150f77ec8e951a272816c3d4f736153fbbbfac0e707576e5aec1b6ab8",
+  "kernel": "Linux",
+  "kernel_release": "6.18.35",
+  "parent_checkpoint": "7a3a9e5419073aed065ef642a7443ee2a5c8f2f2",
+  "seed": null,
+  "stage_1": {
+    "canonical_distinct_neighbors": 0,
+    "canonical_neighbor_hashes": [],
+    "exception": null,
+    "instrumentation": {
+      "counts": {
+        "add_pair_examined": 186,
+        "candidate_validation_attempts": 12,
+        "candidate_validation_failures": 12,
+        "pruned_already_adjacent": 12,
+        "pruned_restore_removed_edge": 12,
+        "pruned_socket_endpoint": 150,
+        "removed_edge_attempts": 12
+      },
+      "distinct_after_dedup": 0,
+      "eligible_black_edges": 12,
+      "instrumentation_wall_seconds": 0.0045842370018363,
+      "mirror_matches_public": true,
+      "public_function_distinct": 0,
+      "validation_failure_messages": {
+        "degree-2 vertices are not exactly the six socket whites": 12
+      }
+    },
+    "method": "block_tools.block_edge_replacements",
+    "raw_same_order_neighbors": 0,
+    "wall_seconds": 0.004936976998578757
+  },
+  "stage_2": {
+    "canonical_parents_expanded": 0,
+    "exception_records": [],
+    "method": "block_tools.expand_block_once on each canonical-deduplicated stage-1 neighbor",
+    "neighbor_expansions": {},
+    "total_valid_distinct_order25_blocks_before_global_dedup": 0
+  },
+  "supplemental_direct_expand_instrumentation": {
+    "counts": {
+      "candidate_validation_attempts": 90,
+      "candidate_validation_failures": 90,
+      "cyclic_rows_generated": 90,
+      "disjoint_edge_pairs": 15,
+      "edge_pair_combinations": 15
+    },
+    "distinct_after_dedup": 0,
+    "eligible_edges": 6,
+    "instrumentation_wall_seconds": 0.02202721499998006,
+    "mirror_matches_public": true,
+    "public_function_distinct": 0,
+    "validation_failure_messages": {
+      "block rotation is not spherical": 90
+    }
+  },
+  "total_wall_seconds": 0.0050030759994115215,
+  "unresolved_block_orders": [
+    25,
+    29,
+    34
+  ]
+}

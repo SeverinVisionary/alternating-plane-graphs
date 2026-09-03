@@ -1,0 +1,19 @@
+{
+  "candidate_hashes": [],
+  "claim_scope": "Bounded zero for block_tools.expand_block_once on this exact labelled D24 block and move family only; this is not a nonexistence result for order-25 compatible blocks.",
+  "cyclic_orders_per_pair": 6,
+  "disjoint_edge_pairs": 15,
+  "eligible_edges": 6,
+  "exception": null,
+  "hostname": "76a7bdc81cdd",
+  "input": "results/blocks/D24.json",
+  "input_sha256": "9210f91150f77ec8e951a272816c3d4f736153fbbbfac0e707576e5aec1b6ab8",
+  "integrated_remote_head": "ec5136747955cdae6c2987b02590cbd11ef48b3a",
+  "kernel": "Linux",
+  "kernel_release": "6.18.35",
+  "method": "block_tools.expand_block_once",
+  "replay": "cd  && python3 block_tools.py expand results/blocks/D24.json /tmp/d24-expand",
+  "total_candidate_attempts": 90,
+  "valid_distinct_order25_blocks": 0,
+  "wall_seconds": 0.024473310997564113
+}

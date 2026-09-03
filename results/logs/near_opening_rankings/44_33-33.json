@@ -1,0 +1,1018 @@
+{
+  "disjoint_fan_pairs": 36,
+  "fan_candidates": 10,
+  "order": 33,
+  "records": [
+    {
+      "fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 120,
+        "total": 460,
+        "white": 180
+      },
+      "state_sha256": "41a2273e6b35c77ffc8d10ff8d5eb68b4831fb8b79dc79eb53c1bcdcf89fd7b6",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 80,
+        "equal_face": 100,
+        "face_distribution": 0,
+        "hex": 0,
+        "total": 540,
+        "white": 360
+      },
+      "state_sha256": "700e502a34e40983f05fce4c0475fefef019fefdf651accf7027a2b35a2008f3",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 30,
+          "leaves": [
+            29,
+            31
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 60,
+        "face_distribution": 0,
+        "hex": 150,
+        "total": 640,
+        "white": 270
+      },
+      "state_sha256": "3f5899a1288d9d27a0b28324e8766e3417e93ed862f2131cd75afc38187dc8af",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 23,
+          "leaves": [
+            21,
+            27
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 80,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 0,
+        "total": 660,
+        "white": 420
+      },
+      "state_sha256": "1a4976381e5b5c96562bda3273f826a99af6b908ff13f2be3c61fdfd934959d2",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 60,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 810,
+        "white": 270
+      },
+      "state_sha256": "6b9579d1506a5cf36cbbb4d2532cbef439d76ef297fe25d5d3d26e7e99e7e31c",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            31,
+            33
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 80,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 120,
+        "total": 810,
+        "white": 450
+      },
+      "state_sha256": "60c44347893ad7a35b6e4e82e35f90af5f847b5b8939bfda003cbd9714798687",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 0,
+        "total": 860,
+        "white": 540
+      },
+      "state_sha256": "06027f88f07d835b044a1975174fac99a567371fb2c9a52f91d7f42f73f4a93d",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 30,
+          "leaves": [
+            29,
+            31
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 60,
+        "face_distribution": 0,
+        "hex": 270,
+        "total": 920,
+        "white": 270
+      },
+      "state_sha256": "08a1d289b5d6127f45540b28853e2d21b0383f4394e89edee2c3e164ffb04384",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            27
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 150,
+        "total": 920,
+        "white": 450
+      },
+      "state_sha256": "bbe706cad3feb23f9a2b608716a3e7ea047f559581ef1bc079083b22f9bb0ee4",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 23,
+          "leaves": [
+            21,
+            27
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 120,
+        "total": 940,
+        "white": 420
+      },
+      "state_sha256": "1aabe114f0119cd692d1676e95656d82d189385698976627b2155903c1a8b661",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        },
+        {
+          "hub": 30,
+          "leaves": [
+            29,
+            31
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 120,
+        "face_distribution": 0,
+        "hex": 270,
+        "total": 990,
+        "white": 360
+      },
+      "state_sha256": "0d0837b88880ae617c719368bf27947c40661a39d4d90193f764a3fc66970cdc",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        },
+        {
+          "hub": 23,
+          "leaves": [
+            21,
+            27
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 60,
+        "face_distribution": 160,
+        "hex": 120,
+        "total": 1010,
+        "white": 510
+      },
+      "state_sha256": "6e0eded7bd2d7232f0ff42c6bf6f6bf531261d7c00c246c4952299ef858821d1",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            31,
+            33
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 240,
+        "total": 1090,
+        "white": 450
+      },
+      "state_sha256": "d300c21475a15d20eed4ffbd131f516787012e20ce1062246e2d73d3293ebfbc",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 23,
+          "leaves": [
+            21,
+            27
+          ]
+        },
+        {
+          "hub": 30,
+          "leaves": [
+            29,
+            31
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 60,
+        "face_distribution": 160,
+        "hex": 150,
+        "total": 1120,
+        "white": 510
+      },
+      "state_sha256": "6b289be071ada6695b87c19e8343160dd286159f059f483d9527520ee70c853b",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 120,
+        "total": 1140,
+        "white": 540
+      },
+      "state_sha256": "e4f073ac74310db609309569227fc572732ac264a4a72f18773171a5482e378b",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            31,
+            33
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 60,
+        "face_distribution": 160,
+        "hex": 240,
+        "total": 1160,
+        "white": 540
+      },
+      "state_sha256": "67d9afc39a899785a96666aba028847d5eb80691ad77aa9f8f4f4ac773b4ff55",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            27
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 270,
+        "total": 1200,
+        "white": 450
+      },
+      "state_sha256": "07a7586dabfb5dcc758f17e9f039d71adc525b64a2f75400c64912645c61ee6a",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 23,
+          "leaves": [
+            21,
+            27
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            31,
+            33
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 320,
+        "hex": 0,
+        "total": 1200,
+        "white": 720
+      },
+      "state_sha256": "5afe9e0217b00aa830d6da96980396585f2ed2d51bb8f8731a880325a24228e6",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 60,
+        "face_distribution": 160,
+        "hex": 120,
+        "total": 1210,
+        "white": 630
+      },
+      "state_sha256": "55b56a8e315909d7af466dcab99c9644bab07faacd069d18cda54ff40209a64c",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            27
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 60,
+        "face_distribution": 160,
+        "hex": 270,
+        "total": 1270,
+        "white": 540
+      },
+      "state_sha256": "d7edae074fef72219e43ca91e30bc46d2f17b368afb7671116a4cda64a3d2ca7",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            27,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 0,
+        "face_distribution": 240,
+        "hex": 0,
+        "total": 1290,
+        "white": 810
+      },
+      "state_sha256": "56fe955ea8afa7392de32e90ec5ea92d5b04a1e313b8ae0e8876606d77993106",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            27
+          ]
+        },
+        {
+          "hub": 30,
+          "leaves": [
+            29,
+            31
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 120,
+        "face_distribution": 240,
+        "hex": 0,
+        "total": 1350,
+        "white": 750
+      },
+      "state_sha256": "7e6c449521a3ee75f825d1e2af1b56a213dfcc3b3a702c0d2aa6f5940e7020aa",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 23,
+          "leaves": [
+            21,
+            27
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 320,
+        "hex": 0,
+        "total": 1380,
+        "white": 900
+      },
+      "state_sha256": "6578e576d362d9ec93733e0ca7bd05e5e4337685610379d909cdaa474bc0e88d",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 5,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 240,
+        "hex": 0,
+        "total": 1390,
+        "white": 990
+      },
+      "state_sha256": "f4f67449ea1c32e2f6e5a6528fde15c46cdc11646e2aa9cb03eda6a57a3ff6b4",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            29
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            31,
+            33
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 0,
+        "face_distribution": 320,
+        "hex": 120,
+        "total": 1490,
+        "white": 810
+      },
+      "state_sha256": "ce18cda3fadfa1d69fa5d0e734c1938f941b8c78dffbfcfe7df498b709347ffb",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 5,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 40,
+        "face_distribution": 240,
+        "hex": 120,
+        "total": 1510,
+        "white": 870
+      },
+      "state_sha256": "ecda516953c91b451d8d6192525f32617035a08e32c2d29e6a1acff6a6765bb1",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            27
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            31,
+            33
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 0,
+        "face_distribution": 320,
+        "hex": 270,
+        "total": 1550,
+        "white": 720
+      },
+      "state_sha256": "133c63c58af0ec52b8de911243ffc1037403ce175e9ea72617e39cc3b020e645",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            27,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 400,
+        "equal_face": 0,
+        "face_distribution": 240,
+        "hex": 120,
+        "total": 1570,
+        "white": 810
+      },
+      "state_sha256": "1ee3c614ded020e6d4ccb65ee7d9276618c8b4720642e5a7566a96fa7ee02728",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 5,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 30,
+          "leaves": [
+            29,
+            31
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 60,
+        "face_distribution": 240,
+        "hex": 150,
+        "total": 1640,
+        "white": 870
+      },
+      "state_sha256": "4ba25cf548ca9e9c91c1148905d8ce95e837fab5ff087d1db6a1be3ac5471af1",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 12,
+          "leaves": [
+            11,
+            14
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            27,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 60,
+        "face_distribution": 240,
+        "hex": 120,
+        "total": 1640,
+        "white": 900
+      },
+      "state_sha256": "d4a0933029f3f00c2471ce8c013015ee1e27107a3c6af982e23dab2b9745a681",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 5,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 23,
+          "leaves": [
+            21,
+            27
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 0,
+        "face_distribution": 400,
+        "hex": 0,
+        "total": 1660,
+        "white": 1020
+      },
+      "state_sha256": "9a15984ffdda6a2a56e92a7cc8489fbba9bc8ffc51c9896c55b845cb90ae56a6",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 5,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            31,
+            33
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 0,
+        "face_distribution": 400,
+        "hex": 120,
+        "total": 1810,
+        "white": 1050
+      },
+      "state_sha256": "ac462037bae1ad8a4d80371681e925192eed67ec612e6428df0413d95d214861",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 5,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 400,
+        "hex": 0,
+        "total": 1860,
+        "white": 1140
+      },
+      "state_sha256": "8bf82e5045686bda85fbff158b59e7a3cd13361a318afb0e1db0672eb798dc9b",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 5,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            25,
+            27
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 400,
+        "hex": 150,
+        "total": 1920,
+        "white": 1050
+      },
+      "state_sha256": "ad93d7030fd52eff116679960664dc33511eec12ccf37d287d348254682ee4b3",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 26,
+          "leaves": [
+            27,
+            29
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            31,
+            33
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 400,
+        "hex": 120,
+        "total": 1920,
+        "white": 1080
+      },
+      "state_sha256": "c94e68f747853ed4e396ba8b896e090e35c7270fc2c1f7d675816f9d6f093079",
+      "zero_validation": null
+    },
+    {
+      "fans": [
+        {
+          "hub": 5,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            27,
+            29
+          ]
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 400,
+        "equal_face": 0,
+        "face_distribution": 480,
+        "hex": 0,
+        "total": 2290,
+        "white": 1410
+      },
+      "state_sha256": "9d503a8d0dee5c2925d890faf79370d71ae170575947c9879cf70d8977510576",
+      "zero_validation": null
+    }
+  ],
+  "source_file": "44_33-33.plc",
+  "source_sha256": "b779feb98cac0025bf165abd3b3d8e7968bff96bac5e428d17c7e1d07017a414",
+  "source_url": "https://www.althofer.de/apg/apgs/44_33-33.plc"
+}

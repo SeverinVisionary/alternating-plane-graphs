@@ -1,0 +1,47 @@
+{
+  "claim_scope": "Deterministic setup checkpoint for the independent dual order-26 near-opening seed. This is not a strict block witness and no dual local-search transition has been run in this checkpoint.",
+  "dual_compute_started": false,
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "kernel": "Linux-6.18.35-x86_64-with-glibc2.39"
+  },
+  "fans": [
+    {
+      "hub": 1,
+      "leaves": [2, 4]
+    },
+    {
+      "hub": 26,
+      "leaves": [15, 25]
+    }
+  ],
+  "replay": "python3 near_opening.py certificates/search_seeds/upstream/28_26-26.plc --sha256 adf39c3bb116a259efedaa6f9bb5c42734f262652dbe3fafd8fe5aafec17799c --source-url https://www.althofer.de/apg/apgs/28_26-26.plc --fan 1:2,4 --fan 26:15,25 --output results/near_openings/order26_28_fans_1_26.replayed.json && cmp results/near_openings/order26_28_fans_1_26.json results/near_openings/order26_28_fans_1_26.replayed.json",
+  "seed": {
+    "file": "results/near_openings/order26_28_fans_1_26.json",
+    "score_breakdown": {
+      "abstract_graph": 160,
+      "equal_face": 0,
+      "face_distribution": 0,
+      "hex": 120,
+      "total": 370,
+      "white": 90
+    },
+    "sha256": "3c40b1684a3dc365893fb14011dcd01a68d6350bd30ca47c270af049661fdf08",
+    "state_sha256": "27d8e3b580147da90d04e1be6340f3401f7a33f665fe82012cbef1234050b1b5"
+  },
+  "source": {
+    "file": "certificates/search_seeds/upstream/28_26-26.plc",
+    "order": 26,
+    "sha256": "adf39c3bb116a259efedaa6f9bb5c42734f262652dbe3fafd8fe5aafec17799c",
+    "url": "https://www.althofer.de/apg/apgs/28_26-26.plc",
+    "verified_apg": true
+  },
+  "tests": {
+    "command": "python3 -m unittest -v test_near_opening_dual",
+    "exact_seed_replay": true,
+    "full_suite": "49 passed in 6.860s",
+    "full_suite_log": "results/logs/order26_dual_seed_setup_gate_tests.txt",
+    "source_hash": true,
+    "source_verified_by_verify_py": true
+  }
+}

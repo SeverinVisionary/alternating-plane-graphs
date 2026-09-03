@@ -1,0 +1,38 @@
+Integrated remote head:
+  ec5136747955cdae6c2987b02590cbd11ef48b3a
+
+Environment:
+  kernel: Linux 6.18.35 x86_64
+  hostname: 76a7bdc81cdd
+
+Replay:
+  cd 
+  python3 -m unittest -v
+
+Result:
+  Ran 22 tests in 2.649s
+  OK
+
+Tests:
+  test_join_order_formula (test_block_arithmetic.BlockArithmeticTests.test_join_order_formula) ... ok
+  test_published_blocks_alone_leave_exact_frontier (test_block_arithmetic.BlockArithmeticTests.test_published_blocks_alone_leave_exact_frontier) ... ok
+  test_target_set_is_exact (test_block_arithmetic.BlockArithmeticTests.test_target_set_is_exact) ... ok
+  test_three_proposed_blocks_cover_every_target (test_block_arithmetic.BlockArithmeticTests.test_three_proposed_blocks_cover_every_target) ... ok
+  test_all_published_seeds_are_positive_apg_controls (test_blocks.BlockOperationsTests.test_all_published_seeds_are_positive_apg_controls) ... ok
+  test_block_certificate_records_reconstructed_sockets (test_blocks.BlockOperationsTests.test_block_certificate_records_reconstructed_sockets) ... ok
+  test_block_validator_rejects_non_pentagonal_socket_neighbor (test_blocks.BlockOperationsTests.test_block_validator_rejects_non_pentagonal_socket_neighbor) ... ok
+  test_cloud_A_D_blocks_cross_validate_and_compose_independently (test_blocks.BlockOperationsTests.test_cloud_A_D_blocks_cross_validate_and_compose_independently) ... ok
+  test_composition_reproduces_all_ordered_A_B_C_pairs (test_blocks.BlockOperationsTests.test_composition_reproduces_all_ordered_A_B_C_pairs) ... ok
+  test_direct_opening_scan_does_not_overclaim_priority_seeds (test_blocks.BlockOperationsTests.test_direct_opening_scan_does_not_overclaim_priority_seeds) ... ok
+  test_open_and_close_published_A_B_C_blocks (test_blocks.BlockOperationsTests.test_open_and_close_published_A_B_C_blocks) ... ok
+  test_expected_order_is_an_independent_gate (test_verify.VerifierCliTests.test_expected_order_is_an_independent_gate) ... ok
+  test_published_planar_code_import_is_reproducible (test_verify.VerifierCliTests.test_published_planar_code_import_is_reproducible) ... ok
+  test_published_positive_controls_through_cli (test_verify.VerifierCliTests.test_published_positive_controls_through_cli) ... ok
+  test_rejects_disconnected_union (test_verify.VerifierCliTests.test_rejects_disconnected_union) ... ok
+  test_rejects_equal_degree_adjacent_vertices (test_verify.VerifierCliTests.test_rejects_equal_degree_adjacent_vertices) ... ok
+  test_rejects_equal_sized_adjacent_faces (test_verify.VerifierCliTests.test_rejects_equal_sized_adjacent_faces) ... ok
+  test_rejects_forbidden_face_size (test_verify.VerifierCliTests.test_rejects_forbidden_face_size) ... ok
+  test_rejects_forbidden_vertex_degree (test_verify.VerifierCliTests.test_rejects_forbidden_vertex_degree) ... ok
+  test_rejects_loops_parallel_edges_and_asymmetry (test_verify.VerifierCliTests.test_rejects_loops_parallel_edges_and_asymmetry) ... ok
+  test_rejects_nonspherical_rotation (test_verify.VerifierCliTests.test_rejects_nonspherical_rotation) ... ok
+  test_requires_integer_normalized_labels (test_verify.VerifierCliTests.test_requires_integer_normalized_labels) ... ok

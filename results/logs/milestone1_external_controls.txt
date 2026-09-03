@@ -1,0 +1,29 @@
+Milestone 1 external published controls
+source_table: https://www.althofer.de/apg/table.html
+direct_url_prefix: https://www.althofer.de/apg/apgs/
+command_summary: downloaded exact planar_code sources; sha256sum; imported with committed import_planar_code.py; checked with committed verify.py in fresh processes
+exit_code: 0
+note: order-19 FAIL lines are the expected documented negative controls; they do not reproduce exhaustive nonexistence.
+output:
+53ea76e1213006a654705d40d65216a8a1abe890ee6a8972be5009ca1c567f71  /tmp/apg_milestone1_controls/03_19-19.plc
+78ba792a5652186957daa375f27c4ce8065426e0efbe381b6d823ef7088ff096  /tmp/apg_milestone1_controls/04_19-19.plc
+5bcab5163959cb5580e28afaaa6a53a39018fe596443407649a31a9ce2bab94a  /tmp/apg_milestone1_controls/05_19-19.plc
+58c2242f9836fbb23eacc2b014ff66c9725b62eb07d1ad6b7054313c3d51b346  /tmp/apg_milestone1_controls/06_19-19.plc
+ce0a31662fde63e3f11b7bccc9045ef398e8e131b52dab6669081f7608df26eb  /tmp/apg_milestone1_controls/07_19-19.plc
+88edfd11d4e4a90678253f5d198fac43ae257f57a985b5064dcbd2c4b4df997a  /tmp/apg_milestone1_controls/09_21-21.plc
+d5f4d817bfb361adfdc20500fd7e125a8ed2c680237f7711be45e2b261856bf1  /tmp/apg_milestone1_controls/10_22-22.plc
+010887bde4d3d7bc47d20ffa9c2f16963d9e926e1e58241db46e5fe12cc024b2  /tmp/apg_milestone1_controls/14_23-23.plc
+a965fca54526c0c4fb51500c27d594e62d256715a3caa49ae3b8e91a5a5693b0  /tmp/apg_milestone1_controls/18_24-24.plc
+35267740b45725b97fb886c6df73322a2c24e9315e46b98878d6d5800b6eaaf2  /tmp/apg_milestone1_controls/31_29-29.plc
+1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76  /tmp/apg_milestone1_controls/51_34-34.plc
+PASS results/controls/order21.json: order=21 edges=40 faces=21 vertex_counts={3: 10, 4: 5, 5: 6} face_counts={3: 10, 4: 5, 5: 6}
+PASS results/controls/order22.json: order=22 edges=42 faces=22 vertex_counts={3: 10, 4: 6, 5: 6} face_counts={3: 10, 4: 6, 5: 6}
+PASS results/controls/order23.json: order=23 edges=44 faces=23 vertex_counts={3: 10, 4: 7, 5: 6} face_counts={3: 10, 4: 7, 5: 6}
+PASS results/controls/order24.json: order=24 edges=46 faces=24 vertex_counts={3: 10, 4: 8, 5: 6} face_counts={3: 10, 4: 8, 5: 6}
+PASS results/controls/order29.json: order=29 edges=56 faces=29 vertex_counts={3: 12, 4: 9, 5: 8} face_counts={3: 12, 4: 9, 5: 8}
+PASS results/controls/order34.json: order=34 edges=66 faces=34 vertex_counts={3: 13, 4: 12, 5: 9} face_counts={3: 13, 4: 12, 5: 9}
+FAIL /tmp/apg_milestone1_controls/03_19-19.json: vertex 10 has forbidden degree 6
+FAIL /tmp/apg_milestone1_controls/04_19-19.json: vertex 16 has forbidden degree 6
+FAIL /tmp/apg_milestone1_controls/05_19-19.json: vertex 8 has forbidden degree 6
+FAIL /tmp/apg_milestone1_controls/06_19-19.json: face 8 has forbidden size 6
+FAIL /tmp/apg_milestone1_controls/07_19-19.json: vertex 13 has forbidden degree 6

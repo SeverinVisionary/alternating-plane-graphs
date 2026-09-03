@@ -1,0 +1,13 @@
+{
+  "checkout": "<workspace>/k5-run-clean-eaH3mQ",
+  "finished_utc": "2026-08-30T03:16:09Z",
+  "hostname": "76a7bdc81cdd",
+  "initial_git_status_porcelain": "",
+  "input_commit": "99655af53b345ffa34c46243c6f4c90530d116bd",
+  "input_tree": "417a3d01bfc2a4148662e4496d8b0d23f44d6c0a",
+  "kernel": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "precompute_suite": "175/175",
+  "remote_ref_equal": true,
+  "started_utc": "2026-08-30T02:54:13Z",
+  "wall_seconds_driver": 1315.901563018997
+}

@@ -1,0 +1,57 @@
+command:
+  python3 -m unittest -v test_verify.py
+  python3 -m unittest -v test_block_arithmetic.py
+  python3 block_arithmetic.py
+exit_code: 0
+output:
+test_expected_order_is_an_independent_gate (test_verify.VerifierCliTests.test_expected_order_is_an_independent_gate) ... ok
+test_published_planar_code_import_is_reproducible (test_verify.VerifierCliTests.test_published_planar_code_import_is_reproducible) ... ok
+test_published_positive_controls_through_cli (test_verify.VerifierCliTests.test_published_positive_controls_through_cli) ... ok
+test_rejects_disconnected_union (test_verify.VerifierCliTests.test_rejects_disconnected_union) ... ok
+test_rejects_equal_degree_adjacent_vertices (test_verify.VerifierCliTests.test_rejects_equal_degree_adjacent_vertices) ... ok
+test_rejects_equal_sized_adjacent_faces (test_verify.VerifierCliTests.test_rejects_equal_sized_adjacent_faces) ... ok
+test_rejects_forbidden_face_size (test_verify.VerifierCliTests.test_rejects_forbidden_face_size) ... ok
+test_rejects_forbidden_vertex_degree (test_verify.VerifierCliTests.test_rejects_forbidden_vertex_degree) ... ok
+test_rejects_loops_parallel_edges_and_asymmetry (test_verify.VerifierCliTests.test_rejects_loops_parallel_edges_and_asymmetry) ... ok
+test_rejects_nonspherical_rotation (test_verify.VerifierCliTests.test_rejects_nonspherical_rotation) ... ok
+test_requires_integer_normalized_labels (test_verify.VerifierCliTests.test_requires_integer_normalized_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.753s
+
+OK
+test_join_order_formula (test_block_arithmetic.BlockArithmeticTests.test_join_order_formula) ... ok
+test_published_blocks_alone_leave_exact_frontier (test_block_arithmetic.BlockArithmeticTests.test_published_blocks_alone_leave_exact_frontier) ... ok
+test_target_set_is_exact (test_block_arithmetic.BlockArithmeticTests.test_target_set_is_exact) ... ok
+test_three_proposed_blocks_cover_every_target (test_block_arithmetic.BlockArithmeticTests.test_three_proposed_blocks_cover_every_target) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+46: 24 + 25 -> 46
+47: 21 + 29 -> 47
+48: 22 + 29 -> 48
+49: 23 + 29 -> 49
+50: 24 + 29 -> 50
+51: 25 + 29 -> 51
+52: 21 + 34 -> 52
+53: 22 + 34 -> 53
+54: 23 + 34 -> 54
+55: 24 + 34 -> 55
+56: 25 + 34 -> 56
+67: 21 + 23 + 29 -> 67
+68: 21 + 24 + 29 -> 68
+69: 21 + 25 + 29 -> 69
+70: 21 + 21 + 34 -> 70
+71: 21 + 22 + 34 -> 71
+72: 21 + 23 + 34 -> 72
+73: 21 + 24 + 34 -> 73
+74: 21 + 25 + 34 -> 74
+88: 21 + 21 + 21 + 34 -> 88
+89: 21 + 21 + 22 + 34 -> 89
+90: 21 + 21 + 23 + 34 -> 90
+91: 29 + 34 + 34 -> 91
+92: 21 + 21 + 25 + 34 -> 92
+109: 21 + 29 + 34 + 34 -> 109
+110: 22 + 29 + 34 + 34 -> 110

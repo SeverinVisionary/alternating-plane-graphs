@@ -1,0 +1,48 @@
+Milestone 3 opening scan
+source_url_prefix: https://www.althofer.de/apg/apgs/
+scope: every public corpus record with order=faces at orders 25, 29, and 34
+method: committed importer + committed final verifier + exhaustive legal disjoint closure-fan pair scan in block_tools.recover_blocks
+seed: none (deterministic exhaustive scan)
+replay:
+  download the twelve filenames listed below from source_url_prefix
+  import each with import_planar_code.py
+  run the command sequence recorded by this log
+interpretation: zero openings is restricted-family search evidence only, never nonexistence
+exit_code: 0
+output:
+FAIL /tmp/apg_opening_scan/20_25-25.json: vertex 21 has forbidden degree 6
+FAIL /tmp/apg_opening_scan/21_25-25.json: vertex 2 has forbidden degree 6
+FAIL /tmp/apg_opening_scan/22_25-25.json: vertex 19 has forbidden degree 6
+FAIL /tmp/apg_opening_scan/23_25-25.json: vertex 4 has forbidden degree 6
+PASS /tmp/apg_opening_scan/24_25-25.json: order=25 edges=48 faces=25 vertex_counts={3: 10, 4: 9, 5: 6} face_counts={3: 10, 4: 9, 5: 6}
+FAIL /tmp/apg_opening_scan/25_25-25.json: vertex 3 has forbidden degree 6
+FAIL /tmp/apg_opening_scan/26_25-25.json: vertex 2 has forbidden degree 6
+PASS /tmp/apg_opening_scan/31_29-29.json: order=29 edges=56 faces=29 vertex_counts={3: 12, 4: 9, 5: 8} face_counts={3: 12, 4: 9, 5: 8}
+PASS /tmp/apg_opening_scan/32_29-29.json: order=29 edges=56 faces=29 vertex_counts={3: 12, 4: 9, 5: 8} face_counts={3: 12, 4: 9, 5: 8}
+PASS /tmp/apg_opening_scan/51_34-34.json: order=34 edges=66 faces=34 vertex_counts={3: 13, 4: 12, 5: 9} face_counts={3: 13, 4: 12, 5: 9}
+PASS /tmp/apg_opening_scan/52_34-34.json: order=34 edges=66 faces=34 vertex_counts={3: 13, 4: 12, 5: 9} face_counts={3: 13, 4: 12, 5: 9}
+FAIL /tmp/apg_opening_scan/55_34-34.json: vertex 2 has forbidden degree 6
+06497f8338f521733ac8e277784489634e436784354d56b32311a8b4e7ddccfe  /tmp/apg_opening_scan/20_25-25.plc
+e01af75b49313c8aba396a43e1761a0bafa64b9f8ac9592817a6fe071218396f  /tmp/apg_opening_scan/21_25-25.plc
+9e96468764c42632cd5f871201543dee59b85c4cd9e68038f68970ff668025a4  /tmp/apg_opening_scan/22_25-25.plc
+363918a90873127db869bdd674feb91e1eaf7f232696403e1dfed36462a768e1  /tmp/apg_opening_scan/23_25-25.plc
+9836752f4b3c3d9a69bbca7a46b115dead54e344ea9ad890dd399dd84abddce6  /tmp/apg_opening_scan/24_25-25.plc
+b86bcd509bfb2d9fdb7c99712d63f56a967e0c7ab08444a063e94644aee09056  /tmp/apg_opening_scan/25_25-25.plc
+3c4f498f6a771b5d6648994ab962622b9f391dc40c8e24b4bb590984f9a5893c  /tmp/apg_opening_scan/26_25-25.plc
+35267740b45725b97fb886c6df73322a2c24e9315e46b98878d6d5800b6eaaf2  /tmp/apg_opening_scan/31_29-29.plc
+71ed9d08270a9176483d41d6010fac640a17cb077e7b95f68e901b4ac60db2c1  /tmp/apg_opening_scan/32_29-29.plc
+1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76  /tmp/apg_opening_scan/51_34-34.plc
+db3d63e7859df75034f0c1314e7cb164ce086783ca761c1c2e7772ab20be8c15  /tmp/apg_opening_scan/52_34-34.plc
+e66bcd66424ee7aa1240bda6a40a16077d11e8ab3096e64aaccde54edc5db4f6  /tmp/apg_opening_scan/55_34-34.plc
+20_25-25.json SKIP_NOT_345 closed graph has a forbidden vertex degree
+21_25-25.json SKIP_NOT_345 closed graph has a forbidden vertex degree
+22_25-25.json SKIP_NOT_345 closed graph has a forbidden vertex degree
+23_25-25.json SKIP_NOT_345 closed graph has a forbidden vertex degree
+24_25-25.json VALID_345 OPENINGS 0
+25_25-25.json SKIP_NOT_345 closed graph has a forbidden vertex degree
+26_25-25.json SKIP_NOT_345 closed graph has a forbidden vertex degree
+31_29-29.json VALID_345 OPENINGS 0
+32_29-29.json VALID_345 OPENINGS 0
+51_34-34.json VALID_345 OPENINGS 0
+52_34-34.json VALID_345 OPENINGS 0
+55_34-34.json SKIP_NOT_345 closed graph has a forbidden vertex degree

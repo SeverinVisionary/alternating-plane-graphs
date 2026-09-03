@@ -1,0 +1,1 @@
+PASS parents=6 attempts=728640 distinct=6 best=800 zero=0

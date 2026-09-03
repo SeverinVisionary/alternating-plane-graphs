@@ -1,0 +1,14 @@
+{
+  "branch": "apg-345-conjecture-10-2",
+  "claim_scope": "Step-0 environment and exact remote-parent gate for the D24 four-edge calibration only; no target k4 enumeration was run.",
+  "expected_parent": "25e17663990cc2a685921b44e8dc07b602878dad",
+  "hostname": "76a7bdc81cdd",
+  "kernel": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "remote_compare": {
+    "ahead_by": 0,
+    "behind_by": 0,
+    "head_sha": "25e17663990cc2a685921b44e8dc07b602878dad",
+    "status": "identical"
+  },
+  "step0_passed": true
+}

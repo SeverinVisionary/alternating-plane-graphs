@@ -1,0 +1,567 @@
+{
+  "claim_scope": "Diagnostic near-opening seed; not a strict block witness.",
+  "fans": [
+    {
+      "hub": 1,
+      "leaves": [
+        4,
+        8
+      ]
+    },
+    {
+      "hub": 27,
+      "leaves": [
+        21,
+        28
+      ]
+    }
+  ],
+  "format": "apg-near-opening-seed-v1",
+  "hexagons": [
+    [
+      1,
+      5,
+      9,
+      10,
+      8,
+      2
+    ],
+    [
+      6,
+      28,
+      26,
+      24,
+      22,
+      27
+    ]
+  ],
+  "opened_rotation": [
+    {
+      "clockwise": [
+        2,
+        5
+      ],
+      "id": 1
+    },
+    {
+      "clockwise": [
+        1,
+        8,
+        15,
+        18,
+        3
+      ],
+      "id": 2
+    },
+    {
+      "clockwise": [
+        2,
+        29,
+        6,
+        4
+      ],
+      "id": 3
+    },
+    {
+      "clockwise": [
+        3,
+        5
+      ],
+      "id": 4
+    },
+    {
+      "clockwise": [
+        1,
+        4,
+        7,
+        11,
+        9
+      ],
+      "id": 5
+    },
+    {
+      "clockwise": [
+        3,
+        29,
+        28,
+        27,
+        7
+      ],
+      "id": 6
+    },
+    {
+      "clockwise": [
+        5,
+        6,
+        21,
+        12
+      ],
+      "id": 7
+    },
+    {
+      "clockwise": [
+        2,
+        10
+      ],
+      "id": 8
+    },
+    {
+      "clockwise": [
+        5,
+        11,
+        14,
+        10
+      ],
+      "id": 9
+    },
+    {
+      "clockwise": [
+        8,
+        9,
+        14,
+        16,
+        15
+      ],
+      "id": 10
+    },
+    {
+      "clockwise": [
+        5,
+        12,
+        9
+      ],
+      "id": 11
+    },
+    {
+      "clockwise": [
+        7,
+        20,
+        19,
+        13,
+        11
+      ],
+      "id": 12
+    },
+    {
+      "clockwise": [
+        12,
+        17,
+        16,
+        14
+      ],
+      "id": 13
+    },
+    {
+      "clockwise": [
+        9,
+        13,
+        10
+      ],
+      "id": 14
+    },
+    {
+      "clockwise": [
+        2,
+        10,
+        18
+      ],
+      "id": 15
+    },
+    {
+      "clockwise": [
+        10,
+        13,
+        17
+      ],
+      "id": 16
+    },
+    {
+      "clockwise": [
+        13,
+        19,
+        25,
+        18,
+        16
+      ],
+      "id": 17
+    },
+    {
+      "clockwise": [
+        2,
+        15,
+        17,
+        26
+      ],
+      "id": 18
+    },
+    {
+      "clockwise": [
+        12,
+        20,
+        23,
+        17
+      ],
+      "id": 19
+    },
+    {
+      "clockwise": [
+        12,
+        22,
+        19
+      ],
+      "id": 20
+    },
+    {
+      "clockwise": [
+        7,
+        22
+      ],
+      "id": 21
+    },
+    {
+      "clockwise": [
+        20,
+        21,
+        27,
+        24,
+        23
+      ],
+      "id": 22
+    },
+    {
+      "clockwise": [
+        19,
+        22,
+        24
+      ],
+      "id": 23
+    },
+    {
+      "clockwise": [
+        22,
+        26,
+        25,
+        23
+      ],
+      "id": 24
+    },
+    {
+      "clockwise": [
+        17,
+        24,
+        26
+      ],
+      "id": 25
+    },
+    {
+      "clockwise": [
+        18,
+        25,
+        24,
+        28,
+        29
+      ],
+      "id": 26
+    },
+    {
+      "clockwise": [
+        6,
+        22
+      ],
+      "id": 27
+    },
+    {
+      "clockwise": [
+        6,
+        26
+      ],
+      "id": 28
+    },
+    {
+      "clockwise": [
+        3,
+        26,
+        6
+      ],
+      "id": 29
+    }
+  ],
+  "score_breakdown": {
+    "abstract_graph": 160,
+    "equal_face": 120,
+    "face_distribution": 0,
+    "hex": 240,
+    "total": 880,
+    "white": 360
+  },
+  "source": {
+    "certificate_file_sha256": "12dfc7585ce4218f9ddc0d28f1d0dc19d4821088f5aa6ff9cc4f485a1f3baaf7",
+    "certificate_path": "certificates/search_seeds/order29b.json",
+    "certificate_sha256": "292a695ed9e4fd1385cd2d962d4c8c06044ea94d893a7a5583351faaf66301e2",
+    "file": "32_29-29.plc",
+    "order": 29,
+    "sha256": "71ed9d08270a9176483d41d6010fac640a17cb077e7b95f68e901b4ac60db2c1",
+    "url": "https://www.althofer.de/apg/apgs/32_29-29.plc",
+    "verified_apg": true
+  },
+  "source_rotation": [
+    {
+      "clockwise": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "id": 1
+    },
+    {
+      "clockwise": [
+        1,
+        8,
+        15,
+        18,
+        3
+      ],
+      "id": 2
+    },
+    {
+      "clockwise": [
+        2,
+        29,
+        6,
+        4
+      ],
+      "id": 3
+    },
+    {
+      "clockwise": [
+        1,
+        3,
+        5
+      ],
+      "id": 4
+    },
+    {
+      "clockwise": [
+        1,
+        4,
+        7,
+        11,
+        9
+      ],
+      "id": 5
+    },
+    {
+      "clockwise": [
+        3,
+        29,
+        28,
+        27,
+        7
+      ],
+      "id": 6
+    },
+    {
+      "clockwise": [
+        5,
+        6,
+        21,
+        12
+      ],
+      "id": 7
+    },
+    {
+      "clockwise": [
+        1,
+        10,
+        2
+      ],
+      "id": 8
+    },
+    {
+      "clockwise": [
+        5,
+        11,
+        14,
+        10
+      ],
+      "id": 9
+    },
+    {
+      "clockwise": [
+        8,
+        9,
+        14,
+        16,
+        15
+      ],
+      "id": 10
+    },
+    {
+      "clockwise": [
+        5,
+        12,
+        9
+      ],
+      "id": 11
+    },
+    {
+      "clockwise": [
+        7,
+        20,
+        19,
+        13,
+        11
+      ],
+      "id": 12
+    },
+    {
+      "clockwise": [
+        12,
+        17,
+        16,
+        14
+      ],
+      "id": 13
+    },
+    {
+      "clockwise": [
+        9,
+        13,
+        10
+      ],
+      "id": 14
+    },
+    {
+      "clockwise": [
+        2,
+        10,
+        18
+      ],
+      "id": 15
+    },
+    {
+      "clockwise": [
+        10,
+        13,
+        17
+      ],
+      "id": 16
+    },
+    {
+      "clockwise": [
+        13,
+        19,
+        25,
+        18,
+        16
+      ],
+      "id": 17
+    },
+    {
+      "clockwise": [
+        2,
+        15,
+        17,
+        26
+      ],
+      "id": 18
+    },
+    {
+      "clockwise": [
+        12,
+        20,
+        23,
+        17
+      ],
+      "id": 19
+    },
+    {
+      "clockwise": [
+        12,
+        22,
+        19
+      ],
+      "id": 20
+    },
+    {
+      "clockwise": [
+        7,
+        27,
+        22
+      ],
+      "id": 21
+    },
+    {
+      "clockwise": [
+        20,
+        21,
+        27,
+        24,
+        23
+      ],
+      "id": 22
+    },
+    {
+      "clockwise": [
+        19,
+        22,
+        24
+      ],
+      "id": 23
+    },
+    {
+      "clockwise": [
+        22,
+        26,
+        25,
+        23
+      ],
+      "id": 24
+    },
+    {
+      "clockwise": [
+        17,
+        24,
+        26
+      ],
+      "id": 25
+    },
+    {
+      "clockwise": [
+        18,
+        25,
+        24,
+        28,
+        29
+      ],
+      "id": 26
+    },
+    {
+      "clockwise": [
+        6,
+        28,
+        22,
+        21
+      ],
+      "id": 27
+    },
+    {
+      "clockwise": [
+        6,
+        26,
+        27
+      ],
+      "id": 28
+    },
+    {
+      "clockwise": [
+        3,
+        26,
+        6
+      ],
+      "id": 29
+    }
+  ],
+  "state_sha256": "34078a0bb5633707ab9fdc262750c42527bea38d510d5fccac54ae3a34e8c067"
+}

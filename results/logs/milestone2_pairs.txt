@@ -1,0 +1,84 @@
+Milestone 2 ordered-pair composition gate
+command: compose, close, and independently verify AA through DD with block_tools.py and verify.py
+exit_code: 0
+output:
+PASS composed 2 block(s) -> results/blocks/pairs/AA_39.json
+PASS closed results/blocks/pairs/AA_39.json -> results/controls/pairs/AA_39.json
+PASS results/controls/pairs/AA_39.json: order=39 edges=76 faces=39 vertex_counts={3: 16, 4: 11, 5: 12} face_counts={3: 16, 4: 11, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/AB_40.json
+PASS closed results/blocks/pairs/AB_40.json -> results/controls/pairs/AB_40.json
+PASS results/controls/pairs/AB_40.json: order=40 edges=78 faces=40 vertex_counts={3: 16, 4: 12, 5: 12} face_counts={3: 16, 4: 12, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/AC_41.json
+PASS closed results/blocks/pairs/AC_41.json -> results/controls/pairs/AC_41.json
+PASS results/controls/pairs/AC_41.json: order=41 edges=80 faces=41 vertex_counts={3: 16, 4: 13, 5: 12} face_counts={3: 16, 4: 13, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/AD_42.json
+PASS closed results/blocks/pairs/AD_42.json -> results/controls/pairs/AD_42.json
+PASS results/controls/pairs/AD_42.json: order=42 edges=82 faces=42 vertex_counts={3: 16, 4: 14, 5: 12} face_counts={3: 16, 4: 14, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/BA_40.json
+PASS closed results/blocks/pairs/BA_40.json -> results/controls/pairs/BA_40.json
+PASS results/controls/pairs/BA_40.json: order=40 edges=78 faces=40 vertex_counts={3: 16, 4: 12, 5: 12} face_counts={3: 16, 4: 12, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/BB_41.json
+PASS closed results/blocks/pairs/BB_41.json -> results/controls/pairs/BB_41.json
+PASS results/controls/pairs/BB_41.json: order=41 edges=80 faces=41 vertex_counts={3: 16, 4: 13, 5: 12} face_counts={3: 16, 4: 13, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/BC_42.json
+PASS closed results/blocks/pairs/BC_42.json -> results/controls/pairs/BC_42.json
+PASS results/controls/pairs/BC_42.json: order=42 edges=82 faces=42 vertex_counts={3: 16, 4: 14, 5: 12} face_counts={3: 16, 4: 14, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/BD_43.json
+PASS closed results/blocks/pairs/BD_43.json -> results/controls/pairs/BD_43.json
+PASS results/controls/pairs/BD_43.json: order=43 edges=84 faces=43 vertex_counts={3: 16, 4: 15, 5: 12} face_counts={3: 16, 4: 15, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/CA_41.json
+PASS closed results/blocks/pairs/CA_41.json -> results/controls/pairs/CA_41.json
+PASS results/controls/pairs/CA_41.json: order=41 edges=80 faces=41 vertex_counts={3: 16, 4: 13, 5: 12} face_counts={3: 16, 4: 13, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/CB_42.json
+PASS closed results/blocks/pairs/CB_42.json -> results/controls/pairs/CB_42.json
+PASS results/controls/pairs/CB_42.json: order=42 edges=82 faces=42 vertex_counts={3: 16, 4: 14, 5: 12} face_counts={3: 16, 4: 14, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/CC_43.json
+PASS closed results/blocks/pairs/CC_43.json -> results/controls/pairs/CC_43.json
+PASS results/controls/pairs/CC_43.json: order=43 edges=84 faces=43 vertex_counts={3: 16, 4: 15, 5: 12} face_counts={3: 16, 4: 15, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/CD_44.json
+PASS closed results/blocks/pairs/CD_44.json -> results/controls/pairs/CD_44.json
+PASS results/controls/pairs/CD_44.json: order=44 edges=86 faces=44 vertex_counts={3: 16, 4: 16, 5: 12} face_counts={3: 16, 4: 16, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/DA_42.json
+PASS closed results/blocks/pairs/DA_42.json -> results/controls/pairs/DA_42.json
+PASS results/controls/pairs/DA_42.json: order=42 edges=82 faces=42 vertex_counts={3: 16, 4: 14, 5: 12} face_counts={3: 16, 4: 14, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/DB_43.json
+PASS closed results/blocks/pairs/DB_43.json -> results/controls/pairs/DB_43.json
+PASS results/controls/pairs/DB_43.json: order=43 edges=84 faces=43 vertex_counts={3: 16, 4: 15, 5: 12} face_counts={3: 16, 4: 15, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/DC_44.json
+PASS closed results/blocks/pairs/DC_44.json -> results/controls/pairs/DC_44.json
+PASS results/controls/pairs/DC_44.json: order=44 edges=86 faces=44 vertex_counts={3: 16, 4: 16, 5: 12} face_counts={3: 16, 4: 16, 5: 12}
+PASS composed 2 block(s) -> results/blocks/pairs/DD_45.json
+PASS closed results/blocks/pairs/DD_45.json -> results/controls/pairs/DD_45.json
+PASS results/controls/pairs/DD_45.json: order=45 edges=88 faces=45 vertex_counts={3: 16, 4: 17, 5: 12} face_counts={3: 16, 4: 17, 5: 12}
+cbcf7fb92d637208c6a39eb92a8ba75e5a308fcbe68a734e53941cf34d9a8ba2  results/blocks/pairs/AA_39.json
+39f98405cb3984697c81222bd91ad1361a7085824f2ad237553c8cbb43ae6ae4  results/blocks/pairs/AB_40.json
+2dfd68d0e2e3669037c81a5d1fc6c1efb3a19dc39d0cd0c01be76a6bce5dc966  results/blocks/pairs/AC_41.json
+847689f2160078e2083286d30c542999f26a8a445f523d0c66653571ae2a9236  results/blocks/pairs/AD_42.json
+b0a97238c95abbd7ea708456b5dd7abc9df64ca60c5c98210903d3d589d1e8f7  results/blocks/pairs/BA_40.json
+75197258cc7ca1d60b18cb79ea734680620889707b5d5b6544c3bf3647f7e182  results/blocks/pairs/BB_41.json
+0689a064c2e7c8571ac04ba8d6f1d81fd24364253227147c96e2083b07b9b282  results/blocks/pairs/BC_42.json
+9b1df8b10e250484b31c9c538a8ee2cde013c719b0b86bfd2a8ea026b0af944c  results/blocks/pairs/BD_43.json
+ba2f4f40b4e5a9ad5b9cfab2aeea7ae1ed393f3aa5a8f56f8f1e2a50920699a4  results/blocks/pairs/CA_41.json
+53a45b658deccee472218473dd8bd99cfd823e1b1482d6dd7a5b74d3afc78be1  results/blocks/pairs/CB_42.json
+56ff76cb303c4a81cf4af76c600f9f219349b72983b7929a5eb7ddb791c3935b  results/blocks/pairs/CC_43.json
+872409434a976869363f792f6b357a825e69d3d42492853b7b5a21847054bdc7  results/blocks/pairs/CD_44.json
+106b8de4b000191875f40ee1e95fc3a7477eb2ba2f29fe63e3e2f69182074ef1  results/blocks/pairs/DA_42.json
+5d06000b7e909e7c012036f67ed3a191b838dce1a9df6ed6ca66c6cbdfc3be68  results/blocks/pairs/DB_43.json
+45b931ea340234cea438edd73eed8cd728a30dba3e3851641d73cea0f7853ef3  results/blocks/pairs/DC_44.json
+25e28bdb7c951462c63966a5ac5043ff2b81bb76946c5dd01c51149b47f65324  results/blocks/pairs/DD_45.json
+87656ccbc947ef5220507bfa5d7abecb34e6f7a5d1c80b662f21b13a2c56a3e7  results/controls/pairs/AA_39.json
+0e49793f14be32172dc1d770f45cfc34ccab9d0ca363d17b8ad44cb6ccd45d5d  results/controls/pairs/AB_40.json
+7cb06ce4a754bf285d18e859f24370d3e7442348db91226edde30905383069d5  results/controls/pairs/AC_41.json
+e0443af1bda9b0c6d716a0cc94f6f2adb8e29155ebfb972c7d6aa3d8fb15e27e  results/controls/pairs/AD_42.json
+e66c7df21e306019f59790560aa3950b086d7ada94e1cbac19f4e25fae5921a5  results/controls/pairs/BA_40.json
+fe6c99b384c67d67d75f66f729a7f78d40ce243883d76318da318807d4e3e69a  results/controls/pairs/BB_41.json
+d5aa7c8803689e64e3d950d1c05113c542fd753184a0e4c277c372261187df5f  results/controls/pairs/BC_42.json
+e950175adf7f3525b93947c95f2491bf7c777bde91dc8b86d532aafc30ed81fc  results/controls/pairs/BD_43.json
+9a9c00adfe52d099a2a3ff971f5012a0091f0033581b05b2c8cd1417eb19af8a  results/controls/pairs/CA_41.json
+bfb795e76ba39ac376e66c9e3a9a08393bb2026c228147884bbd8ed1048c4664  results/controls/pairs/CB_42.json
+e5a91a8da116aa170a750c66bfab594ad22ee2e4cfee5368abff4873607e2c2a  results/controls/pairs/CC_43.json
+f59ee228ef588c6c8373931a1fc4189d096b5050c7cd3a7241433938002797cb  results/controls/pairs/CD_44.json
+6a94a6e6a9ddfd56d2273e50a88dd1fd4c0a4a32377f0354e6dd06aab9a817d6  results/controls/pairs/DA_42.json
+0f29ca47eeafc1fdf3ce481fa66a36b398bbcb579aa1c23d189d45b60861f3d1  results/controls/pairs/DB_43.json
+36030fb6189e61e2a68bc498642146de4d0e0b8b41566fc6aa1c04455f2c277f  results/controls/pairs/DC_44.json
+2e370a6b7c8caa81f63f5860f9347e2b6a680d4b4d7e5a4bb9118402a1f15573  results/controls/pairs/DD_45.json

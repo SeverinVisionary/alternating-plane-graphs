@@ -1,0 +1,31 @@
+{
+  "checkout": {
+    "initial_git_status_porcelain": "",
+    "path": "<workspace>/mandatory-target-clean2-RA4NLE",
+    "remote_branch": "apg-345-conjecture-10-2",
+    "remote_head_sha": "bc620a7c9be7a3707687ebc072fa3b519b1c2d91",
+    "remote_ref_equal": true,
+    "sparse_checkout": ["AGENTS.md", ".gitignore", ""],
+    "tree_sha": "687bf7a7bb6ba5f541b996e2747c77a1941b811b"
+  },
+  "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "cpu_count": 9,
+  "git": "git version 2.51.1",
+  "hostname": "76a7bdc81cdd",
+  "kernel": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "memory_total_kb": 22996780,
+  "precompute_committed_suite": "153/153 passed",
+  "precompute_strengthened_suite": "156/156 passed",
+  "python": "Python 3.12.13",
+  "result_suite": "158/158 passed",
+  "run": {
+    "command": "python3 mandatory_defect_rematch.py run --spec jobs/mandatory_defect_26_29_33.json",
+    "exit_code": 0,
+    "k3_wall_seconds": 0.039840255994931795,
+    "k4_wall_seconds": 7.100665343998116,
+    "shell_real_seconds": 7.209,
+    "utc_end": "2026-08-30T02:17:47Z",
+    "utc_start": "2026-08-30T02:17:40Z"
+  },
+  "step0_passed": true
+}

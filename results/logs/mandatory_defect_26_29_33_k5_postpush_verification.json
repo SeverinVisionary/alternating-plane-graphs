@@ -1,0 +1,32 @@
+{
+  "complete": true,
+  "format": "apg-mandatory-defect-k5-postpush-v1",
+  "full_suite": "172/172",
+  "git_diff_check": "pass",
+  "json_artifacts_parsed": 7,
+  "precompute_commit": "847ead9e3df3153bdb370f4add60fe92c112e04c",
+  "remote_ref": "apg-345-conjecture-10-2",
+  "remote_utf8_blobs": {
+    "SEARCH_STATUS.md": [5914, "7b71714185343166098bfc1727cd70aac275f53bfd7ce6ecd5a173d791e4cd8b"],
+    "five_edge_rematch.py": [15500, "9333bf2f2a0e809aea69c3feb9d06444f66c05c112fc62ab6a2c0b5ef26cc469"],
+    "jobs/mandatory_defect_26_29_33_k5.json": [3309, "a18ea38665b2dc6c4b66d1e50f9644bcaa535eb4a678164e37161da82d68c0c4"],
+    "mandatory_defect_k5.py": [23799, "7d695cde2197099d4e68c063f7d6d73febbd707667b16989f6118cc0859ea574"],
+    "results/calibration/D24_five_edge_positive.json": [5450, "01d774d5d949f2bc3301eacca27a4e91ef0d2d09620fb1398a4213d0fa11b508"],
+    "results/calibration/D24_five_edge_recovered.json": [4292, "9b3819cb2d7d0d4034dd122b54f3be380d8afd0fb1bca1db79f0700a4da56e6a"],
+    "results/logs/D24_five_edge_calibration.json": [292578, "fcdea2df4495ddc5b79fcd837b6f19e8b82fbd5f6fcb71fbd9d2ebfec1938f83"],
+    "results/logs/D24_five_edge_calibration_console.txt": [114, "2457d921151fdda318c3beeed65c86a6df6b027be6e5a426192631c3c1ffde0e"],
+    "results/logs/mandatory_defect_26_29_33_k5_environment.json": [666, "759fb76a20746e6e974dcf6cb38e5731584f3edd935fe9db223ada365f9af6af"],
+    "results/logs/mandatory_defect_26_29_33_k5_focused_tests.txt": [2403, "2e90ff48f640c9e223147cdfdc754cc621db0a7b641bdf69f726c538cf223cf6"],
+    "results/logs/mandatory_defect_26_29_33_k5_full_tests.txt": [28674, "0acb8273fb873855e4bd539596dbbc4258b358e79e9126a5df88de59f0a3ef0f"],
+    "results/logs/mandatory_defect_26_29_33_k5_replay.txt": [906, "881a99cc433333f5be9423e7a509f387d528b2decad03e7f8c48bc5a20afbee8"],
+    "results/logs/mandatory_defect_26_29_33_k5_stage.json": [1102, "74a8fa1782238566e5b6131b47dc81c1b76eee95bc1ff92ecea7663a4f8a2cd2"],
+    "results/logs/mandatory_defect_26_29_33_k5_stage_console.txt": [57, "a258428f1fa754affe9f1b6a0f1d57a277c448c34a1daf20a24689a89a48de0f"],
+    "results/targets/mandatory_defect_26_29_33_k5.json": [15088, "2ac057daf35896a46711ef4d8b6a5fc10720d885fd08fd59289da6cf862ad28b"],
+    "test_five_edge_rematch.py": [7445, "258a2af86f0b05e7c79dae26962b094c20b05bb2d81451e1d14043d5d46548b7"],
+    "test_mandatory_defect_k5.py": [6317, "a52eca8a1a1005fdec066e75508d206aa8a9848746a7b977910f67f027e95058"]
+  },
+  "remote_byte_equality": true,
+  "target_manifest_sha256": "a7d3190ce26764995c6080a9b7dd28d1a27f10864570549b1fbba069a3f8d50e",
+  "target_rematchings_executed": 0,
+  "target_state_sha256": "2ac057daf35896a46711ef4d8b6a5fc10720d885fd08fd59289da6cf862ad28b"
+}

@@ -1,0 +1,1 @@
+PASS parents=64 attempts=7772160 distinct=1498 best=510 zero=0

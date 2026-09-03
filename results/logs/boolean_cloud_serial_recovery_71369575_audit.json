@@ -1,0 +1,50 @@
+{
+  "format": "apg-boolean-cloud-serial-recovery-audit-v1",
+  "audit_date": "2026-08-30",
+  "recovery_archive": {
+    "filename": "apg-boolean-71369575-recovery-artifacts.tar.gz",
+    "sha256": "e749705711f0e14e0beb5280e383c94f556042aef9ff9f915b31d5a4c5ee95e2",
+    "manifest_sha256": "096e694d9a0b4aadd452926296ae5e3a32ab7abe2eb337da6ff901529b18adfd",
+    "entry_count": 38,
+    "all_manifest_entries_rehashed": true
+  },
+  "source_gate": {
+    "bundle_sha256": "7b2d7150b5d884150e172df926300c57b57245fc4f55bfd1982e8cb5f44ece5d",
+    "advertised_ref": "refs/heads/apg-345-target",
+    "commit": "71369575d83b87207f8203adfbe86c26099ec870",
+    "tree": "6bac17ae49b411675296f47d7a9d0fd33f609c35",
+    "non_darwin": true,
+    "bundle_verify": "passed; complete SHA1 history",
+    "fsck": "passed; no dangling objects",
+    "clean_before_compute": true,
+    "python": "3.12.13",
+    "z3": "5.1.0",
+    "cpu_count": 9,
+    "memory_total": "21Gi"
+  },
+  "known_controls": {
+    "order20": "PASSED: sat/CANDIDATE plus both independent verifiers",
+    "A21": "PASSED: sat/CANDIDATE then CERTIFIED with nine closures, r=10, t=0"
+  },
+  "target_dispositions": [
+    {
+      "profile": "(31,12)",
+      "disposition": "BLOCKED",
+      "exit_status": 127,
+      "raw_record": null,
+      "python_z3_started": false,
+      "reason": "/usr/bin/time was absent before the solver command"
+    },
+    {
+      "profile": "(34,13)",
+      "disposition": "BLOCKED",
+      "exit_status": 127,
+      "raw_record": null,
+      "python_z3_started": false,
+      "reason": "/usr/bin/time was absent before the solver command"
+    }
+  ],
+  "target_certificate_exists": false,
+  "nonexistence_claimed": false,
+  "next_action": "retry only these two profiles through cloud_resource_runner.py"
+}

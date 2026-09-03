@@ -1,0 +1,3050 @@
+{
+  "construction": {
+    "applied_rematching": [
+      [
+        5,
+        22
+      ],
+      [
+        9,
+        44
+      ],
+      [
+        11,
+        30
+      ],
+      [
+        27,
+        37
+      ]
+    ],
+    "base_selected_pairs": [
+      [
+        5,
+        11
+      ],
+      [
+        9,
+        30
+      ],
+      [
+        22,
+        27
+      ],
+      [
+        37,
+        44
+      ]
+    ],
+    "genuinely_four_edge": true,
+    "retained_original_pairs": 0,
+    "scan_counts": {
+      "abstract_graph_prunes": 2206325,
+      "edge_quadruples": 39557,
+      "graph_invalid": 2373371,
+      "nonspherical_prunes": 167046,
+      "plane_valid": 8,
+      "rematchings": 2373379,
+      "score_zero_skipped": 3,
+      "unique_recovery_rejections": 4
+    },
+    "scan_order": "lexicographic edge quadruples then lexicographic deranged matchings"
+  },
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname": {
+      "machine": "x86_64",
+      "node": "76a7bdc81cdd",
+      "processor": "x86_64",
+      "release": "6.18.35",
+      "system": "Linux",
+      "version": "#1 SMP Fri Aug 21 00:36:21 UTC 2026"
+    }
+  },
+  "format": "apg-four-edge-calibration-v1",
+  "recovered_D24_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+  "replay": "python3 four_edge_rematch.py calibrate --base results/blocks/D24.json --state-output results/calibration/D24_four_edge_positive.json --certificate results/calibration/D24_four_edge_recovered.json --log results/logs/D24_four_edge_calibration.json",
+  "result": {
+    "best_score": 0,
+    "candidate_outcomes": [
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            27,
+            30
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 0,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "b5102678fe0cfcc95b95269bbafbce8457138e86fe00512a1a878b55f2d8a13d"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            27,
+            44
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 1,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "5080103a80a8aa71c236f8d1f9ac3b4dde97053f0234fff4086ffb5157ef4465"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 2,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "5acf890c3c43e13a98ffcc8a16aa42a4c7d1444345f7e59c425d621c64be336a"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            22,
+            37
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 3,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "cc27e6bc576c14a351caa6177ede00952edb5e1ff827e9d0a85d9a6389d79878"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            22,
+            44
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 4,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "fd5cd359225f5cfe1cbfe4fc6a1b387340bd89261dff4e86d3412766c8bcd583"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 5,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "2d9c2099c16a41c01e17eb9995c807cdbeff20f878351c643c6e8208251ec917"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            27,
+            44
+          ]
+        ],
+        "matching_index": 6,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "a0290407d27ff96294cc8c19091f7859dd98ed3a403b49765d354e6c655a5925"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            22,
+            44
+          ],
+          [
+            27,
+            30
+          ]
+        ],
+        "matching_index": 7,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "fd93f6525c54e3b26a0d93e4ce606519aa0d134c0fee45e01c88d51ae3ea2320"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 8,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "b17b32c199ddd2bc6a092740e4e9b1896bbb848bd4dd027b46c2ed9f1d332b64"
+      },
+      {
+        "matching": [
+          [
+            5,
+            9
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            22,
+            37
+          ],
+          [
+            27,
+            30
+          ]
+        ],
+        "matching_index": 9,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "d5af2dae219f4ee0ddd9197ed2d2af761d13867dc24253b4ad4c8eb6105c61cb"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            27,
+            30
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 10,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "b7523b5bf65592b63ab895f8a79734156c434a80210d3daf4d0b3faefdac5dcf"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            27,
+            44
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 11,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "7a2c19f40f54e0a236e1cb0340d65a8081dc0d78afc88d0ff2bd68b230aa29b5"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 12,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "cc9ec86ae4ce59c99a5e781330f0008b1c34686c2a901872f8d6f349944b2344"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            22,
+            37
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 13,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "e0d5b2ab21fea9fdc5110ebf22b2f3ec044798c4c479de9b591bfaed43610e4a"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            22,
+            44
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 14,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "a49090cd8e9c76e78e94e369eb9d345e4bd1e0b875323d08f646c102221fad7e"
+      },
+      {
+        "breakdown": {
+          "abstract_graph": 0,
+          "equal_face": 0,
+          "face_distribution": 0,
+          "hex": 0,
+          "total": 0,
+          "white": 0
+        },
+        "cross_validated": true,
+        "duplicate": false,
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 15,
+        "parent_index": 0,
+        "plane_valid": true,
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "56f06a93f592865ddcc82892c55118ec74630238cd3b403448176a3118579c28"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            22,
+            37
+          ],
+          [
+            27,
+            44
+          ]
+        ],
+        "matching_index": 16,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "35f76e3f912cd1a5ac1bd05c3f5802874c4929d78fab65b2336c7157d1df32e4"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 17,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "67db4e7d1012e44056dd5e3a145efeb00b04af25a45e1325f6295699f22c0f36"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            27,
+            44
+          ]
+        ],
+        "matching_index": 18,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "a676b22b964570f26a73e66378f9c31a3ed29483347625a433745b988b420f8c"
+      },
+      {
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            22,
+            44
+          ],
+          [
+            27,
+            30
+          ]
+        ],
+        "matching_index": 19,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "0fb4d535b6e5d436a393a782206758b5ecb1fe13250de0c3f261efb533528a2b"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 20,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "0dc696fd543788ae2ee732738d4aecd16b43f80e1bc3c71117c30e5338293fea"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            37
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 21,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "046c886bec37affff729da83af2603b3c1bc0188045ccd6b0414dd5680605749"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            44
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 22,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "3b3322f1f34f7b6ae17cbe7395aa64cce46744df3f8796dca3fc6ff3e7ae0605"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 23,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "548d7d145465de0e21ef1c097028ba4cb3bdb1f3e6711a11b94516966fddcaeb"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 24,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "b5bce644317b11fac76f95f3d0e74377647e4fb16f0b8fc159527ebfc5c1ac4a"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 25,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "e6471bc71dd7a6fe4742a4d239b69c53afab4351bafeaec72e283a06c87fcdba"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            22,
+            44
+          ]
+        ],
+        "matching_index": 26,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "ccfe79335455150f21c7eef862779876a35276252286c90614d06579b5b8108f"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            22,
+            37
+          ]
+        ],
+        "matching_index": 27,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "a5f75b5f9fd8222b04867a9f8bbf44a9fc841ea8073eca04a1acd3fad3a77753"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 28,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "44a8084841b60357764e0903f6c66546dd4474fb0e06b3a3f92a05b575c65ae9"
+      },
+      {
+        "matching": [
+          [
+            5,
+            27
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            22,
+            30
+          ]
+        ],
+        "matching_index": 29,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "04b4b716ceb19d9e832c5409a173e88fa6f338ae7e2a716ec6d248d13b1acdd5"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 30,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "cd6a1fa5592eb5e6d05a8e334d1eecda1c8588b061808e29b301a4560bdcdedd"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            37
+          ],
+          [
+            27,
+            44
+          ]
+        ],
+        "matching_index": 31,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "5456f4a49ebef88094f801fc576a23835704e0e1afc1e5d22462eecb509c5e88"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 32,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "77630f96d02b4aa10af8809814a7f3288a8211924b60fa8f55ddf49e793d9ba1"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            27,
+            44
+          ]
+        ],
+        "matching_index": 33,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "eff5e3d0027abe89835c8b139e88b35c5b3814eb1139fb97973b01057b9b5451"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "matching_index": 34,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "aa59832d6c824f326a26797fb546d18bb89373aaf7a599d5d14d34273a0d5b8f"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            22,
+            44
+          ]
+        ],
+        "matching_index": 35,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "7c1ca6809a5adf5993eefbfcbc8afd081f0032cb2c58aa4d6041bac2a9d796d8"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            22,
+            37
+          ]
+        ],
+        "matching_index": 36,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "84986ccf63316517aaaa1b53d4cc69d629f921e5b7cae5b208822799a6d14f1c"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            27,
+            44
+          ]
+        ],
+        "matching_index": 37,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "540380e3c5ee03d00510dd5cd33c7f4974b8ca74274332e4410ee939bff08ee1"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            22,
+            44
+          ]
+        ],
+        "matching_index": 38,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "86c62543cb7b6705a479c53f7499683bcbe7061d1d7b21da12bed46a30449218"
+      },
+      {
+        "matching": [
+          [
+            5,
+            30
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            22,
+            27
+          ]
+        ],
+        "matching_index": 39,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "053b4b4915cd1cff0c12223ea586b3cb4b0a04fff985cb075ae318f340c8ee05"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 40,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "4d0d4ab39a19589dab00452d7b1e1382fe6a0d0a858d99eca64379f09d745d1b"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            30
+          ],
+          [
+            27,
+            44
+          ]
+        ],
+        "matching_index": 41,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "fae26ea5d0b7cb5880f73db9eb0c5eedb838fcd368abd63bc35af8af09fed9a1"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            44
+          ],
+          [
+            27,
+            30
+          ]
+        ],
+        "matching_index": 42,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "5d42f705ed595b02bfa3d10c0d93364221c49a3ce13dbd91d13e34cf56d0728d"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 43,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "39edbe96a8ea954ce96dff5213c9eb5d17227b66ae7d8d05df4750e563bcea8b"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            27,
+            30
+          ]
+        ],
+        "matching_index": 44,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "44eb6a215ad9965cc81ecb8b047d0194e906ca5961246f29b44d7735410d266d"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            30,
+            44
+          ]
+        ],
+        "matching_index": 45,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "c42a2fbd9469bfd92d9bf9b7de1e7813d691f147db06cb28580f77d2bebf6191"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            22,
+            30
+          ]
+        ],
+        "matching_index": 46,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "fc0b9485011b64ef6ab1a1acc593fc71132f4804ad46a08b5a8b025d02fecdf7"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            27,
+            44
+          ]
+        ],
+        "matching_index": 47,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "7fcf32c0ebacdfe31b4985dfa49d972556aaa5dc7e2752238824a0c8b699425f"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            22,
+            44
+          ]
+        ],
+        "matching_index": 48,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "7c11fcc49a135fccc42f122129ccc4d8705d0e5a672916ea2b62fd644aa1fb76"
+      },
+      {
+        "matching": [
+          [
+            5,
+            37
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            11,
+            44
+          ],
+          [
+            22,
+            27
+          ]
+        ],
+        "matching_index": 49,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "nonspherical",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "b25723197947fb0a592ed136f6f6174d83f0d2e85944fce4c25321c2bfda5096"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 50,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "925a082468b9d98e1688b04aa4a310d58b8c71725317d2271e72e3f60bcda2d2"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            22,
+            37
+          ],
+          [
+            27,
+            30
+          ]
+        ],
+        "matching_index": 51,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "b3cf967a2a9e0958320629db55ef21f2ce0917b56d5e27ded6cfdfbc5b2fcf28"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 52,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "0195ea48ac3dd877380c536706a8682c1c1623c7fba9bbf784865295871e64c1"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            27,
+            30
+          ]
+        ],
+        "matching_index": 53,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "e4a322e1cf1b3fecc9e9979e26a8888474a3b4c0e414123b81b32c81d684ebb2"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            30,
+            37
+          ]
+        ],
+        "matching_index": 54,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "cf8a94ade9e48d87019ddc2d93244cfd17bd0de5bdbbe31a549169f94fab2bb6"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            22,
+            30
+          ]
+        ],
+        "matching_index": 55,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "320b19b8501df7fc4951deca1bf4ed340d6dd0e7c6e8103fa419f0ce1682efea"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            22,
+            37
+          ]
+        ],
+        "matching_index": 56,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "9091447bec2e80eee8c2c18177ad6148555e640cb205a10f66639179eec4e5e6"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            11,
+            37
+          ],
+          [
+            22,
+            27
+          ]
+        ],
+        "matching_index": 57,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "be462569feffab70bb2453473322ffbc5ebcc8207c42e7a8d543522b1f5c989f"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            27,
+            30
+          ]
+        ],
+        "matching_index": 58,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "0916adcee23a172ccabfefb10b2ffa45c659005a48dcf48578a850faa2b17304"
+      },
+      {
+        "matching": [
+          [
+            5,
+            44
+          ],
+          [
+            9,
+            37
+          ],
+          [
+            11,
+            27
+          ],
+          [
+            22,
+            30
+          ]
+        ],
+        "matching_index": 59,
+        "parent_index": 0,
+        "plane_valid": false,
+        "prune_reason": "abstract_graph",
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "state_sha256": "e4a101c02a1ddf3a3cda5d503028a261d14722fb640a25d0ccfcada6c1ee167c"
+      }
+    ],
+    "complete": true,
+    "counts": {
+      "abstract_graph_prunes": 58,
+      "attempts": 60,
+      "distinct_plane_valid": 1,
+      "duplicates": 0,
+      "graph_invalid_prunes": 59,
+      "nonspherical_prunes": 1,
+      "raw_plane_valid": 1,
+      "score_zero": 1,
+      "zero_score_block_tools_rejections": 0,
+      "zero_score_blocks_rejections": 0,
+      "zero_score_cross_validated": 1,
+      "zero_score_validation_rejections": 0
+    },
+    "edges": 42,
+    "expected_attempts": 60,
+    "frontier_limit": 60,
+    "frontier_state_count": 1,
+    "frontier_states": [
+      {
+        "abstract_graph_valid": true,
+        "alpha": [
+          4,
+          12,
+          32,
+          7,
+          0,
+          11,
+          17,
+          3,
+          40,
+          30,
+          26,
+          5,
+          1,
+          20,
+          54,
+          52,
+          33,
+          6,
+          21,
+          63,
+          13,
+          18,
+          27,
+          28,
+          70,
+          66,
+          10,
+          22,
+          23,
+          35,
+          9,
+          36,
+          2,
+          16,
+          41,
+          29,
+          31,
+          44,
+          80,
+          73,
+          8,
+          34,
+          47,
+          45,
+          37,
+          43,
+          81,
+          42,
+          53,
+          56,
+          77,
+          82,
+          15,
+          48,
+          14,
+          58,
+          49,
+          62,
+          55,
+          65,
+          68,
+          75,
+          57,
+          19,
+          69,
+          59,
+          25,
+          72,
+          60,
+          64,
+          24,
+          76,
+          67,
+          39,
+          78,
+          61,
+          71,
+          50,
+          74,
+          83,
+          38,
+          46,
+          51,
+          79
+        ],
+        "breakdown": {
+          "abstract_graph": 0,
+          "equal_face": 0,
+          "face_distribution": 0,
+          "hex": 0,
+          "total": 0,
+          "white": 0
+        },
+        "euler_characteristic": 2,
+        "matching": [
+          [
+            5,
+            11
+          ],
+          [
+            9,
+            30
+          ],
+          [
+            22,
+            27
+          ],
+          [
+            37,
+            44
+          ]
+        ],
+        "parent_index": 0,
+        "rotation": [
+          {
+            "clockwise": [
+              2,
+              4,
+              10,
+              3
+            ],
+            "id": 1
+          },
+          {
+            "clockwise": [
+              1,
+              3,
+              5
+            ],
+            "id": 2
+          },
+          {
+            "clockwise": [
+              1,
+              12,
+              9,
+              7,
+              2
+            ],
+            "id": 3
+          },
+          {
+            "clockwise": [
+              1,
+              5,
+              16,
+              15,
+              10
+            ],
+            "id": 4
+          },
+          {
+            "clockwise": [
+              2,
+              6,
+              19,
+              4
+            ],
+            "id": 5
+          },
+          {
+            "clockwise": [
+              5,
+              7,
+              8,
+              21,
+              20
+            ],
+            "id": 6
+          },
+          {
+            "clockwise": [
+              3,
+              6
+            ],
+            "id": 7
+          },
+          {
+            "clockwise": [
+              6,
+              11
+            ],
+            "id": 8
+          },
+          {
+            "clockwise": [
+              3,
+              11
+            ],
+            "id": 9
+          },
+          {
+            "clockwise": [
+              1,
+              4,
+              12
+            ],
+            "id": 10
+          },
+          {
+            "clockwise": [
+              8,
+              9,
+              13,
+              24,
+              22
+            ],
+            "id": 11
+          },
+          {
+            "clockwise": [
+              3,
+              10,
+              14,
+              13
+            ],
+            "id": 12
+          },
+          {
+            "clockwise": [
+              11,
+              12,
+              24
+            ],
+            "id": 13
+          },
+          {
+            "clockwise": [
+              12,
+              15,
+              17,
+              23,
+              24
+            ],
+            "id": 14
+          },
+          {
+            "clockwise": [
+              4,
+              14
+            ],
+            "id": 15
+          },
+          {
+            "clockwise": [
+              4,
+              18
+            ],
+            "id": 16
+          },
+          {
+            "clockwise": [
+              14,
+              18
+            ],
+            "id": 17
+          },
+          {
+            "clockwise": [
+              16,
+              19,
+              20,
+              22,
+              17
+            ],
+            "id": 18
+          },
+          {
+            "clockwise": [
+              5,
+              20,
+              18
+            ],
+            "id": 19
+          },
+          {
+            "clockwise": [
+              6,
+              21,
+              18,
+              19
+            ],
+            "id": 20
+          },
+          {
+            "clockwise": [
+              6,
+              22,
+              20
+            ],
+            "id": 21
+          },
+          {
+            "clockwise": [
+              11,
+              23,
+              18,
+              21
+            ],
+            "id": 22
+          },
+          {
+            "clockwise": [
+              14,
+              22,
+              24
+            ],
+            "id": 23
+          },
+          {
+            "clockwise": [
+              11,
+              13,
+              14,
+              23
+            ],
+            "id": 24
+          }
+        ],
+        "selected_pairs": [
+          [
+            5,
+            22
+          ],
+          [
+            9,
+            44
+          ],
+          [
+            11,
+            30
+          ],
+          [
+            27,
+            37
+          ]
+        ],
+        "spherical": true,
+        "state_sha256": "56f06a93f592865ddcc82892c55118ec74630238cd3b403448176a3118579c28"
+      }
+    ],
+    "frontier_truncated": false,
+    "matchings_per_quadruple": 60,
+    "mode": "fixed-quadruple",
+    "parent_count": 1,
+    "quadruples": 1,
+    "score_histogram_distinct": {
+      "0": 1
+    },
+    "success_checks": {
+      "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc": {
+        "block_tools_closed_sha256": "2b539972aab8aaf68c72e616e8a62a8736809a958a252b0056471390c81ae0d1",
+        "block_tools_verified": true,
+        "blocks_closed_sha256": "2b539972aab8aaf68c72e616e8a62a8736809a958a252b0056471390c81ae0d1",
+        "blocks_verified": true
+      }
+    },
+    "success_hashes": [
+      "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc"
+    ],
+    "support_edge_counts": [
+      4
+    ],
+    "wall_seconds": 1.2780187280004611
+  },
+  "state_file": "results/calibration/D24_four_edge_positive.json",
+  "state_file_sha256": "511237ca6a08a2778f60cd2f71db4140b7cf71aa9c7142d306ebc228242e9577"
+}

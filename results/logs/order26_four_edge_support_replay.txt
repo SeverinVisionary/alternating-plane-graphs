@@ -1,0 +1,1 @@
+python3 order26_four_edge_support.py run --spec jobs/order26_four_edge_support.json

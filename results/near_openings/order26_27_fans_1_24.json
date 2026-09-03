@@ -1,0 +1,510 @@
+{
+  "claim_scope": "Diagnostic near-opening seed; not a strict block witness.",
+  "fans": [
+    {
+      "hub": 1,
+      "leaves": [
+        2,
+        4
+      ]
+    },
+    {
+      "hub": 24,
+      "leaves": [
+        23,
+        25
+      ]
+    }
+  ],
+  "format": "apg-near-opening-seed-v1",
+  "hexagons": [
+    [
+      1,
+      3,
+      2,
+      5,
+      4,
+      10
+    ],
+    [
+      10,
+      25,
+      22,
+      23,
+      21,
+      24
+    ]
+  ],
+  "opened_rotation": [
+    {
+      "clockwise": [
+        3,
+        10
+      ],
+      "id": 1
+    },
+    {
+      "clockwise": [
+        3,
+        5
+      ],
+      "id": 2
+    },
+    {
+      "clockwise": [
+        1,
+        12,
+        9,
+        7,
+        2
+      ],
+      "id": 3
+    },
+    {
+      "clockwise": [
+        5,
+        10
+      ],
+      "id": 4
+    },
+    {
+      "clockwise": [
+        2,
+        6,
+        16,
+        22,
+        4
+      ],
+      "id": 5
+    },
+    {
+      "clockwise": [
+        5,
+        7,
+        8,
+        16
+      ],
+      "id": 6
+    },
+    {
+      "clockwise": [
+        3,
+        8,
+        6
+      ],
+      "id": 7
+    },
+    {
+      "clockwise": [
+        6,
+        7,
+        9,
+        11,
+        15
+      ],
+      "id": 8
+    },
+    {
+      "clockwise": [
+        3,
+        11,
+        8
+      ],
+      "id": 9
+    },
+    {
+      "clockwise": [
+        1,
+        4,
+        25,
+        24,
+        12
+      ],
+      "id": 10
+    },
+    {
+      "clockwise": [
+        8,
+        9,
+        13,
+        14
+      ],
+      "id": 11
+    },
+    {
+      "clockwise": [
+        3,
+        10,
+        26,
+        13
+      ],
+      "id": 12
+    },
+    {
+      "clockwise": [
+        11,
+        12,
+        26,
+        19,
+        14
+      ],
+      "id": 13
+    },
+    {
+      "clockwise": [
+        11,
+        13,
+        15
+      ],
+      "id": 14
+    },
+    {
+      "clockwise": [
+        8,
+        14,
+        18,
+        17
+      ],
+      "id": 15
+    },
+    {
+      "clockwise": [
+        5,
+        6,
+        17
+      ],
+      "id": 16
+    },
+    {
+      "clockwise": [
+        15,
+        18,
+        20,
+        22,
+        16
+      ],
+      "id": 17
+    },
+    {
+      "clockwise": [
+        15,
+        19,
+        17
+      ],
+      "id": 18
+    },
+    {
+      "clockwise": [
+        13,
+        21,
+        20,
+        18
+      ],
+      "id": 19
+    },
+    {
+      "clockwise": [
+        17,
+        19,
+        21
+      ],
+      "id": 20
+    },
+    {
+      "clockwise": [
+        19,
+        26,
+        24,
+        23,
+        20
+      ],
+      "id": 21
+    },
+    {
+      "clockwise": [
+        5,
+        17,
+        23,
+        25
+      ],
+      "id": 22
+    },
+    {
+      "clockwise": [
+        21,
+        22
+      ],
+      "id": 23
+    },
+    {
+      "clockwise": [
+        10,
+        21
+      ],
+      "id": 24
+    },
+    {
+      "clockwise": [
+        10,
+        22
+      ],
+      "id": 25
+    },
+    {
+      "clockwise": [
+        12,
+        21,
+        13
+      ],
+      "id": 26
+    }
+  ],
+  "score_breakdown": {
+    "abstract_graph": 160,
+    "equal_face": 0,
+    "face_distribution": 0,
+    "hex": 120,
+    "total": 370,
+    "white": 90
+  },
+  "source": {
+    "file": "27_26-26.plc",
+    "order": 26,
+    "sha256": "d78efd8db7aa415f36a15a9225cbf0b7c1bacfe096051514a7614edd683c4902",
+    "url": "https://www.althofer.de/apg/apgs/27_26-26.plc",
+    "verified_apg": true
+  },
+  "source_rotation": [
+    {
+      "clockwise": [
+        2,
+        4,
+        10,
+        3
+      ],
+      "id": 1
+    },
+    {
+      "clockwise": [
+        1,
+        3,
+        5
+      ],
+      "id": 2
+    },
+    {
+      "clockwise": [
+        1,
+        12,
+        9,
+        7,
+        2
+      ],
+      "id": 3
+    },
+    {
+      "clockwise": [
+        1,
+        5,
+        10
+      ],
+      "id": 4
+    },
+    {
+      "clockwise": [
+        2,
+        6,
+        16,
+        22,
+        4
+      ],
+      "id": 5
+    },
+    {
+      "clockwise": [
+        5,
+        7,
+        8,
+        16
+      ],
+      "id": 6
+    },
+    {
+      "clockwise": [
+        3,
+        8,
+        6
+      ],
+      "id": 7
+    },
+    {
+      "clockwise": [
+        6,
+        7,
+        9,
+        11,
+        15
+      ],
+      "id": 8
+    },
+    {
+      "clockwise": [
+        3,
+        11,
+        8
+      ],
+      "id": 9
+    },
+    {
+      "clockwise": [
+        1,
+        4,
+        25,
+        24,
+        12
+      ],
+      "id": 10
+    },
+    {
+      "clockwise": [
+        8,
+        9,
+        13,
+        14
+      ],
+      "id": 11
+    },
+    {
+      "clockwise": [
+        3,
+        10,
+        26,
+        13
+      ],
+      "id": 12
+    },
+    {
+      "clockwise": [
+        11,
+        12,
+        26,
+        19,
+        14
+      ],
+      "id": 13
+    },
+    {
+      "clockwise": [
+        11,
+        13,
+        15
+      ],
+      "id": 14
+    },
+    {
+      "clockwise": [
+        8,
+        14,
+        18,
+        17
+      ],
+      "id": 15
+    },
+    {
+      "clockwise": [
+        5,
+        6,
+        17
+      ],
+      "id": 16
+    },
+    {
+      "clockwise": [
+        15,
+        18,
+        20,
+        22,
+        16
+      ],
+      "id": 17
+    },
+    {
+      "clockwise": [
+        15,
+        19,
+        17
+      ],
+      "id": 18
+    },
+    {
+      "clockwise": [
+        13,
+        21,
+        20,
+        18
+      ],
+      "id": 19
+    },
+    {
+      "clockwise": [
+        17,
+        19,
+        21
+      ],
+      "id": 20
+    },
+    {
+      "clockwise": [
+        19,
+        26,
+        24,
+        23,
+        20
+      ],
+      "id": 21
+    },
+    {
+      "clockwise": [
+        5,
+        17,
+        23,
+        25
+      ],
+      "id": 22
+    },
+    {
+      "clockwise": [
+        21,
+        24,
+        22
+      ],
+      "id": 23
+    },
+    {
+      "clockwise": [
+        10,
+        25,
+        23,
+        21
+      ],
+      "id": 24
+    },
+    {
+      "clockwise": [
+        10,
+        22,
+        24
+      ],
+      "id": 25
+    },
+    {
+      "clockwise": [
+        12,
+        21,
+        13
+      ],
+      "id": 26
+    }
+  ],
+  "state_sha256": "9115b20cf204b1ff18b321142d6bf5c13eaf0501336382aa98283d69a36ac23b"
+}

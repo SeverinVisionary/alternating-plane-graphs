@@ -1,0 +1,72 @@
+{
+  "note": "formula-shape measurement only; no search was run",
+  "results": {
+    "cnf closed(17,8)": {
+      "build_seconds": 0.24,
+      "clauses": 219191,
+      "darts": 64,
+      "engine": "cnf/exact_map_cnf",
+      "faces": 17,
+      "matching_variables": 1360,
+      "variables": 41889,
+      "vertices": 17
+    },
+    "cnf closed(20,9)": {
+      "build_seconds": 0.42,
+      "clauses": 327456,
+      "darts": 76,
+      "engine": "cnf/exact_map_cnf",
+      "faces": 20,
+      "matching_variables": 1923,
+      "variables": 67905,
+      "vertices": 20
+    },
+    "cnf closed(46,18)": {
+      "build_seconds": 6.33,
+      "clauses": 3664506,
+      "darts": 180,
+      "engine": "cnf/exact_map_cnf",
+      "faces": 46,
+      "matching_variables": 10724,
+      "variables": 775102,
+      "vertices": 46
+    },
+    "z3 block(28,12) t0": {
+      "assertions": 41336,
+      "boolean_matching_variables": 2976,
+      "build_seconds": 21.51,
+      "darts": 100,
+      "distinct_ast_nodes": 275718,
+      "engine": "z3/exact_map_bool_sat",
+      "integer_variables": 700
+    },
+    "z3 block(29,12) t0": {
+      "assertions": 44492,
+      "boolean_matching_variables": 3232,
+      "build_seconds": 22.67,
+      "darts": 104,
+      "distinct_ast_nodes": 298046,
+      "engine": "z3/exact_map_bool_sat",
+      "integer_variables": 728
+    },
+    "z3 block(31,12) t0": {
+      "assertions": 51056,
+      "boolean_matching_variables": 3744,
+      "build_seconds": 25.88,
+      "darts": 112,
+      "distinct_ast_nodes": 344442,
+      "engine": "z3/exact_map_bool_sat",
+      "integer_variables": 784
+    },
+    "z3 closed(20,9)": {
+      "assertions": 14529,
+      "boolean_matching_variables": 1923,
+      "build_seconds": 9.5,
+      "darts": 76,
+      "distinct_ast_nodes": 127631,
+      "engine": "z3/exact_map_bool_sat",
+      "integer_variables": 456
+    }
+  },
+  "tool": "measure_encoding_cost.py"
+}

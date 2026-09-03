@@ -1,0 +1,96 @@
+{
+  "format": "apg-boolean-cloud-pilot-audit-v1",
+  "audit_date": "2026-08-30",
+  "pilot_archive": {
+    "filename": "apg-boolean-4ab6dcb1-pilot-artifacts.tar.gz",
+    "sha256": "a6e8c98d61a9be4a530b98dcb471d322f508d59c2efaf7da7c13a37148cf005a",
+    "manifest_sha256": "7e90f2c1086877dcad14ca7bc6631c3a79bdaa9d6d2de096a245b43aff4d09c1",
+    "entry_count": 64,
+    "all_manifest_entries_rehashed": true
+  },
+  "source_gate": {
+    "bundle_sha256": "03ae525d18d4a426ea230d7a4ce009d9abc9bdf610eab325cb4d4afc950e26af",
+    "advertised_ref": "refs/heads/apg-345-target",
+    "commit": "4ab6dcb160704aa869268d738a7b700d3da0afa5",
+    "tree": "1671856be18ee636538a1c99242a94e1cab8557d",
+    "non_darwin": true,
+    "bundle_verify": "passed; complete SHA1 history",
+    "fsck": "passed; no dangling objects",
+    "clean_before_compute": true,
+    "python": "3.12.13",
+    "z3": "5.1.0",
+    "cpu_count": 9,
+    "memory_total": "21Gi"
+  },
+  "known_controls": {
+    "order20": {
+      "solver_disposition": "CANDIDATE",
+      "z3_result": "sat",
+      "verify_py_passed": true,
+      "verify_darts_passed": true
+    },
+    "A21_strict_block": {
+      "solver_disposition": "CANDIDATE",
+      "z3_result": "sat",
+      "postprocess_disposition": "CERTIFIED",
+      "closure_count": 9,
+      "r": 10,
+      "expected_block_t": 0,
+      "all_closures_passed_both_verifiers": true,
+      "independently_replayed_after_path_fix": true
+    }
+  },
+  "target_dispositions": [
+    {
+      "profile": "(25,11)",
+      "require_t0": false,
+      "z3_result": "unknown",
+      "disposition": "INCOMPLETE",
+      "wall_seconds": 623.4586641788483
+    },
+    {
+      "profile": "(27,12)",
+      "require_t0": true,
+      "z3_result": "unknown",
+      "disposition": "INCOMPLETE",
+      "wall_seconds": 623.1387012004852
+    },
+    {
+      "profile": "(28,12)",
+      "require_t0": true,
+      "z3_result": "unknown",
+      "disposition": "INCOMPLETE",
+      "wall_seconds": 630.2910902500153
+    },
+    {
+      "profile": "(29,12)",
+      "require_t0": true,
+      "z3_result": "unknown",
+      "disposition": "INCOMPLETE",
+      "wall_seconds": 632.7462055683136
+    },
+    {
+      "profile": "(31,12)",
+      "require_t0": true,
+      "z3_result": null,
+      "disposition": "INCOMPLETE",
+      "reason": "process killed before raw JSON was written; stderr retained"
+    },
+    {
+      "profile": "(34,13)",
+      "require_t0": true,
+      "z3_result": null,
+      "disposition": "INCOMPLETE",
+      "reason": "process killed before raw JSON was written; stderr retained"
+    }
+  ],
+  "coverage": {
+    "independently_verified_target_orders": 0,
+    "required_target_orders": 26
+  },
+  "nonexistence_free": true,
+  "recovery_scope": [
+    "(31,12)",
+    "(34,13)"
+  ]
+}

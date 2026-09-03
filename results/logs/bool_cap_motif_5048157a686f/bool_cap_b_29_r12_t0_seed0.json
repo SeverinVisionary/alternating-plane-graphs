@@ -1,0 +1,49 @@
+{
+  "canonical": true,
+  "cap_fans": [
+    {
+      "center": 12,
+      "leaves": [
+        0,
+        1
+      ]
+    },
+    {
+      "center": 13,
+      "leaves": [
+        2,
+        3
+      ]
+    }
+  ],
+  "disposition": "INCOMPLETE",
+  "encoding": "boolean-dart-matching-plus-face-period",
+  "encoding_constraint_count": 29764,
+  "explicit_connectivity": false,
+  "format": "apg-exact-map-bool-sat-v1",
+  "heuristic": false,
+  "lane": "closed",
+  "order": 29,
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "python": "3.14.4 (main, May  1 2026, 05:51:55) [GCC 13.3.0]",
+  "r": 12,
+  "random_seed": 0,
+  "require_cap_facets": true,
+  "require_cap_fans": true,
+  "require_cap_interface": true,
+  "require_t0": true,
+  "solver_statistics": {
+    "max memory": 10353.69,
+    "memory": 10347.32,
+    "num allocs": 1672233169207.0,
+    "rlimit count": 884887721,
+    "solve-eqs-elim-vars": 3808,
+    "solve-eqs-steps": 223792,
+    "time": 600.006
+  },
+  "threads": 1,
+  "timeout_seconds": 600,
+  "wall_seconds": 642.2054536342621,
+  "z3_result": "unknown",
+  "z3_version": "5.1.0"
+}

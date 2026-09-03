@@ -1,0 +1,24 @@
+Integrated remote head:
+  00d438c9bbccad6f299800abc63534ced6a6e07e
+
+Environment:
+  kernel: Linux 6.18.35 x86_64
+  hostname: 76a7bdc81cdd
+
+Corrected search source:
+  map_search.py git blob: 134d3348d44db0caa155c4d1712652ba8a1eb866
+  test_map_search.py git blob: b9f458dd1a168b991b36732f33f9508361180c2d
+
+Replay:
+  cd 
+  python3 -m unittest -v
+
+Result:
+  Ran 26 tests in 3.479s
+  OK
+
+Test groups:
+  test_block_arithmetic.py: 4 passed
+  test_blocks.py: 7 passed
+  test_map_search.py: 4 passed
+  test_verify.py: 11 passed

@@ -1,0 +1,681 @@
+{
+  "claim_scope": "Exact score_breakdown ranking of every vertex-disjoint closure-fan pair in the 19 recorded public embeddings; scores are diagnostics, not witnesses.",
+  "environment": {
+    "kernel": "Linux 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 GNU/Linux",
+    "hostname": "76a7bdc81cdd"
+  },
+  "final_pass_elapsed_seconds": 63.300478846,
+  "files": [
+    {
+      "source_file": "27_26-26.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/27_26-26.plc",
+      "source_sha256": "d78efd8db7aa415f36a15a9225cbf0b7c1bacfe096051514a7614edd683c4902",
+      "order": 26,
+      "fan_candidates": 7,
+      "disjoint_fan_pairs": 18,
+      "best_score": 370,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 120,
+        "total": 370,
+        "white": 90
+      },
+      "best_fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 24,
+          "leaves": [
+            23,
+            25
+          ]
+        }
+      ],
+      "best_state_sha256": "9115b20cf204b1ff18b321142d6bf5c13eaf0501336382aa98283d69a36ac23b",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "28_26-26.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/28_26-26.plc",
+      "source_sha256": "adf39c3bb116a259efedaa6f9bb5c42734f262652dbe3fafd8fe5aafec17799c",
+      "order": 26,
+      "fan_candidates": 7,
+      "disjoint_fan_pairs": 18,
+      "best_score": 370,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 120,
+        "total": 370,
+        "white": 90
+      },
+      "best_fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 26,
+          "leaves": [
+            15,
+            25
+          ]
+        }
+      ],
+      "best_state_sha256": "27d8e3b580147da90d04e1be6340f3401f7a33f665fe82012cbef1234050b1b5",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "29_27-27.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/29_27-27.plc",
+      "source_sha256": "d490e230e10d114d607d415fb91f35362e68cdc4762cbd19b9c264388e6f381a",
+      "order": 27,
+      "fan_candidates": 10,
+      "disjoint_fan_pairs": 32,
+      "best_score": 950,
+      "best_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 80,
+        "face_distribution": 0,
+        "hex": 270,
+        "total": 950,
+        "white": 360
+      },
+      "best_fans": [
+        {
+          "hub": 3,
+          "leaves": [
+            2,
+            10
+          ]
+        },
+        {
+          "hub": 19,
+          "leaves": [
+            18,
+            21
+          ]
+        }
+      ],
+      "best_state_sha256": "788c1654fd43a0d04d56206ec1a31f6d1e8ccf81c9388438c67bc77410685745",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "30_28-28.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/30_28-28.plc",
+      "source_sha256": "6ed445bfa5d2e53eb756c12b0c3f57e0129aba0890517c9e0aa72209838abe26",
+      "order": 28,
+      "fan_candidates": 13,
+      "disjoint_fan_pairs": 52,
+      "best_score": 740,
+      "best_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 740,
+        "white": 180
+      },
+      "best_fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 20,
+          "leaves": [
+            17,
+            21
+          ]
+        }
+      ],
+      "best_state_sha256": "997810931e46727cc8eb0511caedf6b3a7bd36d0e5902577997783c23c30ae0b",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "31_29-29.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/31_29-29.plc",
+      "source_sha256": "35267740b45725b97fb886c6df73322a2c24e9315e46b98878d6d5800b6eaaf2",
+      "order": 29,
+      "fan_candidates": 7,
+      "disjoint_fan_pairs": 17,
+      "best_score": 880,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 120,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 880,
+        "white": 360
+      },
+      "best_fans": [
+        {
+          "hub": 12,
+          "leaves": [
+            10,
+            13
+          ]
+        },
+        {
+          "hub": 17,
+          "leaves": [
+            15,
+            22
+          ]
+        }
+      ],
+      "best_state_sha256": "47094c88eb367991684df1a4994132da5ca7221d4a2c40393b60f8490d97b998",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "32_29-29.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/32_29-29.plc",
+      "source_sha256": "71ed9d08270a9176483d41d6010fac640a17cb077e7b95f68e901b4ac60db2c1",
+      "order": 29,
+      "fan_candidates": 7,
+      "disjoint_fan_pairs": 18,
+      "best_score": 880,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 120,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 880,
+        "white": 360
+      },
+      "best_fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            4,
+            8
+          ]
+        },
+        {
+          "hub": 27,
+          "leaves": [
+            21,
+            28
+          ]
+        }
+      ],
+      "best_state_sha256": "34078a0bb5633707ab9fdc262750c42527bea38d510d5fccac54ae3a34e8c067",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "34_30-30.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/34_30-30.plc",
+      "source_sha256": "30780d7a870fd5736afa6c9cb3b223b4e70012d4c01f8ed7080c2dd8adf8080a",
+      "order": 30,
+      "fan_candidates": 9,
+      "disjoint_fan_pairs": 29,
+      "best_score": 370,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 120,
+        "total": 370,
+        "white": 90
+      },
+      "best_fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 15,
+          "leaves": [
+            16,
+            17
+          ]
+        }
+      ],
+      "best_state_sha256": "4a0472b81b2a649ca6774205c6edc2bcac4dbafc6d0675665e210f489f8c82ab",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "36_30-30.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/36_30-30.plc",
+      "source_sha256": "2fe447dcf61ad1254124abe07bacd7e4dc8df69cc1d13b993b2f6e3ad7323625",
+      "order": 30,
+      "fan_candidates": 9,
+      "disjoint_fan_pairs": 29,
+      "best_score": 370,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 120,
+        "total": 370,
+        "white": 90
+      },
+      "best_fans": [
+        {
+          "hub": 7,
+          "leaves": [
+            12,
+            15
+          ]
+        },
+        {
+          "hub": 21,
+          "leaves": [
+            9,
+            19
+          ]
+        }
+      ],
+      "best_state_sha256": "5508ef3e21ae4c7154eec6be4d10feddf1a94f160ac0352039292abcb9356580",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "38_31-31.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/38_31-31.plc",
+      "source_sha256": "e67095feaffa09a39d32dfba5712c577899db59bed8ff55ecc091879196febb7",
+      "order": 31,
+      "fan_candidates": 12,
+      "disjoint_fan_pairs": 51,
+      "best_score": 740,
+      "best_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 740,
+        "white": 180
+      },
+      "best_fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        },
+        {
+          "hub": 16,
+          "leaves": [
+            17,
+            19
+          ]
+        }
+      ],
+      "best_state_sha256": "36a99142dd7d246deb5b83ceddd524789dc163fe7a81436f5307dd2123c38f34",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "39_32-32.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/39_32-32.plc",
+      "source_sha256": "43077668d6f86053f2ebec3bdf4141f90510a7ed61a7d86ba80ef598c0df25f5",
+      "order": 32,
+      "fan_candidates": 14,
+      "disjoint_fan_pairs": 62,
+      "best_score": 740,
+      "best_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 740,
+        "white": 180
+      },
+      "best_fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 25,
+          "leaves": [
+            22,
+            26
+          ]
+        }
+      ],
+      "best_state_sha256": "485cd29ee92c313347b77bb7d5529a40ed01bb99e31e27030a53cc98200b02b6",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "40_32-32.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/40_32-32.plc",
+      "source_sha256": "8d60906638ff9440a24d2ff0d45b4d5bb88df2c041a37eb5949dad14c29d497e",
+      "order": 32,
+      "fan_candidates": 8,
+      "disjoint_fan_pairs": 21,
+      "best_score": 860,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 100,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 860,
+        "white": 360
+      },
+      "best_fans": [
+        {
+          "hub": 15,
+          "leaves": [
+            14,
+            25
+          ]
+        },
+        {
+          "hub": 20,
+          "leaves": [
+            18,
+            21
+          ]
+        }
+      ],
+      "best_state_sha256": "ceea0dfc780843710d9ddaf661d6becf4b50db2d08cc98c965d91798e83cf2ef",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "41_32-32.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/41_32-32.plc",
+      "source_sha256": "d91c3f2080814c55c4cbd3846612cec6781691ec37d57bae9cc08ff84dbb86e3",
+      "order": 32,
+      "fan_candidates": 8,
+      "disjoint_fan_pairs": 21,
+      "best_score": 860,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 100,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 860,
+        "white": 360
+      },
+      "best_fans": [
+        {
+          "hub": 11,
+          "leaves": [
+            10,
+            16
+          ]
+        },
+        {
+          "hub": 31,
+          "leaves": [
+            24,
+            32
+          ]
+        }
+      ],
+      "best_state_sha256": "e83b01a0718fb6de393d04b26e8408628ef41246515b8934cca0188041db73e0",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "44_33-33.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/44_33-33.plc",
+      "source_sha256": "b779feb98cac0025bf165abd3b3d8e7968bff96bac5e428d17c7e1d07017a414",
+      "order": 33,
+      "fan_candidates": 10,
+      "disjoint_fan_pairs": 36,
+      "best_score": 460,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 120,
+        "total": 460,
+        "white": 180
+      },
+      "best_fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 8,
+          "leaves": [
+            7,
+            9
+          ]
+        }
+      ],
+      "best_state_sha256": "41a2273e6b35c77ffc8d10ff8d5eb68b4831fb8b79dc79eb53c1bcdcf89fd7b6",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "45_33-33.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/45_33-33.plc",
+      "source_sha256": "f62d06087969b4347a3da7270fd58d933df96159f222391cc33245116bd8521b",
+      "order": 33,
+      "fan_candidates": 10,
+      "disjoint_fan_pairs": 35,
+      "best_score": 650,
+      "best_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 650,
+        "white": 90
+      },
+      "best_fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            2,
+            4
+          ]
+        },
+        {
+          "hub": 7,
+          "leaves": [
+            10,
+            13
+          ]
+        }
+      ],
+      "best_state_sha256": "f73d33249ff36d1825c7a6f937129743d0caf8c2f43698efc6ac17796fce1b78",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "51_34-34.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/51_34-34.plc",
+      "source_sha256": "1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76",
+      "order": 34,
+      "fan_candidates": 13,
+      "disjoint_fan_pairs": 53,
+      "best_score": 460,
+      "best_breakdown": {
+        "abstract_graph": 160,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 120,
+        "total": 460,
+        "white": 180
+      },
+      "best_fans": [
+        {
+          "hub": 8,
+          "leaves": [
+            6,
+            10
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            33,
+            34
+          ]
+        }
+      ],
+      "best_state_sha256": "938ee94260c196b7f4fb9aef81ca3fab0aaeb67b92dc2bf520cb087a029aaa93",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "52_34-34.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/52_34-34.plc",
+      "source_sha256": "db3d63e7859df75034f0c1314e7cb164ce086783ca761c1c2e7772ab20be8c15",
+      "order": 34,
+      "fan_candidates": 11,
+      "disjoint_fan_pairs": 44,
+      "best_score": 650,
+      "best_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 0,
+        "face_distribution": 0,
+        "hex": 240,
+        "total": 650,
+        "white": 90
+      },
+      "best_fans": [
+        {
+          "hub": 9,
+          "leaves": [
+            10,
+            13
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            24,
+            34
+          ]
+        }
+      ],
+      "best_state_sha256": "2bd9ce000097907a42bb43d9fca005049259d9b4bfbe06bca210a64e7f575637",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "56_35-35.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/56_35-35.plc",
+      "source_sha256": "e797592db8ee2c6a7ae461ddada90e4ba2634b57aa862695f939a90719531ce2",
+      "order": 35,
+      "fan_candidates": 12,
+      "disjoint_fan_pairs": 52,
+      "best_score": 1060,
+      "best_breakdown": {
+        "abstract_graph": 320,
+        "equal_face": 80,
+        "face_distribution": 0,
+        "hex": 300,
+        "total": 1060,
+        "white": 360
+      },
+      "best_fans": [
+        {
+          "hub": 3,
+          "leaves": [
+            2,
+            10
+          ]
+        },
+        {
+          "hub": 32,
+          "leaves": [
+            30,
+            35
+          ]
+        }
+      ],
+      "best_state_sha256": "0b2c390020e6952e1d734c7e7e038b5256fe1c3f859eff2f82f2adf582f0a3c9",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "60_36-36.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/60_36-36.plc",
+      "source_sha256": "5778919bcb7ba2b0bf3f18482819b1cb71fa8853a01620a5b260cede83b291f9",
+      "order": 36,
+      "fan_candidates": 10,
+      "disjoint_fan_pairs": 34,
+      "best_score": 950,
+      "best_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 80,
+        "face_distribution": 0,
+        "hex": 270,
+        "total": 950,
+        "white": 360
+      },
+      "best_fans": [
+        {
+          "hub": 3,
+          "leaves": [
+            2,
+            10
+          ]
+        },
+        {
+          "hub": 31,
+          "leaves": [
+            30,
+            32
+          ]
+        }
+      ],
+      "best_state_sha256": "850a55986ed0654f8cae90a46d1b7e706bd7c1965c4bfcf7e9b1cabd403c0960",
+      "zero_score_states": 0
+    },
+    {
+      "source_file": "61_36-36.plc",
+      "source_url": "https://www.althofer.de/apg/apgs/61_36-36.plc",
+      "source_sha256": "48d25c0b97c95448f0cf36cc67fd30225e33af6d22defb404b94b0a591f78876",
+      "order": 36,
+      "fan_candidates": 10,
+      "disjoint_fan_pairs": 32,
+      "best_score": 950,
+      "best_breakdown": {
+        "abstract_graph": 240,
+        "equal_face": 80,
+        "face_distribution": 0,
+        "hex": 270,
+        "total": 950,
+        "white": 360
+      },
+      "best_fans": [
+        {
+          "hub": 1,
+          "leaves": [
+            5,
+            8
+          ]
+        },
+        {
+          "hub": 28,
+          "leaves": [
+            25,
+            29
+          ]
+        }
+      ],
+      "best_state_sha256": "d39d5871c419ca8264a02048a5c67b75bd5be9a528a612f706d1fbe2dc9ff661",
+      "zero_score_states": 0
+    }
+  ],
+  "totals": {
+    "published_embeddings": 19,
+    "disjoint_fan_pairs": 654,
+    "zero_score_states": 0
+  },
+  "replay": "download each source_url; verify source_sha256; python3 near_opening.py SOURCE --sha256 SHA --source-url URL --rank --output FILE"
+}

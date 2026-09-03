@@ -1,0 +1,6 @@
+git status --short --branch
+## work
+?? results/logs/bool_r12_residual_h55_baa349135fc9/
+HEAD=baa349135fc965f150460994bbb48ab8bec4707c
+TREE=57858f688bd168e0cb0476ff12fee7a6ec0bc85b
+git fsck --full

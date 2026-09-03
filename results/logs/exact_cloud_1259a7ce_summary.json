@@ -1,0 +1,46 @@
+{
+  "bundle": {
+    "path": "<source-bundle>",
+    "sha256": "95ebe98ecf6578fd073ec41ff79653a2980ae5e9c795caed78b4a3245fb809f9",
+    "ref": "refs/transfer/apg-345-1259a7ce",
+    "complete_history": true
+  },
+  "input": {
+    "commit": "1259a7ce7d7c62033ce73aad17d8ef831af23bfb",
+    "tree": "2915a049d462a8a94629f831d2be2463d50eb4e6",
+    "source_manifest_sha256": "f1de880ca90f41207665456369c952c3a0d9283187ba8c202a79b222fcb4dec4"
+  },
+  "environment": {
+    "kernel": "Linux 88ef8c6d385a 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+    "hostname": "88ef8c6d385a",
+    "non_darwin": true,
+    "python": "3.12.13",
+    "z3": "5.1.0"
+  },
+  "known_answer_gate": {
+    "command": "python3 -m pytest -q test_verify.py test_block_arithmetic.py test_blocks.py test_block_tools.py test_map_search.py test_near_open_search.py",
+    "result": "48 passed, 79 subtests passed"
+  },
+  "encoding": {
+    "path": "exact_map_sat.py",
+    "sha256": "a993b939256977c608e33446087da8f91d9b286a2bdd17756c1bb03b3541f11a",
+    "kind": "labelled-dart-involution-plus-face-permutation",
+    "heuristic": false,
+    "unsat_claimed": false
+  },
+  "lane_a": {
+    "command_template": "python3 exact_map_sat.py --lane closed --r {16|17|18} --timeout-s 120 --output results/logs/exact_lane_a_r{r}.json",
+    "profiles": [
+      {"r": 16, "z3_result": "unknown", "wall_seconds": 128.98134756088257, "disposition": "INCOMPLETE", "record_sha256": "85c3219267b331bb3ca7eeee30312deb61c722f2084f69ebfe67ff26e9a4ee4f"},
+      {"r": 17, "z3_result": "unknown", "wall_seconds": 129.8195676803589, "disposition": "INCOMPLETE", "record_sha256": "de3401aee5e99e7081e375a2ad1be95b35a96f8fdbe408a35630b53e002b72c5"},
+      {"r": 18, "z3_result": "unknown", "wall_seconds": 129.17015480995178, "disposition": "INCOMPLETE", "record_sha256": "ea39c42eee417b4a8ff50f8275e4df419fe61f1b5692a19796a17ce099f6984a"}
+    ]
+  },
+  "lane_b": {
+    "command": "python3 exact_map_sat.py --lane block --r 12 --timeout-s 120 --output results/logs/exact_lane_b_27_r12.json",
+    "profile": {"b": 27, "r": 12, "z3_result": "unknown", "wall_seconds": 122.23739719390869, "disposition": "INCOMPLETE", "record_sha256": "fdf760baaa20a2666bda52654248c01962a0923734646c08a9bb3a5aa05c1221"},
+    "closures_run": 0,
+    "reason": "no positive model/candidate was emitted"
+  },
+  "overall_disposition": "INCOMPLETE: 0/26 independently verified; no UNSAT or nonexistence assertion"
+}

@@ -1,0 +1,153 @@
+{
+  "certificates": {},
+  "claim_scope": "Complete bounded mandatory-defect k3 and k4 lanes over five frozen near openings; a miss is not nonexistence.",
+  "combined_expected_attempts": 361668,
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname": {
+      "machine": "x86_64",
+      "node": "76a7bdc81cdd",
+      "processor": "x86_64",
+      "release": "6.18.35",
+      "system": "Linux",
+      "version": "#1 SMP Fri Aug 21 00:36:21 UTC 2026"
+    }
+  },
+  "format": "apg-mandatory-defect-k3-k4-result-v1",
+  "k3": {
+    "best_score": null,
+    "best_state_hashes": [],
+    "complete": true,
+    "counts": {
+      "abstract_graph_prunes": 1968,
+      "attempts": 1968,
+      "graph_invalid_prunes": 1968
+    },
+    "expected_attempts": 1968,
+    "frontier_limit": 64,
+    "frontier_state_count": 0,
+    "frontier_states": [],
+    "frontier_truncated": false,
+    "lane": "k3",
+    "per_seed": [
+      {
+        "counts": {
+          "abstract_graph_prunes": 352,
+          "attempts": 352,
+          "graph_invalid_prunes": 352
+        },
+        "id": "26a"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 352,
+          "attempts": 352,
+          "graph_invalid_prunes": 352
+        },
+        "id": "26b"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 400,
+          "attempts": 400,
+          "graph_invalid_prunes": 400
+        },
+        "id": "29a"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 400,
+          "attempts": 400,
+          "graph_invalid_prunes": 400
+        },
+        "id": "29b"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 464,
+          "attempts": 464,
+          "graph_invalid_prunes": 464
+        },
+        "id": "33"
+      }
+    ],
+    "score_histogram_distinct": {},
+    "success_checks": {},
+    "success_hashes": [],
+    "wall_seconds": 0.039840255994931795
+  },
+  "k4": {
+    "best_score": null,
+    "best_state_hashes": [],
+    "complete": true,
+    "counts": {
+      "abstract_graph_prunes": 358458,
+      "attempts": 359700,
+      "graph_invalid_prunes": 359700,
+      "nonspherical_prunes": 1242
+    },
+    "expected_attempts": 359700,
+    "frontier_limit": 64,
+    "frontier_state_count": 0,
+    "frontier_states": [],
+    "frontier_truncated": false,
+    "lane": "k4",
+    "per_seed": [
+      {
+        "counts": {
+          "abstract_graph_prunes": 56556,
+          "attempts": 56760,
+          "graph_invalid_prunes": 56760,
+          "nonspherical_prunes": 204
+        },
+        "id": "26a"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 56556,
+          "attempts": 56760,
+          "graph_invalid_prunes": 56760,
+          "nonspherical_prunes": 204
+        },
+        "id": "26b"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 73206,
+          "attempts": 73500,
+          "graph_invalid_prunes": 73500,
+          "nonspherical_prunes": 294
+        },
+        "id": "29a"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 73256,
+          "attempts": 73500,
+          "graph_invalid_prunes": 73500,
+          "nonspherical_prunes": 244
+        },
+        "id": "29b"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 98884,
+          "attempts": 99180,
+          "graph_invalid_prunes": 99180,
+          "nonspherical_prunes": 296
+        },
+        "id": "33"
+      }
+    ],
+    "score_histogram_distinct": {},
+    "success_checks": {},
+    "success_hashes": [],
+    "wall_seconds": 7.100665343998116
+  },
+  "parent_manifest_sha256": "fd975d8752589565d7c8a7a7d69b8c4d8f55f5f76b9b2b706d6a7d4c2536149a",
+  "replay": "python3 mandatory_defect_rematch.py run --spec jobs/mandatory_defect_26_29_33.json",
+  "spec": "jobs/mandatory_defect_26_29_33.json",
+  "spec_sha256": "e3d3c4d417c00aabce50bea56591a3e8b3dbda837eec7f5f6d2f4aa99f1a428b",
+  "target_state_file": "results/targets/mandatory_defect_26_29_33_parents.json",
+  "target_state_sha256": "8eb46f4665eefb4889f51b514430a28954bb092183e1efc0542d6c3d8d76cf8c"
+}

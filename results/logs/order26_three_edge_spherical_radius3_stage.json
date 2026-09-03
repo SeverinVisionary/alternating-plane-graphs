@@ -1,0 +1,32 @@
+{
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname": {
+      "machine": "x86_64",
+      "node": "76a7bdc81cdd",
+      "processor": "x86_64",
+      "release": "6.18.35",
+      "system": "Linux",
+      "version": "#1 SMP Fri Aug 21 00:36:21 UTC 2026"
+    }
+  },
+  "format": "apg-three-edge-spherical-radius3-stage-v1",
+  "identities": {
+    "edges_per_parent": 46,
+    "matchings_per_triple": 8,
+    "parents": 64,
+    "scores": {
+      "780": 6,
+      "800": 58
+    },
+    "total_attempts": 7772160,
+    "total_triples": 971520,
+    "triples_per_parent": 15180
+  },
+  "parent_frontier_manifest_sha256": "7f5debfc24c524143ecccb4503cb3ecbabcc30ba7a1f2e4d7259529e9091a50f",
+  "replay": "python3 order26_three_edge_spherical_radius3.py stage --spec jobs/order26_three_edge_spherical_radius3.json",
+  "spec": "jobs/order26_three_edge_spherical_radius3.json",
+  "spec_sha256": "a5edc0c8159e526feb064006e4daedab600bf2b40d67a42897dc1e663e74572e",
+  "target_state_file": "results/targets/order26_three_edge_spherical_radius3_parents.json",
+  "target_state_sha256": "5d39d7804f48bc1e2344656f680f6fb5f0703af1de73443902db2af69d8774d2"
+}

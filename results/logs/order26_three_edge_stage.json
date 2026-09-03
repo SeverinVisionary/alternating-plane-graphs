@@ -1,0 +1,27 @@
+{
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname": {
+      "machine": "x86_64",
+      "node": "76a7bdc81cdd",
+      "processor": "x86_64",
+      "release": "6.18.35",
+      "system": "Linux",
+      "version": "#1 SMP Fri Aug 21 00:36:21 UTC 2026"
+    }
+  },
+  "format": "apg-three-edge-target-stage-v1",
+  "identities": {
+    "edges_per_parent": 46,
+    "matchings_per_triple": 8,
+    "parents": 6,
+    "total_attempts": 728640,
+    "total_triples": 91080,
+    "triples_per_parent": 15180
+  },
+  "replay": "python3 order26_three_edge_target.py stage --spec jobs/order26_three_edge_all_triples.json",
+  "spec": "jobs/order26_three_edge_all_triples.json",
+  "spec_sha256": "8dba266aa5ed7610730acd919a721222bb6d375052198c0ae8615bb71668ea03",
+  "target_state_file": "results/targets/order26_three_edge_parents.json",
+  "target_state_sha256": "77b5c304505d43576813bda3feda59d745b36a296d901223f842729dc9d4c1bb"
+}

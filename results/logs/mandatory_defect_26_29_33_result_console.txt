@@ -1,0 +1,5 @@
+PASS k3=1968 k4=359700
+
+real	0m7.209s
+user	0m7.202s
+sys	0m0.004s

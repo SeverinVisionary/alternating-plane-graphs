@@ -1,0 +1,40 @@
+{
+  "format": "apg-three-edge-spherical-radius3-postpush-v1",
+  "claim_scope": "Authenticated remote-byte verification of the bounded radius-3 result; no further search was run.",
+  "verified_commit": "e9545682e1bcf862a4b4f9334368259e29a91884",
+  "artifact": "results/logs/order26_three_edge_spherical_radius3.json",
+  "retrieval": "authenticated repository fetch_blob API",
+  "remote_git_blob_sha1": "f2a5dce40e0dcca48ed3d294314b4cce24a836e2",
+  "remote_byte_length": 390007,
+  "remote_sha256": "ef42150945dbe902d1eea1a383557ba9d87076cb799ddedd3f22f2cab698148c",
+  "remote_matches_source_byte_for_byte": true,
+  "utf8_decode": true,
+  "json_parse": true,
+  "spec_sha256": "a5edc0c8159e526feb064006e4daedab600bf2b40d67a42897dc1e663e74572e",
+  "target_state_sha256": "5d39d7804f48bc1e2344656f680f6fb5f0703af1de73443902db2af69d8774d2",
+  "result_accounting": {
+    "attempts": 7772160,
+    "abstract_graph_prunes": 6621150,
+    "nonspherical_prunes": 1149150,
+    "plane_gate_prunes": 7770300,
+    "raw_plane_valid": 1860,
+    "duplicates": 362,
+    "distinct_plane_valid": 1498,
+    "minimum_score": 510,
+    "score_zero": 0,
+    "frontier_count": 64,
+    "frontier_truncated": true
+  },
+  "remote_result_tests": {
+    "tests": 7,
+    "result": "OK",
+    "output": "results/logs/order26_three_edge_spherical_radius3_remote_result_tests.txt",
+    "output_sha256": "77c6a2ebd1dc0775c5eb94b02ef180c460839defa74302df24284128ba84fb1f"
+  },
+  "postpush_full_suite": {
+    "tests": 111,
+    "result": "OK",
+    "output": "results/logs/order26_three_edge_spherical_radius3_postpush_full_tests.txt",
+    "output_sha256": "ab95f8b05437d9032d90deac6bbc930277429b507e49b5bc5c633d9ec9471421"
+  }
+}

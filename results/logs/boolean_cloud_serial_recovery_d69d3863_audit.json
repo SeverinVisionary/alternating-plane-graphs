@@ -1,0 +1,60 @@
+{
+  "format": "apg-boolean-cloud-serial-recovery-audit-v1",
+  "audit_date": "2026-08-30",
+  "recovery_archive": {
+    "filename": "apg-boolean-d69d3863-recovery-artifacts.tar.gz",
+    "sha256": "c4f8956ce48265e0898a8b0f35d43f7c56415c18b3b0bf0dcecfd788af127fd2",
+    "manifest_sha256": "fbae199437c59143a1c62b605428a6cd9a0285ad23faf5b4ea7eefdd80542483",
+    "entry_count": 42,
+    "all_manifest_entries_rehashed": true
+  },
+  "source_gate": {
+    "bundle_sha256": "dfc7b1c52140b05dc3b33b8511efb6cb4d10996d94a9de4b16dc146608c348b2",
+    "advertised_ref": "refs/heads/apg-345-target",
+    "commit": "d69d3863c10284af77c026cc9f07f2d18fc91bb4",
+    "tree": "8b7be28a5a1e9fcba9267a648a1af20d3fd00fff",
+    "non_darwin": true,
+    "bundle_verify": "passed; complete SHA1 history",
+    "fsck": "passed; no dangling objects",
+    "clean_before_compute": true,
+    "python": "3.12.13",
+    "z3": "5.1.0",
+    "cpu_count": 9,
+    "memory_total": "21Gi"
+  },
+  "known_controls": {
+    "order20": "PASSED: sat/CANDIDATE plus both independent verifiers",
+    "A21": "PASSED: sat/CANDIDATE then CERTIFIED with strict validation, nine closures, r=10, t=0"
+  },
+  "independent_local_audit": {
+    "strict_intermediate": "PASS: blocks.validate_block accepts the A21 candidate as a two-socket strict block; it correctly fails closed-APG verifiers because socket whites have degree 2",
+    "closed_certificates": "PASS: every one of the nine A21 cap closures passes verify.py and the standalone verify_darts.py"
+  },
+  "target_dispositions": [
+    {
+      "profile": "(31,12)",
+      "disposition": "INCOMPLETE",
+      "exit_status": 0,
+      "z3_result": "unknown",
+      "raw_record_sha256": "e8574be18be0eab6c35ebf7dfb3fbde31e7facba7aca97732f3634bbc10d3dad",
+      "resource_record_sha256": "69dff8c06945d84b0a3392475d5a6401413266effbbb1da37009ebb697d5b13a",
+      "timeout_seconds": 600,
+      "solver_seconds": 600.004,
+      "postprocessed": false
+    },
+    {
+      "profile": "(34,13)",
+      "disposition": "INCOMPLETE",
+      "exit_status": 0,
+      "z3_result": "unknown",
+      "raw_record_sha256": "e0829be08a61098e2d53306198ce8673b419856376956c56d04a61f1ab34c04d",
+      "resource_record_sha256": "253353bd6aa69a5e3b12b9b196b48ce1975b9b138a9f8d8c4212b7c1de1b22a4",
+      "timeout_seconds": 600,
+      "solver_seconds": 600.105,
+      "postprocessed": false
+    }
+  ],
+  "target_certificate_exists": false,
+  "nonexistence_claimed": false,
+  "next_action": "run the complete socket-normal-form primary triple only from a newly source-pinned cloud bundle"
+}

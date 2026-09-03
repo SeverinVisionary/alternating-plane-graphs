@@ -1,0 +1,53 @@
+Order-30 exact radius-2 checkpoint gate
+=======================================
+
+Environment
+-----------
+hostname: 76a7bdc81cdd
+kernel: Linux 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 GNU/Linux
+remote input commit: 0a197c85dc712ca67b4e17dd48f5779a57f0541c
+
+Pre-compute full gate
+---------------------
+command: python3 -m unittest discover -v
+result: 59 tests passed
+reported test wall time: 7.288s
+
+Input replay gate
+-----------------
+parents: 64
+edges per parent: 54
+edge pairs per parent: 1431
+pairings per edge pair: 2
+derived exact attempts: 183168
+parent frontier manifest: c9e58ba3a72586c0592cf938ef54b1fa589a9cc9a69cf125d68e13a8594b0df0
+
+Exact bounded compute
+---------------------
+command: python3 near_open_order30_radius2.py --seed results/near_openings/order30_34_fans_8_15.json --k4-log results/logs/order30_near_open_k4.json --output-directory results/blocks/order30_radius2 --log results/logs/order30_near_open_radius2.json
+result: PASS order30 radius2 complete=True successes=0 best_score=610
+recorded search wall time: 8.668102520998218s
+
+Post-result targeted replay gate
+--------------------------------
+command: python3 -m unittest -v test_near_open_order30_radius2
+result: 1 test passed
+reported test wall time: 0.030s
+
+Post-result full gate
+---------------------
+command: python3 -m unittest discover -v
+result: 60 tests passed
+reported test wall time: 7.366s
+
+Result manifests
+----------------
+score histogram SHA-256: b8904d9b773fcd646bff54c567fe99a790e6ac6150dc3dba0969265523649f34
+radius-2 frontier manifest: 9bace1f68101c959787577d47de0451bda1be90174d4135bc11b7619b5c7a83b
+
+Bounded decision
+----------------
+No score-zero state was found, but the exact minimum improved from 630 to 610.
+The order-30 seed family remains open for one future bounded decision. No
+radius-3 expansion or other search was started in this checkpoint. This is not
+a nonexistence result.

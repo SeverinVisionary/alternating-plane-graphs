@@ -1,0 +1,18 @@
+{
+  "format": "apg-mandatory-defect-k3-k4-stage-environment-v1",
+  "audit_parent_commit": "e83327b49d1d20c1857be8a2fde3aa25a19ed66e",
+  "initial_remote_head": "0928583fc81d5e93e1793ef68cf1005ef42164aa",
+  "checkout_path": "<workspace>/apg-next-clean-eHg0wU",
+  "initial_git_status_porcelain": "",
+  "hostname": "76a7bdc81cdd",
+  "uname": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "replay": "python3 mandatory_defect_rematch.py stage --spec jobs/mandatory_defect_26_29_33.json",
+  "spec_sha256": "e3d3c4d417c00aabce50bea56591a3e8b3dbda837eec7f5f6d2f4aa99f1a428b",
+  "target_state_sha256": "8eb46f4665eefb4889f51b514430a28954bb092183e1efc0542d6c3d8d76cf8c",
+  "parent_manifest_sha256": "fd975d8752589565d7c8a7a7d69b8c4d8f55f5f76b9b2b706d6a7d4c2536149a",
+  "k3_total_attempts": 1968,
+  "k4_total_attempts": 359700,
+  "combined_total_attempts": 361668,
+  "target_rematchings_executed": 0,
+  "tests": "153/153 passed"
+}

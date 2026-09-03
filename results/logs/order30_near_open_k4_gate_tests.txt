@@ -1,0 +1,39 @@
+Order-30 exact k4 result checkpoint gate
+========================================
+
+Environment
+-----------
+hostname: 76a7bdc81cdd
+kernel: Linux 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 GNU/Linux
+remote input commit: 08eb83f8b654a5a9b780074251404a814afe4ea6
+
+Pre-compute full gate
+---------------------
+command: python3 -m unittest discover -v
+result: 58 tests passed
+reported test wall time: 7.473s
+
+Exact bounded compute
+---------------------
+command: python3 near_open_search.py --seed results/near_openings/order30_34_fans_8_15.json --mandatory-edge 16,18 --mandatory-edge 17,18 --output-directory results/blocks/order30_k4 --log results/logs/order30_near_open_k4.json
+result: PASS exhaustive k4 lane: successes=0 best_score=630
+recorded search wall time: 0.12371311699826038s
+
+Post-result targeted replay gate
+--------------------------------
+command: python3 -m unittest -v test_near_open_search.NearOpenSearchTests.test_order30_k4_result_replays_exactly
+result: 1 test passed
+reported test wall time: 0.009s
+
+Post-result full gate
+---------------------
+command: python3 -m unittest discover -v
+result: 59 tests passed
+reported test wall time: 7.485s
+
+Bounded claim
+-------------
+No score-zero state was found among the exact k4 rematch family for this one
+published embedding, fan pair, mandatory defect-edge pair, and every pair of
+degree-(3,5) donor edges. This is not a nonexistence result. Radius 2 was not
+started.

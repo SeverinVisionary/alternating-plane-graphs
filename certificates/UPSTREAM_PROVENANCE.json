@@ -1,0 +1,239 @@
+{
+  "format": "apg-upstream-provenance-v1",
+  "source": "https://www.althofer.de/apg/apgs/",
+  "note": "The planar_code bytes these digests describe are NOT redistributed here. No licence statement was found at the source, and absence of a licence is not permission. Each graph is instead re-expressed in this repository's own apg-plane-rotation-v1 format, which records the same mathematical object -- a rotation system -- in an encoding defined here. Anyone holding the original files can confirm the correspondence by decoding them with import_planar_code.py and comparing against reexpressed_sha256.",
+  "count": 33,
+  "files": [
+    {
+      "upstream_name": "27_26-26.plc",
+      "upstream_sha256": "d78efd8db7aa415f36a15a9225cbf0b7c1bacfe096051514a7614edd683c4902",
+      "upstream_bytes": 142,
+      "reexpressed_as": "certificates/census_sources/27_26-26.json",
+      "reexpressed_sha256": "2ca1b172bcde1e098478341dd97b881ed1c0b2daaa9cb1fc0423b1c02c0d76d6"
+    },
+    {
+      "upstream_name": "28_26-26.plc",
+      "upstream_sha256": "adf39c3bb116a259efedaa6f9bb5c42734f262652dbe3fafd8fe5aafec17799c",
+      "upstream_bytes": 142,
+      "reexpressed_as": "certificates/census_sources/28_26-26.json",
+      "reexpressed_sha256": "521ec2e0e8503662269b15d9f7583437d9aa1f9b067cca4b53ebc662bba62b72"
+    },
+    {
+      "upstream_name": "29_27-27.plc",
+      "upstream_sha256": "d490e230e10d114d607d415fb91f35362e68cdc4762cbd19b9c264388e6f381a",
+      "upstream_bytes": 147,
+      "reexpressed_as": "certificates/census_sources/29_27-27.json",
+      "reexpressed_sha256": "d2f05c0f4dd64682185d1e8fb4d4059f66ec5479c8cb74361042d059f15c96b4"
+    },
+    {
+      "upstream_name": "30_28-28.plc",
+      "upstream_sha256": "6ed445bfa5d2e53eb756c12b0c3f57e0129aba0890517c9e0aa72209838abe26",
+      "upstream_bytes": 152,
+      "reexpressed_as": "certificates/census_sources/30_28-28.json",
+      "reexpressed_sha256": "5a04a7f775e78b4a442fc72ca7ea744755fbb79072ed2bf9367ad4e0785d83c9"
+    },
+    {
+      "upstream_name": "31_29-29.plc",
+      "upstream_sha256": "35267740b45725b97fb886c6df73322a2c24e9315e46b98878d6d5800b6eaaf2",
+      "upstream_bytes": 157,
+      "reexpressed_as": "certificates/census_sources/31_29-29.json",
+      "reexpressed_sha256": "c5aff8e28e611548711471b223a3547c1c676127981d06194ca2bb889feb1db2"
+    },
+    {
+      "upstream_name": "32_29-29.plc",
+      "upstream_sha256": "71ed9d08270a9176483d41d6010fac640a17cb077e7b95f68e901b4ac60db2c1",
+      "upstream_bytes": 157,
+      "reexpressed_as": "certificates/census_sources/32_29-29.json",
+      "reexpressed_sha256": "12dfc7585ce4218f9ddc0d28f1d0dc19d4821088f5aa6ff9cc4f485a1f3baaf7"
+    },
+    {
+      "upstream_name": "34_30-30.plc",
+      "upstream_sha256": "30780d7a870fd5736afa6c9cb3b223b4e70012d4c01f8ed7080c2dd8adf8080a",
+      "upstream_bytes": 162,
+      "reexpressed_as": "certificates/census_sources/34_30-30.json",
+      "reexpressed_sha256": "6aa81988073df5b419130b759567d9521d33229b0d95b1779ff7e07f9db7c6e6"
+    },
+    {
+      "upstream_name": "36_30-30.plc",
+      "upstream_sha256": "2fe447dcf61ad1254124abe07bacd7e4dc8df69cc1d13b993b2f6e3ad7323625",
+      "upstream_bytes": 162,
+      "reexpressed_as": "certificates/census_sources/36_30-30.json",
+      "reexpressed_sha256": "05f60f6301fab16ca78d8290e2c0072f1b8300e28d9192ebd220cdf8c4c9cb4c"
+    },
+    {
+      "upstream_name": "38_31-31.plc",
+      "upstream_sha256": "e67095feaffa09a39d32dfba5712c577899db59bed8ff55ecc091879196febb7",
+      "upstream_bytes": 167,
+      "reexpressed_as": "certificates/census_sources/38_31-31.json",
+      "reexpressed_sha256": "3da799b3ff85fe108ec35222b9aa5408ea98f953d23dd3b9c44b944b65f937d6"
+    },
+    {
+      "upstream_name": "39_32-32.plc",
+      "upstream_sha256": "43077668d6f86053f2ebec3bdf4141f90510a7ed61a7d86ba80ef598c0df25f5",
+      "upstream_bytes": 172,
+      "reexpressed_as": "certificates/census_sources/39_32-32.json",
+      "reexpressed_sha256": "f456587528e9035d1d726712066a4c3d7043ee0fff23ead915d4312ff42c32b0"
+    },
+    {
+      "upstream_name": "40_32-32.plc",
+      "upstream_sha256": "8d60906638ff9440a24d2ff0d45b4d5bb88df2c041a37eb5949dad14c29d497e",
+      "upstream_bytes": 172,
+      "reexpressed_as": "certificates/census_sources/40_32-32.json",
+      "reexpressed_sha256": "a85470cbb2c96252776c56c29dd86e4b5f802ddbc5804fe93954e6d4946d56d1"
+    },
+    {
+      "upstream_name": "41_32-32.plc",
+      "upstream_sha256": "d91c3f2080814c55c4cbd3846612cec6781691ec37d57bae9cc08ff84dbb86e3",
+      "upstream_bytes": 172,
+      "reexpressed_as": "certificates/census_sources/41_32-32.json",
+      "reexpressed_sha256": "01547b5ce73eb3556afe376005767d1f04c39237d0d0408871eb9121031c9a17"
+    },
+    {
+      "upstream_name": "44_33-33.plc",
+      "upstream_sha256": "b779feb98cac0025bf165abd3b3d8e7968bff96bac5e428d17c7e1d07017a414",
+      "upstream_bytes": 177,
+      "reexpressed_as": "certificates/census_sources/44_33-33.json",
+      "reexpressed_sha256": "418699c777d45cb674697977946236ffe33a94597a23a3a899bea9792dfbe6c3"
+    },
+    {
+      "upstream_name": "45_33-33.plc",
+      "upstream_sha256": "f62d06087969b4347a3da7270fd58d933df96159f222391cc33245116bd8521b",
+      "upstream_bytes": 177,
+      "reexpressed_as": "certificates/census_sources/45_33-33.json",
+      "reexpressed_sha256": "df34d1004523a3d1a4718baf1e4c9afb3c9d9f72937a200797a787cbdb90e618"
+    },
+    {
+      "upstream_name": "51_34-34.plc",
+      "upstream_sha256": "1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76",
+      "upstream_bytes": 182,
+      "reexpressed_as": "certificates/census_sources/51_34-34.json",
+      "reexpressed_sha256": "2c36e6e126c44adc0641c8e6e5dd54735764116a94e517e0e2e582c052b1456f"
+    },
+    {
+      "upstream_name": "52_34-34.plc",
+      "upstream_sha256": "db3d63e7859df75034f0c1314e7cb164ce086783ca761c1c2e7772ab20be8c15",
+      "upstream_bytes": 182,
+      "reexpressed_as": "certificates/census_sources/52_34-34.json",
+      "reexpressed_sha256": "08d7151b1c15006daa555e357bb0cf3728567f523484555b5018940e5bdd0bfd"
+    },
+    {
+      "upstream_name": "56_35-35.plc",
+      "upstream_sha256": "e797592db8ee2c6a7ae461ddada90e4ba2634b57aa862695f939a90719531ce2",
+      "upstream_bytes": 187,
+      "reexpressed_as": "certificates/census_sources/56_35-35.json",
+      "reexpressed_sha256": "35d2a538d17ea3779ad1098edff326c1fcf9cecc81c3d302c5c5de190d3836a4"
+    },
+    {
+      "upstream_name": "60_36-36.plc",
+      "upstream_sha256": "5778919bcb7ba2b0bf3f18482819b1cb71fa8853a01620a5b260cede83b291f9",
+      "upstream_bytes": 192,
+      "reexpressed_as": "certificates/census_sources/60_36-36.json",
+      "reexpressed_sha256": "cdd2a93fc6f4fc614d83e35cff2b2c4f7d88ec4b647b8c94dcdb4472280ce7a1"
+    },
+    {
+      "upstream_name": "61_36-36.plc",
+      "upstream_sha256": "48d25c0b97c95448f0cf36cc67fd30225e33af6d22defb404b94b0a591f78876",
+      "upstream_bytes": 192,
+      "reexpressed_as": "certificates/census_sources/61_36-36.json",
+      "reexpressed_sha256": "c61a2792c0034217d97a593bdbf918f5f7ec306bdaaed7b004461dfe60b40019"
+    },
+    {
+      "upstream_name": "01_17-17_schneider17.plc",
+      "upstream_sha256": "648a97ff8331890b61031ddb83f0713f04c19cc71721ff7cd99ce69ef88c9fe3",
+      "upstream_bytes": 97,
+      "reexpressed_as": "certificates/known/01_17-17_schneider17.json",
+      "reexpressed_sha256": "7ba629dc048dfb37c2fd11344af5fc890c98871f9f7d69d84bac8176a879f5d8"
+    },
+    {
+      "upstream_name": "02_17-17_ghent17.plc",
+      "upstream_sha256": "6f9d5ba66b7e5fb1b9ec0c7fce778cfe8286196f9224c649edbd331499dc53b5",
+      "upstream_bytes": 97,
+      "reexpressed_as": "certificates/known/02_17-17_ghent17.json",
+      "reexpressed_sha256": "ebe67ef4d233b7222c71aac9feb758b6c12dacbdf77993a1256de08edd27bbc5"
+    },
+    {
+      "upstream_name": "08_20-20.plc",
+      "upstream_sha256": "cf66ec94e724f574f24539e2ae2fa034cd2c249c63bf55a28c6c729002f53f22",
+      "upstream_bytes": 112,
+      "reexpressed_as": "certificates/known/08_20-20.json",
+      "reexpressed_sha256": "9746ffd60e00062ebdaa02585f12705fb81b49fdc0696d02b94485807d76ed2d"
+    },
+    {
+      "upstream_name": "86_42-42.plc",
+      "upstream_sha256": "0de4200db2fb26bcd348eccc30c144e80919201fe84757079fe8426957a94c4a",
+      "upstream_bytes": 222,
+      "reexpressed_as": "certificates/known/86_42-42.json",
+      "reexpressed_sha256": "9e50dca2ea46816309912e63c5b947e62a652f20014a9080bdd0a154f068109b"
+    },
+    {
+      "upstream_name": "03_19-19.plc",
+      "upstream_sha256": "53ea76e1213006a654705d40d65216a8a1abe890ee6a8972be5009ca1c567f71",
+      "upstream_bytes": 107,
+      "reexpressed_as": "certificates/order19/03_19-19.json",
+      "reexpressed_sha256": "3ef0a64ffef082d191e3016f5df0f348ad15e33a9491dbae9f1528229265c25d"
+    },
+    {
+      "upstream_name": "04_19-19.plc",
+      "upstream_sha256": "78ba792a5652186957daa375f27c4ce8065426e0efbe381b6d823ef7088ff096",
+      "upstream_bytes": 107,
+      "reexpressed_as": "certificates/order19/04_19-19.json",
+      "reexpressed_sha256": "ca1b4a83ecffaac773deb52aab89625bde24374c66711953ff8deccbf60386fc"
+    },
+    {
+      "upstream_name": "05_19-19.plc",
+      "upstream_sha256": "5bcab5163959cb5580e28afaaa6a53a39018fe596443407649a31a9ce2bab94a",
+      "upstream_bytes": 107,
+      "reexpressed_as": "certificates/order19/05_19-19.json",
+      "reexpressed_sha256": "40f36ad33d7690352a7e01c3cc126424939eb6dce34fa08d64e3aea09f53bd8a"
+    },
+    {
+      "upstream_name": "06_19-19.plc",
+      "upstream_sha256": "58c2242f9836fbb23eacc2b014ff66c9725b62eb07d1ad6b7054313c3d51b346",
+      "upstream_bytes": 107,
+      "reexpressed_as": "certificates/order19/06_19-19.json",
+      "reexpressed_sha256": "4a6d2c4646a8efb3ca94ad426de565ae42257b5421759ad4bc471ca32d43e4c6"
+    },
+    {
+      "upstream_name": "07_19-19.plc",
+      "upstream_sha256": "ce0a31662fde63e3f11b7bccc9045ef398e8e131b52dab6669081f7608df26eb",
+      "upstream_bytes": 107,
+      "reexpressed_as": "certificates/order19/07_19-19.json",
+      "reexpressed_sha256": "86f5cdbba5ff7349a5f3f56ae61f91367451d9a8a4fb30dd32c2e27690adbc65"
+    },
+    {
+      "upstream_name": "27_26-26.plc",
+      "upstream_sha256": "d78efd8db7aa415f36a15a9225cbf0b7c1bacfe096051514a7614edd683c4902",
+      "upstream_bytes": 142,
+      "reexpressed_as": "certificates/search_seeds/27_26-26.json",
+      "reexpressed_sha256": "2ca1b172bcde1e098478341dd97b881ed1c0b2daaa9cb1fc0423b1c02c0d76d6"
+    },
+    {
+      "upstream_name": "28_26-26.plc",
+      "upstream_sha256": "adf39c3bb116a259efedaa6f9bb5c42734f262652dbe3fafd8fe5aafec17799c",
+      "upstream_bytes": 142,
+      "reexpressed_as": "certificates/search_seeds/28_26-26.json",
+      "reexpressed_sha256": "521ec2e0e8503662269b15d9f7583437d9aa1f9b067cca4b53ebc662bba62b72"
+    },
+    {
+      "upstream_name": "34_30-30.plc",
+      "upstream_sha256": "30780d7a870fd5736afa6c9cb3b223b4e70012d4c01f8ed7080c2dd8adf8080a",
+      "upstream_bytes": 162,
+      "reexpressed_as": "certificates/search_seeds/34_30-30.json",
+      "reexpressed_sha256": "6aa81988073df5b419130b759567d9521d33229b0d95b1779ff7e07f9db7c6e6"
+    },
+    {
+      "upstream_name": "44_33-33.plc",
+      "upstream_sha256": "b779feb98cac0025bf165abd3b3d8e7968bff96bac5e428d17c7e1d07017a414",
+      "upstream_bytes": 177,
+      "reexpressed_as": "certificates/search_seeds/44_33-33.json",
+      "reexpressed_sha256": "418699c777d45cb674697977946236ffe33a94597a23a3a899bea9792dfbe6c3"
+    },
+    {
+      "upstream_name": "51_34-34.plc",
+      "upstream_sha256": "1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76",
+      "upstream_bytes": 182,
+      "reexpressed_as": "certificates/search_seeds/51_34-34.json",
+      "reexpressed_sha256": "2c36e6e126c44adc0641c8e6e5dd54735764116a94e517e0e2e582c052b1456f"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "format": "apg-three-edge-spherical-radius4-v1",
+  "claim_scope": "Complete one-step exact three-edge deranged-rematching neighborhood of the deterministic 64-state spherical order-26 radius-3 frontier; a zero-witness result is not nonexistence.",
+  "input_commit": "19f0881baf64d6cf9dd5c577a18b91da84c21ae9",
+  "parent_result_file": "results/logs/order26_three_edge_spherical_radius3.json",
+  "parent_result_sha256": "ef42150945dbe902d1eea1a383557ba9d87076cb799ddedd3f22f2cab698148c",
+  "parent_frontier_manifest_sha256": "b47f3257feac229b3a44e35a209894d6600d50dd3c162e4c6e3800a0137ad62a",
+  "fixed_state_file": "results/targets/order26_three_edge_spherical_radius3_parents.json",
+  "fixed_state_sha256": "5d39d7804f48bc1e2344656f680f6fb5f0703af1de73443902db2af69d8774d2",
+  "fixed_rotation_hash": "aa82e2d913a9cc4c98a405fba9293a1440ae77f3acc40bbb6c6ff76f6b604346",
+  "base_alpha_sha256": "9115b20cf204b1ff18b321142d6bf5c13eaf0501336382aa98283d69a36ac23b",
+  "parent_count": 64,
+  "parent_score_histogram": {
+    "510": 4,
+    "780": 60
+  },
+  "edges_per_parent": 46,
+  "triples_per_parent": 15180,
+  "total_triples": 971520,
+  "matchings_per_triple": 8,
+  "total_attempts": 7772160,
+  "frontier_limit": 64,
+  "target_state_file": "results/targets/order26_three_edge_spherical_radius4_parents.json",
+  "target_state_sha256": "cfe788abcf2b63585bdcbc1a860ce08dcf7988380437caf5cf41461d36e133c7",
+  "stage_log": "results/logs/order26_three_edge_spherical_radius4_stage.json",
+  "result_log": "results/logs/order26_three_edge_spherical_radius4.json",
+  "certificate_directory": "results/blocks/order26_three_edge_spherical_radius4"
+}

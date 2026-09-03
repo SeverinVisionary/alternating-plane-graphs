@@ -1,0 +1,49 @@
+{
+  "claim_scope": "Diagnostic milestone only. It proves deterministic score decomposition and production logging of initial/current/best components; it does not demonstrate annealing recovery or support any existence claim.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "kernel": "Linux",
+    "kernel_release": "6.18.35"
+  },
+  "implementation": {
+    "map_search_blob_sha": "5be74cabea24dac0ab643be04df242cacd6399a8",
+    "score_components": [
+      "face_distribution",
+      "abstract_graph",
+      "equal_face",
+      "white",
+      "hex"
+    ],
+    "test_map_search_blob_sha": "3674c9dbdc218d3cf6ee1c25bc6db7fd554b74e1"
+  },
+  "parent_checkpoint": "37ed29dc7505421239d2df76698a6ac49da5f5e2",
+  "positive_perturbation": {
+    "alpha_sha256": "2847ed3d2d64043d6a126b312a751e8b578c21b2fa945a2ffb059b3888887033",
+    "base_rotation_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+    "components": {
+      "abstract_graph": 160,
+      "equal_face": 0,
+      "face_distribution": 240,
+      "hex": 0,
+      "total": 820,
+      "white": 420
+    },
+    "log": "results/logs/score_breakdown_D24_positive_switch_seed0.json",
+    "perturbed_rows_sha256": "f4731b9c25be89dc05669ecc9dbbfc68750a59436c209eee1296fd8baf39772f",
+    "switch_rng_seed": 0
+  },
+  "production_schema_replay": {
+    "command": "python3 map_search.py --base results/blocks/D24.json --order 24 --seed 0 --steps 0 --output results/diagnostics/score_breakdown_D24_seed0_block.json --log results/logs/score_breakdown_D24_seed0.json",
+    "log": "results/logs/score_breakdown_D24_seed0.json",
+    "log_raw_sha256": "98e59bd5f8b0fce015d9084aa631fb38ade0fec50b08f4bf6226c1035179d05c",
+    "logged_component_vectors": [
+      "initial_components",
+      "current_components",
+      "best_components"
+    ]
+  },
+  "test_result": {
+    "passed": 28,
+    "wall_seconds": 4.039
+  }
+}

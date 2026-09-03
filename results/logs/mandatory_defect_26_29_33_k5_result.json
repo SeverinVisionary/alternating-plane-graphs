@@ -1,0 +1,1524 @@
+{
+  "certificates": {},
+  "format": "apg-mandatory-defect-k5-result-v1",
+  "result": {
+    "best_score": 760,
+    "best_state_hashes": [
+      "cfb1ed2569a86f70b3727914cb323a658d02b0c8be743bd401c4ecbfa2fef7e0"
+    ],
+    "complete": true,
+    "counts": {
+      "abstract_graph_prunes": 52325387,
+      "attempts": 52519936,
+      "distinct_plane_valid": 4,
+      "global_duplicates": 0,
+      "graph_invalid_prunes": 52519932,
+      "nonspherical_prunes": 194545,
+      "per_seed_duplicates": 0,
+      "raw_plane_valid": 4,
+      "score_zero": 0,
+      "selections": 96544,
+      "zero_score_block_tools_rejections": 0,
+      "zero_score_blocks_rejections": 0,
+      "zero_score_cross_validated": 0,
+      "zero_score_validation_rejections": 0
+    },
+    "expected_attempts": 52519936,
+    "expected_selections": 96544,
+    "frontier_limit": 64,
+    "frontier_state_count": 4,
+    "frontier_states": [
+      {
+        "abstract_graph_valid": true,
+        "alpha": [
+          10,
+          24,
+          16,
+          28,
+          59,
+          53,
+          61,
+          69,
+          15,
+          11,
+          0,
+          9,
+          20,
+          36,
+          29,
+          8,
+          2,
+          58,
+          44,
+          21,
+          12,
+          19,
+          46,
+          37,
+          1,
+          32,
+          90,
+          51,
+          3,
+          14,
+          39,
+          33,
+          25,
+          31,
+          43,
+          80,
+          13,
+          23,
+          40,
+          30,
+          38,
+          47,
+          73,
+          34,
+          18,
+          48,
+          22,
+          41,
+          45,
+          60,
+          68,
+          27,
+          54,
+          5,
+          52,
+          88,
+          64,
+          62,
+          17,
+          4,
+          49,
+          6,
+          57,
+          67,
+          56,
+          85,
+          70,
+          63,
+          50,
+          7,
+          66,
+          76,
+          74,
+          42,
+          72,
+          79,
+          71,
+          87,
+          81,
+          75,
+          35,
+          78,
+          86,
+          89,
+          91,
+          65,
+          82,
+          77,
+          55,
+          83,
+          26,
+          84
+        ],
+        "breakdown": {
+          "abstract_graph": 0,
+          "equal_face": 100,
+          "face_distribution": 240,
+          "hex": 0,
+          "total": 760,
+          "white": 420
+        },
+        "euler_characteristic": 2,
+        "fixed_rotation_hash": "e73f8ddc85fff642992e1e1ece1b779030dc77d03ca050d7763bdcd876b61451",
+        "rotation": [
+          {
+            "clockwise": [
+              5,
+              8
+            ],
+            "id": 1
+          },
+          {
+            "clockwise": [
+              6,
+              8
+            ],
+            "id": 2
+          },
+          {
+            "clockwise": [
+              16,
+              18,
+              20,
+              17
+            ],
+            "id": 3
+          },
+          {
+            "clockwise": [
+              5,
+              6
+            ],
+            "id": 4
+          },
+          {
+            "clockwise": [
+              1,
+              4,
+              7,
+              11,
+              9
+            ],
+            "id": 5
+          },
+          {
+            "clockwise": [
+              2,
+              17,
+              13,
+              7,
+              4
+            ],
+            "id": 6
+          },
+          {
+            "clockwise": [
+              5,
+              6,
+              13,
+              11
+            ],
+            "id": 7
+          },
+          {
+            "clockwise": [
+              1,
+              10,
+              26,
+              15,
+              2
+            ],
+            "id": 8
+          },
+          {
+            "clockwise": [
+              5,
+              12,
+              10
+            ],
+            "id": 9
+          },
+          {
+            "clockwise": [
+              8,
+              9,
+              12,
+              23
+            ],
+            "id": 10
+          },
+          {
+            "clockwise": [
+              5,
+              7,
+              12
+            ],
+            "id": 11
+          },
+          {
+            "clockwise": [
+              9,
+              11,
+              14,
+              21,
+              10
+            ],
+            "id": 12
+          },
+          {
+            "clockwise": [
+              6,
+              14,
+              7
+            ],
+            "id": 13
+          },
+          {
+            "clockwise": [
+              12,
+              13,
+              17,
+              20
+            ],
+            "id": 14
+          },
+          {
+            "clockwise": [
+              8,
+              16
+            ],
+            "id": 15
+          },
+          {
+            "clockwise": [
+              3,
+              15,
+              25,
+              19,
+              18
+            ],
+            "id": 16
+          },
+          {
+            "clockwise": [
+              3,
+              14,
+              6
+            ],
+            "id": 17
+          },
+          {
+            "clockwise": [
+              3,
+              16,
+              19
+            ],
+            "id": 18
+          },
+          {
+            "clockwise": [
+              16,
+              24,
+              20,
+              18
+            ],
+            "id": 19
+          },
+          {
+            "clockwise": [
+              3,
+              19,
+              22,
+              21,
+              14
+            ],
+            "id": 20
+          },
+          {
+            "clockwise": [
+              12,
+              20,
+              22
+            ],
+            "id": 21
+          },
+          {
+            "clockwise": [
+              20,
+              24,
+              23,
+              21
+            ],
+            "id": 22
+          },
+          {
+            "clockwise": [
+              10,
+              22,
+              24,
+              25,
+              26
+            ],
+            "id": 23
+          },
+          {
+            "clockwise": [
+              19,
+              23,
+              22
+            ],
+            "id": 24
+          },
+          {
+            "clockwise": [
+              16,
+              23
+            ],
+            "id": 25
+          },
+          {
+            "clockwise": [
+              8,
+              23
+            ],
+            "id": 26
+          }
+        ],
+        "seed_id": "26b",
+        "spherical": true,
+        "state_namespace": "26b:e73f8ddc85fff642992e1e1ece1b779030dc77d03ca050d7763bdcd876b61451:cfb1ed2569a86f70b3727914cb323a658d02b0c8be743bd401c4ecbfa2fef7e0",
+        "state_sha256": "cfb1ed2569a86f70b3727914cb323a658d02b0c8be743bd401c4ecbfa2fef7e0"
+      },
+      {
+        "abstract_graph_valid": true,
+        "alpha": [
+          10,
+          24,
+          16,
+          28,
+          17,
+          53,
+          61,
+          58,
+          15,
+          11,
+          0,
+          9,
+          20,
+          36,
+          29,
+          8,
+          2,
+          4,
+          44,
+          21,
+          12,
+          19,
+          46,
+          37,
+          1,
+          32,
+          90,
+          51,
+          3,
+          14,
+          39,
+          33,
+          25,
+          31,
+          43,
+          80,
+          13,
+          23,
+          40,
+          30,
+          38,
+          47,
+          73,
+          34,
+          18,
+          48,
+          22,
+          41,
+          45,
+          60,
+          68,
+          27,
+          54,
+          5,
+          52,
+          88,
+          64,
+          62,
+          7,
+          69,
+          49,
+          6,
+          57,
+          67,
+          56,
+          85,
+          70,
+          63,
+          50,
+          59,
+          66,
+          76,
+          74,
+          42,
+          72,
+          79,
+          71,
+          87,
+          81,
+          75,
+          35,
+          78,
+          86,
+          89,
+          91,
+          65,
+          82,
+          77,
+          55,
+          83,
+          26,
+          84
+        ],
+        "breakdown": {
+          "abstract_graph": 0,
+          "equal_face": 140,
+          "face_distribution": 160,
+          "hex": 120,
+          "total": 780,
+          "white": 360
+        },
+        "euler_characteristic": 2,
+        "fixed_rotation_hash": "e73f8ddc85fff642992e1e1ece1b779030dc77d03ca050d7763bdcd876b61451",
+        "rotation": [
+          {
+            "clockwise": [
+              5,
+              8
+            ],
+            "id": 1
+          },
+          {
+            "clockwise": [
+              6,
+              8
+            ],
+            "id": 2
+          },
+          {
+            "clockwise": [
+              6,
+              16,
+              18,
+              17
+            ],
+            "id": 3
+          },
+          {
+            "clockwise": [
+              5,
+              6
+            ],
+            "id": 4
+          },
+          {
+            "clockwise": [
+              1,
+              4,
+              7,
+              11,
+              9
+            ],
+            "id": 5
+          },
+          {
+            "clockwise": [
+              2,
+              3,
+              13,
+              7,
+              4
+            ],
+            "id": 6
+          },
+          {
+            "clockwise": [
+              5,
+              6,
+              13,
+              11
+            ],
+            "id": 7
+          },
+          {
+            "clockwise": [
+              1,
+              10,
+              26,
+              15,
+              2
+            ],
+            "id": 8
+          },
+          {
+            "clockwise": [
+              5,
+              12,
+              10
+            ],
+            "id": 9
+          },
+          {
+            "clockwise": [
+              8,
+              9,
+              12,
+              23
+            ],
+            "id": 10
+          },
+          {
+            "clockwise": [
+              5,
+              7,
+              12
+            ],
+            "id": 11
+          },
+          {
+            "clockwise": [
+              9,
+              11,
+              14,
+              21,
+              10
+            ],
+            "id": 12
+          },
+          {
+            "clockwise": [
+              6,
+              14,
+              7
+            ],
+            "id": 13
+          },
+          {
+            "clockwise": [
+              12,
+              13,
+              17,
+              20
+            ],
+            "id": 14
+          },
+          {
+            "clockwise": [
+              8,
+              16
+            ],
+            "id": 15
+          },
+          {
+            "clockwise": [
+              3,
+              15,
+              25,
+              19,
+              18
+            ],
+            "id": 16
+          },
+          {
+            "clockwise": [
+              3,
+              20,
+              14
+            ],
+            "id": 17
+          },
+          {
+            "clockwise": [
+              3,
+              16,
+              19
+            ],
+            "id": 18
+          },
+          {
+            "clockwise": [
+              16,
+              24,
+              20,
+              18
+            ],
+            "id": 19
+          },
+          {
+            "clockwise": [
+              14,
+              17,
+              19,
+              22,
+              21
+            ],
+            "id": 20
+          },
+          {
+            "clockwise": [
+              12,
+              20,
+              22
+            ],
+            "id": 21
+          },
+          {
+            "clockwise": [
+              20,
+              24,
+              23,
+              21
+            ],
+            "id": 22
+          },
+          {
+            "clockwise": [
+              10,
+              22,
+              24,
+              25,
+              26
+            ],
+            "id": 23
+          },
+          {
+            "clockwise": [
+              19,
+              23,
+              22
+            ],
+            "id": 24
+          },
+          {
+            "clockwise": [
+              16,
+              23
+            ],
+            "id": 25
+          },
+          {
+            "clockwise": [
+              8,
+              23
+            ],
+            "id": 26
+          }
+        ],
+        "seed_id": "26b",
+        "spherical": true,
+        "state_namespace": "26b:e73f8ddc85fff642992e1e1ece1b779030dc77d03ca050d7763bdcd876b61451:68d8473b3da57db5d07155d2a468731d8cfbafbbd8376cbc8fe657132f6a5554",
+        "state_sha256": "68d8473b3da57db5d07155d2a468731d8cfbafbbd8376cbc8fe657132f6a5554"
+      },
+      {
+        "abstract_graph_valid": true,
+        "alpha": [
+          4,
+          31,
+          8,
+          11,
+          0,
+          40,
+          28,
+          20,
+          2,
+          15,
+          32,
+          3,
+          16,
+          84,
+          88,
+          9,
+          12,
+          22,
+          23,
+          57,
+          7,
+          24,
+          17,
+          18,
+          21,
+          30,
+          36,
+          52,
+          6,
+          37,
+          25,
+          1,
+          10,
+          87,
+          85,
+          41,
+          26,
+          29,
+          44,
+          49,
+          5,
+          35,
+          89,
+          45,
+          38,
+          43,
+          91,
+          67,
+          50,
+          39,
+          48,
+          53,
+          27,
+          51,
+          64,
+          59,
+          79,
+          19,
+          63,
+          55,
+          66,
+          71,
+          80,
+          58,
+          54,
+          70,
+          60,
+          47,
+          74,
+          72,
+          65,
+          61,
+          69,
+          81,
+          68,
+          90,
+          86,
+          83,
+          82,
+          56,
+          62,
+          73,
+          78,
+          77,
+          13,
+          34,
+          76,
+          33,
+          14,
+          42,
+          75,
+          46
+        ],
+        "breakdown": {
+          "abstract_graph": 0,
+          "equal_face": 100,
+          "face_distribution": 160,
+          "hex": 180,
+          "total": 800,
+          "white": 360
+        },
+        "euler_characteristic": 2,
+        "fixed_rotation_hash": "aa82e2d913a9cc4c98a405fba9293a1440ae77f3acc40bbb6c6ff76f6b604346",
+        "rotation": [
+          {
+            "clockwise": [
+              3,
+              10
+            ],
+            "id": 1
+          },
+          {
+            "clockwise": [
+              3,
+              5
+            ],
+            "id": 2
+          },
+          {
+            "clockwise": [
+              1,
+              12,
+              9,
+              7,
+              2
+            ],
+            "id": 3
+          },
+          {
+            "clockwise": [
+              5,
+              10
+            ],
+            "id": 4
+          },
+          {
+            "clockwise": [
+              2,
+              6,
+              23,
+              25,
+              4
+            ],
+            "id": 5
+          },
+          {
+            "clockwise": [
+              5,
+              7,
+              8,
+              16
+            ],
+            "id": 6
+          },
+          {
+            "clockwise": [
+              3,
+              8,
+              6
+            ],
+            "id": 7
+          },
+          {
+            "clockwise": [
+              6,
+              7,
+              9,
+              11,
+              15
+            ],
+            "id": 8
+          },
+          {
+            "clockwise": [
+              3,
+              11,
+              8
+            ],
+            "id": 9
+          },
+          {
+            "clockwise": [
+              1,
+              4,
+              25,
+              24,
+              12
+            ],
+            "id": 10
+          },
+          {
+            "clockwise": [
+              8,
+              9,
+              13,
+              14
+            ],
+            "id": 11
+          },
+          {
+            "clockwise": [
+              3,
+              10,
+              26,
+              13
+            ],
+            "id": 12
+          },
+          {
+            "clockwise": [
+              11,
+              12,
+              26,
+              19,
+              14
+            ],
+            "id": 13
+          },
+          {
+            "clockwise": [
+              11,
+              13,
+              15
+            ],
+            "id": 14
+          },
+          {
+            "clockwise": [
+              8,
+              14,
+              18,
+              17
+            ],
+            "id": 15
+          },
+          {
+            "clockwise": [
+              6,
+              17,
+              22
+            ],
+            "id": 16
+          },
+          {
+            "clockwise": [
+              15,
+              18,
+              20,
+              22,
+              16
+            ],
+            "id": 17
+          },
+          {
+            "clockwise": [
+              15,
+              19,
+              17
+            ],
+            "id": 18
+          },
+          {
+            "clockwise": [
+              13,
+              21,
+              20,
+              18
+            ],
+            "id": 19
+          },
+          {
+            "clockwise": [
+              17,
+              19,
+              22
+            ],
+            "id": 20
+          },
+          {
+            "clockwise": [
+              19,
+              26,
+              24,
+              23,
+              22
+            ],
+            "id": 21
+          },
+          {
+            "clockwise": [
+              16,
+              17,
+              20,
+              21
+            ],
+            "id": 22
+          },
+          {
+            "clockwise": [
+              5,
+              21
+            ],
+            "id": 23
+          },
+          {
+            "clockwise": [
+              10,
+              21
+            ],
+            "id": 24
+          },
+          {
+            "clockwise": [
+              5,
+              10
+            ],
+            "id": 25
+          },
+          {
+            "clockwise": [
+              12,
+              21,
+              13
+            ],
+            "id": 26
+          }
+        ],
+        "seed_id": "26a",
+        "spherical": true,
+        "state_namespace": "26a:aa82e2d913a9cc4c98a405fba9293a1440ae77f3acc40bbb6c6ff76f6b604346:137111b13b71eaaf73783e418320d79d62e448ee547d4d95c5c2fce11a23d459",
+        "state_sha256": "137111b13b71eaaf73783e418320d79d62e448ee547d4d95c5c2fce11a23d459"
+      },
+      {
+        "abstract_graph_valid": true,
+        "alpha": [
+          2,
+          13,
+          0,
+          27,
+          53,
+          64,
+          7,
+          6,
+          101,
+          18,
+          77,
+          81,
+          14,
+          1,
+          12,
+          23,
+          38,
+          29,
+          9,
+          103,
+          99,
+          97,
+          75,
+          15,
+          83,
+          73,
+          41,
+          3,
+          33,
+          17,
+          40,
+          50,
+          34,
+          28,
+          32,
+          52,
+          56,
+          54,
+          16,
+          45,
+          30,
+          26,
+          72,
+          68,
+          46,
+          39,
+          44,
+          59,
+          57,
+          51,
+          31,
+          49,
+          35,
+          4,
+          37,
+          65,
+          36,
+          48,
+          63,
+          47,
+          71,
+          89,
+          66,
+          58,
+          5,
+          55,
+          62,
+          92,
+          43,
+          74,
+          82,
+          60,
+          42,
+          25,
+          69,
+          22,
+          78,
+          10,
+          76,
+          98,
+          85,
+          11,
+          70,
+          24,
+          88,
+          80,
+          94,
+          90,
+          84,
+          61,
+          87,
+          93,
+          67,
+          91,
+          86,
+          100,
+          102,
+          21,
+          79,
+          20,
+          95,
+          8,
+          96,
+          19
+        ],
+        "breakdown": {
+          "abstract_graph": 0,
+          "equal_face": 160,
+          "face_distribution": 320,
+          "hex": 540,
+          "total": 1620,
+          "white": 600
+        },
+        "euler_characteristic": 2,
+        "fixed_rotation_hash": "bebe566f8888ab4716936a387f4c799738a984ec3830b9a6dee6dcd4c4788361",
+        "rotation": [
+          {
+            "clockwise": [
+              2,
+              5
+            ],
+            "id": 1
+          },
+          {
+            "clockwise": [
+              1,
+              8,
+              15,
+              18,
+              3
+            ],
+            "id": 2
+          },
+          {
+            "clockwise": [
+              2,
+              29,
+              6,
+              22
+            ],
+            "id": 3
+          },
+          {
+            "clockwise": [
+              5,
+              22
+            ],
+            "id": 4
+          },
+          {
+            "clockwise": [
+              1,
+              4,
+              7,
+              11,
+              9
+            ],
+            "id": 5
+          },
+          {
+            "clockwise": [
+              3,
+              29,
+              28,
+              27,
+              21
+            ],
+            "id": 6
+          },
+          {
+            "clockwise": [
+              5,
+              23,
+              20,
+              12
+            ],
+            "id": 7
+          },
+          {
+            "clockwise": [
+              2,
+              10
+            ],
+            "id": 8
+          },
+          {
+            "clockwise": [
+              5,
+              11,
+              14,
+              10
+            ],
+            "id": 9
+          },
+          {
+            "clockwise": [
+              8,
+              9,
+              14,
+              16,
+              15
+            ],
+            "id": 10
+          },
+          {
+            "clockwise": [
+              5,
+              12,
+              9
+            ],
+            "id": 11
+          },
+          {
+            "clockwise": [
+              7,
+              20,
+              19,
+              13,
+              11
+            ],
+            "id": 12
+          },
+          {
+            "clockwise": [
+              12,
+              17,
+              16,
+              14
+            ],
+            "id": 13
+          },
+          {
+            "clockwise": [
+              9,
+              13,
+              10
+            ],
+            "id": 14
+          },
+          {
+            "clockwise": [
+              2,
+              10,
+              18
+            ],
+            "id": 15
+          },
+          {
+            "clockwise": [
+              10,
+              13,
+              17
+            ],
+            "id": 16
+          },
+          {
+            "clockwise": [
+              13,
+              19,
+              25,
+              18,
+              16
+            ],
+            "id": 17
+          },
+          {
+            "clockwise": [
+              2,
+              15,
+              17,
+              26
+            ],
+            "id": 18
+          },
+          {
+            "clockwise": [
+              12,
+              20,
+              23,
+              17
+            ],
+            "id": 19
+          },
+          {
+            "clockwise": [
+              7,
+              19,
+              12
+            ],
+            "id": 20
+          },
+          {
+            "clockwise": [
+              6,
+              22
+            ],
+            "id": 21
+          },
+          {
+            "clockwise": [
+              3,
+              21,
+              27,
+              24,
+              4
+            ],
+            "id": 22
+          },
+          {
+            "clockwise": [
+              7,
+              24,
+              19
+            ],
+            "id": 23
+          },
+          {
+            "clockwise": [
+              22,
+              26,
+              25,
+              23
+            ],
+            "id": 24
+          },
+          {
+            "clockwise": [
+              17,
+              24,
+              26
+            ],
+            "id": 25
+          },
+          {
+            "clockwise": [
+              18,
+              25,
+              24,
+              28,
+              29
+            ],
+            "id": 26
+          },
+          {
+            "clockwise": [
+              6,
+              22
+            ],
+            "id": 27
+          },
+          {
+            "clockwise": [
+              6,
+              26
+            ],
+            "id": 28
+          },
+          {
+            "clockwise": [
+              3,
+              26,
+              6
+            ],
+            "id": 29
+          }
+        ],
+        "seed_id": "29b",
+        "spherical": true,
+        "state_namespace": "29b:bebe566f8888ab4716936a387f4c799738a984ec3830b9a6dee6dcd4c4788361:442d60134fbe5bd2fc2da81ceec4b65ebfe4c5ea44aa7cf3abd062ed0dc82840",
+        "state_sha256": "442d60134fbe5bd2fc2da81ceec4b65ebfe4c5ea44aa7cf3abd062ed0dc82840"
+      }
+    ],
+    "frontier_truncated": false,
+    "matchings_per_selection": 544,
+    "per_seed": [
+      {
+        "counts": {
+          "abstract_graph_prunes": 7179714,
+          "attempts": 7204736,
+          "distinct_plane_valid": 1,
+          "global_duplicates": 0,
+          "graph_invalid_prunes": 7204735,
+          "nonspherical_prunes": 25021,
+          "per_seed_duplicates": 0,
+          "raw_plane_valid": 1,
+          "score_zero": 0,
+          "selections": 13244,
+          "zero_score_block_tools_rejections": 0,
+          "zero_score_blocks_rejections": 0,
+          "zero_score_cross_validated": 0,
+          "zero_score_validation_rejections": 0
+        },
+        "id": "26a"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 7179726,
+          "attempts": 7204736,
+          "distinct_plane_valid": 2,
+          "global_duplicates": 0,
+          "graph_invalid_prunes": 7204734,
+          "nonspherical_prunes": 25008,
+          "per_seed_duplicates": 0,
+          "raw_plane_valid": 2,
+          "score_zero": 0,
+          "selections": 13244,
+          "zero_score_block_tools_rejections": 0,
+          "zero_score_blocks_rejections": 0,
+          "zero_score_cross_validated": 0,
+          "zero_score_validation_rejections": 0
+        },
+        "id": "26b"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 10616998,
+          "attempts": 10662400,
+          "distinct_plane_valid": 0,
+          "global_duplicates": 0,
+          "graph_invalid_prunes": 10662400,
+          "nonspherical_prunes": 45402,
+          "per_seed_duplicates": 0,
+          "raw_plane_valid": 0,
+          "score_zero": 0,
+          "selections": 19600,
+          "zero_score_block_tools_rejections": 0,
+          "zero_score_blocks_rejections": 0,
+          "zero_score_cross_validated": 0,
+          "zero_score_validation_rejections": 0
+        },
+        "id": "29a"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 10622889,
+          "attempts": 10662400,
+          "distinct_plane_valid": 1,
+          "global_duplicates": 0,
+          "graph_invalid_prunes": 10662399,
+          "nonspherical_prunes": 39510,
+          "per_seed_duplicates": 0,
+          "raw_plane_valid": 1,
+          "score_zero": 0,
+          "selections": 19600,
+          "zero_score_block_tools_rejections": 0,
+          "zero_score_blocks_rejections": 0,
+          "zero_score_cross_validated": 0,
+          "zero_score_validation_rejections": 0
+        },
+        "id": "29b"
+      },
+      {
+        "counts": {
+          "abstract_graph_prunes": 16726060,
+          "attempts": 16785664,
+          "distinct_plane_valid": 0,
+          "global_duplicates": 0,
+          "graph_invalid_prunes": 16785664,
+          "nonspherical_prunes": 59604,
+          "per_seed_duplicates": 0,
+          "raw_plane_valid": 0,
+          "score_zero": 0,
+          "selections": 30856,
+          "zero_score_block_tools_rejections": 0,
+          "zero_score_blocks_rejections": 0,
+          "zero_score_cross_validated": 0,
+          "zero_score_validation_rejections": 0
+        },
+        "id": "33"
+      }
+    ],
+    "score_histogram_distinct": {
+      "1620": 1,
+      "760": 1,
+      "780": 1,
+      "800": 1
+    },
+    "success_checks": {},
+    "success_hashes": [],
+    "wall_seconds": 1315.901563018997
+  },
+  "spec": "jobs/mandatory_defect_26_29_33_k5.json",
+  "spec_sha256": "a18ea38665b2dc6c4b66d1e50f9644bcaa535eb4a678164e37161da82d68c0c4",
+  "target_state_file": "results/targets/mandatory_defect_26_29_33_k5.json",
+  "target_state_sha256": "2ac057daf35896a46711ef4d8b6a5fc10720d885fd08fd59289da6cf862ad28b"
+}

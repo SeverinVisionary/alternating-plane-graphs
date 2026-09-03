@@ -1,0 +1,53 @@
+Order-30 final exact radius-3 checkpoint gate
+=============================================
+
+Environment
+-----------
+hostname: 76a7bdc81cdd
+kernel: Linux 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 GNU/Linux
+remote input commit: a19dd45067e97caf53fec474b09a8221b16e2f55
+
+Pre-compute full gate
+---------------------
+command: python3 -m unittest discover -v
+result: 60 tests passed
+reported test wall time: 7.778s
+
+Input replay gate
+-----------------
+parents: 64
+edges per parent: 54
+edge pairs per parent: 1431
+pairings per edge pair: 2
+derived exact attempts: 183168
+parent frontier manifest: 9bace1f68101c959787577d47de0451bda1be90174d4135bc11b7619b5c7a83b
+
+Exact bounded compute
+---------------------
+command: python3 near_open_order30_radius3.py --seed results/near_openings/order30_34_fans_8_15.json --k4-log results/logs/order30_near_open_k4.json --radius2-log results/logs/order30_near_open_radius2.json --output-directory results/blocks/order30_radius3 --log results/logs/order30_near_open_radius3.json
+result: PASS order30 radius3 complete=True successes=0 best_score=550
+recorded search wall time: 9.133602896999946s
+
+Post-result targeted replay gate
+--------------------------------
+command: python3 -m unittest -v test_near_open_order30_radius3
+result: 1 test passed
+reported test wall time: 0.034s
+
+Post-result full gate
+---------------------
+command: python3 -m unittest discover -v
+result: 61 tests passed
+reported test wall time: 7.527s
+
+Result manifests
+----------------
+score histogram SHA-256: 9ed4246b435fbc9a37a18a9315a94e09c06fa0395cdfb40f075dfdb57f26d6a2
+radius-3 frontier manifest: 950f3912d8594efccd96af34751da80d48cdc95315f2da51c200ff0ecbd2592b
+
+Bounded decision
+----------------
+No score-zero state was found. The exact minimum improved from 610 to 550,
+but the operator required this order-30 seed family to close after radius 3
+regardless of numeric improvement. Radius 4 was not started and is forbidden
+for this lane. This bounded miss is not a nonexistence result.

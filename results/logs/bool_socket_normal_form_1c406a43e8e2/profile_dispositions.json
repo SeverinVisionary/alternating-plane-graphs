@@ -1,0 +1,12 @@
+{
+  "format": "apg-bool-socket-normal-form-run-dispositions-v1",
+  "source_commit": "1c406a43e8e201d2f000b0210ecf70e8e7be9455",
+  "source_tree": "4ff0fb7c7775bf3647a7c4ec08364c5f053737f0",
+  "controls_passed": true,
+  "nonexistence_claimed": false,
+  "profiles": [
+    {"block_order": 28, "r": 12, "raw_disposition": "INCOMPLETE", "z3_result": "unknown", "final_disposition": "INCOMPLETE", "postprocessed": false, "target_certificate_exists": false, "candidate_path": null, "certificate_path": null},
+    {"block_order": 29, "r": 12, "raw_disposition": "INCOMPLETE", "z3_result": "unknown", "final_disposition": "INCOMPLETE", "postprocessed": false, "target_certificate_exists": false, "candidate_path": null, "certificate_path": null},
+    {"block_order": 31, "r": 12, "raw_disposition": "INCOMPLETE", "z3_result": "unknown", "final_disposition": "INCOMPLETE", "postprocessed": false, "target_certificate_exists": false, "candidate_path": null, "certificate_path": null}
+  ]
+}

@@ -1,0 +1,14 @@
+Parent checkpoint: 57ba4807815ee0386f1bf2c86a7cf9765672c00c
+Pre-compute target attempts executed: 0
+
+Focused validator and calibration gates:
+python3 -m unittest test_five_edge_rematch test_mandatory_defect_k5 -v
+
+Full clean committed-tree gate:
+python3 -m unittest discover -v
+
+Frozen stage replay (zero target rematchings):
+python3 mandatory_defect_k5.py stage --spec jobs/mandatory_defect_26_29_33_k5.json
+
+Mechanical gate:
+git diff --check

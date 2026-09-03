@@ -1,0 +1,17 @@
+Integrated milestone parent:
+  37ed29dc7505421239d2df76698a6ac49da5f5e2
+
+Environment:
+  kernel: Linux 6.18.35 x86_64
+  hostname: 76a7bdc81cdd
+
+Replay:
+  cd 
+  python3 -m unittest -v
+
+Result:
+  Ran 28 tests in 4.039s
+  OK
+
+New gate:
+  test_positive_score_breakdown_sums_exactly ... ok

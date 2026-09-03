@@ -1,0 +1,169 @@
+{
+  "note": "map automorphisms of the 23 published (3,4,5)-APGs held here; the corpus is not a census",
+  "rows": [
+    {
+      "fixture": "ghent17",
+      "order": 17,
+      "orientation_preserving": 2,
+      "r": 8,
+      "with_reflections": 2
+    },
+    {
+      "fixture": "order20",
+      "order": 20,
+      "orientation_preserving": 1,
+      "r": 9,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "order42",
+      "order": 42,
+      "orientation_preserving": 1,
+      "r": 15,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "schneider17",
+      "order": 17,
+      "orientation_preserving": 2,
+      "r": 8,
+      "with_reflections": 2
+    },
+    {
+      "fixture": "27_26-26",
+      "order": 26,
+      "orientation_preserving": 1,
+      "r": 11,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "28_26-26",
+      "order": 26,
+      "orientation_preserving": 1,
+      "r": 11,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "29_27-27",
+      "order": 27,
+      "orientation_preserving": 1,
+      "r": 11,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "30_28-28",
+      "order": 28,
+      "orientation_preserving": 1,
+      "r": 11,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "31_29-29",
+      "order": 29,
+      "orientation_preserving": 1,
+      "r": 12,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "32_29-29",
+      "order": 29,
+      "orientation_preserving": 1,
+      "r": 12,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "34_30-30",
+      "order": 30,
+      "orientation_preserving": 1,
+      "r": 12,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "36_30-30",
+      "order": 30,
+      "orientation_preserving": 1,
+      "r": 12,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "38_31-31",
+      "order": 31,
+      "orientation_preserving": 1,
+      "r": 12,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "39_32-32",
+      "order": 32,
+      "orientation_preserving": 1,
+      "r": 12,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "40_32-32",
+      "order": 32,
+      "orientation_preserving": 1,
+      "r": 13,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "41_32-32",
+      "order": 32,
+      "orientation_preserving": 1,
+      "r": 13,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "44_33-33",
+      "order": 33,
+      "orientation_preserving": 1,
+      "r": 13,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "45_33-33",
+      "order": 33,
+      "orientation_preserving": 1,
+      "r": 13,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "51_34-34",
+      "order": 34,
+      "orientation_preserving": 1,
+      "r": 13,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "52_34-34",
+      "order": 34,
+      "orientation_preserving": 1,
+      "r": 13,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "56_35-35",
+      "order": 35,
+      "orientation_preserving": 1,
+      "r": 13,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "60_36-36",
+      "order": 36,
+      "orientation_preserving": 1,
+      "r": 14,
+      "with_reflections": 1
+    },
+    {
+      "fixture": "61_36-36",
+      "order": 36,
+      "orientation_preserving": 1,
+      "r": 14,
+      "with_reflections": 1
+    }
+  ],
+  "tool": "automorphism_census.py",
+  "total": 23,
+  "trivial": 21
+}

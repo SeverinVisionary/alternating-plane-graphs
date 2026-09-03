@@ -1,0 +1,19 @@
+Integrated milestone parent:
+  634d2b65dbe43a31ea18891a030594ca8fb93dbc
+
+Environment:
+  kernel: Linux 6.18.35 x86_64
+  hostname: 76a7bdc81cdd
+
+Replay:
+  cd 
+  python3 -m unittest -v
+
+Result:
+  Ran 31 tests in 5.407s
+  OK
+
+Recovery gate:
+  test_production_positive_perturbation_is_nonvacuous ... ok
+  test_graph_valid_mode_rejects_invalid_moves ... ok
+  test_graph_valid_mode_recovers_fixed_positive_D24 ... ok

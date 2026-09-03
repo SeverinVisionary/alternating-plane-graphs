@@ -1,0 +1,79 @@
+{
+  "claim_scope": "Bounded radius-1 enumeration of block_tools.apg_two_edge_switches on the exact committed Table 4 row 24 order-25 seed, including both disjoint-edge pairings and every cyclic splice. Zero survivors is not nonexistence of an order-25 compatible block.",
+  "direct_opening_calibration": {
+    "disjoint_fan_pairs": 0,
+    "fan_candidates": 0,
+    "recovered_blocks": 0
+  },
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "kernel": "Linux",
+    "kernel_release": "6.18.35"
+  },
+  "implementation": {
+    "block_tools_blob_sha": "7036c34e762c7a529fb214449bf19b5f6e9ad3e2",
+    "function": "block_tools.apg_two_edge_switches"
+  },
+  "input": {
+    "canonical_rotation_hash": "f9f6dd29dc6d68da24fbe552b1f200be72dca75fd0064bb65f57b6d4d1fc4f0d",
+    "closed_profile": {
+      "face_counts": {
+        "3": 10,
+        "4": 9,
+        "5": 6
+      },
+      "order": 25,
+      "r": 10,
+      "vertex_counts": {
+        "3": 10,
+        "4": 9,
+        "5": 6
+      }
+    },
+    "path": "certificates/search_seeds/order25.json",
+    "raw_sha256": "30595fb6f406f8c3e3ef3859eaf709e50c72985946e7f4b274f3cc8f3aadf10c",
+    "table": "Table 4 row 24",
+    "verify_returncode": 0,
+    "verify_stderr": "",
+    "verify_stdout": "PASS certificates/search_seeds/order25.json: order=25 edges=48 faces=25 vertex_counts={3: 10, 4: 9, 5: 6} face_counts={3: 10, 4: 9, 5: 6}\n"
+  },
+  "parent_checkpoint": "0e19167e0718903eba0ea87ec725cfba40fef8b6",
+  "recovery_stage": {
+    "independent_blocks_checks": 0,
+    "per_survivor": [],
+    "recovered_block_hashes": [],
+    "survivors_scanned": 0,
+    "total_disjoint_fan_pairs": 0,
+    "total_fan_candidates": 0,
+    "total_recovered_blocks": 0
+  },
+  "replay": "python3 block_tools.py apg-switch certificates/search_seeds/order25.json results/apg_switch_order25/survivors --stats results/logs/milestone3_order25_seed_apg_two_edge_switch_stats.json",
+  "switch_stage": {
+    "counts": {
+      "candidate_validation_attempts": 53532,
+      "candidate_validation_failures": 53532,
+      "disjoint_edge_pairs": 984,
+      "edge_pair_combinations": 1128,
+      "pairing_attempts": 1968,
+      "pruned_equal_endpoint_degree": 860,
+      "pruned_existing_edge": 372,
+      "pruned_shared_endpoint": 144,
+      "splice_attempts": 53532
+    },
+    "distinct_survivor_hashes": [],
+    "distinct_survivors": 0,
+    "eligible_edges": 48,
+    "raw_survivor_hashes": [],
+    "validation_prune_reasons": {
+      "closed graph has a forbidden face size": 53526,
+      "closed graph has equal adjacent face sizes": 6
+    },
+    "wall_seconds": 5.30540176499926
+  },
+  "top_level_exception": null,
+  "unresolved_block_orders": [
+    25,
+    29,
+    34
+  ]
+}

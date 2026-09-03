@@ -1,0 +1,24 @@
+{
+  "claim_scope": "Pre-compute stage only; zero mandatory k5 target rematchings executed.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "uname": {
+      "machine": "x86_64",
+      "node": "76a7bdc81cdd",
+      "processor": "x86_64",
+      "release": "6.18.35",
+      "system": "Linux",
+      "version": "#1 SMP Fri Aug 21 00:36:21 UTC 2026"
+    }
+  },
+  "format": "apg-mandatory-defect-k5-stage-v1",
+  "matchings_per_selection": 544,
+  "parent_manifest_sha256": "fd975d8752589565d7c8a7a7d69b8c4d8f55f5f76b9b2b706d6a7d4c2536149a",
+  "replay": "python3 mandatory_defect_k5.py stage --spec <workspace>/k5-stage-clean-5ysexw/jobs/mandatory_defect_26_29_33_k5.json",
+  "spec_sha256": "a18ea38665b2dc6c4b66d1e50f9644bcaa535eb4a678164e37161da82d68c0c4",
+  "target_manifest_sha256": "a7d3190ce26764995c6080a9b7dd28d1a27f10864570549b1fbba069a3f8d50e",
+  "target_rematchings_executed": 0,
+  "target_state_sha256": "2ac057daf35896a46711ef4d8b6a5fc10720d885fd08fd59289da6cf862ad28b",
+  "total_attempts": 52519936,
+  "total_selections": 96544
+}

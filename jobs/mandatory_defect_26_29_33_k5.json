@@ -1,0 +1,35 @@
+{
+  "calibration": {
+    "certificate_file": "results/calibration/D24_five_edge_recovered.json",
+    "certificate_file_sha256": "9b3819cb2d7d0d4034dd122b54f3be380d8afd0fb1bca1db79f0700a4da56e6a",
+    "log_file": "results/logs/D24_five_edge_calibration.json",
+    "log_file_sha256": "fcdea2df4495ddc5b79fcd837b6f19e8b82fbd5f6fcb71fbd9d2ebfec1938f83",
+    "state_file": "results/calibration/D24_five_edge_positive.json",
+    "state_file_sha256": "01d774d5d949f2bc3301eacca27a4e91ef0d2d09620fb1398a4213d0fa11b508"
+  },
+  "certificate_directory": "results/blocks/mandatory_defect_26_29_33_k5",
+  "format": "apg-mandatory-defect-k5-v1",
+  "frontier_limit": 64,
+  "input_commit": "d01a43bd92764933103083ac9c9a42ff79854719",
+  "matchings_per_selection": 544,
+  "parent_manifest_sha256": "fd975d8752589565d7c8a7a7d69b8c4d8f55f5f76b9b2b706d6a7d4c2536149a",
+  "parent_state_file": "results/targets/mandatory_defect_26_29_33_parents.json",
+  "parent_state_sha256": "8eb46f4665eefb4889f51b514430a28954bb092183e1efc0542d6c3d8d76cf8c",
+  "prior_result_file": "results/logs/mandatory_defect_26_29_33_result.json",
+  "prior_result_sha256": "9b85bdc57c4ccf4760f0260cd3282ee94dc94aef9a7d85f6390ceea449f576a3",
+  "prior_spec_file": "jobs/mandatory_defect_26_29_33.json",
+  "result_log": "results/logs/mandatory_defect_26_29_33_k5_result.json",
+  "seeds": [
+    {"attempts": 7204736, "auxiliary_edges": 44, "fixed_rotation_hash": "aa82e2d913a9cc4c98a405fba9293a1440ae77f3acc40bbb6c6ff76f6b604346", "id": "26a", "mandatory_dart_pairs": [[81,84],[82,88]], "order": 26, "selections": 13244, "state_sha256": "9115b20cf204b1ff18b321142d6bf5c13eaf0501336382aa98283d69a36ac23b"},
+    {"attempts": 7204736, "auxiliary_edges": 44, "fixed_rotation_hash": "e73f8ddc85fff642992e1e1ece1b779030dc77d03ca050d7763bdcd876b61451", "id": "26b", "mandatory_dart_pairs": [[2,4],[7,8]], "order": 26, "selections": 13244, "state_sha256": "27d8e3b580147da90d04e1be6340f3401f7a33f665fe82012cbef1234050b1b5"},
+    {"attempts": 10662400, "auxiliary_edges": 50, "fixed_rotation_hash": "bfdc061a339186b76a673c62e8267eaa11dea827ad2b9ee9a6fdbfa3b53426f8", "id": "29a", "mandatory_dart_pairs": [[46,50],[48,51]], "order": 29, "selections": 19600, "state_sha256": "47094c88eb367991684df1a4994132da5ca7221d4a2c40393b60f8490d97b998"},
+    {"attempts": 10662400, "auxiliary_edges": 50, "fixed_rotation_hash": "bebe566f8888ab4716936a387f4c799738a984ec3830b9a6dee6dcd4c4788361", "id": "29b", "mandatory_dart_pairs": [[10,11],[25,75]], "order": 29, "selections": 19600, "state_sha256": "34078a0bb5633707ab9fdc262750c42527bea38d510d5fccac54ae3a34e8c067"},
+    {"attempts": 16785664, "auxiliary_edges": 58, "fixed_rotation_hash": "51f07456f140ab137255807c86992592b840de7cf62f088d6e951370a27815a1", "id": "33", "mandatory_dart_pairs": [[3,11],[9,14]], "order": 33, "selections": 30856, "state_sha256": "41a2273e6b35c77ffc8d10ff8d5eb68b4831fb8b79dc79eb53c1bcdcf89fd7b6"}
+  ],
+  "stage_log": "results/logs/mandatory_defect_26_29_33_k5_stage.json",
+  "target_manifest_sha256": "a7d3190ce26764995c6080a9b7dd28d1a27f10864570549b1fbba069a3f8d50e",
+  "target_state_file": "results/targets/mandatory_defect_26_29_33_k5.json",
+  "target_state_sha256": "2ac057daf35896a46711ef4d8b6a5fc10720d885fd08fd59289da6cf862ad28b",
+  "total_attempts": 52519936,
+  "total_selections": 96544
+}

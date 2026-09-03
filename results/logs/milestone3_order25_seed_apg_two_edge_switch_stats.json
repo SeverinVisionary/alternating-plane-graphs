@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "candidate_validation_attempts": 53532,
+    "candidate_validation_failures": 53532,
+    "disjoint_edge_pairs": 984,
+    "edge_pair_combinations": 1128,
+    "pairing_attempts": 1968,
+    "pruned_equal_endpoint_degree": 860,
+    "pruned_existing_edge": 372,
+    "pruned_shared_endpoint": 144,
+    "splice_attempts": 53532
+  },
+  "distinct_survivor_hashes": [],
+  "distinct_survivors": 0,
+  "eligible_edges": 48,
+  "raw_survivor_hashes": [],
+  "validation_prune_reasons": {
+    "closed graph has a forbidden face size": 53526,
+    "closed graph has equal adjacent face sizes": 6
+  },
+  "wall_seconds": 5.30540176499926
+}

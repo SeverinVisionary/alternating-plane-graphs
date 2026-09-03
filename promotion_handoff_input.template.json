@@ -1,0 +1,20 @@
+{
+  "format": "apg-boolean-block-handoff-input-v1",
+  "profiles": {
+    "28": {
+      "opened_block": "inputs/28/opened_block.json",
+      "postprocess_record": "inputs/28/postprocess.json",
+      "raw_record": "inputs/28/raw.json"
+    },
+    "29": {
+      "opened_block": "inputs/29/opened_block.json",
+      "postprocess_record": "inputs/29/postprocess.json",
+      "raw_record": "inputs/29/raw.json"
+    },
+    "31": {
+      "opened_block": "inputs/31/opened_block.json",
+      "postprocess_record": "inputs/31/postprocess.json",
+      "raw_record": "inputs/31/raw.json"
+    }
+  }
+}

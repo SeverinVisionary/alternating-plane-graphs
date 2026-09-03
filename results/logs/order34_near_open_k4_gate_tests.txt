@@ -1,0 +1,44 @@
+Order-34 exact k4 result checkpoint gate
+========================================
+
+Environment
+-----------
+hostname: 76a7bdc81cdd
+kernel: Linux 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 GNU/Linux
+remote input commit: 4ec3134e6fe469a27045223f77a4fd73246ae779
+
+Pre-compute full gate
+---------------------
+command: python3 -m unittest discover -v
+result: 63 tests passed
+reported test wall time: 7.008s
+
+Exact bounded compute
+---------------------
+command: python3 near_open_search.py --seed results/near_openings/order34_51_fans_8_32.json --mandatory-edge 5,6 --mandatory-edge 5,10 --output-directory results/blocks/order34_k4 --log results/logs/order34_near_open_k4.json
+result: PASS exhaustive k4 lane: successes=0 best_score=1500
+recorded search wall time: 0.06843017199935275s
+
+Post-result targeted replay gate
+--------------------------------
+command: python3 -m unittest -v test_near_opening_order34.NearOpenOrder34SetupTests.test_exact_k4_result_replays
+result: 1 test passed
+reported test wall time: 0.010s
+
+Post-result full gate
+---------------------
+command: python3 -m unittest discover -v
+result: 64 tests passed
+reported test wall time: 7.190s
+
+Result manifests
+----------------
+score histogram SHA-256: cf5a37e69e05e5fb83f990dc6f1fc467e519b6c3d3b16d61c9ad16e7614adcc5
+k4 frontier manifest: 1f5d7f9c56720ce8ef0797706dfdb143050707ee80948144c0801f6a5b536678
+
+Bounded status
+--------------
+No score-zero state was found among the exact k4 rematch family for this one
+published embedding, fan pair, mandatory defect-edge pair, and every pair of
+degree-(3,5) donor edges. This is not a nonexistence result. Radius 2 was not
+started.

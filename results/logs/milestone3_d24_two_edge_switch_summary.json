@@ -1,0 +1,61 @@
+{
+  "claim_scope": "Bounded radius-1 enumeration of block_tools.block_two_edge_switches on this exact labelled D24 block, excluding every socket-boundary vertex from rewiring. This is separate from block_edge_replacements and is not a nonexistence result for order-24 neighbors or order-25 compatible blocks.",
+  "environment": {
+    "hostname": "76a7bdc81cdd",
+    "kernel": "Linux",
+    "kernel_release": "6.18.35"
+  },
+  "expansion_stage": {
+    "candidate_attempts": 0,
+    "distinct_order24_parents": 0,
+    "independent_order25_checks": 0,
+    "order25_candidate_hashes": [],
+    "raw_order25_candidates": 0,
+    "valid_distinct_order25_candidates": 0
+  },
+  "implementation": {
+    "block_tools_blob_sha": "ea27eeac72c1b70b43e252b70e6f716c21af6521",
+    "function": "block_tools.block_two_edge_switches",
+    "test_block_tools_blob_sha": "992d1558913585b69ad68ab8cd349a804f4f6039"
+  },
+  "independent_blocks_cross_check": {
+    "attempted": 0,
+    "passed": 0,
+    "survivor_hashes": []
+  },
+  "input": {
+    "path": "results/blocks/D24.json",
+    "raw_sha256": "9210f91150f77ec8e951a272816c3d4f736153fbbbfac0e707576e5aec1b6ab8"
+  },
+  "parent_checkpoint": "85e4a5bd938e31e199f8c09d9c3238227641b980",
+  "replay": "python3 block_tools.py block-switch results/blocks/D24.json results/block_switch_d24/order24_neighbors --stats results/logs/milestone3_d24_two_edge_switch_stats.json",
+  "result": {
+    "counts": {
+      "candidate_validation_attempts": 1512,
+      "candidate_validation_failures": 1512,
+      "disjoint_edge_pairs": 54,
+      "edge_pair_combinations": 66,
+      "pairing_attempts": 108,
+      "pruned_equal_endpoint_degree": 54,
+      "pruned_existing_edge": 12,
+      "pruned_shared_endpoint": 12,
+      "splice_attempts": 1512
+    },
+    "distinct_survivor_hashes": [],
+    "distinct_survivors": 0,
+    "eligible_edges": 12,
+    "raw_survivor_hashes": [],
+    "raw_survivors": 0,
+    "top_level_exception": null,
+    "validation_prune_reasons": {
+      "block rotation is not spherical": 1512
+    },
+    "wall_seconds": 0.33492988600119133
+  },
+  "stats_raw_sha256": "03184fa73d70a75a8286f69baefaa522d59ab499bf66c7c40bb567737cdcfe17",
+  "unresolved_block_orders": [
+    25,
+    29,
+    34
+  ]
+}

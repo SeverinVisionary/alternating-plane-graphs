@@ -1,0 +1,2 @@
+command: python3 order26_four_edge_support.py run --spec jobs/order26_four_edge_support.json
+PASS attempts=1663200 distinct=1484 best=510 zero=0

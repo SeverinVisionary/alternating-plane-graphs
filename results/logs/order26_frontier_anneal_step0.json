@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-08-30T00:09:30Z",
+  "hostname": "76a7bdc81cdd",
+  "uname_a": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "darwin": false,
+  "operator_mac": false,
+  "branch": "apg-345-conjecture-10-2",
+  "required_head": "43b0b4ae86da2f28243ea7d8930b7235e8f73955",
+  "remote_head_via_authenticated_repository_api": "43b0b4ae86da2f28243ea7d8930b7235e8f73955",
+  "remote_tree": "e6df5dc902b5bff26ca3274a21b92075570ecac7",
+  "ordinary_git_fetch": {
+    "completed": false,
+    "error": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "checkout_note": "The shared workspace retains the original local Git object as HEAD while containing selectively synced checkpoint files. Exact branch HEAD and tree were fetched and gated through the authenticated repository API; commits use parent-checked non-force ref updates.",
+  "gate_passed": true
+}

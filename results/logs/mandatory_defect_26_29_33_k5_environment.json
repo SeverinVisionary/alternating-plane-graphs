@@ -1,0 +1,15 @@
+{
+  "checkout": "<workspace>/k5-stage-clean-5ysexw",
+  "hostname": "76a7bdc81cdd",
+  "initial_git_status_porcelain": "",
+  "input_commit": "d01a43bd92764933103083ac9c9a42ff79854719",
+  "input_tree": "ca8fe73ae3c7609e6bbbd89ef44bf39977a40a01",
+  "kernel": "Linux 76a7bdc81cdd 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "prior_clean_suite": "158/158",
+  "prior_result_attempts": 361668,
+  "prior_result_certificates": 0,
+  "prior_result_plane_valid": 0,
+  "prior_result_sha256": "9b85bdc57c4ccf4760f0260cd3282ee94dc94aef9a7d85f6390ceea449f576a3",
+  "remote_ref_equal": true,
+  "target_rematchings_executed": 0
+}

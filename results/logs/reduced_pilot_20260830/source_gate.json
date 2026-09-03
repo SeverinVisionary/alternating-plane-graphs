@@ -1,0 +1,14 @@
+{
+  "bundle_path": "<source-bundle>",
+  "bundle_sha256": "c172247aa2bd52621a3b46452ed0aa07b0eca063b29cfc271d0527438bf88234",
+  "advertised_ref": "refs/heads/apg-345-target",
+  "head": "e44699b2780a269537df71a861c247444d10be4e",
+  "tree": "490812444803e3e326f7d61ccaac9a67e2af40a4",
+  "kernel": "Linux 88ef8c6d385a 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "hostname": "88ef8c6d385a",
+  "non_darwin": true,
+  "bundle_verify": "passed; complete SHA1 history",
+  "fsck": "passed; no dangling objects",
+  "clean_before_compute": true,
+  "known_answer_suite": "56 passed, 87 subtests passed in 25.08s"
+}

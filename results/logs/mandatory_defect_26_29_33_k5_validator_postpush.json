@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "format": "apg-mandatory-defect-k5-validator-postpush-v1",
+  "focused_suite": "17/17",
+  "full_suite": "175/175",
+  "git_diff_check": "pass",
+  "remote_byte_equality": true,
+  "remote_commit": "ad7b4b7e79a1d1c0af882aa0d606237fc292bcda",
+  "remote_utf8_blobs": {
+    "SEARCH_STATUS.md": [6349, "679bf8dee7f53953045cc391c27b06fb3f481609f43757a238472b1e9e6588c3"],
+    "mandatory_defect_k5.py": [29675, "c37f80dc09e8b06805e25ef95e6f083a126bdc69162b7dadfb61140758acc6f6"],
+    "results/logs/mandatory_defect_26_29_33_k5_validator_focused_tests.txt": [2962, "e60e34aa5bb3d98d194dc93ac146147f2f58a4db76c7795e397bc400ea297031"],
+    "results/logs/mandatory_defect_26_29_33_k5_validator_full_tests.txt": [29233, "d1a85d9f4ebff0574a95d517ca35e1e58651196722a649376d5e22f4581a9819"],
+    "results/logs/mandatory_defect_26_29_33_k5_validator_replay.txt": [444, "348c388e429c67e8e53461cf20f2e1b51e8f1f1e635f660dc26db2c61a32af98"],
+    "test_mandatory_defect_k5.py": [14651, "295de5ed270d3f35d2956b3adfd8a31d1aee25bcb6e9ce091640389fb6422247"]
+  },
+  "spec_sha256": "a18ea38665b2dc6c4b66d1e50f9644bcaa535eb4a678164e37161da82d68c0c4",
+  "target_manifest_sha256": "a7d3190ce26764995c6080a9b7dd28d1a27f10864570549b1fbba069a3f8d50e",
+  "target_rematchings_executed": 0,
+  "target_state_sha256": "2ac057daf35896a46711ef4d8b6a5fc10720d885fd08fd59289da6cf862ad28b"
+}

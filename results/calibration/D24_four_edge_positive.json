@@ -1,0 +1,385 @@
+{
+  "base_alpha_sha256": "56f06a93f592865ddcc82892c55118ec74630238cd3b403448176a3118579c28",
+  "base_file": "results/blocks/D24.json",
+  "base_file_sha256": "9210f91150f77ec8e951a272816c3d4f736153fbbbfac0e707576e5aec1b6ab8",
+  "calibration_selected_current_pairs": [
+    [
+      5,
+      22
+    ],
+    [
+      9,
+      44
+    ],
+    [
+      11,
+      30
+    ],
+    [
+      27,
+      37
+    ]
+  ],
+  "claim_scope": "Known-answer D24 exact four-edge calibration state only.",
+  "construction": {
+    "applied_rematching": [
+      [
+        5,
+        22
+      ],
+      [
+        9,
+        44
+      ],
+      [
+        11,
+        30
+      ],
+      [
+        27,
+        37
+      ]
+    ],
+    "base_selected_pairs": [
+      [
+        5,
+        11
+      ],
+      [
+        9,
+        30
+      ],
+      [
+        22,
+        27
+      ],
+      [
+        37,
+        44
+      ]
+    ],
+    "genuinely_four_edge": true,
+    "retained_original_pairs": 0,
+    "scan_counts": {
+      "abstract_graph_prunes": 2206325,
+      "edge_quadruples": 39557,
+      "graph_invalid": 2373371,
+      "nonspherical_prunes": 167046,
+      "plane_valid": 8,
+      "rematchings": 2373379,
+      "score_zero_skipped": 3,
+      "unique_recovery_rejections": 4
+    },
+    "scan_order": "lexicographic edge quadruples then lexicographic deranged matchings"
+  },
+  "fixed_rotation": [
+    {
+      "clockwise": [
+        2,
+        4,
+        10,
+        3
+      ],
+      "id": 1
+    },
+    {
+      "clockwise": [
+        1,
+        3,
+        5
+      ],
+      "id": 2
+    },
+    {
+      "clockwise": [
+        1,
+        12,
+        9,
+        7,
+        2
+      ],
+      "id": 3
+    },
+    {
+      "clockwise": [
+        1,
+        5,
+        16,
+        15,
+        10
+      ],
+      "id": 4
+    },
+    {
+      "clockwise": [
+        2,
+        6,
+        19,
+        4
+      ],
+      "id": 5
+    },
+    {
+      "clockwise": [
+        5,
+        7,
+        8,
+        21,
+        20
+      ],
+      "id": 6
+    },
+    {
+      "clockwise": [
+        3,
+        6
+      ],
+      "id": 7
+    },
+    {
+      "clockwise": [
+        6,
+        11
+      ],
+      "id": 8
+    },
+    {
+      "clockwise": [
+        3,
+        11
+      ],
+      "id": 9
+    },
+    {
+      "clockwise": [
+        1,
+        4,
+        12
+      ],
+      "id": 10
+    },
+    {
+      "clockwise": [
+        8,
+        9,
+        13,
+        24,
+        22
+      ],
+      "id": 11
+    },
+    {
+      "clockwise": [
+        3,
+        10,
+        14,
+        13
+      ],
+      "id": 12
+    },
+    {
+      "clockwise": [
+        11,
+        12,
+        24
+      ],
+      "id": 13
+    },
+    {
+      "clockwise": [
+        12,
+        15,
+        17,
+        23,
+        24
+      ],
+      "id": 14
+    },
+    {
+      "clockwise": [
+        4,
+        14
+      ],
+      "id": 15
+    },
+    {
+      "clockwise": [
+        4,
+        18
+      ],
+      "id": 16
+    },
+    {
+      "clockwise": [
+        14,
+        18
+      ],
+      "id": 17
+    },
+    {
+      "clockwise": [
+        16,
+        19,
+        20,
+        22,
+        17
+      ],
+      "id": 18
+    },
+    {
+      "clockwise": [
+        5,
+        20,
+        18
+      ],
+      "id": 19
+    },
+    {
+      "clockwise": [
+        6,
+        21,
+        18,
+        19
+      ],
+      "id": 20
+    },
+    {
+      "clockwise": [
+        6,
+        22,
+        20
+      ],
+      "id": 21
+    },
+    {
+      "clockwise": [
+        11,
+        23,
+        18,
+        21
+      ],
+      "id": 22
+    },
+    {
+      "clockwise": [
+        14,
+        22,
+        24
+      ],
+      "id": 23
+    },
+    {
+      "clockwise": [
+        11,
+        13,
+        14,
+        23
+      ],
+      "id": 24
+    }
+  ],
+  "fixed_rotation_hash": "fae4bc323d2f570b0dcc8aa47a17152abb466a1297d7ca1a2c75fb1743372cdc",
+  "format": "apg-fixed-alpha-state-v1",
+  "states": [
+    {
+      "abstract_graph_valid": true,
+      "alpha": [
+        4,
+        12,
+        32,
+        7,
+        0,
+        22,
+        17,
+        3,
+        40,
+        44,
+        26,
+        30,
+        1,
+        20,
+        54,
+        52,
+        33,
+        6,
+        21,
+        63,
+        13,
+        18,
+        5,
+        28,
+        70,
+        66,
+        10,
+        37,
+        23,
+        35,
+        11,
+        36,
+        2,
+        16,
+        41,
+        29,
+        31,
+        27,
+        80,
+        73,
+        8,
+        34,
+        47,
+        45,
+        9,
+        43,
+        81,
+        42,
+        53,
+        56,
+        77,
+        82,
+        15,
+        48,
+        14,
+        58,
+        49,
+        62,
+        55,
+        65,
+        68,
+        75,
+        57,
+        19,
+        69,
+        59,
+        25,
+        72,
+        60,
+        64,
+        24,
+        76,
+        67,
+        39,
+        78,
+        61,
+        71,
+        50,
+        74,
+        83,
+        38,
+        46,
+        51,
+        79
+      ],
+      "breakdown": {
+        "abstract_graph": 0,
+        "equal_face": 0,
+        "face_distribution": 160,
+        "hex": 0,
+        "total": 490,
+        "white": 330
+      },
+      "euler_characteristic": 2,
+      "spherical": true,
+      "state_sha256": "0028cf263b487dba40b9b0258ba312041d5d364e77a7890cc63434d15512c0e6"
+    }
+  ]
+}

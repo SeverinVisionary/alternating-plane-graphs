@@ -1,0 +1,31 @@
+{
+  "claim_scope": "Direct strict two-closure-fan opening scan of every published (3,4,5)-APG embedding at alternative candidate block orders 26-36. Zero openings is a bounded seed-corpus result only, not block nonexistence.",
+  "covering_new_block_triples": [
+    [25, 29, 34], [25, 30, 34], [25, 30, 35], [26, 29, 33],
+    [27, 31, 35], [28, 29, 31], [28, 31, 34], [28, 31, 35],
+    [28, 31, 36], [28, 32, 35], [28, 32, 36]
+  ],
+  "records": [
+    {"disjoint_fan_pairs": 18, "fan_candidates": 7, "file": "27_26-26.plc", "order": 26, "raw_sha256": "d78efd8db7aa415f36a15a9225cbf0b7c1bacfe096051514a7614edd683c4902", "source_url": "https://www.althofer.de/apg/apgs/27_26-26.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 18, "fan_candidates": 7, "file": "28_26-26.plc", "order": 26, "raw_sha256": "adf39c3bb116a259efedaa6f9bb5c42734f262652dbe3fafd8fe5aafec17799c", "source_url": "https://www.althofer.de/apg/apgs/28_26-26.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 32, "fan_candidates": 10, "file": "29_27-27.plc", "order": 27, "raw_sha256": "d490e230e10d114d607d415fb91f35362e68cdc4762cbd19b9c264388e6f381a", "source_url": "https://www.althofer.de/apg/apgs/29_27-27.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 52, "fan_candidates": 13, "file": "30_28-28.plc", "order": 28, "raw_sha256": "6ed445bfa5d2e53eb756c12b0c3f57e0129aba0890517c9e0aa72209838abe26", "source_url": "https://www.althofer.de/apg/apgs/30_28-28.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 17, "fan_candidates": 7, "file": "31_29-29.plc", "order": 29, "raw_sha256": "35267740b45725b97fb886c6df73322a2c24e9315e46b98878d6d5800b6eaaf2", "source_url": "https://www.althofer.de/apg/apgs/31_29-29.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 18, "fan_candidates": 7, "file": "32_29-29.plc", "order": 29, "raw_sha256": "71ed9d08270a9176483d41d6010fac640a17cb077e7b95f68e901b4ac60db2c1", "source_url": "https://www.althofer.de/apg/apgs/32_29-29.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 29, "fan_candidates": 9, "file": "34_30-30.plc", "order": 30, "raw_sha256": "30780d7a870fd5736afa6c9cb3b223b4e70012d4c01f8ed7080c2dd8adf8080a", "source_url": "https://www.althofer.de/apg/apgs/34_30-30.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 29, "fan_candidates": 9, "file": "36_30-30.plc", "order": 30, "raw_sha256": "2fe447dcf61ad1254124abe07bacd7e4dc8df69cc1d13b993b2f6e3ad7323625", "source_url": "https://www.althofer.de/apg/apgs/36_30-30.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 51, "fan_candidates": 12, "file": "38_31-31.plc", "order": 31, "raw_sha256": "e67095feaffa09a39d32dfba5712c577899db59bed8ff55ecc091879196febb7", "source_url": "https://www.althofer.de/apg/apgs/38_31-31.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 62, "fan_candidates": 14, "file": "39_32-32.plc", "order": 32, "raw_sha256": "43077668d6f86053f2ebec3bdf4141f90510a7ed61a7d86ba80ef598c0df25f5", "source_url": "https://www.althofer.de/apg/apgs/39_32-32.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 21, "fan_candidates": 8, "file": "40_32-32.plc", "order": 32, "raw_sha256": "8d60906638ff9440a24d2ff0d45b4d5bb88df2c041a37eb5949dad14c29d497e", "source_url": "https://www.althofer.de/apg/apgs/40_32-32.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 21, "fan_candidates": 8, "file": "41_32-32.plc", "order": 32, "raw_sha256": "d91c3f2080814c55c4cbd3846612cec6781691ec37d57bae9cc08ff84dbb86e3", "source_url": "https://www.althofer.de/apg/apgs/41_32-32.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 36, "fan_candidates": 10, "file": "44_33-33.plc", "order": 33, "raw_sha256": "b779feb98cac0025bf165abd3b3d8e7968bff96bac5e428d17c7e1d07017a414", "source_url": "https://www.althofer.de/apg/apgs/44_33-33.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 35, "fan_candidates": 10, "file": "45_33-33.plc", "order": 33, "raw_sha256": "f62d06087969b4347a3da7270fd58d933df96159f222391cc33245116bd8521b", "source_url": "https://www.althofer.de/apg/apgs/45_33-33.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 53, "fan_candidates": 13, "file": "51_34-34.plc", "order": 34, "raw_sha256": "1f2670651eb62019115375bacd8335aaedf3e711ec6e9f4173ca1fce5e605f76", "source_url": "https://www.althofer.de/apg/apgs/51_34-34.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 44, "fan_candidates": 11, "file": "52_34-34.plc", "order": 34, "raw_sha256": "db3d63e7859df75034f0c1314e7cb164ce086783ca761c1c2e7772ab20be8c15", "source_url": "https://www.althofer.de/apg/apgs/52_34-34.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 52, "fan_candidates": 12, "file": "56_35-35.plc", "order": 35, "raw_sha256": "e797592db8ee2c6a7ae461ddada90e4ba2634b57aa862695f939a90719531ce2", "source_url": "https://www.althofer.de/apg/apgs/56_35-35.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 34, "fan_candidates": 10, "file": "60_36-36.plc", "order": 36, "raw_sha256": "5778919bcb7ba2b0bf3f18482819b1cb71fa8853a01620a5b260cede83b291f9", "source_url": "https://www.althofer.de/apg/apgs/60_36-36.plc", "strict_blocks": 0},
+    {"disjoint_fan_pairs": 32, "fan_candidates": 10, "file": "61_36-36.plc", "order": 36, "raw_sha256": "48d25c0b97c95448f0cf36cc67fd30225e33af6d22defb404b94b0a591f78876", "source_url": "https://www.althofer.de/apg/apgs/61_36-36.plc", "strict_blocks": 0}
+  ],
+  "replay": "download the listed planar_code URLs; import_planar_code.decode_first; verify.verify_certificate; blocks.candidate_closure_fans; blocks.opening_scan",
+  "totals": {"published_embeddings": 19, "strict_blocks": 0}
+}

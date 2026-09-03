@@ -1,0 +1,447 @@
+{
+  "budget_seconds_per_profile": 240,
+  "date": "2026-08-31",
+  "nonexistence_claimed": false,
+  "note": "One witness search per (order, r), r ordered outward from the published trend, at most four r per order. INCOMPLETE means the wall clock ran out. ENCODING_UNSAT is a statement about this encoding at that profile and is never a nonexistence claim. The run was stopped by its outer wall during order 40, so orders 43 and 46 were never reached.",
+  "profiles": [
+    {
+      "build_seconds": 0.21,
+      "clauses": 226087,
+      "disposition": "CERTIFIED",
+      "order": 17,
+      "r": 8,
+      "solve_seconds": 4.178
+    },
+    {
+      "build_seconds": 0.395,
+      "clauses": 337950,
+      "disposition": "INCOMPLETE",
+      "order": 20,
+      "r": 9,
+      "solve_seconds": 240.098
+    },
+    {
+      "build_seconds": 0.415,
+      "clauses": 338068,
+      "disposition": "INCOMPLETE",
+      "order": 20,
+      "r": 8,
+      "solve_seconds": 240.1
+    },
+    {
+      "build_seconds": 0.431,
+      "clauses": 345212,
+      "disposition": "ENCODING_UNSAT",
+      "order": 20,
+      "r": 10,
+      "solve_seconds": 3.991
+    },
+    {
+      "build_seconds": 0.251,
+      "clauses": 245400,
+      "disposition": "ENCODING_UNSAT",
+      "order": 20,
+      "r": 7,
+      "solve_seconds": 4.166
+    },
+    {
+      "build_seconds": 0.559,
+      "clauses": 446382,
+      "disposition": "INCOMPLETE",
+      "order": 22,
+      "r": 9,
+      "solve_seconds": 240.099
+    },
+    {
+      "build_seconds": 0.533,
+      "clauses": 446666,
+      "disposition": "ENCODING_UNSAT",
+      "order": 22,
+      "r": 8,
+      "solve_seconds": 9.155
+    },
+    {
+      "build_seconds": 0.5,
+      "clauses": 448118,
+      "disposition": "INCOMPLETE",
+      "order": 22,
+      "r": 10,
+      "solve_seconds": 240.032
+    },
+    {
+      "build_seconds": 0.383,
+      "clauses": 308324,
+      "disposition": "ENCODING_UNSAT",
+      "order": 22,
+      "r": 7,
+      "solve_seconds": 4.178
+    },
+    {
+      "build_seconds": 0.687,
+      "clauses": 576064,
+      "disposition": "INCOMPLETE",
+      "order": 24,
+      "r": 10,
+      "solve_seconds": 240.086
+    },
+    {
+      "build_seconds": 0.798,
+      "clauses": 576718,
+      "disposition": "INCOMPLETE",
+      "order": 24,
+      "r": 9,
+      "solve_seconds": 240.014
+    },
+    {
+      "build_seconds": 0.72,
+      "clauses": 581004,
+      "disposition": "INCOMPLETE",
+      "order": 24,
+      "r": 11,
+      "solve_seconds": 240.079
+    },
+    {
+      "build_seconds": 0.503,
+      "clauses": 378240,
+      "disposition": "INCOMPLETE",
+      "order": 24,
+      "r": 8,
+      "solve_seconds": 240.098
+    },
+    {
+      "build_seconds": 0.917,
+      "clauses": 729472,
+      "disposition": "INCOMPLETE",
+      "order": 26,
+      "r": 11,
+      "solve_seconds": 240.077
+    },
+    {
+      "build_seconds": 0.975,
+      "clauses": 729146,
+      "disposition": "INCOMPLETE",
+      "order": 26,
+      "r": 10,
+      "solve_seconds": 240.044
+    },
+    {
+      "build_seconds": 0.98,
+      "clauses": 738966,
+      "disposition": "INCOMPLETE",
+      "order": 26,
+      "r": 12,
+      "solve_seconds": 240.079
+    },
+    {
+      "build_seconds": 0.961,
+      "clauses": 729054,
+      "disposition": "ENCODING_UNSAT",
+      "order": 26,
+      "r": 9,
+      "solve_seconds": 45.37
+    },
+    {
+      "build_seconds": 1.289,
+      "clauses": 906308,
+      "disposition": "INCOMPLETE",
+      "order": 28,
+      "r": 11,
+      "solve_seconds": 240.026
+    },
+    {
+      "build_seconds": 1.226,
+      "clauses": 907460,
+      "disposition": "INCOMPLETE",
+      "order": 28,
+      "r": 10,
+      "solve_seconds": 240.101
+    },
+    {
+      "build_seconds": 1.22,
+      "clauses": 908964,
+      "disposition": "INCOMPLETE",
+      "order": 28,
+      "r": 12,
+      "solve_seconds": 240.101
+    },
+    {
+      "build_seconds": 0.738,
+      "clauses": 588590,
+      "disposition": "INCOMPLETE",
+      "order": 28,
+      "r": 9,
+      "solve_seconds": 240.075
+    },
+    {
+      "build_seconds": 1.521,
+      "clauses": 1110562,
+      "disposition": "INCOMPLETE",
+      "order": 30,
+      "r": 12,
+      "solve_seconds": 240.039
+    },
+    {
+      "build_seconds": 1.647,
+      "clauses": 1111608,
+      "disposition": "INCOMPLETE",
+      "order": 30,
+      "r": 11,
+      "solve_seconds": 240.007
+    },
+    {
+      "build_seconds": 1.592,
+      "clauses": 1116898,
+      "disposition": "INCOMPLETE",
+      "order": 30,
+      "r": 13,
+      "solve_seconds": 240.017
+    },
+    {
+      "build_seconds": 1.405,
+      "clauses": 1111102,
+      "disposition": "ENCODING_UNSAT",
+      "order": 30,
+      "r": 10,
+      "solve_seconds": 105.375
+    },
+    {
+      "build_seconds": 2.002,
+      "clauses": 1471042,
+      "disposition": "INCOMPLETE",
+      "order": 33,
+      "r": 13,
+      "solve_seconds": 240.097
+    },
+    {
+      "build_seconds": 1.955,
+      "clauses": 1472419,
+      "disposition": "INCOMPLETE",
+      "order": 33,
+      "r": 12,
+      "solve_seconds": 240.099
+    },
+    {
+      "build_seconds": 2.12,
+      "clauses": 1477941,
+      "disposition": "INCOMPLETE",
+      "order": 33,
+      "r": 14,
+      "solve_seconds": 240.099
+    },
+    {
+      "build_seconds": 2.169,
+      "clauses": 1473138,
+      "disposition": "INCOMPLETE",
+      "order": 33,
+      "r": 11,
+      "solve_seconds": 240.099
+    },
+    {
+      "build_seconds": 2.858,
+      "clauses": 1903882,
+      "disposition": "INCOMPLETE",
+      "order": 36,
+      "r": 13,
+      "solve_seconds": 240.042
+    },
+    {
+      "build_seconds": 2.662,
+      "clauses": 1905916,
+      "disposition": "INCOMPLETE",
+      "order": 36,
+      "r": 12,
+      "solve_seconds": 240.044
+    },
+    {
+      "build_seconds": 2.948,
+      "clauses": 1902084,
+      "disposition": "INCOMPLETE",
+      "order": 36,
+      "r": 14,
+      "solve_seconds": 240.101
+    },
+    {
+      "build_seconds": 1.873,
+      "clauses": 1213284,
+      "disposition": "INCOMPLETE",
+      "order": 36,
+      "r": 11,
+      "solve_seconds": 240.1
+    }
+  ],
+  "summary": [
+    {
+      "certified": true,
+      "certified_r": 8,
+      "encoding_unsat_r": [],
+      "incomplete_r": [],
+      "max_clauses": 226087,
+      "order": 17,
+      "r_values_tried": [
+        8
+      ]
+    },
+    {
+      "certified": false,
+      "certified_r": null,
+      "encoding_unsat_r": [
+        10,
+        7
+      ],
+      "incomplete_r": [
+        9,
+        8
+      ],
+      "max_clauses": 345212,
+      "order": 20,
+      "r_values_tried": [
+        9,
+        8,
+        10,
+        7
+      ]
+    },
+    {
+      "certified": false,
+      "certified_r": null,
+      "encoding_unsat_r": [
+        8,
+        7
+      ],
+      "incomplete_r": [
+        9,
+        10
+      ],
+      "max_clauses": 448118,
+      "order": 22,
+      "r_values_tried": [
+        9,
+        8,
+        10,
+        7
+      ]
+    },
+    {
+      "certified": false,
+      "certified_r": null,
+      "encoding_unsat_r": [],
+      "incomplete_r": [
+        10,
+        9,
+        11,
+        8
+      ],
+      "max_clauses": 581004,
+      "order": 24,
+      "r_values_tried": [
+        10,
+        9,
+        11,
+        8
+      ]
+    },
+    {
+      "certified": false,
+      "certified_r": null,
+      "encoding_unsat_r": [
+        9
+      ],
+      "incomplete_r": [
+        11,
+        10,
+        12
+      ],
+      "max_clauses": 738966,
+      "order": 26,
+      "r_values_tried": [
+        11,
+        10,
+        12,
+        9
+      ]
+    },
+    {
+      "certified": false,
+      "certified_r": null,
+      "encoding_unsat_r": [],
+      "incomplete_r": [
+        11,
+        10,
+        12,
+        9
+      ],
+      "max_clauses": 908964,
+      "order": 28,
+      "r_values_tried": [
+        11,
+        10,
+        12,
+        9
+      ]
+    },
+    {
+      "certified": false,
+      "certified_r": null,
+      "encoding_unsat_r": [
+        10
+      ],
+      "incomplete_r": [
+        12,
+        11,
+        13
+      ],
+      "max_clauses": 1116898,
+      "order": 30,
+      "r_values_tried": [
+        12,
+        11,
+        13,
+        10
+      ]
+    },
+    {
+      "certified": false,
+      "certified_r": null,
+      "encoding_unsat_r": [],
+      "incomplete_r": [
+        13,
+        12,
+        14,
+        11
+      ],
+      "max_clauses": 1477941,
+      "order": 33,
+      "r_values_tried": [
+        13,
+        12,
+        14,
+        11
+      ]
+    },
+    {
+      "certified": false,
+      "certified_r": null,
+      "encoding_unsat_r": [],
+      "incomplete_r": [
+        13,
+        12,
+        14,
+        11
+      ],
+      "max_clauses": 1905916,
+      "order": 36,
+      "r_values_tried": [
+        13,
+        12,
+        14,
+        11
+      ]
+    }
+  ],
+  "tool": "exact_map_cnf.search, scaling ladder",
+  "vertex_symmetry_break": false,
+  "worker": {
+    "cores": 4,
+    "system": "Linux"
+  }
+}

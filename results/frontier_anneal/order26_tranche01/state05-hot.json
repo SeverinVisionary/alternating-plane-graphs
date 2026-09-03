@@ -1,0 +1,1055 @@
+{
+  "claim_scope": "One bounded order-26 frontier-annealing lane; no witness is not nonexistence.",
+  "format": "apg-frontier-anneal-lane-v1",
+  "input": {
+    "abstract_graph_valid": true,
+    "frontier_log": "<workspace>/results/logs/order26_near_open_radius5.json",
+    "frontier_log_sha256": "e62332c8b3c4524994bf98a7faa25f6afce62ad227b5378dca1f0d3adbe954de",
+    "mode": "frontier",
+    "score_breakdown": {
+      "abstract_graph": 0,
+      "equal_face": 40,
+      "face_distribution": 160,
+      "hex": 0,
+      "total": 470,
+      "white": 270
+    },
+    "seed_file_sha256": "db44db0882c38e98ff94b40e42230c81f57e72d82cb5e0e221a499e57cd280c9",
+    "seed_path": "<workspace>/results/near_openings/order26_27_fans_1_24.json",
+    "seed_state_sha256": "9115b20cf204b1ff18b321142d6bf5c13eaf0501336382aa98283d69a36ac23b",
+    "state_sha256": "f47b7c1a84035d3c674dd54575c914dc3f39574251a3439d697d8a71328bac0e"
+  },
+  "job": {
+    "job_id": "state05-hot",
+    "lane": "hot",
+    "rng_seed": 3605,
+    "schedule": "geometric",
+    "state_index": 5,
+    "state_sha256": "f47b7c1a84035d3c674dd54575c914dc3f39574251a3439d697d8a71328bac0e",
+    "steps": 250000,
+    "temperature_end": 2.0,
+    "temperature_start": 800.0
+  },
+  "result": {
+    "best_state": {
+      "alpha": [
+        4,
+        31,
+        8,
+        11,
+        0,
+        40,
+        28,
+        20,
+        2,
+        15,
+        32,
+        3,
+        16,
+        83,
+        88,
+        9,
+        12,
+        22,
+        23,
+        57,
+        7,
+        79,
+        17,
+        18,
+        82,
+        30,
+        36,
+        52,
+        6,
+        37,
+        25,
+        1,
+        10,
+        87,
+        85,
+        41,
+        26,
+        29,
+        44,
+        49,
+        5,
+        35,
+        89,
+        45,
+        38,
+        43,
+        91,
+        67,
+        50,
+        39,
+        48,
+        53,
+        27,
+        51,
+        64,
+        59,
+        78,
+        19,
+        63,
+        55,
+        66,
+        71,
+        80,
+        58,
+        54,
+        70,
+        60,
+        47,
+        74,
+        72,
+        65,
+        61,
+        69,
+        81,
+        68,
+        90,
+        86,
+        84,
+        56,
+        21,
+        62,
+        73,
+        24,
+        13,
+        77,
+        34,
+        76,
+        33,
+        14,
+        42,
+        75,
+        46
+      ],
+      "rotation": [
+        {
+          "clockwise": [
+            3,
+            10
+          ],
+          "id": 1
+        },
+        {
+          "clockwise": [
+            3,
+            5
+          ],
+          "id": 2
+        },
+        {
+          "clockwise": [
+            1,
+            12,
+            9,
+            7,
+            2
+          ],
+          "id": 3
+        },
+        {
+          "clockwise": [
+            5,
+            10
+          ],
+          "id": 4
+        },
+        {
+          "clockwise": [
+            2,
+            6,
+            23,
+            25,
+            4
+          ],
+          "id": 5
+        },
+        {
+          "clockwise": [
+            5,
+            7,
+            8,
+            16
+          ],
+          "id": 6
+        },
+        {
+          "clockwise": [
+            3,
+            22,
+            6
+          ],
+          "id": 7
+        },
+        {
+          "clockwise": [
+            6,
+            22,
+            9,
+            11,
+            15
+          ],
+          "id": 8
+        },
+        {
+          "clockwise": [
+            3,
+            11,
+            8
+          ],
+          "id": 9
+        },
+        {
+          "clockwise": [
+            1,
+            4,
+            25,
+            24,
+            12
+          ],
+          "id": 10
+        },
+        {
+          "clockwise": [
+            8,
+            9,
+            13,
+            14
+          ],
+          "id": 11
+        },
+        {
+          "clockwise": [
+            3,
+            10,
+            26,
+            13
+          ],
+          "id": 12
+        },
+        {
+          "clockwise": [
+            11,
+            12,
+            26,
+            19,
+            14
+          ],
+          "id": 13
+        },
+        {
+          "clockwise": [
+            11,
+            13,
+            15
+          ],
+          "id": 14
+        },
+        {
+          "clockwise": [
+            8,
+            14,
+            18,
+            17
+          ],
+          "id": 15
+        },
+        {
+          "clockwise": [
+            6,
+            17,
+            21
+          ],
+          "id": 16
+        },
+        {
+          "clockwise": [
+            15,
+            18,
+            20,
+            22,
+            16
+          ],
+          "id": 17
+        },
+        {
+          "clockwise": [
+            15,
+            19,
+            17
+          ],
+          "id": 18
+        },
+        {
+          "clockwise": [
+            13,
+            21,
+            20,
+            18
+          ],
+          "id": 19
+        },
+        {
+          "clockwise": [
+            17,
+            19,
+            22
+          ],
+          "id": 20
+        },
+        {
+          "clockwise": [
+            16,
+            19,
+            26,
+            24,
+            23
+          ],
+          "id": 21
+        },
+        {
+          "clockwise": [
+            7,
+            17,
+            20,
+            8
+          ],
+          "id": 22
+        },
+        {
+          "clockwise": [
+            5,
+            21
+          ],
+          "id": 23
+        },
+        {
+          "clockwise": [
+            10,
+            21
+          ],
+          "id": 24
+        },
+        {
+          "clockwise": [
+            5,
+            10
+          ],
+          "id": 25
+        },
+        {
+          "clockwise": [
+            12,
+            21,
+            13
+          ],
+          "id": 26
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 0,
+        "equal_face": 40,
+        "face_distribution": 160,
+        "hex": 0,
+        "total": 470,
+        "white": 270
+      },
+      "state_sha256": "f47b7c1a84035d3c674dd54575c914dc3f39574251a3439d697d8a71328bac0e"
+    },
+    "counts": {
+      "accepted_equal": 1172,
+      "accepted_improving": 2146,
+      "accepted_moves": 5420,
+      "accepted_worsening": 2102,
+      "best_improvements": 0,
+      "graph_invalid_rejections": 166196,
+      "graph_valid_candidates": 83804,
+      "metropolis_rejections": 78384,
+      "move_attempts": 250000,
+      "score_evaluations": 83804,
+      "zero_score_block_tools_rejections": 0,
+      "zero_score_blocks_rejections": 0,
+      "zero_score_candidates": 0,
+      "zero_score_cross_validated": 0,
+      "zero_score_validation_rejections": 0
+    },
+    "current_state": {
+      "alpha": [
+        32,
+        12,
+        75,
+        45,
+        50,
+        54,
+        9,
+        43,
+        81,
+        6,
+        44,
+        85,
+        1,
+        83,
+        19,
+        87,
+        73,
+        46,
+        56,
+        14,
+        76,
+        53,
+        80,
+        30,
+        66,
+        90,
+        82,
+        42,
+        41,
+        70,
+        23,
+        84,
+        0,
+        68,
+        39,
+        71,
+        91,
+        59,
+        51,
+        34,
+        48,
+        28,
+        27,
+        7,
+        10,
+        3,
+        17,
+        72,
+        40,
+        63,
+        4,
+        38,
+        78,
+        21,
+        5,
+        58,
+        18,
+        74,
+        55,
+        37,
+        65,
+        86,
+        88,
+        49,
+        69,
+        60,
+        24,
+        89,
+        33,
+        64,
+        29,
+        35,
+        47,
+        16,
+        57,
+        2,
+        20,
+        79,
+        52,
+        77,
+        22,
+        8,
+        26,
+        13,
+        31,
+        11,
+        61,
+        15,
+        62,
+        67,
+        25,
+        36
+      ],
+      "rotation": [
+        {
+          "clockwise": [
+            5,
+            10
+          ],
+          "id": 1
+        },
+        {
+          "clockwise": [
+            13,
+            21
+          ],
+          "id": 2
+        },
+        {
+          "clockwise": [
+            4,
+            12,
+            22,
+            14,
+            15
+          ],
+          "id": 3
+        },
+        {
+          "clockwise": [
+            3,
+            13
+          ],
+          "id": 4
+        },
+        {
+          "clockwise": [
+            1,
+            23,
+            6,
+            25,
+            24
+          ],
+          "id": 5
+        },
+        {
+          "clockwise": [
+            5,
+            20,
+            13,
+            16
+          ],
+          "id": 6
+        },
+        {
+          "clockwise": [
+            15,
+            22,
+            21
+          ],
+          "id": 7
+        },
+        {
+          "clockwise": [
+            9,
+            18,
+            26,
+            22,
+            12
+          ],
+          "id": 8
+        },
+        {
+          "clockwise": [
+            8,
+            12,
+            19
+          ],
+          "id": 9
+        },
+        {
+          "clockwise": [
+            1,
+            19,
+            11,
+            20,
+            23
+          ],
+          "id": 10
+        },
+        {
+          "clockwise": [
+            10,
+            26,
+            17,
+            14
+          ],
+          "id": 11
+        },
+        {
+          "clockwise": [
+            3,
+            13,
+            9,
+            8
+          ],
+          "id": 12
+        },
+        {
+          "clockwise": [
+            2,
+            6,
+            20,
+            12,
+            4
+          ],
+          "id": 13
+        },
+        {
+          "clockwise": [
+            3,
+            11,
+            17
+          ],
+          "id": 14
+        },
+        {
+          "clockwise": [
+            3,
+            16,
+            21,
+            7
+          ],
+          "id": 15
+        },
+        {
+          "clockwise": [
+            6,
+            21,
+            15
+          ],
+          "id": 16
+        },
+        {
+          "clockwise": [
+            11,
+            18,
+            24,
+            25,
+            14
+          ],
+          "id": 17
+        },
+        {
+          "clockwise": [
+            8,
+            19,
+            17
+          ],
+          "id": 18
+        },
+        {
+          "clockwise": [
+            9,
+            26,
+            10,
+            18
+          ],
+          "id": 19
+        },
+        {
+          "clockwise": [
+            6,
+            10,
+            13
+          ],
+          "id": 20
+        },
+        {
+          "clockwise": [
+            2,
+            7,
+            22,
+            15,
+            16
+          ],
+          "id": 21
+        },
+        {
+          "clockwise": [
+            3,
+            8,
+            21,
+            7
+          ],
+          "id": 22
+        },
+        {
+          "clockwise": [
+            5,
+            10
+          ],
+          "id": 23
+        },
+        {
+          "clockwise": [
+            5,
+            17
+          ],
+          "id": 24
+        },
+        {
+          "clockwise": [
+            5,
+            17
+          ],
+          "id": 25
+        },
+        {
+          "clockwise": [
+            8,
+            11,
+            19
+          ],
+          "id": 26
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 0,
+        "equal_face": 20,
+        "face_distribution": 480,
+        "hex": 0,
+        "total": 1220,
+        "white": 720
+      },
+      "state_sha256": "2d508e8dd17a078e395024dcc96b662fb43d8f97adcd987a62a0aa0c60320268"
+    },
+    "initial_state": {
+      "alpha": [
+        4,
+        31,
+        8,
+        11,
+        0,
+        40,
+        28,
+        20,
+        2,
+        15,
+        32,
+        3,
+        16,
+        83,
+        88,
+        9,
+        12,
+        22,
+        23,
+        57,
+        7,
+        79,
+        17,
+        18,
+        82,
+        30,
+        36,
+        52,
+        6,
+        37,
+        25,
+        1,
+        10,
+        87,
+        85,
+        41,
+        26,
+        29,
+        44,
+        49,
+        5,
+        35,
+        89,
+        45,
+        38,
+        43,
+        91,
+        67,
+        50,
+        39,
+        48,
+        53,
+        27,
+        51,
+        64,
+        59,
+        78,
+        19,
+        63,
+        55,
+        66,
+        71,
+        80,
+        58,
+        54,
+        70,
+        60,
+        47,
+        74,
+        72,
+        65,
+        61,
+        69,
+        81,
+        68,
+        90,
+        86,
+        84,
+        56,
+        21,
+        62,
+        73,
+        24,
+        13,
+        77,
+        34,
+        76,
+        33,
+        14,
+        42,
+        75,
+        46
+      ],
+      "rotation": [
+        {
+          "clockwise": [
+            3,
+            10
+          ],
+          "id": 1
+        },
+        {
+          "clockwise": [
+            3,
+            5
+          ],
+          "id": 2
+        },
+        {
+          "clockwise": [
+            1,
+            12,
+            9,
+            7,
+            2
+          ],
+          "id": 3
+        },
+        {
+          "clockwise": [
+            5,
+            10
+          ],
+          "id": 4
+        },
+        {
+          "clockwise": [
+            2,
+            6,
+            23,
+            25,
+            4
+          ],
+          "id": 5
+        },
+        {
+          "clockwise": [
+            5,
+            7,
+            8,
+            16
+          ],
+          "id": 6
+        },
+        {
+          "clockwise": [
+            3,
+            22,
+            6
+          ],
+          "id": 7
+        },
+        {
+          "clockwise": [
+            6,
+            22,
+            9,
+            11,
+            15
+          ],
+          "id": 8
+        },
+        {
+          "clockwise": [
+            3,
+            11,
+            8
+          ],
+          "id": 9
+        },
+        {
+          "clockwise": [
+            1,
+            4,
+            25,
+            24,
+            12
+          ],
+          "id": 10
+        },
+        {
+          "clockwise": [
+            8,
+            9,
+            13,
+            14
+          ],
+          "id": 11
+        },
+        {
+          "clockwise": [
+            3,
+            10,
+            26,
+            13
+          ],
+          "id": 12
+        },
+        {
+          "clockwise": [
+            11,
+            12,
+            26,
+            19,
+            14
+          ],
+          "id": 13
+        },
+        {
+          "clockwise": [
+            11,
+            13,
+            15
+          ],
+          "id": 14
+        },
+        {
+          "clockwise": [
+            8,
+            14,
+            18,
+            17
+          ],
+          "id": 15
+        },
+        {
+          "clockwise": [
+            6,
+            17,
+            21
+          ],
+          "id": 16
+        },
+        {
+          "clockwise": [
+            15,
+            18,
+            20,
+            22,
+            16
+          ],
+          "id": 17
+        },
+        {
+          "clockwise": [
+            15,
+            19,
+            17
+          ],
+          "id": 18
+        },
+        {
+          "clockwise": [
+            13,
+            21,
+            20,
+            18
+          ],
+          "id": 19
+        },
+        {
+          "clockwise": [
+            17,
+            19,
+            22
+          ],
+          "id": 20
+        },
+        {
+          "clockwise": [
+            16,
+            19,
+            26,
+            24,
+            23
+          ],
+          "id": 21
+        },
+        {
+          "clockwise": [
+            7,
+            17,
+            20,
+            8
+          ],
+          "id": 22
+        },
+        {
+          "clockwise": [
+            5,
+            21
+          ],
+          "id": 23
+        },
+        {
+          "clockwise": [
+            10,
+            21
+          ],
+          "id": 24
+        },
+        {
+          "clockwise": [
+            5,
+            10
+          ],
+          "id": 25
+        },
+        {
+          "clockwise": [
+            12,
+            21,
+            13
+          ],
+          "id": 26
+        }
+      ],
+      "score_breakdown": {
+        "abstract_graph": 0,
+        "equal_face": 40,
+        "face_distribution": 160,
+        "hex": 0,
+        "total": 470,
+        "white": 270
+      },
+      "state_sha256": "f47b7c1a84035d3c674dd54575c914dc3f39574251a3439d697d8a71328bac0e"
+    },
+    "recovery_step": null,
+    "seed": 3605,
+    "steps_executed": 250000,
+    "steps_requested": 250000,
+    "success": false,
+    "success_block_hash": null,
+    "success_checks": {},
+    "temperature": {
+      "end": 2.0,
+      "first_effective": 800.0,
+      "last_configured": 2.0,
+      "recovery": null,
+      "schedule": "geometric",
+      "start": 800.0
+    },
+    "wall_seconds": 11.146099149998918
+  }
+}

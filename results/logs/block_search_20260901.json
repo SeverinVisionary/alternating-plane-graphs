@@ -1,0 +1,58 @@
+{
+  "budget_seconds": 1150,
+  "date": "2026-09-01",
+  "encoding": "cnf-face-label-v1 with socket interface and t=0",
+  "nonexistence_claimed": false,
+  "note": "Positive-witness engine. Every profile exhausted its wall clock without the solver returning a single model, so no candidate was validated and no refutation was reached. INCOMPLETE is a statement about the wall clock; it is not evidence about whether a block exists at these profiles.",
+  "results": [
+    {
+      "clauses": 435982,
+      "disposition": "INCOMPLETE",
+      "nonexistence_claimed": false,
+      "order": 25,
+      "r": 11,
+      "raw_models": 0,
+      "rejection_reasons": {},
+      "seconds": 1150.0,
+      "t0": true
+    },
+    {
+      "clauses": 631648,
+      "disposition": "INCOMPLETE",
+      "nonexistence_claimed": false,
+      "order": 28,
+      "r": 12,
+      "raw_models": 0,
+      "rejection_reasons": {},
+      "seconds": 1150.0,
+      "t0": true
+    },
+    {
+      "clauses": 705569,
+      "disposition": "INCOMPLETE",
+      "nonexistence_claimed": false,
+      "order": 29,
+      "r": 12,
+      "raw_models": 0,
+      "rejection_reasons": {},
+      "seconds": 1150.1,
+      "t0": true
+    },
+    {
+      "clauses": 873391,
+      "disposition": "INCOMPLETE",
+      "nonexistence_claimed": false,
+      "order": 31,
+      "r": 12,
+      "raw_models": 0,
+      "rejection_reasons": {},
+      "seconds": 1150.1,
+      "t0": true
+    }
+  ],
+  "tool": "block_search.py",
+  "worker": {
+    "cores": 4,
+    "system": "Linux"
+  }
+}

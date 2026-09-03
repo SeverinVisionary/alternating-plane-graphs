@@ -1,0 +1,36 @@
+{
+  "format": "apg-four-edge-order26-support-remote-verification-v1",
+  "verified_result_commit": "ca8be7ba0143487d3e9897dd8ec009b27dd1d714",
+  "verified_result_tree": "292540f9c7d80522fa8d508e09b692b4e5bf83f6",
+  "parent": "67ea02935dd6dec8d5516b5b18e3856b76a92558",
+  "branch": "apg-345-conjecture-10-2",
+  "branch_head_at_verification": "ca8be7ba0143487d3e9897dd8ec009b27dd1d714",
+  "result": {
+    "path": "results/logs/order26_four_edge_support_result.json",
+    "git_blob_sha1": "32136026b95fdc3b9716a1d8d54f63d8a216b17f",
+    "byte_length": 397000,
+    "sha256": "df9a2c68f3c5ac246c0722b9959f09ca2574b11497095de97e8e316d2fd6753c",
+    "remote_local_byte_equal": true,
+    "utf8_decode": true,
+    "json_loads": true,
+    "result_replay": true
+  },
+  "frozen_provenance": {
+    "spec_sha256": "0b9e7152a329f811e6deae549d26f7d548bcbd705a7685087b220cfeaf8cd9f1",
+    "target_state_sha256": "93f9ec18ff60744b691da9ea3743ef4efa505e570ace71f5e8b26aef4c68b5e2",
+    "parent_manifest_sha256": "10e474800e632b44767b6dfd2137594d14db2eb87f96e22de6f717251fb112b7",
+    "support_manifest_sha256": "7dadec97c34866026d2394bfa3c81d3ef1e7d47bda57cdfd03f8a093555ed2f1"
+  },
+  "certificates": {
+    "count": 0,
+    "remote_blobs": [],
+    "reason": "No score-zero candidate occurred."
+  },
+  "checks": {
+    "result_replay_tests": "12/12 passed",
+    "full_committed_suite": "136/136 passed",
+    "full_suite_wall_seconds": 14.998,
+    "git_diff_check": "passed",
+    "accounting": "passed"
+  }
+}

@@ -1,0 +1,6 @@
+# Optional.  None of the three settled conjectures depends on any of these:
+# `make verify` passes without them and the tests that need them skip.
+python-sat>=1.8      # test_exact_map_cnf.py, exact_map_cnf.py, block_search.py
+z3-solver>=4.13      # exact_map_bool_sat.py, exact_map_sat.py, measure_encoding_cost.py
+sympy>=1.12          # results/cap_construction_20260901/code/winding.py
+numpy>=1.26          # results/cap_construction_20260901/code/winding.py

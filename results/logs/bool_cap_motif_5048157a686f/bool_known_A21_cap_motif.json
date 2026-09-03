@@ -1,0 +1,240 @@
+{
+  "canonical": true,
+  "cap_fans": [
+    {
+      "center": 10,
+      "leaves": [
+        0,
+        1
+      ]
+    },
+    {
+      "center": 11,
+      "leaves": [
+        2,
+        3
+      ]
+    }
+  ],
+  "certificate": {
+    "format": "apg-plane-rotation-v1",
+    "vertices": [
+      {
+        "clockwise": [
+          10,
+          15,
+          16
+        ],
+        "id": 0
+      },
+      {
+        "clockwise": [
+          10,
+          16,
+          18
+        ],
+        "id": 1
+      },
+      {
+        "clockwise": [
+          11,
+          19,
+          17
+        ],
+        "id": 2
+      },
+      {
+        "clockwise": [
+          11,
+          20,
+          19
+        ],
+        "id": 3
+      },
+      {
+        "clockwise": [
+          12,
+          15,
+          17
+        ],
+        "id": 4
+      },
+      {
+        "clockwise": [
+          14,
+          17,
+          15
+        ],
+        "id": 5
+      },
+      {
+        "clockwise": [
+          13,
+          16,
+          19
+        ],
+        "id": 6
+      },
+      {
+        "clockwise": [
+          12,
+          19,
+          16
+        ],
+        "id": 7
+      },
+      {
+        "clockwise": [
+          14,
+          18,
+          20
+        ],
+        "id": 8
+      },
+      {
+        "clockwise": [
+          13,
+          20,
+          18
+        ],
+        "id": 9
+      },
+      {
+        "clockwise": [
+          0,
+          1,
+          18,
+          15
+        ],
+        "id": 10
+      },
+      {
+        "clockwise": [
+          2,
+          17,
+          20,
+          3
+        ],
+        "id": 11
+      },
+      {
+        "clockwise": [
+          4,
+          17,
+          7,
+          16
+        ],
+        "id": 12
+      },
+      {
+        "clockwise": [
+          6,
+          19,
+          9,
+          18
+        ],
+        "id": 13
+      },
+      {
+        "clockwise": [
+          5,
+          15,
+          8,
+          20
+        ],
+        "id": 14
+      },
+      {
+        "clockwise": [
+          0,
+          10,
+          14,
+          5,
+          4
+        ],
+        "id": 15
+      },
+      {
+        "clockwise": [
+          0,
+          12,
+          7,
+          6,
+          1
+        ],
+        "id": 16
+      },
+      {
+        "clockwise": [
+          2,
+          12,
+          4,
+          5,
+          11
+        ],
+        "id": 17
+      },
+      {
+        "clockwise": [
+          1,
+          13,
+          9,
+          8,
+          10
+        ],
+        "id": 18
+      },
+      {
+        "clockwise": [
+          2,
+          3,
+          13,
+          6,
+          7
+        ],
+        "id": 19
+      },
+      {
+        "clockwise": [
+          3,
+          11,
+          14,
+          8,
+          9
+        ],
+        "id": 20
+      }
+    ]
+  },
+  "control": "published-strict-block-capped-cap-normalized",
+  "disposition": "CANDIDATE",
+  "encoding": "boolean-dart-matching-plus-face-period",
+  "encoding_constraint_count": 16320,
+  "explicit_connectivity": false,
+  "format": "apg-exact-map-bool-sat-v1",
+  "heuristic": false,
+  "lane": "closed",
+  "order": 21,
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "python": "3.14.4 (main, May  1 2026, 05:51:55) [GCC 13.3.0]",
+  "r": 10,
+  "random_seed": 0,
+  "require_cap_facets": true,
+  "require_cap_fans": true,
+  "require_cap_interface": true,
+  "require_t0": true,
+  "solver_statistics": {
+    "max memory": 68.48,
+    "memory": 56.19,
+    "num allocs": 96966313,
+    "rlimit count": 2928367,
+    "solve-eqs-elim-vars": 4260,
+    "solve-eqs-steps": 4260,
+    "time": 0.704
+  },
+  "threads": 1,
+  "timeout_seconds": 120,
+  "wall_seconds": 21.360668182373047,
+  "z3_result": "sat",
+  "z3_version": "5.1.0"
+}

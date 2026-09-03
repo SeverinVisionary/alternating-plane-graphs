@@ -1,0 +1,64 @@
+PRE_JOB_ENVIRONMENT_RECORDED_BEFORE_JOB_OR_SOURCE_READ
+uname: Linux a7003f656bcb 6.18.35 #1 SMP Fri Aug 21 00:36:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+hostname: a7003f656bcb
+utc: 2026-08-31T20:07:44Z
+python: Python 3.14.4
+z3_python: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import z3; print(z3.get_version_string())
+    ^^^^^^^^^
+ModuleNotFoundError: No module named 'z3'
+z3_cli: MISSING
+cpu:
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  3
+On-line CPU(s) list:                     0-2
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+BIOS Model name:                           CPU @ 0.0GHz
+BIOS CPU family:                         0
+CPU family:                              6
+Model:                                   79
+Thread(s) per core:                      1
+Core(s) per socket:                      3
+Socket(s):                               1
+Stepping:                                1
+BogoMIPS:                                4589.36
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat umip md_clear arch_capabilities
+Hypervisor vendor:                       KVM
+Virtualization type:                     full
+L1d cache:                               64 KiB (2 instances)
+L1i cache:                               64 KiB (2 instances)
+L2 cache:                                512 KiB (2 instances)
+L3 cache:                                50 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-2
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Vulnerable
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Mitigation; PTE Inversion
+Vulnerability Mds:                       Vulnerable; SMT Host state unknown
+Vulnerability Meltdown:                  Vulnerable
+Vulnerability Mmio stale data:           Vulnerable
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Vulnerable
+Vulnerability Spectre v1:                Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+Vulnerability Spectre v2:                Vulnerable; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI: Vulnerable
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Vulnerable
+Vulnerability Vmscape:                   Not affected
+memory:
+               total        used        free      shared  buff/cache   available
+Mem:            17Gi       682Mi        16Gi        16Ki       1.0Gi        17Gi
+Swap:             0B          0B          0B
+git_status_porcelain_v1:
+head: baa349135fc965f150460994bbb48ab8bec4707c
+tree: 57858f688bd168e0cb0476ff12fee7a6ec0bc85b

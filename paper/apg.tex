@@ -1,0 +1,725 @@
+\documentclass[11pt,a4paper]{amsart}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{convention}[theorem]{Convention}
+\newtheorem{remark}[theorem]{Remark}
+
+
+\begin{document}
+
+\title[Three conjectures on alternating plane graphs]
+      {Three conjectures on alternating plane graphs}
+
+\author{Hanyu Yang}
+\email{hanyu.yang.92@gmail.com}
+\urladdr{\href{https://orcid.org/0009-0005-0419-4070}{ORCID 0009-0005-0419-4070}}
+
+\date{\today}
+
+\subjclass[2020]{05C10, 05C30, 68R10}
+\keywords{alternating plane graph, plane graph, rotation system,
+computer-assisted proof}
+
+\begin{abstract}
+Alth\"ofer, Haugland, Scherer, Schneider and Van Cleemput introduced
+\emph{alternating plane graphs} and closed their paper with four open problems.
+We settle three of them.
+
+Conjecture~10.1, that no alternating plane graph has exactly two distinct
+vertex degrees or exactly two distinct face sizes, is proved. The argument is a
+single per-edge inequality applied twice, and it is unconditional: we show that
+such a graph would have to be bridgeless, so the proof does not depend on how
+the definition is read at a bridge.
+
+Conjecture~10.2, that $(3,4,5)$-alternating plane graphs exist on $n$ vertices
+for every $n \ge 20$, is settled. We exhibit verified certificates for all
+$26$ orders that were open, and prove a periodic capping lemma: one certificate
+per residue class generates a $(3,4,5)$-alternating plane graph at order $48$
+and at every order $n \ge 50$.
+
+Conjecture~10.3, that a $3$-connected alternating plane graph exists on $n$
+vertices for every $n \ge 19$, is settled. We also refute the natural shortcut
+by exhibiting a $(3,4,5)$-alternating plane graph on $46$ vertices with a
+separating pair.
+
+The remaining problem --- the asymptotic distribution of the degree ratio
+$v_4/v_3$ on $[1,1.5]$ --- is untouched, and we explain why the present methods
+do not reach it.
+
+Every graph asserted here is supplied as an explicit rotation system and is
+accepted by three independently written verifiers; the accompanying artifact
+runs $1253$ checks and requires only a Python interpreter.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Alth\"ofer, Haugland, Scherer, Schneider and Van Cleemput \cite{AHSSV2015}
+introduced alternating plane graphs: plane graphs in which adjacent vertices
+have different degrees and adjacent faces have different sizes. The condition is
+severe. It forces a global rigidity that makes even existence questions hard,
+and the paper closes (\cite{AHSSV2015}, \S10, p.~362) with four open problems.
+Three are settled here.
+
+\subsection*{Results}
+
+\begin{itemize}
+  \item Conjecture~10.1 is proved, unconditionally (Theorem~\ref{thm:101}).
+  \item Conjecture~10.2 is settled, by certificates together with a proved
+        construction (Theorem~\ref{thm:pumping}, Corollary~\ref{cor:102}).
+  \item Conjecture~10.3 is settled (Theorem~\ref{thm:103}).
+  \item The asymptotic degree distribution is left open (\S\ref{sec:density}).
+\end{itemize}
+
+\subsection*{Disclosure of AI use}
+
+This work was produced with substantial assistance from large language models:
+the software, the search programs that found the certificates, the arguments,
+and the exposition. The step that removes the (C2) hypothesis in
+\S\ref{sec:c2}, and so makes Theorem~\ref{thm:101} unconditional, was supplied
+by an AI reviewer and subsequently re-derived and verified by the author. AI
+review was also used adversarially, and found errors that had been missed,
+including three claims stated in earlier drafts that were false and were
+withdrawn. No AI system is an author of this paper, and responsibility for every
+claim in it rests with the named author. The accompanying artifact states the
+extent in full.
+
+\subsection*{On the use of computation}
+
+Two of the three results assert the existence of specific graphs, and those
+graphs are large: the certificates here run to $110$ vertices. We state them as
+rotation systems, which determine a plane map up to homeomorphism, and we derive
+every claimed property --- degrees, faces, face sizes, bridges, connectivity ---
+rather than storing it. Nothing in the artifact records a claim that a graph
+\emph{is} an alternating plane graph; three separately written decision
+procedures recompute that on every run.
+
+The proofs in \S\ref{sec:101} and \S\ref{sec:pumping} are ordinary mathematics
+and can be read without a computer. Computation enters in two places: verifying
+the certificates, and discharging two finite hypotheses of the capping lemma,
+both stated explicitly in \S\ref{sec:pumping} so that a reader can see precisely
+what is being taken from a machine.
+
+\section{Preliminaries}\label{sec:prelim}
+
+We follow \cite{AHSSV2015} throughout.
+
+\begin{definition}[\cite{AHSSV2015}, Definition~2.1]\label{def:apg}
+An \emph{alternating plane graph} is a simple connected plane graph in which
+\begin{enumerate}
+  \item[(a)] every vertex has degree at least $3$;
+  \item[(b)] every face, the unbounded one included, has size at least $3$;
+  \item[(c)] adjacent vertices have different degrees;
+  \item[(d)] adjacent faces have different sizes.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[\cite{AHSSV2015}, Definitions~3.1 and~3.4]
+A $(3,4,5)$-alternating plane graph is one in which every vertex degree and
+every face size lies in $\{3,4,5\}$. An \emph{$X,Y$-alternating plane graph} is
+one with exactly $X$ distinct vertex degrees and exactly $Y$ distinct face
+sizes.
+\end{definition}
+
+\begin{convention}[face size]\label{conv:c1}
+The \emph{size} of a face is the length of its boundary walk counted with
+multiplicity, that is, the number of edge-side incidences. It is not the number
+of distinct vertices on the face. The two differ exactly when the walk repeats a
+vertex, which happens if and only if the graph is not $2$-connected. In
+particular a bridge contributes $2$ to the size of the single face carrying it.
+This is the reading used in \cite{AHSSV2015} at (3.1) and (9.2), both of which
+assert $\sum_s s\,f_s = 2e$.
+\end{convention}
+
+Condition (d) of Definition~\ref{def:apg} is ambiguous at a bridge, since then
+one face lies on both sides of an edge. Two readings are available.
+
+\begin{convention}[bridges]\label{conv:c2}
+Say that a plane graph satisfies \emph{(C2)} if no edge has the same face on
+both sides, equivalently if it has no bridge. \cite{AHSSV2015} takes (d) to
+include a face adjacent to itself, so that (C2) follows from
+Definition~\ref{def:apg}; under the \emph{weak reading}, (d) constrains only
+pairs of distinct faces and bridges are permitted.
+\end{convention}
+
+This is not a quibble: the proof of Conjecture~10.1 in \S\ref{sec:101} uses
+(C2), and we therefore prove in \S\ref{sec:c2} that a putative counterexample
+must be bridgeless under \emph{either} reading. The result is thus independent
+of the ambiguity.
+
+We shall use the following, which is due to \cite{AHSSV2015}.
+
+\begin{theorem}[\cite{AHSSV2015}, Theorem~3.2]\label{thm:32}
+In a $(3,4,5)$-alternating plane graph, $v_3 = f_3$, $v_4 = f_4$ and
+$v_5 = f_5$, where $v_i$ and $f_i$ count vertices of degree $i$ and faces of
+size $i$. Consequently $v_5 = v_3 - 4$, $E = 2V - 2$ and $F = V$.
+\end{theorem}
+
+\subsection{Rotation systems}
+
+A plane map is encoded by its \emph{rotation system}: for each vertex, its
+neighbours in clockwise order. Writing $\alpha$ for the involution exchanging
+the two darts of an edge and $\sigma$ for the rotation, the faces are the orbits
+of $\varphi = \sigma^{-1}\alpha$, and the size of a face is the length of its
+orbit. An edge is a bridge if and only if its two darts lie in the same orbit.
+Every graph in this paper is presented this way.
+
+\section{The per-edge identity}\label{sec:identity}
+
+The following double count is the engine of \S\ref{sec:101}. It is the
+convention behind (9.2) of \cite{AHSSV2015}, isolated.
+
+\begin{lemma}\label{lem:identity}
+Let $G$ be a plane graph with $v$ vertices, $e$ edges and $f$ faces. For an edge
+$a$ with ends $u,w$ and face occurrences $F^-(a)$, $F^+(a)$ on its two sides,
+put
+\[
+  c(a) \;=\; \frac{1}{\deg u} + \frac{1}{\deg w}
+           + \frac{1}{|F^-(a)|} + \frac{1}{|F^+(a)|}.
+\]
+Then $\sum_{a} c(a) = v + f$. If $G$ is connected, Euler's formula gives
+\[
+  \sum_{a} c(a) \;=\; e + 2 ,
+  \qquad\text{equivalently}\qquad
+  \sum_{a} \bigl(c(a) - 1\bigr) \;=\; 2 .
+\]
+\end{lemma}
+
+\begin{proof}
+A vertex of degree $d$ is an end of exactly $d$ edges and contributes $1/d$ each
+time, hence $1$ in total; summing gives $v$. By Convention~\ref{conv:c1} a face
+of size $s$ occurs exactly $s$ times as a side of an edge and contributes $1/s$
+each time, hence $1$ in total; summing gives $f$.
+\end{proof}
+
+\begin{remark}
+Neither count requires facial walks to be simple. Repeated vertices, cut
+vertices and bridges are all permitted; a bridge simply has
+$F^-(a) = F^+(a)$ and contributes $2/|F|$ from its face side. This is what makes
+Lemma~\ref{lem:identity} usable in \S\ref{sec:c2}, where bridges are the object
+of study.
+\end{remark}
+
+We write $x(a) = c(a) - 1$ for the \emph{excess} of an edge, so that
+Lemma~\ref{lem:identity} reads $\sum_a x(a) = 2$: in a connected plane graph
+some edge must have positive excess.
+
+\section{Conjecture 10.1}\label{sec:101}
+
+\begin{theorem}\label{thm:101}
+There is no $2,Y$-alternating plane graph and no $X,2$-alternating plane graph.
+\end{theorem}
+
+We prove the two halves separately, then remove the dependence on
+Convention~\ref{conv:c2} in \S\ref{sec:c2}. Both halves are the same inequality
+with the roles of vertices and faces exchanged; no dual graph is constructed, so
+neither invokes the $3$-edge-connectivity hypothesis of
+(\cite{AHSSV2015}, Lemma~2.2).
+
+\subsection{No $2,Y$-alternating plane graph}
+
+Suppose $G$ is one, with degrees taking exactly the two values $d_1 < d_2$.
+
+Adjacent vertices differ in degree and only two degrees occur, so every edge
+joins a $d_1$-vertex to a $d_2$-vertex. In particular $G$ is bipartite, and
+every edge contributes
+\[
+  \frac{1}{d_1} + \frac{1}{d_2} \;\le\; \frac13 + \frac14 \;=\; \frac{7}{12}
+\]
+to the vertex side, using $d_1 \ge 3$ from Definition~\ref{def:apg}(a).
+
+Since $G$ is bipartite, every closed walk has even length, so by
+Convention~\ref{conv:c1} every face has even size, hence size at least $4$. By
+(C2) the two sides of an edge are distinct faces, and by
+Definition~\ref{def:apg}(d) their sizes differ; being distinct even numbers at
+least $4$, one is at least $4$ and the other at least $6$. So the face side
+contributes at most $\tfrac14 + \tfrac16 = \tfrac{5}{12}$.
+
+Hence $c(a) \le \tfrac{7}{12} + \tfrac{5}{12} = 1$ for every edge, so
+$\sum_a x(a) \le 0$, contradicting Lemma~\ref{lem:identity}. \qed
+
+\begin{remark}
+This is (9.5) of \cite{AHSSV2015} with $1/2$ replaced by $1/d_1 \le 1/3$. The
+derivation of (9.5) never used the degree $2$; \S9.1 of \cite{AHSSV2015} runs
+the chain on the weak class with degrees $2$ and $k$, while \S3.2 attacks the
+strong class with different machinery yielding only $V \ge 25$ and $V \ge 56$
+and never bounding $f$. The two sections were not connected.
+\end{remark}
+
+\subsection{No $X,2$-alternating plane graph}\label{sec:halftwo}
+
+Suppose $G$ is one, with face sizes taking exactly the two values $s_1 < s_2$.
+
+By (C2) the two sides of every edge are distinct faces, and by
+Definition~\ref{def:apg}(d) they have different sizes; with only two sizes
+available, every edge separates an $s_1$-face from an $s_2$-face and contributes
+at most $\tfrac13 + \tfrac14 = \tfrac{7}{12}$ to the face side.
+
+We claim every degree is even. Fix a vertex $u$ of degree $d$, let its edges in
+rotation order be $a_1,\dots,a_d$, and let $F_i$ be the face occupying the
+corner between $a_i$ and $a_{i+1}$, indices modulo $d$. The two sides of $a_i$
+are the occurrences $F_{i-1}$ and $F_i$, distinct faces by (C2), so
+$|F_{i-1}| \ne |F_i|$. With only two sizes the cyclic word
+$|F_1|,\dots,|F_d|$ alternates, and a cyclically alternating binary word has
+even length. Hence $d$ is even.
+
+Stating the argument over corners rather than over ``the incident faces'' is
+what makes it correct at a cut vertex, where one face occupies several corners:
+those corners are non-consecutive, so alternation is undisturbed.
+
+Degrees are at least $3$ and even, hence at least $4$; adjacent vertices have
+distinct even degrees, so the vertex side contributes at most
+$\tfrac14+\tfrac16 = \tfrac{5}{12}$. Again $c(a) \le 1$ for every edge and
+Lemma~\ref{lem:identity} is contradicted. \qed
+
+\begin{remark}
+Euler is used as $v - e + f = 2$. Disconnectedness only strengthens the
+contradiction: with $c$ components $v + f = e + 1 + c$.
+\end{remark}
+
+\subsection{Calibration}
+
+The chain can be run on the class \cite{AHSSV2015} settles, the weak $2,k$
+class, where it must exclude exactly $k \ge 12$, reproducing
+(\cite{AHSSV2015}, (9.10)), and must \emph{not} exclude $k \le 10$, for which
+\cite{AHSSV2015} exhibits weak $2,k$-alternating plane graphs (Table~5,
+Figures~8--9). It does both. Any step that over-counted would have failed this
+test. The case $k = 11$ is left open by the chain, exactly as in
+\cite{AHSSV2015}, which needs its Lemma~9.4 for it.
+
+\section{Removing the dependence on (C2)}\label{sec:c2}
+
+Everything in this section is under the weak reading of
+Convention~\ref{conv:c2}: condition (d) of Definition~\ref{def:apg} constrains
+only pairs of distinct faces, and bridges are permitted. We show that no
+$X,2$-alternating plane graph exists even so. Since such a graph would in
+particular be bridgeless, (C2) is a consequence of Definition~\ref{def:apg}
+rather than a reading of it, and Theorem~\ref{thm:101} holds under both
+readings. (The corresponding statement for $2,Y$ follows from a leaf-block
+argument, sketched at the end of the section.)
+
+\begin{lemma}[parity]\label{lem:parity}
+Let $G$ be a plane graph whose faces admit a colouring by two colours that is
+proper on every pair of distinct adjacent faces. Then for every vertex $v$,
+\[
+  \deg v \;-\; \bigl|\{\text{bridges at } v\}\bigr| \quad\text{is even.}
+\]
+\end{lemma}
+
+\begin{proof}
+Walk the darts at $v$ in rotation order and let $F_1,\dots,F_d$ be the corner
+faces as in \S\ref{sec:halftwo}, so that $F_{i-1}$ and $F_i$ are the two sides
+of the edge $a_i$. These two occurrences are of the same face precisely when
+$a_i$ is a bridge. Hence the corner colour changes across each non-bridge edge
+at $v$ and is unchanged across each bridge at $v$. The walk closes up, so the
+number of changes is even, and that number is $\deg v$ minus the number of
+bridges at $v$.
+\end{proof}
+
+Lemma~\ref{lem:parity} is the classical fact that a plane graph is face
+$2$-colourable if and only if it is Eulerian, restated so that bridges are
+permitted rather than assumed away. In an $X,2$-alternating plane graph the face
+size supplies the colouring, so the lemma applies.
+
+\begin{corollary}\label{cor:evendeg}
+In an $X,2$-alternating plane graph under the weak reading, a vertex lying on no
+bridge has even degree, hence degree at least $4$.
+\end{corollary}
+
+\begin{theorem}\label{thm:nobridge}
+Under the weak reading there is no $X,2$-alternating plane graph. In particular
+no such graph has a bridge.
+\end{theorem}
+
+\begin{proof}
+Let $G$ be one, with face sizes $s_1 < s_2$, and let $B$ be its number of
+bridges. Suppose first $B \ge 1$.
+
+\smallskip
+\emph{Step 0: $s_2 \ge 8$.} Let $a = uw$ be a bridge and let $A$ be the
+component of $G - a$ containing $u$. Then $\deg_A u = \deg u - 1 \ge 2$, so $A$
+has at least three vertices. A simple connected plane graph on at least three
+vertices has every facial walk of length at least $3$: a walk of length $2$
+requires parallel edges and one of length $1$ a loop. The face $F$ carrying $a$
+is traced as the outer walk of $A$, then $a$, then the outer walk of the other
+component, then $a$ again, so by Convention~\ref{conv:c1}
+\[
+  |F| \;=\; |\partial A| + |\partial B| + 2 \;\ge\; 3 + 3 + 2 \;=\; 8 .
+\]
+As $|F| \in \{s_1,s_2\}$ and $s_1 < s_2$, we get $s_2 \ge 8$.
+
+\smallskip
+\emph{Step 1: only an edge at a vertex of degree $3$ can have positive excess.}
+Recall $s_1 \ge 3$ and, by Step 0, $s_2 \ge 8$; degrees at the two ends of an
+edge are distinct by Definition~\ref{def:apg}(c). Three cases:
+\begin{itemize}
+  \item $a$ a bridge: both sides carry $F$, so
+        $c(a) \le \tfrac13+\tfrac14+\tfrac28 = \tfrac56$ and
+        $x(a) \le -\tfrac16$;
+  \item $a$ not a bridge, both ends of degree at least $4$:
+        $c(a) \le \tfrac14+\tfrac15+\tfrac13+\tfrac18 = \tfrac{109}{120}$ and
+        $x(a) \le -\tfrac{11}{120}$;
+  \item $a$ not a bridge with an end of degree $3$:
+        $c(a) \le \tfrac13+\tfrac14+\tfrac13+\tfrac18 = \tfrac{25}{24}$ and
+        $x(a) \le \tfrac1{24}$.
+\end{itemize}
+Only the third class can be positive. Note in particular that a bridge endpoint
+of degree $5$ cannot make an edge positive.
+
+\smallskip
+\emph{Step 2: each bridge carries at most two positive edges.} First, a positive
+edge is a $3$--$4$ edge. Its face side is at most $\tfrac13+\tfrac18 =
+\tfrac{11}{24}$, so its vertex side must exceed $\tfrac{13}{24}$; among pairs of
+distinct degrees at least $3$, only $\tfrac13+\tfrac14 = \tfrac{14}{24}$ does,
+since already $\tfrac13+\tfrac15 = \tfrac{12.8}{24}$ falls short.
+
+Let $a$ be an edge of positive excess and let $u$ be its end of degree $3$,
+which is unique since adjacent vertices have different degrees. By
+Lemma~\ref{lem:parity} the
+number of bridges at $u$ has the same parity as $\deg u = 3$, so it is $1$ or
+$3$; it is not $3$, since $a$ itself is a non-bridge edge at $u$. So $u$ lies on
+exactly one bridge, hence on exactly two non-bridge edges, and we may send $a$
+to that bridge.
+
+The qualification matters: a vertex of degree $3$ need not carry two non-bridge
+edges, since one with three bridges carries none. What is proved, and what is
+needed, is that a vertex of degree $3$ \emph{incident with a non-bridge edge}
+lies on exactly one bridge and two non-bridge edges.
+
+Now let $b$ be a bridge. Its two ends have different degrees by
+Definition~\ref{def:apg}(c), so at most one of them has degree $3$. Hence at
+most two positive edges are sent to $b$, and writing $P$ for the number of
+positive edges, $P \le 2B$.
+
+\smallskip
+\emph{Step 3.} Every non-positive edge has $x(a) \le 0$, so by
+Lemma~\ref{lem:identity},
+\[
+  2 \;=\; \sum_a x(a) \;\le\; \frac{P}{24} - \frac{B}{6}
+     \;\le\; \frac{2B}{24} - \frac{B}{6} \;=\; -\frac{B}{12} \;<\; 0 ,
+\]
+a contradiction.
+
+\smallskip
+Finally suppose $B = 0$. By Corollary~\ref{cor:evendeg} every degree is even and
+at least $4$, so the vertex side of every edge is at most $\tfrac14+\tfrac16 =
+\tfrac5{12}$; the face side is at most $\tfrac13+\tfrac14 = \tfrac7{12}$; hence
+$x(a) \le 0$ for every edge and $\sum_a x(a) = 2$ is again contradicted.
+\end{proof}
+
+\begin{remark}[how much room the argument has]
+The tether of Step 2 is the substance: treating the positive edges as
+unconstrained gives only a lower bound on $B$ and closes nothing. It does not
+have to be sharp. Ignoring the degree condition on a bridge's two ends gives
+only $P \le 4B$, and even then the bound of Step 3 is $0$, which still
+contradicts $2$; the sharp tether merely supplies the margin $-B/12$. That
+margin also means Step 0 is not needed at full strength: with $s_2 \ge 7$ the
+per-bridge total is $-\tfrac1{84}$, still negative. Some lower bound on the
+bridge face is nevertheless indispensable --- at $s_2 \ge 6$ the total is
+$+\tfrac1{12}$ --- and at $P \le 5B$ the argument fails outright.
+\end{remark}
+
+\begin{proposition}\label{prop:twoY-weak}
+Under the weak reading there is no $2,Y$-alternating plane graph either.
+\end{proposition}
+
+\begin{proof}
+Step 0 of Theorem~\ref{thm:nobridge} uses only minimum degree $3$ and
+simplicity, so it applies here: a bridge's face has size at least $8$. As in
+\S\ref{sec:101} the graph is bipartite, since two degrees and
+Definition~\ref{def:apg}(c) force every edge to join a $d_1$-vertex to a
+$d_2$-vertex; hence every closed walk has even length, a facial walk traversing
+a bridge twice included, and every face has even size at least $4$. Then a
+bridge has
+\[
+  c(a) \;\le\; \tfrac13 + \tfrac14 + \tfrac28 \;=\; \tfrac56 ,
+\]
+and a non-bridge edge, whose two sides are distinct faces of distinct even sizes
+at least $4$ and $6$, has
+$c(a) \le \tfrac13+\tfrac14+\tfrac14+\tfrac16 = 1$. So $x(a) \le 0$ for every
+edge, contradicting $\sum_a x(a) = 2$.
+\end{proof}
+
+\section{The periodic capping lemma}\label{sec:pumping}
+
+Conjecture~10.2 asks for a $(3,4,5)$-alternating plane graph on $n$ vertices for
+every $n \ge 20$. Twenty-six orders were open. We supply certificates for all of
+them (\S\ref{sec:artifact}) and, more usefully, prove that a single certificate
+generates an infinite family, so that the result does not rest on a finite list.
+
+\subsection{The cover}
+
+The certificates are capped unrollings of a periodic quotient of the torus. The
+relevant structure is a bi-infinite \emph{strip}, built from identical
+\emph{copies}, each contributing three vertices and six edges, together with two
+\emph{caps} that close it off at the ends. Writing $\mathrm{TARGET}_n$ for a
+certificate of order $n$, its alignment against the cover exhibits a maximal run
+of copies whose rotations are translates of one another; we call this run the
+\emph{deep block} $D$.
+
+\begin{theorem}[periodic capping lemma]\label{thm:pumping}
+Fix an order $n$ whose alignment against the cover has a deep block $D$ of at
+least five copies, and let $\mathrm{cut}$ be a copy at distance at least two
+from each end of $D$. Then for every integer $d \ge -(|D| - 1)$ the rotation
+system $\mathrm{splice}(n,d)$, obtained from $\mathrm{TARGET}_n$ by inserting
+$d$ further translates of the copy $\mathrm{cut}$ (or deleting $-d$ of them when
+$d < 0$), is a $(3,4,5)$-alternating plane graph on $n + 3d$ vertices.
+\end{theorem}
+
+\begin{proof}
+Write $S = \mathrm{splice}(n,d)$. Every vertex of $S$ receives its rotation in
+one of four ways: cap vertices verbatim, with strip neighbours above the cut
+shifted by $d$; strip copies at or below the cut verbatim; strip copies above
+$\mathrm{cut}+d$ verbatim from copy $c-d$; and the $d$ fresh copies from the cut
+copy's rotation, translated.
+
+The argument is local. A facial walk is traced by
+$\varphi = \sigma^{-1}\alpha$, which reads only the edge partner and the
+rotation predecessor at each vertex it visits. A face of a
+$(3,4,5)$-alternating plane graph has at most five darts and the cover's largest
+edge offset is two, so a facial walk cannot span more than three consecutive
+copies. The fresh copies lie in $(\mathrm{cut}, \mathrm{cut}+d]$, and
+$\mathrm{cut}$ is at distance at least two from each end of $D$, so every
+five-copy window around a fresh copy is a translate of the window
+$[\mathrm{cut}-2,\mathrm{cut}+2]$ of $\mathrm{TARGET}_n$; away from the fresh
+block $S$ agrees with $\mathrm{TARGET}_n$ verbatim. Hence \emph{every face of
+$S$ is a translated face of $\mathrm{TARGET}_n$}.
+
+Each condition of Definition~\ref{def:apg} is now inherited, because each is
+local: face sizes and vertex degrees lie in $\{3,4,5\}$; adjacent vertices have
+unequal degrees and adjacent faces unequal sizes; facial walks are simple; and a
+loop or parallel edge would have to sit inside a two-copy window, where $S$ and
+$\mathrm{TARGET}_n$ agree. Connectivity is inherited because each copy meets the
+next and every cap vertex reaches the strip as before.
+
+Finally $S$ is spherical. A copy contributes three vertices, six edges and ---
+since every face is a translated face --- three faces, and $3-6+3=0$, so
+$V-E+F$ is unchanged from $\mathrm{TARGET}_n$, where it is $2$.
+\end{proof}
+
+\begin{remark}[what is machine-checked]\label{rem:hypotheses}
+Two facts in the proof are not bookkeeping and are discharged by computation on
+a single certificate: that no face spans more than three consecutive copies, and
+that the deep block really is periodic, i.e.\ its rotations are translates of one
+another. Both are finite checks. Everything else is the local argument above.
+\end{remark}
+
+\subsection{What the family reaches}
+
+The floor $-(|D|-1)$ is where deletion would consume a copy that is not deep,
+that is, where the two cap collars meet; each collar is two copies wide.
+Splicing changes the order by $3d$, so a certificate reaches one residue class
+modulo $3$. The floors are:
+
+\begin{center}
+\begin{tabular}{ccl}
+\toprule
+$n \bmod 3$ & floor & family \\
+\midrule
+$0$ & $48$ & $48, 51, 54, 57, \dots$ \\
+$1$ & $52$ & $52, 55, 58, 61, \dots$ \\
+$2$ & $50$ & $50, 53, 56, 59, \dots$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{corollary}\label{cor:102}
+Conjecture~10.2 holds: there is a $(3,4,5)$-alternating plane graph on $n$
+vertices for every $n \ge 20$.
+\end{corollary}
+
+\begin{proof}
+Orders below $46$ are the published witnesses of \cite{AHSSV2015} together with
+the Section-8 closures of \S\ref{sec:103}. Orders $46$ through $56$, $67$
+through $74$, $88$ through $92$, and $109$, $110$ carry the certificates of this
+paper. Every remaining order is reached by Theorem~\ref{thm:pumping} from a
+certificate in its residue class modulo $3$, with the floors above.
+\end{proof}
+
+\begin{remark}[the deletion direction]\label{rem:deletion}
+Theorem~\ref{thm:pumping} is stated for every $d \ge -(|D|-1)$, and the floors
+in the table are reached by deletion rather than insertion. The locality
+argument is written above for insertion, where the fresh copies are interior to
+$D$; for $d < 0$ it reads the same way with the four cases collapsing, save at
+the floor itself, where a three-copy window meets both cap collars and ``every
+window is a translated window'' is no longer literally true. The floor orders
+are therefore also carried by their own verified certificates, and orders $57$,
+$58$, $59$, $61$ and $63$ --- which the hypothesis $|D| \ge 5$ does not reach by
+insertion alone --- rest on machine-verified splices rather than on the theorem
+as stated. Tightening the hypothesis to cover deletion uniformly is left open;
+nothing else in this paper depends on it.
+\end{remark}
+
+This is an independent construction of (\cite{AHSSV2015}, Theorem~8.1), which
+gives $n \ge 111$, and of twenty-three of the twenty-six open orders, from one
+certificate per residue class. Orders $46$, $47$ and $49$ lie outside the family
+and rest on their certificates alone.
+
+\begin{remark}[why this is not twenty-six more examples]
+The splice reproduces certificates it did not start from.
+$\mathrm{TARGET}_{110}$ shortened by twenty periods is $\mathrm{TARGET}_{50}$ up
+to isomorphism of rotation systems, and so is $\mathrm{TARGET}_{92}$ shortened
+by fourteen; $\mathrm{TARGET}_{90}$ shortened by fourteen and
+$\mathrm{TARGET}_{72}$ shortened by eight both give $\mathrm{TARGET}_{48}$. Two
+independently found certificates decompose into the same pair of caps and the
+same period, which is what shows the cap extraction to be canonical rather than
+an artefact of one alignment.
+\end{remark}
+
+\section{Conjecture 10.3}\label{sec:103}
+
+\begin{theorem}\label{thm:103}
+For every $n \ge 19$ there is a $3$-connected alternating plane graph on $n$
+vertices.
+\end{theorem}
+
+The witnesses come from six sources, and no order depends on more than one of
+them being correct.
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+orders & source \\
+\midrule
+$19$ & all five alternating plane graphs on $19$ vertices \\
+$17, 20, 26$--$36, 42$ & published witnesses, decoded and re-verified \\
+$21, 22, 23, 25$ & published search seeds \\
+$21$--$24$, $39$--$45$ & Section-8 closures, rebuilt here \\
+$37, 38$ & disk surgery \\
+$46$--$56$, $67$--$74$, $88$--$92$, $109$, $110$ & the certificates of \S\ref{sec:pumping} \\
+$48$ and every $n \ge 50$ & the spliced family \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Three orders deserve comment.
+
+\emph{Order $19$} is the one order the settled Conjecture~10.2 cannot reach:
+\cite{AHSSV2015} reports no $(3,4,5)$-alternating plane graph on $18$ or $19$
+vertices, so a witness must be a general alternating plane graph in the sense of
+Definition~\ref{def:apg}. There are exactly five on $19$ vertices, and all five
+are $3$-connected. A single one would have sufficed.
+
+\emph{Orders $37$ and $38$} are out of reach of the Section-8 arithmetic
+$18a+19b+20c+21d+3$, because $34$ and $35$ are not sums of $18,19,20,21$; this
+is why the coverage list of \cite{AHSSV2015} skips them. They are obtained by
+disk surgery: excise the star of a vertex, an edge or a face from a stored
+$(3,4,5)$-alternating plane graph, let the boundary degrees float, and refill
+the disk.
+
+\emph{The infinite tail} is not an artefact of a search horizon. The spliced
+family is $3$-connected at \emph{every} order it produces, by the same locality
+that carries Theorem~\ref{thm:pumping}; finite sweeps only check that theorem's
+hypotheses.
+
+\subsection{A shortcut that does not exist}
+
+If every $(3,4,5)$-alternating plane graph were $3$-connected, then
+Corollary~\ref{cor:102} would give Theorem~\ref{thm:103} for all $n \ge 20$ in
+one step.
+
+\begin{proposition}\label{prop:not3conn}
+There is a $(3,4,5)$-alternating plane graph on $46$ vertices with a separating
+pair. In particular $(3,4,5)$-alternating plane graphs need not be
+$3$-connected.
+\end{proposition}
+
+The graph is supplied as a rotation system in the artifact; both verifiers
+accept it, its unique separating pair is exhibited, and removing that pair
+leaves two components of $22$ vertices each. Nothing in
+Theorem~\ref{thm:103} depends on the proposition --- every witness is checked
+individually rather than inferred from a class-wide claim --- but it is why the
+connectivity of the spliced family has to be proved rather than assumed.
+
+\section{The asymptotic degree distribution}\label{sec:density}
+
+The fourth problem of (\cite{AHSSV2015}, \S10, p.~362) is not a counting
+question but a question about the shape of a typical graph. Writing $r = v_3$,
+Theorem~\ref{thm:32} confines $v_4$ to $[r-5, \tfrac32 r - 5]$, so the ratio
+$v_4/v_3$ lies asymptotically in $[1, 1.5]$. The authors ask whether there is a
+density function on that interval giving the asymptotic fractions of
+$(3,4,5)$-alternating plane graphs for large $n$, and if so what it looks like.
+
+We have nothing to offer on it. What we can add is a caution, from the only
+data this paper produces.
+
+All twenty-six certificates satisfy $v_5 = v_3 - 4$, as they must, and all lie
+inside the interval. But they lie at its very bottom: $v_4/v_3$ ranges over
+$[1.0000, 1.1250]$ across the twenty-six, and drifts \emph{downwards} with $n$,
+attaining exactly $1$ at orders $50$, $56$, $74$, $92$ and $110$.
+
+That is a selection effect, not a measurement. The certificates come from one
+construction --- a capped unrolling of a periodic strip --- and
+Theorem~\ref{thm:pumping} extends it by inserting copies of a single period, so
+every member of the family inherits that period's degree profile. A construction
+emitting one graph per order reports on the construction, not on the
+distribution over all graphs of that order. The clustering at $v_4/v_3 = 1$ is
+precisely what a periodic family looks like and precisely what a sample would
+not.
+
+The methods of this paper cannot reach the question, for a structural reason.
+Everything proved above is an existence statement: one graph per order, or a
+class shown empty. A density function requires a measure over all graphs of
+order $n$, and nothing here enumerates. The class is moreover rigid in a way
+that obstructs sampling: a sweep over every two-edge switch of all twenty-six
+certificates finds no switch leaving a valid $(3,4,5)$-alternating plane graph,
+so the one-switch neighbourhood of each is empty and local moves cannot walk the
+space.
+
+Three routes seem plausible. An exhaustive census at small orders, with
+\texttt{plantri} or an equivalent generator restricted to the degree and
+face-size profile, would give the first honest histogram of $v_4/v_3$; it is a
+means to a conjecture rather than to a theorem, and it is where we would start.
+A structure theorem giving \emph{every} $(3,4,5)$-alternating plane graph a
+cap--strip--cap decomposition with a bounded interface alphabet would make the
+count a regular language and the density a transfer-matrix computation; the
+obstacle is the word \emph{every}, since we have a construction and not a
+classification. Failing either, a bijection with an already-counted family of
+plane maps would serve, and the identities of Theorem~\ref{thm:32} are the
+natural hook.
+
+\section{The artifact}\label{sec:artifact}
+
+Every graph asserted in this paper is supplied as an explicit rotation system in
+the accompanying artifact, in a documented JSON format with a dependency-free
+reference reader. No file records a claim that a graph \emph{is} an alternating
+plane graph: degrees, faces, face sizes, bridges, connectivity and both
+alternation conditions are recomputed on every run by three separately written
+decision procedures. Certificates can also be exported to \texttt{planar\_code}
+for checking by \texttt{plantri} or House of Graphs.
+
+The artifact runs $1253$ checks and needs only a Python interpreter; the
+mathematics uses no third-party library. Two classes of check are load-bearing:
+that each certificate is accepted by every verifier, and that each source in
+Theorem~\ref{thm:103} is necessary, in the sense that removing it reopens
+orders. Each gate is paired with a control that must fail, so that a check
+cannot pass by being vacuous.
+
+The two computations that the proofs genuinely rest on are the finite hypotheses
+of Remark~\ref{rem:hypotheses}.
+
+\begin{thebibliography}{9}
+
+\bibitem{AHSSV2015}
+I.~Alth\"ofer, J.~K. Haugland, K.~Scherer, F.~Schneider and N.~Van Cleemput,
+\emph{Alternating plane graphs},
+Ars Math. Contemp. \textbf{8} (2015), 337--363.
+\href{https://doi.org/10.26493/1855-3974.584.09a}{doi:10.26493/1855-3974.584.09a}.
+
+\end{thebibliography}
+
+\end{document}

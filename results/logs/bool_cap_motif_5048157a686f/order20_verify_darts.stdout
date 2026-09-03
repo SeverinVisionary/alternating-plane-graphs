@@ -1,0 +1,1 @@
+PASS certificates/known/order20.json: order=20 edges=38 faces=20 vertex_counts={3: 9, 4: 6, 5: 5}

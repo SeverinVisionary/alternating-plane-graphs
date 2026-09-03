@@ -9,6 +9,9 @@
 > proof steps.** See [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
 >
 > [`ZENODO.md`](ZENODO.md) is a one-page formatted summary of the whole deposit.
+>
+> **Archived:** DOI [10.5281/zenodo.22269200](https://doi.org/10.5281/zenodo.22269200) (concept — always the latest version) ·
+> [landing page](https://severinvisionary.github.io/alternating-plane-graphs/)
 
 ## Re-verify before trusting any of it
 

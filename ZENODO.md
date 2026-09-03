@@ -110,3 +110,11 @@ vacuous.
 
 Cite this deposit *and* the paper whose conjectures it settles. Machine-readable
 metadata is in [`CITATION.cff`](CITATION.cff).
+
+| | |
+| --- | --- |
+| **this deposit** | DOI [10.5281/zenodo.22269200](https://doi.org/10.5281/zenodo.22269200) — the *concept* DOI, which always resolves to the latest version |
+| **version 1.0.0** | DOI [10.5281/zenodo.22269201](https://doi.org/10.5281/zenodo.22269201) |
+| **landing page** | <https://severinvisionary.github.io/alternating-plane-graphs/> |
+| **the source paper** | Althöfer, Haugland, Scherer, Schneider & Van Cleemput, *Alternating plane graphs*, *Ars Math. Contemp.* **8** (2015) 337–363, [doi:10.26493/1855-3974.584.09a](https://doi.org/10.26493/1855-3974.584.09a) |
+

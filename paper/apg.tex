@@ -543,7 +543,8 @@ vertices for every $n \ge 20$.
 \end{corollary}
 
 \begin{proof}
-Orders below $46$ are the published witnesses of \cite{AHSSV2015} together with
+Orders below $46$ are the published witnesses of \cite{AHSSV2015}, decoded from the author-hosted
+corpus~\cite{APGcorpus}, together with
 the Section-8 closures of \S\ref{sec:103}. Orders $46$ through $56$, $67$
 through $74$, $88$ through $92$, and $109$, $110$ carry the certificates of this
 paper. Every remaining order is reached by Theorem~\ref{thm:pumping} from a
@@ -611,8 +612,8 @@ Three orders deserve comment.
 \emph{Order $19$} is the one order the settled Conjecture~10.2 cannot reach:
 \cite{AHSSV2015} reports no $(3,4,5)$-alternating plane graph on $18$ or $19$
 vertices, so a witness must be a general alternating plane graph in the sense of
-Definition~\ref{def:apg}. There are exactly five on $19$ vertices, and all five
-are $3$-connected. A single one would have sufficed.
+Definition~\ref{def:apg}. There are exactly five on $19$ vertices~\cite{HoG}, and all
+five are $3$-connected. A single one would have sufficed.
 
 \emph{Orders $37$ and $38$} are out of reach of the Section-8 arithmetic
 $18a+19b+20c+21d+3$, because $34$ and $35$ are not sums of $18,19,20,21$; this
@@ -681,7 +682,7 @@ so the one-switch neighbourhood of each is empty and local moves cannot walk the
 space.
 
 Three routes seem plausible. An exhaustive census at small orders, with
-\texttt{plantri} or an equivalent generator restricted to the degree and
+\texttt{plantri}~\cite{plantri} or an equivalent generator restricted to the degree and
 face-size profile, would give the first honest histogram of $v_4/v_3$; it is a
 means to a conjecture rather than to a theorem, and it is where we would start.
 A structure theorem giving \emph{every} $(3,4,5)$-alternating plane graph a
@@ -700,7 +701,7 @@ reference reader. No file records a claim that a graph \emph{is} an alternating
 plane graph: degrees, faces, face sizes, bridges, connectivity and both
 alternation conditions are recomputed on every run by three separately written
 decision procedures. Certificates can also be exported to \texttt{planar\_code}
-for checking by \texttt{plantri} or House of Graphs.
+for checking by \texttt{plantri}~\cite{plantri} or House of Graphs~\cite{HoG}.
 
 The artifact runs $1253$ checks and needs only a Python interpreter; the
 mathematics uses no third-party library. Two classes of check are load-bearing:
@@ -719,6 +720,23 @@ I.~Alth\"ofer, J.~K. Haugland, K.~Scherer, F.~Schneider and N.~Van Cleemput,
 \emph{Alternating plane graphs},
 Ars Math. Contemp. \textbf{8} (2015), 337--363.
 \href{https://doi.org/10.26493/1855-3974.584.09a}{doi:10.26493/1855-3974.584.09a}.
+
+\bibitem{plantri}
+G.~Brinkmann and B.~D. McKay,
+\emph{Fast generation of planar graphs} (expanded edition),
+MATCH Commun. Math. Comput. Chem. \textbf{58} (2007), 323--357.
+
+\bibitem{HoG}
+K.~Coolsaet, S.~D'hondt and J.~Goedgebeur,
+\emph{House of Graphs 2.0: A database of interesting graphs and more},
+Discrete Appl. Math. \textbf{325} (2023), 97--107.
+\href{https://doi.org/10.1016/j.dam.2022.10.013}{doi:10.1016/j.dam.2022.10.013}.
+
+\bibitem{APGcorpus}
+I.~Alth\"ofer, \emph{Alternating plane graphs} --- status page and
+machine-readable corpus of published witnesses,
+\url{https://althofer.de/alternating-plane-graphs.html} and
+\url{https://althofer.de/apg/apgs/}, accessed 1 September 2026.
 
 \end{thebibliography}
 

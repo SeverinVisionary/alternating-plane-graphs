@@ -17,7 +17,7 @@ DOI [`10.26493/1855-3974.584.09a`](https://doi.org/10.26493/1855-3974.584.09a).
 | --- | --- | --- |
 | Conjecture 10.1 (no `2,Y`-, no `X,2`-APG) | **proved**, unconditionally | [`CONJECTURE_10_1.md`](CONJECTURE_10_1.md) |
 | asymptotic degree distribution | **open** | [`DENSITY.md`](DENSITY.md) |
-| Conjecture 10.2 (`(3,4,5)`-APG for all `n >= 20`) | **settled** | [`PUMPING_LEMMA_STATUS.md`](PUMPING_LEMMA_STATUS.md) |
+| Conjecture 10.2 (`(3,4,5)`-APG for all `n >= 20`) | **settled**; every `n >= 46` closed here, `20..45` inherited from the paper | [`PUMPING_LEMMA_STATUS.md`](PUMPING_LEMMA_STATUS.md) |
 | Conjecture 10.3 (3-connected APG for all `n >= 19`) | **settled** | [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md) |
 
 Attribution -- what is the source paper's, what is re-verified here, and what is
@@ -42,7 +42,7 @@ result, not the closing of a gap the authors left open.
 
 ```
 make deps      # pytest 8.4.2, and nothing else
-make verify    # 1253 passed, 13 skipped, about 13 minutes
+make verify    # 1257 passed, 13 skipped, about 11 minutes
 ```
 
 or, for the load-bearing gates only, about a minute:
@@ -51,7 +51,7 @@ or, for the load-bearing gates only, about a minute:
 make verify-fast
 ```
 
-Recorded runtime for the figure above: Python 3.9.6 on macOS, 13m07s. Of the
+Recorded runtime for the figure above: Python 3.9.6 on macOS, 10m40s. Of the
 13 skips, 11 need the published planar_code corpus, which is not redistributed
 here (see [`NOTICE.md`](NOTICE.md) and [`conftest.py`](conftest.py)), one needs
 the optional `python-sat`, and one is an empty parameter set that follows from

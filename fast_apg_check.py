@@ -68,6 +68,15 @@ def is_apg(degrees: list[int], alpha: list[int]) -> bool:
         return False
     for face in faces:
         corners = [vertex_of[dart] for dart in face]
+        # NOT in Definition 2.1: the paper never requires facial walks to be
+        # simple, and says on p. 362 that some of its Section-7 alternating plane
+        # graphs are not 2-connected.  Demanding it makes this test strictly
+        # narrower than the paper's class.  It is safe in the direction the
+        # existence results need -- a stricter test can only reject a good witness,
+        # never accept a bad one -- but a non-2-connected candidate is rejected here
+        # for the wrong reason, which matters to anyone hunting counterexamples.
+        # Same restriction, same caveat, in `verify_darts.py`, `fast_apg_check.py`
+        # and `general_apg.is_apg`, whose docstring first recorded it.
         if len(set(corners)) != len(corners):
             return False
     for dart, mate in enumerate(alpha):

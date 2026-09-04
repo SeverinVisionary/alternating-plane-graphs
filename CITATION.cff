@@ -13,8 +13,8 @@ authors:
 repository-code: https://github.com/SeverinVisionary/alternating-plane-graphs
 url: https://severinvisionary.github.io/alternating-plane-graphs/
 doi: "10.5281/zenodo.22269200"
-version: 1.0.1
-date-released: 2026-09-02
+version: 1.0.2
+date-released: 2026-09-03
 abstract: >-
   Machine-checked settlement of three of the four open problems in Section 10 of
   Althofer, Haugland, Scherer, Schneider and Van Cleemput, "Alternating plane

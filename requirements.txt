@@ -2,7 +2,7 @@
 # reproduce rather than float.
 #
 # Recorded runtime: Python 3.9.6, macOS (darwin), pytest 8.4.2.
-# 1253 passed, 13 skipped in 13m07s.  Eleven skips need the published
+# 1257 passed, 13 skipped in 10m40s.  Eleven skips need the published
 # planar_code corpus, which is not redistributed here; one needs the optional
 # python-sat; one is an empty parameter set that follows from the first.
 #

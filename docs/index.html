@@ -60,7 +60,7 @@
   ],
   "license": "https://opensource.org/licenses/MIT",
   "keywords": "alternating plane graphs, rotation systems, plane graphs, computer-assisted proof, certificate verification, combinatorics",
-  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved without relying on the bridge convention: Definition 2.1 is silent about bridges and the paper rules them out a few lines later by asserting 2-edge-connectivity (p. 339), but the discharging argument closes under the permissive reading too. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating order 48 and every order n >= 50. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, is settled by a verified witness at every such order. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
+  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved without relying on the bridge convention: Definition 2.1 is silent about bridges and the paper rules them out a few lines later by asserting 2-edge-connectivity (p. 339), but the discharging argument closes under the permissive reading too. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating order 48 and every order n >= 50; these close every order n >= 46 without reference to the source paper, while orders 20 to 45 remain that paper's own heuristic and Section-8 coverage. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, is settled by a verified witness at every such order. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
   "isBasedOn": {
     "@type": "SoftwareSourceCode",
     "codeRepository": "https://github.com/SeverinVisionary/alternating-plane-graphs",
@@ -165,7 +165,7 @@ witness re-verified from its rotation system rather than asserted.</p>
     <tr>
       <td class="s"><strong>Conjecture 10.2</strong></td>
       <td>A <span class="m">(3,4,5)</span>-APG exists at every order <span class="m">n ≥ 20</span></td>
-      <td><strong>Settled.</strong> 26 orders certified, plus a proved capping lemma</td>
+      <td><strong>Settled.</strong> 26 orders certified, plus a proved capping lemma &mdash; together closing every <span class="m">n &ge; 46</span> here</td>
     </tr>
     <tr>
       <td class="s"><strong>Conjecture 10.3</strong></td>
@@ -230,6 +230,30 @@ periodic strip, generating a <span class="m">(3,4,5)</span>-APG at order 48 and
 at <em>every</em> order <span class="m">n ≥ 50</span>. The certificates close the
 gap below that floor; the lemma removes any dependence on the list above it.</p>
 
+<h3>What is established here, and what is inherited</h3>
+<p>Worth stating precisely, because &ldquo;settled&rdquo; can cover a weaker
+claim than it sounds. The conjecture closes as a union of four ranges, and
+<strong>three of them are the 2015 paper's</strong>: its heuristic search
+(<span class="m">20&ndash;42</span>), its Section-8 construction, and its
+Theorem 8.1 (<span class="m">n &ge; 111</span>). Only the 26 certified orders
+are new.</p>
+
+<p>Taking the certificates together with the capping lemma and nothing else,
+<strong>this deposit closes every order <span class="m">n &ge; 46</span> on its
+own</strong> &mdash; which makes the paper's Theorem 8.1 redundant. Orders
+<span class="m">20</span> to <span class="m">45</span> are inherited and are not
+re-established here. Both statements are gates, not prose:
+<span class="m">test_the_deposit_alone_covers_every_order_from_46_up</span> and
+<span class="m">test_orders_20_to_45_are_exactly_what_is_inherited</span>.</p>
+
+<p>One qualification, since it would otherwise read as stronger than it is: the
+family's floor orders and <span class="m">57, 58, 59, 61, 63</span> rest on
+machine-verified splices rather than on the capping lemma <em>as stated</em>,
+because its locality argument is written for insertion and the hypothesis
+<span class="m">|D| &ge; 5</span> does not reach those orders that way. Still
+this deposit's own evidence, but a mix of theorem and verified computation
+rather than the theorem alone.</p>
+
 <h2>A counterexample worth having</h2>
 <p>The natural shortcut from 10.2 to 10.3 is to hope every
 <span class="m">(3,4,5)</span>-APG is already 3-connected. It is not. The
@@ -250,8 +274,8 @@ a check cannot pass by being vacuous.</p>
 cd alternating-plane-graphs
 make deps          # pytest, and nothing else
 make verify-fast   # load-bearing gates, about a minute
-make verify        # everything, about 13 minutes</pre>
-<p><strong>1253 passed, 13 skipped</strong> on Python 3.9.6, macOS. Nothing the
+make verify        # everything, about 11 minutes</pre>
+<p><strong>1257 passed, 13 skipped</strong> on Python 3.9.6, macOS. Nothing the
 settled results depend on needs a package outside the standard library. The 13
 skips are declared rather than hidden: 11 need a third-party corpus that is not
 redistributed here, one needs the optional <span class="m">python-sat</span>,

@@ -29,7 +29,7 @@ Section 10 of the source paper poses four items. Three are now settled here.
 | --- | --- |
 | **Conjecture 10.1** — no `2,Y`- and no `X,2`-APG | **proved**, and no longer conditional on (C2) ([`CONJECTURE_10_1.md`](CONJECTURE_10_1.md)) |
 | asymptotic degree distribution — the density of `v4/v3` on `[1, 1.5]` | **open**, and out of reach of these methods ([`DENSITY.md`](DENSITY.md)) |
-| **Conjecture 10.2** — `(3,4,5)`-APGs for all `n >= 20` | **settled** — 26 certificates, plus an infinite family |
+| **Conjecture 10.2** — `(3,4,5)`-APGs for all `n >= 20` | **settled** — 26 certificates plus a proved infinite family, closing every `n >= 46` here; `20..45` is the source paper's |
 | **Conjecture 10.3** — 3-connected APG for all `n >= 19` | **settled** ([`CONJECTURE_10_3.md`](CONJECTURE_10_3.md)) |
 
 ## Status

@@ -88,7 +88,7 @@ verbatim, in quotation marks and attributed:
   which is what the (C2) question needs.
 * **The verification apparatus**: three independent decision procedures,
   [`export_planar_code.py`](export_planar_code.py), the format specification
-  with an executable reference reader, and 1253 gates.
+  with an executable reference reader, and 1257 gates.
 
 ## How it was produced
 

@@ -12,7 +12,7 @@ Scherer, Schneider & Van Cleemput, *Alternating plane graphs*,
 | | |
 | --- | --- |
 | ✅ **Conjecture 10.1** | **Proved, and not resting on an interpretation.** Definition 2.1 is silent about bridges; the paper rules bridges out a few lines later, asserting that an alternating plane graph "is always at least 2-edge-connected, since plane graph with edge connectivity 1 contains a face that is adjacent to itself" (p. 339). The proof here does not use that sentence — it closes under the permissive reading too, in which bridges are allowed. |
-| ✅ **Conjecture 10.2** | **Settled.** Certificates for all **26** previously open orders, plus a *proved* periodic capping lemma generating order 48 and **every** order ≥ 50. |
+| ✅ **Conjecture 10.2** | **Settled**, and this deposit closes **every order ≥ 46 on its own** — the 26 certificates plus a *proved* periodic capping lemma giving order 48 and every order ≥ 50. Orders 20–45 remain the **source paper's** (its heuristic search and Section-8 construction); they are not re-established here. |
 | ✅ **Conjecture 10.3** | **Settled.** A verified 3-connected witness at **every** order ≥ 19. |
 | ⬜ **Fourth problem** | **Open.** The asymptotic distribution of `v₄/v₃` on `[1, 1.5]`. Out of reach of these methods, and we say why. |
 
@@ -43,13 +43,13 @@ residue class mod 3 generates the family from floors **48**, **50** and **52**.
 ```sh
 make deps          # pytest, and nothing else
 make verify-fast   # load-bearing gates, ~1 minute
-make verify        # everything, ~13 minutes
+make verify        # everything, ~11 minutes
 ```
 
 | measure | value |
 | --- | --- |
-| gates | **1253 passed, 13 skipped** |
-| runtime | 13 min (Python 3.9.6, macOS) |
+| gates | **1257 passed, 13 skipped** |
+| runtime | about 11 min (Python 3.9.6, macOS) |
 | dependencies of the settled results | **standard library only** |
 | independent verifiers per certificate | **3** |
 

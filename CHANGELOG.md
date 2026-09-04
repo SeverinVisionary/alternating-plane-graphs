@@ -3,6 +3,39 @@
 Versions are for the deposit, not for an API. A release is a state of the
 evidence: what is settled, and what a reader can check.
 
+## 1.0.2 — 2026-09-03
+
+Two changes, both prompted by preparing the deposit for a human verifier.
+
+**The Conjecture 10.2 claim is made precise.** Its closure is a union of four
+ranges and three of them are the 2015 paper's -- the heuristic search over
+`20..42`, the Section-8 construction, and Theorem 8.1 for `n >= 111`. Only the
+26 certified orders were new, so "settled" meant "settled, given the source
+paper", which is weaker than it sounded. The periodic capping lemma was already
+proved here and already yields order 48 and every order from 50 up, but the
+coverage gate did not use it. It does now, and two new gates state the position
+exactly: this deposit closes **every order `n >= 46`** on its own, making the
+paper's Theorem 8.1 redundant, while orders `20..45` are inherited and are not
+re-established here. A control checks the lemma is load-bearing rather than
+decorative -- without it the certificates and the paper's finite constructions
+stop at 110. The claim is qualified where it needs to be: the family's floor
+orders and 57, 58, 59, 61, 63 rest on machine-verified splices rather than the
+lemma *as stated*, per the manuscript's own deletion remark.
+
+The gate count moves from 1253 to **1257** with the four new coverage tests;
+the quoted runtime is the measured 10m40s for this release rather than the
+13m07s of 1.0.0.
+
+**The simple-facial-walks restriction is documented where it is imposed.** All
+four decision procedures reject a facial walk that repeats a vertex, which
+Definition 2.1 does not require -- the paper says on p. 362 that some of its
+Section-7 alternating plane graphs are not 2-connected. `general_apg.is_apg`
+recorded this in its docstring; `verify.py`, `verify_darts.py` and
+`fast_apg_check.py` imposed it silently. All three now carry the same note. The
+restriction is safe in the direction the existence results need -- a stricter
+test can only reject a good witness, never accept a bad one -- but a reader is
+now told rather than left to find it.
+
 ## 1.0.1 — 2026-09-02
 
 DOI [10.5281/zenodo.22269200](https://doi.org/10.5281/zenodo.22269200) (concept).

@@ -1,38 +1,24 @@
-\documentclass[11pt,a4paper]{amsart}
-
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath,amssymb,amsthm}
+\documentclass{baustms}
 \usepackage{tikz}
-\usepackage[hidelinks]{hyperref}
 \usepackage{booktabs}
-
-\theoremstyle{plain}
+\citesort
+\theoremstyle{cupthm}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
-\theoremstyle{definition}
+\theoremstyle{cupdefn}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{convention}[theorem]{Convention}
+\theoremstyle{cuprem}
 \newtheorem{remark}[theorem]{Remark}
 
-
 \begin{document}
-
-\title[Three conjectures on alternating plane graphs]
-      {Three conjectures on alternating plane graphs}
-
-\author{Hanyu Yang}
-\email{hanyu.yang.92@gmail.com}
-\urladdr{\href{https://orcid.org/0009-0005-0419-4070}{ORCID 0009-0005-0419-4070}}
-
-\date{\today}
-
-\subjclass[2020]{05C10, 05C30, 68R10}
-\keywords{alternating plane graph, plane graph, rotation system,
-computer-assisted proof}
-
+\runningtitle{Three conjectures on alternating plane graphs}
+\title{Three conjectures on alternating plane graphs}
+\author[1]{Hanyu Yang}
+\address[1]{Independent researcher, California, USA\email{hanyu.yang.92@gmail.com}}
+\authorheadline{H. Yang}
 \begin{abstract}
 Alth\"ofer, Haugland, Scherer, Schneider and Van Cleemput introduced
 \emph{alternating plane graphs} and closed their paper with four open problems.
@@ -52,7 +38,8 @@ Conjecture~10.3, that a $3$-connected alternating plane graph exists for every
 $n \ge 19$, is settled; we also exhibit one on $46$ vertices with a separating
 pair. The fourth problem is untouched.
 \end{abstract}
-
+\classification{primary 05C10; secondary 05C30, 68R10}
+\keywords{alternating plane graph, plane graph, rotation system, certificate verification}
 \maketitle
 
 \section{Introduction}

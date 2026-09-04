@@ -6,7 +6,7 @@
 <title>Three conjectures on alternating plane graphs, settled | Althöfer et al., Section 10</title>
 <link rel="canonical" href="https://severinvisionary.github.io/alternating-plane-graphs/">
 <meta name="description" content="Conjectures 10.1, 10.2 and 10.3 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput, Alternating plane graphs (2015), settled: 10.1 proved unconditionally, 10.2 closed at all 26 remaining orders plus a proved periodic capping lemma, 10.3 closed by a 3-connected witness at every order from 19 up. Every certificate is a rotation system re-verified by three independent decision procedures.">
-<meta name="keywords" content="alternating plane graphs, APG, plane graphs, rotation systems, planar graphs, 3-connected, combinatorics, computer-assisted proof, certificate verification, Althofer, Ars Mathematica Contemporanea, discharging, Euler formula">
+<meta name="keywords" content="alternating plane graphs, APG, plane graphs, rotation systems, planar graphs, 3-connected, combinatorics, computer-assisted proof, certificate verification, Althofer, Ars Mathematica Contemporanea, Euler formula">
 <meta name="author" content="Hanyu Yang">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
@@ -60,7 +60,7 @@
   ],
   "license": "https://opensource.org/licenses/MIT",
   "keywords": "alternating plane graphs, rotation systems, plane graphs, computer-assisted proof, certificate verification, combinatorics",
-  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved without relying on the bridge convention: Definition 2.1 is silent about bridges and the paper rules them out a few lines later by asserting 2-edge-connectivity (p. 339), but the discharging argument closes under the permissive reading too. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating order 48 and every order n >= 50; these close every order n >= 46 without reference to the source paper, while orders 20 to 45 remain that paper's own heuristic and Section-8 coverage. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, is settled by a verified witness at every such order. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
+  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved without relying on the bridge convention: Definition 2.1 is silent about bridges and the paper rules them out a few lines later by asserting 2-edge-connectivity (p. 339), but the counting argument closes under the permissive reading too. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating order 48 and every order n >= 50; these close every order n >= 46 without reference to the source paper, while orders 20 to 45 remain that paper's own heuristic and Section-8 coverage. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, is settled by a verified witness at every such order. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
   "isBasedOn": {
     "@type": "SoftwareSourceCode",
     "codeRepository": "https://github.com/SeverinVisionary/alternating-plane-graphs",
@@ -182,7 +182,7 @@ witness re-verified from its rotation system rather than asserted.</p>
 </div>
 
 <h2>Conjecture 10.1, and the bridge convention</h2>
-<p>The proof is a discharging argument over edges. It turns on how the
+<p>The proof is a counting argument over edges — a single per-edge inequality applied twice. It turns on how the
 definition behaves at a <strong>bridge</strong>, where the same face lies on both
 sides of the edge, so "adjacent faces differ in size" is either violated at every
 bridge or vacuous at every bridge.</p>
@@ -200,7 +200,7 @@ into the definition.</p>
 of a parity lemma — for any plane graph whose faces admit a proper
 2-colouring, <span class="m">deg(v) − bridges_at(v)</span> is even —
 which pins each degree-3 endpoint onto exactly one bridge and lets the
-discharging close with room to spare.</p>
+count close with room to spare.</p>
 
 <div class="headline">A robustness result, not a gap in the paper: the authors
 chose the strict reading, and the proof holds either way.</div>
@@ -314,7 +314,7 @@ and one follows from the first.</p>
 <ul>
   <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/ARTIFACT.md">ARTIFACT.md</a> — what is here and how to check it</li>
   <li><a href="https://severinvisionary.github.io/alternating-plane-graphs/artifact.pdf">ARTIFACT.md as a PDF</a> — a typeset rendering of the artifact overview, unchanged in content; its first page names the commit it was rendered from. The manuscript in <span class="m">paper/</span> is a separate document, compiled as its own PDF, and is not what this rendering contains</li>
-  <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/CONJECTURE_10_1.md">CONJECTURE_10_1.md</a> — the discharging argument and the bridge case in full</li>
+  <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/CONJECTURE_10_1.md">CONJECTURE_10_1.md</a> — the per-edge inequality and the bridge case in full</li>
   <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/DENSITY.md">DENSITY.md</a> — the fourth problem, and why it is out of reach here</li>
   <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/REVIEW.md">REVIEW.md</a> — the withdrawn claims, kept in place</li>
   <li><a href="https://github.com/SeverinVisionary/alternating-plane-graphs/blob/main/AI_DISCLOSURE.md">AI_DISCLOSURE.md</a> — which systems did what</li>

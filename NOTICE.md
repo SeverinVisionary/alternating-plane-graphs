@@ -1,7 +1,17 @@
 # Third-party material
 
-[`LICENSE`](LICENSE) covers everything in this repository. No third-party bytes
-are redistributed here.
+[`LICENSE`](LICENSE) covers the code, prose and figures written for this
+repository. No third-party *bytes* are redistributed here.
+
+**That is a statement about bytes, not a clearance.** Re-encoding a published
+graph in this repository's own format produces new bytes but carries the same
+mathematical content, and a new serialisation does not by itself grant a
+permission that was absent. Facts are not copyrightable, which is the basis on
+which the re-expressed graphs are distributed here; that argument is about the
+abstract graphs, and does not dispose of database or compilation rights, which
+depend on jurisdiction and on facts not established here. The corpus authors
+have **not** been contacted, and doing so is the direct way to settle this
+rather than reasoning about it.
 
 ## Source of the problem
 

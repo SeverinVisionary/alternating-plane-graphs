@@ -44,20 +44,30 @@ connected.
 The chain is run against a result the paper *proves*: on the weak `2,k` class it
 must exclude exactly `k >= 12`, reproducing Lemma 9.2, and must **not** exclude
 `k <= 10`, where the paper exhibits weak `2,k`-APGs (Table 5, Figures 8–9). It
-does both. Any over-counting step would have failed that test. `k = 11` is left
-open by the chain, exactly as in the paper, which needs Lemma 9.4 for it.
+does both, which shows the contradiction turns on `d1 >= 3` rather than on an
+over-count that would also have killed the small-`k` weak graphs. `k = 11` is
+left open by the chain, exactly as in the paper, which needs Lemma 9.4 for it.
+
+**It is not a certification.** A spuriously *stronger* bound such as
+`5/12 - 1/1000` reproduces the same threshold, so the calibration cannot detect
+an invalid strengthening -- the dangerous direction. `conjecture_10_1.py` has
+said so since it was written; this file and the manuscript did not, until
+2026-09-05.
 
 Both halves *derive* through (C2) — that no edge has the same face on both
 sides — and both **conclusions survive its failure**, so the theorem does not
-depend on how Definition 2.1 is read at a bridge. Half one by a leaf-block
-argument. Half two, since 2026-09-02, by a counting argument that costs a
+depend on how Definition 2.1 is read at a bridge. Half one by a direct counting
+argument -- an earlier leaf-block sketch was **unsound and has been withdrawn**;
+see the retracted step recorded in [`bridge_lemma.py`](bridge_lemma.py).
+Half two, since 2026-09-02, also by a counting argument that costs a
 hypothetical bridged `X,2`-APG exactly as much as it gains: see "Removing the
 dependence on (C2)" in [`conjecture_10_1.py`](conjecture_10_1.py). The
 parity lemma it turns on is in [`bridge_lemma.py`](bridge_lemma.py).
 
 ## Status
 
-**Reviewed by five independent reviewers on 2026-09-02**, each given the same
+**Reviewed in five independent AI review runs on 2026-09-02** -- not by any
+human mathematician, then or since (see [`FOR_REVIEWERS.md`](FOR_REVIEWERS.md)) -- each given the same
 brief and told to break it. All five returned sound, none raised a critical or
 high finding, and none could construct a `2,Y`- or `X,2`-alternating plane
 graph.

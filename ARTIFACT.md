@@ -38,6 +38,25 @@ itself", which is the strict reading stated as a consequence in passing.
 either reading, and does not depend on that sentence. This is a robustness
 result, not the closing of a gap the authors left open.
 
+### Why 80 files hold 62 graphs
+
+Eighteen certificate files are byte-identical rotation systems already stored
+under another name. This is deliberate in one direction and untidy in the other,
+and a reviewer counting files should know which is which:
+
+* **Across directories** -- eight graphs appear in both `census_sources/` and
+  `search_seeds/`, because the same graph plays two roles: a published witness
+  and a seed the search actually started from. Provenance differs even though
+  the bytes do not.
+* **Within a directory** -- `order19/` holds ten files for **five** graphs and
+  `known/` holds eight for **four**, each under both an older and a newer name.
+  That is a rename that never cleaned up. Both names are referenced by live
+  tests, so neither can simply be deleted; the duplication is recorded here
+  rather than hidden.
+
+No result depends on the count. Conjecture 10.2 needs 26 certificates and has
+26 distinct ones; the five 19-vertex witnesses are five distinct graphs.
+
 ## Verifying it
 
 If you are reviewing this rather than reusing it, read
@@ -73,7 +92,7 @@ archived analysis script, none of which any settled result rests on.
 | path | count | what it is |
 | --- | --- | --- |
 | `certificates/targets/` | 26 | the Conjecture 10.2 witnesses, one per previously open order |
-| `certificates/` (all) | 80 JSON | plus order-19, surgery, counterexample, seed and published witnesses, all as rotation systems |
+| `certificates/` (all) | 80 files, **62 distinct** | plus order-19, surgery, counterexample, seed and published witnesses, all as rotation systems. 18 files are second copies of a graph already present under another name -- see below |
 | `*.py` modules | 74 | constructions, three independent verifiers, search lanes |
 | `test_*.py` | 77 | the gates |
 | `results/` | 614 | run artifacts, provenance only |

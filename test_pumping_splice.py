@@ -217,7 +217,11 @@ def test_a_damaged_cap_is_rejected(tmp_path) -> None:
         row["clockwise"] = ring[start:] + ring[:start]
     path = tmp_path / "damaged.json"
     path.write_text(json.dumps(certificate))
-    with pytest.raises(Exception):
+    # `verify.VerificationError` specifically.  A bare `Exception` here -- which
+    # is what this control used until 2026-09-05 -- would also be satisfied by an
+    # unrelated bug in the harness above, and a control that can pass for the
+    # wrong reason is not a control.  Flagged by adversarial review.
+    with pytest.raises(verify.VerificationError):
         verify.verify_certificate(verify.load_certificate(path), expected_order=116)
 
 

@@ -36,9 +36,17 @@ rotation:
 **Locality.** A facial walk is traced by `phi = sigma^-1 . alpha`, which reads
 only the edge partner and the rotation predecessor at the vertices it visits. A
 `(3,4,5)`-APG face has at most five darts and the cover's largest edge offset is
-two, so a facial walk cannot span more than three consecutive copies
-(`test_every_face_stays_inside_a_short_window_of_copies` measures the span and
-gets exactly three).
+two. `test_every_face_stays_inside_a_short_window_of_copies` **measures** the
+span and finds `max(copy) - min(copy) <= 3`, i.e. a walk touching at most
+**four** consecutive copies.
+
+Two cautions, both added 2026-09-05 after adversarial review. First, earlier
+wording here said "three consecutive copies", off by one against the gate.
+Second, and more seriously, the bound is **measured, not derived**: face size at
+most five and edge offset at most two do *not* by themselves imply it. The
+closed index sequence `0, 2, 4, 3, 1, 0` has five steps of size at most two and
+touches five levels. The locality step therefore rests on a finite measurement
+over the representatives, not on the stated inference.
 
 **Every window is a translated window.** `deep_block_is_periodic` checks that
 the deep rotations really are translates of one another. The fresh copies lie in

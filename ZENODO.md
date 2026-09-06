@@ -50,7 +50,7 @@ make verify        # everything, ~11 minutes
 | --- | --- |
 | gates | **1257 passed, 13 skipped** |
 | runtime | about 11 min (Python 3.9.6, macOS) |
-| dependencies of the settled results | **standard library only** |
+| dependencies | verifiers: **standard library only**. The test suite additionally needs `pytest` |
 | independent verifiers per certificate | **3** |
 
 The 13 skips are declared, not hidden: 11 need a third-party corpus that is not
@@ -68,7 +68,7 @@ vacuous.
 
 | path | count | contents |
 | --- | --- | --- |
-| `certificates/` | 80 JSON | witnesses, counterexample, published corpus re-expressed |
+| `certificates/` | 80 files, **62 distinct** | witnesses, counterexample, published corpus re-expressed; 18 files duplicate a graph stored elsewhere under another name |
 | `*.py` | 74 | constructions, three verifiers, search lanes, tooling |
 | `test_*.py` | 77 | the gates |
 | `figures/` | 12 | SVG + TikZ, computed from the certificates |

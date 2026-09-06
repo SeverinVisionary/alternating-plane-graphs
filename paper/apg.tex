@@ -311,9 +311,16 @@ The chain can be run on the class \cite{AHSSV2015} settles, the weak $2,k$
 class, where it must exclude exactly $k \ge 12$, reproducing
 (\cite{AHSSV2015}, (9.10)), and must \emph{not} exclude $k \le 10$, for which
 \cite{AHSSV2015} exhibits weak $2,k$-alternating plane graphs (Table~5,
-Figures~8--9). It does both. Any step that over-counted would have failed this
-test. The case $k = 11$ is left open by the chain, exactly as in
+Figures~8--9). It does both, which shows the contradiction turns on
+$d_1 \ge 3$ rather than on an over-count that would also have killed the
+small-$k$ weak graphs. The case $k = 11$ is left open by the chain, exactly as in
 \cite{AHSSV2015}, which needs its Lemma~9.4 for it.
+
+This is emphatically \emph{not} a certification of the chain. A spuriously
+\emph{stronger} face bound such as $5/12 - 1/1000$ reproduces the same
+threshold exactly, so the calibration cannot detect an invalid strengthening ---
+which is the dangerous direction. It rules out one specific failure mode and no
+others.
 
 \section{Removing the dependence on (C2)}\label{sec:c2}
 
@@ -723,8 +730,9 @@ alternation conditions are recomputed on every run by four separately written
 decision procedures. Certificates can also be exported to \texttt{planar\_code}
 for checking by \texttt{plantri}~\cite{plantri} or House of Graphs~\cite{HoG}.
 
-The artifact runs $1257$ checks and needs only a Python interpreter; the
-mathematics uses no third-party library. Two classes of check are load-bearing:
+The artifact runs $1257$ checks. The four decision procedures use the Python
+standard library alone; the automated suite that drives them additionally
+requires \texttt{pytest}, and nothing else. Two classes of check are load-bearing:
 that each certificate is accepted by every verifier, and that each source in
 Theorem~\ref{thm:103} is necessary, in the sense that removing it reopens
 orders. Each gate is paired with a control that must fail, so that a check

@@ -40,6 +40,12 @@ result, not the closing of a gap the authors left open.
 
 ## Verifying it
 
+If you are reviewing this rather than reusing it, read
+[`FOR_REVIEWERS.md`](FOR_REVIEWERS.md) first: running the suite establishes
+much less than it appears to, and that file says exactly what it does not
+reach.
+
+
 ```
 make deps      # pytest 8.4.2, and nothing else
 make verify    # 1257 passed, 13 skipped, about 11 minutes

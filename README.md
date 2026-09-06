@@ -10,6 +10,9 @@
 >
 > [`ZENODO.md`](ZENODO.md) is a one-page formatted summary of the whole deposit.
 >
+> **Reviewing this?** Start at [`FOR_REVIEWERS.md`](FOR_REVIEWERS.md) — what to
+> check, in the order that matters, and what is already known to be soft.
+>
 > **Archived:** DOI [10.5281/zenodo.22269200](https://doi.org/10.5281/zenodo.22269200) (concept — always the latest version) ·
 > [landing page](https://severinvisionary.github.io/alternating-plane-graphs/)
 

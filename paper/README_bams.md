@@ -26,3 +26,32 @@ page to the main manuscript, and `baustms.cls` is not committed here, so this
 variant has not been rebuilt since. Recompile and check the length before
 submitting; any addition needs
 a matching cut.
+
+## The submission process, checked 2026-09-06
+
+Sources: the OJS [submissions page][sub] and [about page][about].
+
+| | |
+| --- | --- |
+| where | OJS at `journal.austms.org.au`; register as *reader and author*, then a 5-step form |
+| at submission | **a PDF**. LaTeX source is required on acceptance, or before peer review |
+| abstract | **200 words** on the submissions page; the class template says 150. Ours is 147 |
+| length | *"relatively short (say, no more than 12 pages)"* — guidance, not a hard limit; the author guidelines state no maximum |
+| classification | MSC 2020, one primary plus one or more secondary, and keywords. Present: `05C10` primary; `05C30`, `68R10` secondary |
+| decision speed | *"often within a month of receipt"* |
+| bar | *"new and interesting results"*, exposition *"in publishable form, without revision"* |
+| cost | **none** on the default green route |
+| copyright | author retains it, exclusive licence to AMPAI. **Preprints may be shared at any time**, so this repository and its DOI are not a conflict. Accepted manuscript shareable after 6 months; final version free to all after 5 years |
+| gold OA | optional, **USD 3,655** (2026, indexed annually), immediate CC licence |
+
+**The AI policy is a disclosure requirement, not a bar.** The submission
+checklist asks the author to confirm that *"any use of an artificial
+intelligence tool to generate text or images or analyse data for the submission
+is appropriately acknowledged and described"*. `AI_DISCLOSURE.md` and the
+manuscript's disclosure section are written to that standard already.
+
+**No referee suggestions** are requested, and no data-availability policy is
+stated; the manuscript carries one anyway.
+
+[sub]: https://journal.austms.org.au/ojs/index.php/Bulletin/about/submissions
+[about]: https://journal.austms.org.au/ojs/index.php/Bulletin/about

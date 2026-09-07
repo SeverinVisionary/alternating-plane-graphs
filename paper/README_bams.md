@@ -45,8 +45,22 @@ Sources: the OJS [submissions page][sub] and [about page][about].
 | decision speed | *"often within a month of receipt"* |
 | bar | *"new and interesting results"*, exposition *"in publishable form, without revision"* |
 | cost | **none** on the default green route |
-| copyright | author retains it, exclusive licence to AMPAI. **Preprints may be shared at any time**, so this repository and its DOI are not a conflict. Accepted manuscript shareable after 6 months; final version free to all after 5 years |
-| gold OA | optional, **USD 3,655** (2026, indexed annually), immediate CC licence |
+| copyright | author retains it, licence to publish granted to AMPAI |
+| green OA, what you may post | **preprint/submitted version: "may be made available by the author at any time", licence of the author's choosing** -- so this repository and its DOI are not a conflict. Accepted manuscript: author's own web page on acceptance, a non-commercial repository six months after publication, under CC-BY-NC-ND. Final typeset version: Cambridge Core only, free to all after five years; elsewhere, abstract plus a link |
+| gold OA | optional, **USD 3,655** (2026, indexed annually) or covered by an institutional Read and Publish agreement; immediate access on Cambridge Core under a CC licence the author picks |
+
+**Why gold exists, given that green already permits the preprint.** The journal
+states it outright: *"The Bulletin's Green Open Access policy does not allow the
+use of the Green Open Access self-archiving route to Plan S compliance."* An
+author bound by Plan S -- ERC, Wellcome, and many national funders -- therefore
+cannot satisfy their mandate on the free route and must either pay or publish
+elsewhere. Most who do pay are covered by a library agreement and never see the
+invoice. Gold also lifts the six-month repository embargo, releases the typeset
+version immediately, and replaces CC-BY-NC-ND with a licence permitting reuse
+and text mining.
+
+**None of that applies here.** No funder mandate, no institution, no Plan S
+obligation, and the work is already deposited with its own DOI. Green.
 
 **The AI policy is a disclosure requirement, not a bar.** The submission
 checklist asks the author to confirm that *"any use of an artificial

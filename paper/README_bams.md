@@ -60,7 +60,9 @@ version immediately, and replaces CC-BY-NC-ND with a licence permitting reuse
 and text mining.
 
 **None of that applies here.** No funder mandate, no institution, no Plan S
-obligation, and the work is already deposited with its own DOI. Green.
+obligation, and the work is already deposited with its own DOI.
+**Decision, 2026-09-06: green.** No fee, and the preprint in this repository
+stays public exactly as it is.
 
 **The AI policy is a disclosure requirement, not a bar.** The submission
 checklist asks the author to confirm that *"any use of an artificial

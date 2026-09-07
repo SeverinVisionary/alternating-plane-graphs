@@ -8,7 +8,7 @@ records the same rotation system in an encoding defined here, with the digests
 of the originals kept in `certificates/UPSTREAM_PROVENANCE.json`.
 
 Nothing that is settled depends on the bytes: Conjectures 10.1, 10.2 and 10.3
-all verify without them, and `witness_coverage.residue()` is empty.  What does
+all verify without them, and `witness_coverage.verified_orders()` is unchanged.  What does
 depend on them is a handful of tests whose *subject* is the bytes -- the
 planar_code decoder, the byte-level census, and search-lane seed replays.  Those
 skip here and pass for anyone who restores the corpus alongside this tree.

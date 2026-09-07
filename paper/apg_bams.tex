@@ -22,21 +22,21 @@
 \begin{abstract}
 Alth\"ofer, Haugland, Scherer, Schneider and Van Cleemput introduced
 \emph{alternating plane graphs} and closed their paper with four open problems.
-We settle three.
+We settle two and advance a third.
 
 Conjecture~10.1, that no alternating plane graph has exactly two distinct vertex
 degrees or exactly two distinct face sizes, is proved by one per-edge inequality
-applied twice, and unconditionally: such a graph would be bridgeless however the
+applied twice, and unconditionally: such a graph is bridgeless however the
 definition is read at a bridge.
 
 Conjecture~10.2, that $(3,4,5)$-alternating plane graphs exist for every
-$n \ge 20$, is settled by verified certificates at the $26$ orders that were
-open, together with a periodic capping lemma reaching order $48$ and every
-$n \ge 50$; these close every $n \ge 46$ independently of the original paper.
+$n \ge 20$, is settled by verified certificates at the $26$ open orders together
+with a periodic capping lemma reaching order $48$ and every $n \ge 50$; these
+close every $n \ge 46$ independently of the original paper.
 
-Conjecture~10.3, that a $3$-connected alternating plane graph exists for every
-$n \ge 19$, is settled; we also exhibit one on $46$ vertices with a separating
-pair. The fourth problem is untouched.
+For Conjecture~10.3 we certify $54$ orders by explicit witness and leave the
+tail above $56$ open. We also exhibit a $(3,4,5)$-graph on $46$ vertices with a
+separating pair. The fourth problem is untouched.
 \end{abstract}
 \classification{primary 05C10; secondary 05C30, 68R10}
 \keywords{alternating plane graph, plane graph, rotation system, certificate verification}
@@ -49,7 +49,7 @@ introduced alternating plane graphs: plane graphs in which adjacent vertices
 have different degrees and adjacent faces have different sizes. The condition is
 severe. It forces a global rigidity that makes even existence questions hard,
 and the paper closes (\cite{AHSSV2015}, \S10, p.~362) with four open problems.
-Three are settled here.
+Two are settled here, and the third is advanced but not closed.
 
 \subsection*{Results}
 
@@ -57,7 +57,9 @@ Three are settled here.
   \item Conjecture~10.1 is proved, unconditionally (Theorem~\ref{thm:101}).
   \item Conjecture~10.2 is settled, by certificates together with a proved
         construction (Theorem~\ref{thm:pumping}, Corollary~\ref{cor:102}).
-  \item Conjecture~10.3 is settled (Theorem~\ref{thm:103}).
+  \item Conjecture~10.3 is \emph{not} settled here. Theorem~\ref{thm:103}
+        gives $3$-connected witnesses at $54$ orders; the tail above $56$ is
+        left open.
   \item The asymptotic degree distribution is left open (\S\ref{sec:density}).
 \end{itemize}
 
@@ -492,8 +494,11 @@ The argument is local. A facial walk is traced by
 $\varphi = \sigma^{-1}\alpha$, which reads only the edge partner and the
 rotation predecessor at each vertex it visits. A face of a
 $(3,4,5)$-alternating plane graph has at most five darts and the cover's largest
-edge offset is two, so a facial walk cannot span more than three consecutive
-copies. The fresh copies lie in $(\mathrm{cut}, \mathrm{cut}+d]$, and
+edge offset is two. That does \emph{not} by itself bound the span: the closed
+index sequence $0,2,4,3,1,0$ has five steps of size at most two and touches five
+levels. The bound we use is \emph{measured} instead --- over every spliceable
+order at $d = 1,2,3,5$ the largest span is two, so a facial walk touches at most
+three consecutive copies --- and it is gated as a measurement. The fresh copies lie in $(\mathrm{cut}, \mathrm{cut}+d]$, and
 $\mathrm{cut}$ is at distance at least two from each end of $D$, so every
 five-copy window around a fresh copy is a translate of the window
 $[\mathrm{cut}-2,\mathrm{cut}+2]$ of $\mathrm{TARGET}_n$; away from the fresh
@@ -591,9 +596,17 @@ an artefact of one alignment.
 \section{Conjecture 10.3}\label{sec:103}
 
 \begin{theorem}\label{thm:103}
-For every $n \ge 19$ there is a $3$-connected alternating plane graph on $n$
-vertices.
+There is a $3$-connected alternating plane graph on $n$ vertices for
+$$n \in \{17\} \cup [19,56] \cup [67,74] \cup [88,92] \cup \{109,110\},$$
+$54$ orders in all, each certified by an explicit witness.
 \end{theorem}
+
+We state Theorem~\ref{thm:103} in this bounded form deliberately.
+Conjecture~10.3 asks for every $n \ge 19$, and we do not prove that: the
+remaining orders $57$--$66$, $75$--$87$, $93$--$108$ and $n \ge 111$ are carried
+only by the spliced family, whose $3$-connectivity induction we have been unable
+to establish. An earlier version of this paper stated the full conjecture as a
+theorem; that was withdrawn on 2026-09-05.
 
 The witnesses come from six sources, and no order depends on more than one of
 them being correct.
@@ -629,7 +642,13 @@ disk surgery: excise the star of a vertex, an edge or a face from a stored
 $(3,4,5)$-alternating plane graph, let the boundary degrees float, and refill
 the disk.
 
-\emph{The infinite tail} is not an artefact of a search horizon. The spliced
+\emph{The infinite tail is not established.} An earlier version argued that the
+spliced family is $3$-connected at every order it produces; that induction does
+not go through and was withdrawn on 2026-09-05. Orders $57$--$66$, $75$--$87$,
+$93$--$108$ and every $n \ge 111$ are open here. What follows records the
+argument as it was made.
+
+\emph{The claim was} that the tail is not an artefact of a search horizon. The spliced
 family is $3$-connected at \emph{every} order it produces, by the same locality
 that carries Theorem~\ref{thm:pumping}; finite sweeps only check that theorem's
 hypotheses.
@@ -710,12 +729,15 @@ alternation conditions are recomputed on every run by four separately written
 decision procedures. Certificates can also be exported to \texttt{planar\_code}
 for checking by \texttt{plantri}~\cite{plantri} or House of Graphs~\cite{HoG}.
 
-The artifact runs $1257$ checks and needs only a Python interpreter; the
+The artifact runs $1308$ checks and needs only a Python interpreter; the
 mathematics uses no third-party library. Two classes of check are load-bearing:
 that each certificate is accepted by every verifier, and that each source in
 Theorem~\ref{thm:103} is necessary, in the sense that removing it reopens
-orders. Each gate is paired with a control that must fail, so that a check
-cannot pass by being vacuous.
+orders. Most gates are paired with a control that must fail, so that a check
+cannot pass by being vacuous. Not all: \texttt{test\_verifier\_mutations.py}
+lists $17$ verifier conditions with no negative control, and in September 2026
+three coverage gates were found to be iterating an empty set. Both are recorded
+in the artifact rather than corrected in silence.
 
 The two computations that the proofs genuinely rest on are the finite hypotheses
 of Remark~\ref{rem:hypotheses}.
@@ -729,10 +751,12 @@ tools, and the complete test suite --- is archived at
 \href{https://doi.org/10.5281/zenodo.22269200}{10.5281/zenodo.22269200} always
 resolves to the current version; the version this paper describes is~$1.0.2$,
 \href{https://doi.org/10.5281/zenodo.22294497}{10.5281/zenodo.22294497}.
-Reproduce with \texttt{make deps \&\& make verify}. No third-party graph data
-is redistributed: no licence statement was found at the source of the published
+Reproduce with \texttt{make deps \&\& make verify}. No third-party \emph{files}
+are redistributed: no licence statement was found at the source of the published
 corpus~\cite{APGcorpus}, so each of its graphs is re-expressed in the artifact's
-own format with the SHA-256 of every original retained for comparison.
+own format with the SHA-256 of every original retained for comparison. The
+graphs themselves are of course the corpus's; re-encoding changes the bytes, not
+the provenance, and the artifact's licence is not asserted over them.
 
 \begin{thebibliography}{9}
 
@@ -743,8 +767,8 @@ Ars Math. Contemp. \textbf{8} (2015), 337--363.
 \href{https://doi.org/10.26493/1855-3974.584.09a}{doi:10.26493/1855-3974.584.09a}.
 
 \bibitem{artifact}
-H.~Yang, \emph{Settling Conjectures 10.1, 10.2 and 10.3 on alternating plane
-graphs} --- certificates, verifiers and test suite, version 1.0.2, Zenodo, 2026.
+H.~Yang, \emph{Alternating plane graphs: settling Conjectures 10.1 and 10.2,
+with witnesses for 10.3} --- certificates, verifiers and test suite, version 1.0.2, Zenodo, 2026.
 \href{https://doi.org/10.5281/zenodo.22269200}{doi:10.5281/zenodo.22269200}
 (concept).
 

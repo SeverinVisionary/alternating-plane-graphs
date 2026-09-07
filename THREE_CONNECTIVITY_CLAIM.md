@@ -68,14 +68,16 @@ known graph.
 
 It closes the route "one lemma, then 10.3 for every `n >= 20`". It costs
 Conjecture 10.3 **nothing else**: every witness this repository counts was
-checked individually, so the residue — `19, 37, 38` — was unchanged **at the time this was written**. All three have since closed and the residue is now empty; see [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md) and
+checked individually, so the residue — `19, 37, 38` — was unchanged **at the time this was written**. All three have since closed; the checked residue now begins at 57, see
 [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md).
 
 It also promotes [`family_connectivity.py`](family_connectivity.py) from a
-tidiness argument to a necessary one. That module proves the spliced family is
+tidiness argument to a necessary one. That module *claimed* the spliced family is
 3-connected at *every* order it produces. With the general claim false, that
-theorem is the only thing standing between "48 and every `n >= 50`" and a
-per-order spot check — and it is unaffected, because it argues from the family's
+theorem was the only thing standing between "48 and every `n >= 50`" and a
+per-order spot check — and **it was itself withdrawn on 2026-09-05**, so nothing
+now stands there. What follows describes the argument as it was written, because
+it argues from the family's
 own periodic structure rather than from the class.
 
 ## An unverified claim, recorded as the reviewer's

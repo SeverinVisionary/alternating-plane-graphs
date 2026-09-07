@@ -118,11 +118,20 @@ def test_the_three_connected_orders_and_the_residue() -> None:
     `certificates/search_seeds/` -- published witnesses at 21, 22, 23, 25 -- and
     reported fourteen orders when it was ten.  Seven more fell to Section-8
     closures built from blocks already on disk, and 37 and 38 to disk surgery on
-    graphs already on disk.  Only order 19 is left, and only because no
-    (3,4,5)-APG exists there at all.
+    graphs already on disk.  Order 19 is the interesting survivor, and only
+    because no (3,4,5)-APG exists there at all.
+
+    Since the withdrawal of 2026-09-05 the bookkeeping stops at 56: everything
+    above it was carried by the spliced family, whose induction is not proved.
     """
 
-    assert wc.residue() == []
+    # `residue()` counts the periodic family, whose 3-connectivity was
+    # withdrawn on 2026-09-05, and that term reads no file.  The measurement is
+    # `verified_residue()`, which sees only checked witnesses.
+    assert wc.verified_residue()[:3] == [57, 58, 59]
+    assert {o for o in wc.verified_orders() if o >= 19} == (
+        set(range(19, 57)) | set(range(67, 75)) | set(range(88, 93)) | {109, 110}
+    )
     # 19 is covered, but never from the (3,4,5) subclass: no (3,4,5)-APG exists
     # on 18 or 19 vertices, so its witnesses are general alternating plane
     # graphs.  `test_conjecture_10_3.py` checks that distinction directly.

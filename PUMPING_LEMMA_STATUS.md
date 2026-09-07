@@ -36,13 +36,16 @@ rotation:
 **Locality.** A facial walk is traced by `phi = sigma^-1 . alpha`, which reads
 only the edge partner and the rotation predecessor at the vertices it visits. A
 `(3,4,5)`-APG face has at most five darts and the cover's largest edge offset is
-two. `test_every_face_stays_inside_a_short_window_of_copies` **measures** the
-span and finds `max(copy) - min(copy) <= 3`, i.e. a walk touching at most
-**four** consecutive copies.
+two. `test_every_face_stays_inside_a_short_window_of_copies` **measures** the span.
+Over every spliceable order at `d = 1, 2, 3, 5` the maximum is
+`max(copy) - min(copy) = 2`, attained at order 48 -- a walk touching at most
+**three** consecutive copies. The gate now asserts `<= 2`.
 
-Two cautions, both added 2026-09-05 after adversarial review. First, earlier
-wording here said "three consecutive copies", off by one against the gate.
-Second, and more seriously, the bound is **measured, not derived**: face size at
+One caution, and a correction to a correction. The 1.0.3 entry claimed the gate
+"finds" span 3 and therefore four copies; it did not. The gate's threshold was
+3, a slack bound; the measurement is 2, so "three consecutive copies" -- the
+wording here and in the manuscript all along -- was right. What survives from
+that entry is the part that matters: the bound is **measured, not derived**: face size at
 most five and edge offset at most two do *not* by themselves imply it. The
 closed index sequence `0, 2, 4, 3, 1, 0` has five steps of size at most two and
 touches five levels. The locality step therefore rests on a finite measurement

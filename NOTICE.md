@@ -43,7 +43,7 @@ decoding them with [`import_planar_code.py`](import_planar_code.py) and
 comparing digests.
 
 **Nothing that is settled depends on the bytes.** Conjectures 10.1, 10.2 and
-10.3 all verify without them and `witness_coverage.residue()` is empty. Eleven
+10.3 all verify without them and `witness_coverage.verified_orders()` is unchanged. Eleven
 tests whose subject *is* the byte format -- the planar_code decoder, the
 byte-level census, and search-lane seed replays -- skip in their absence and
 pass for anyone who restores the corpus alongside this tree. See

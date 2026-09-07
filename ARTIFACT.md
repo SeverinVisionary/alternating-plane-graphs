@@ -18,7 +18,7 @@ DOI [`10.26493/1855-3974.584.09a`](https://doi.org/10.26493/1855-3974.584.09a).
 | Conjecture 10.1 (no `2,Y`-, no `X,2`-APG) | **proved**, unconditionally | [`CONJECTURE_10_1.md`](CONJECTURE_10_1.md) |
 | asymptotic degree distribution | **open** | [`DENSITY.md`](DENSITY.md) |
 | Conjecture 10.2 (`(3,4,5)`-APG for all `n >= 20`) | **settled**; every `n >= 46` closed here, `20..45` inherited from the paper | [`PUMPING_LEMMA_STATUS.md`](PUMPING_LEMMA_STATUS.md) |
-| Conjecture 10.3 (3-connected APG for all `n >= 19`) | **settled** | [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md) |
+| Conjecture 10.3 (3-connected APG for all `n >= 19`) | **witnesses at 54 orders; the infinite tail is not proved** | [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md) |
 
 Attribution -- what is the source paper's, what is re-verified here, and what is
 new -- is collected in [`ATTRIBUTION.md`](ATTRIBUTION.md).
@@ -67,7 +67,7 @@ reach.
 
 ```
 make deps      # pytest 8.4.2, and nothing else
-make verify    # 1257 passed, 13 skipped, about 11 minutes
+make verify    # 1295 passed, 13 skipped; 8 min, or ~2h with python-sat
 ```
 
 or, for the load-bearing gates only, about a minute:
@@ -93,7 +93,7 @@ archived analysis script, none of which any settled result rests on.
 | --- | --- | --- |
 | `certificates/targets/` | 26 | the Conjecture 10.2 witnesses, one per previously open order |
 | `certificates/` (all) | 80 files, **62 distinct** | plus order-19, surgery, counterexample, seed and published witnesses, all as rotation systems. 18 files are second copies of a graph already present under another name -- see below |
-| `*.py` modules | 74 | constructions, three independent verifiers, search lanes |
+| `*.py` modules | 74 | constructions, four independent verifiers, search lanes |
 | `test_*.py` | 77 | the gates |
 | `results/` | 614 | run artifacts, provenance only |
 | `figures/` | 12 | SVG and TikZ for the five smallest certificates and the order-46 counterexample |
@@ -160,12 +160,16 @@ Stated in full in [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md), and short:
 
 ## Before this is deposited
 
-Nothing legal is outstanding. No third-party bytes are redistributed: the
-published `planar_code` corpus is not included, each of its graphs is
-re-expressed in this repository's own format, and the digests of the originals
-are kept for verification. See [`NOTICE.md`](NOTICE.md).
+No third-party bytes are redistributed: the published `planar_code` corpus is
+not included, each of its graphs is re-expressed in this repository's own
+format, and the digests of the originals are kept for verification. That is a
+change of encoding, not a grant of permission, and this repository's MIT licence
+is not asserted over those graphs -- Zenodo carries a single licence field, so
+the record's `MIT` should be read as covering the code and the original work
+only. The remedy is to ask the corpus authors; they have not been contacted.
+See [`NOTICE.md`](NOTICE.md).
 
 What remains is editorial. The manuscript in [`paper/`](paper/) now compiles --
-[`paper/apg.pdf`](paper/apg.pdf), 11 pages, built with Tectonic -- but it has had
+[`paper/apg.pdf`](paper/apg.pdf), 13 pages, built with Tectonic -- but it has had
 no peer review and its density section paraphrases the source problem rather than
 quoting it. See [`paper/README.md`](paper/README.md).

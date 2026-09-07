@@ -10,10 +10,13 @@ That is a statement about a union of sources, and it is checkable.  This file
 checks it, and checks that each source really is doing the work attributed to
 it -- removing any one of them must reopen an order.
 
-The infinite tail is **not** a horizon artefact: it rests on the theorem in
-`family_connectivity.py`, which proves every member of the spliced family is
-3-connected, at every order the family produces, rather than on the finite
-sweep the other tests run.
+The infinite tail is **not** established.  It rested on the induction in
+`family_connectivity.py`, which was found unproved on 2026-09-05 and withdrawn.
+What this file gates is therefore the *checked* evidence -- stored certificates
+and the Section-8 closures -- and the exact set of orders the withdrawal
+reopened.  `witness_coverage.residue` is kept but is no longer a headline: two
+of its three terms are scans and the third is arithmetic, so it cannot see a
+missing file at any order the family claims.
 """
 from __future__ import annotations
 
@@ -28,8 +31,49 @@ from certificate_tools import alpha_from_certificate
 HORIZON = 400
 
 
-def test_no_order_from_nineteen_up_is_missing_a_witness() -> None:
+# The 53 orders at or above 19 with a witness this repository checks, plus
+# order 17 below the conjecture's range: the 54 of the manuscript's Theorem 6.1.
+VERIFIED = (set(range(19, 57)) | set(range(67, 75))
+            | set(range(88, 93)) | {109, 110})
+
+
+def test_the_checked_witnesses_are_exactly_the_orders_the_theorem_claims() -> None:
+    """What the deposit establishes, measured from files rather than asserted."""
+
+    assert {o for o in wc.verified_orders() if o >= 19} == VERIFIED
+    assert 17 in wc.verified_orders()
+    assert len(VERIFIED) + 1 == 54
+
+
+def test_the_withdrawal_reopened_exactly_these_orders() -> None:
+    """Conjecture 10.3 is open here above 56, apart from three finite islands."""
+
+    gap = wc.verified_residue(HORIZON)
+    assert gap[:10] == list(range(57, 67))
+    assert set(gap) == set(range(19, HORIZON)) - VERIFIED
+    assert min(gap) == 57
+
+
+def test_the_residue_cannot_see_a_missing_family_witness() -> None:
+    """Why `residue` is no longer the headline gate.
+
+    `family_orders` is `range(floor, horizon, 3)` over `FAMILY_FLOORS`; it reads
+    no file.  So `residue` reports full coverage from order 48 up on the
+    strength of a withdrawn theorem, and would go on reporting it if every
+    stored witness above 47 were deleted.  This gate pins that, so the next
+    reader does not mistake `residue() == []` for evidence.
+    """
+
     assert wc.residue(HORIZON) == []
+
+    # Delete every stored witness from 48 up and recompute the residue's union.
+    thinned = {o for o in wc.verified_orders() if o < 48}
+    blind = sorted(set(range(19, HORIZON)) - (thinned | wc.family_orders(HORIZON)))
+    # One order reappears -- 49, the only one above 47 the family's floors and
+    # step of 3 do not reach.  The other 327 do not, because the family term
+    # claims them by arithmetic.
+    assert blind == [49]
+    assert len(wc.verified_residue(HORIZON)) == 328
 
 
 def test_order_nineteen_is_witnessed_and_cannot_be_a_three_four_five_graph() -> None:

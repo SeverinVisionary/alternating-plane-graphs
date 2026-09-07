@@ -1,4 +1,4 @@
-# Conjecture 10.3 — settled
+# Conjecture 10.3 — witnesses at 54 orders, tail open
 
 > Companion notes: [`CONJECTURE_10_1.md`](CONJECTURE_10_1.md) for the paper's
 > other numbered conjecture, and
@@ -10,11 +10,18 @@
 > For any `n >= 19` there exists a 3-connected alternating plane graph on `n`
 > vertices.
 
-**Every order from 19 up now has a 3-connected witness verified in this
-repository**, and `witness_coverage.residue()` — which derives the covered set
-from files and constructions rather than asserting it — returns the empty list.
+**Orders 17 and 19-56, 67-74, 88-92, 109 and 110 have a 3-connected witness
+verified in this repository** — 54 orders, derived from files and run-time
+constructions by `witness_coverage.verified_orders()` rather than asserted.
+Above 56 the conjecture is **open here**: `verified_residue()` begins at 57.
 Gated by [`test_conjecture_10_3.py`](test_conjecture_10_3.py), which also checks
 that each source is load-bearing: removing any one of them reopens orders.
+
+> `witness_coverage.residue()` still returns `[]`, and that is **not** evidence.
+> One of its three terms, `family_orders()`, is arithmetic over
+> `FAMILY_FLOORS` and reads no file, so it claims every order from 48 up on the
+> strength of the withdrawn induction. Delete every stored witness above 47 and
+> `residue()` notices exactly one missing order. Use `verified_residue()`.
 
 | orders | source | what it is |
 | --- | --- | --- |
@@ -24,12 +31,21 @@ that each source is load-bearing: removing any one of them reopens orders.
 | 21–24, 39–45 | [`section8_witnesses.py`](section8_witnesses.py) | Section-8 closures built from `results/blocks/` |
 | **37, 38** | [`certificates/surgery/`](certificates/surgery/PROVENANCE.md) | disk surgery on graphs already held |
 | 46–56, 67–74, 88–92, 109, 110 | [`certificates/targets/`](certificates/targets/) | the Conjecture 10.2 certificates |
-| 48, and every `n >= 50` | [`pumping_splice.py`](pumping_splice.py) + [`family_connectivity.py`](family_connectivity.py) | the spliced family, **proved** 3-connected at every order |
+| 48, and every `n >= 50` | [`pumping_splice.py`](pumping_splice.py) + [`family_connectivity.py`](family_connectivity.py) | the spliced family. **The infinite step is not established** -- see the gap note in `family_connectivity.py`. Orders here that also carry a stored certificate are verified directly and do not depend on it |
 
-The infinite tail is not a horizon artefact. `family_connectivity.py` proves the
-spliced family is 3-connected at *every* order it produces, by the same
-locality that carries the periodic capping lemma; the finite sweeps only check
-that theorem's hypotheses.
+**The infinite tail is the weakest part of this file, and as of 2026-09-05 it is
+not proved.** `family_connectivity.py` sets out an induction intended to carry
+3-connectivity to every order the family produces, and adversarial review found
+its insertion step assumes the connectivity it is meant to establish. The finite
+hypotheses are genuinely checked; the extension from them is not. The gap is
+stated in full at the top of that module.
+
+Concretely: every order carrying a stored certificate is verified 3-connected
+directly. Orders beyond the stored set rest on the unproved induction, or on the
+source paper's own unproved assertion that its Section-8 constructions are
+3-connected. Conjecture 10.3 is described throughout this repository as settled
+where witnesses exist and open above that, until the induction is repaired or
+replaced.
 
 ## The three orders that were hard, and why
 

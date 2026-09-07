@@ -22,7 +22,10 @@ useful thing you could send.
 ```sh
 make deps          # pytest, nothing else
 make verify-fast   # 2m19s measured
-make verify        # 10m40s measured -> 1257 passed, 13 skipped
+make verify        # 7m52s measured -> 1295 passed, 13 skipped
+                   #   ...but ~2h if `python-sat` is installed: two gates in
+                   #   test_exact_map_cnf.py then run 27 fixtures through the
+                   #   SAT encoding and every verifier instead of skipping.
 ```
 
 Green means **the code accepts the files**. It does not touch:
@@ -151,8 +154,12 @@ computation, not the theorem alone. **Satisfy yourself that those five orders
 are genuinely covered**; it is the softest joint in the coverage argument.
 
 For **Conjecture 10.3**, [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md) has the per-order source table and
-`witness_coverage.residue()` derives the covered set from files rather than
-asserting it; it returns `[]`. Order 19 is the interesting case — no (3,4,5)-APG
+`witness_coverage.verified_orders()` derives the checked set from files and
+run-time constructions rather than asserting it, and `verified_residue()` —
+what is still open here — begins at **57**. The older `residue()` returns `[]`
+but must not be read as evidence: its family term is arithmetic over
+`FAMILY_FLOORS`, reads no file, and claims every order from 48 up on the
+strength of an induction withdrawn on 2026-09-05. Order 19 is the interesting case — no (3,4,5)-APG
 exists on 19 vertices, so its five witnesses are *general* APGs that all three
 (3,4,5)-verifiers correctly reject; they are checked by the fourth,
 `general_apg.is_apg` (`test_conjecture_10_3.py:38-45`).
@@ -181,9 +188,9 @@ rediscover these; if you find a *fourth*, that is the finding.
 ## Known gaps, stated so you need not hunt for them
 
 - No human has previously checked any of this. There has been no peer review.
-- The manuscript (`paper/apg.pdf`, 11 pp.) is a draft.
+- The manuscript (`paper/apg.pdf`, 13 pp.) is a draft.
 - Conjecture 10.2 inherits orders 20-45 from the source paper (item 4).
-- 13 of 1257 gates are skipped: 11 need a third-party corpus that is not
+- 13 of 1308 gates are skipped: 11 need a third-party corpus that is not
   redistributed (no licence found at source), 1 needs optional `python-sat`,
   1 follows from the first.
 - AI assistance was substantial, including the step that removed the (C2)

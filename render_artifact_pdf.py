@@ -234,7 +234,7 @@ def build_tex(commit: str, dirty: bool) -> str:
     return (
         PREAMBLE
         + "\n\\begin{document}\n"
-        + r"\begin{center}{\LARGE\bfseries Settling Conjectures 10.1, 10.2 and 10.3\\[2pt]"
+        + r"\begin{center}{\LARGE\bfseries Settling Conjectures 10.1 and 10.2\\[2pt]"
         + r"on alternating plane graphs\par}\vspace{8pt}"
         + r"{\normalsize Hanyu Yang \textendash{} ORCID 0009-0005-0419-4070\par}\vspace{4pt}"
         + r"{\small Concept DOI \href{https://doi.org/" + CONCEPT_DOI + "}{" + CONCEPT_DOI + r"} \textperiodcentered{} Licence: MIT\par}"

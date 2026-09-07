@@ -26,6 +26,7 @@ from fast_apg_check import is_apg as _fast_apg_filter
 
 HERE = Path(__file__).resolve().parent
 KNOWN = HERE / "certificates" / "known"
+CENSUS = HERE / "certificates" / "census_sources"
 
 
 def _is_model(degrees, faces, alpha, **kwargs) -> bool:
@@ -158,21 +159,14 @@ def _two_swap(alpha: list[int], first: int, second: int) -> list[int] | None:
 def test_every_published_apg_is_a_model(tmp_path: Path) -> None:
     """The predicted-object gate, across parameters rather than at one point.
 
-    The 19 frozen planar-code census sources span orders 26-36 and ``r`` from
-    11 to 14, and the four known fixtures add orders 17, 20 and 42.  A kernel
-    calibrated on a single profile passes a one-map gate; it does not pass
-    this one (the project rules sections 3 and 4).
+    The 19 frozen census sources span orders 26-36 and ``r`` from 11 to 14,
+    and the known fixtures -- eight files holding four graphs, under both
+    naming conventions -- add orders 17, 20 and 42.  A kernel calibrated on a
+    single profile passes a one-map gate; it does not pass this one (the
+    project rules sections 3 and 4).
     """
 
-    fixtures: list[Path] = sorted(KNOWN.glob("*.json"))
-    for source in sorted((HERE / "certificates" / "census_sources").glob("*.plc")):
-        target = tmp_path / f"{source.stem}.json"
-        subprocess.run(
-            [sys.executable, str(HERE / "import_planar_code.py"), str(source), str(target)],
-            capture_output=True,
-            check=True,
-        )
-        fixtures.append(target)
+    fixtures: list[Path] = sorted(KNOWN.glob("*.json")) + sorted(CENSUS.glob("*.json"))
 
     seen_orders: set[int] = set()
     seen_r: set[int] = set()
@@ -185,7 +179,7 @@ def test_every_published_apg_is_a_model(tmp_path: Path) -> None:
         seen_orders.add(order)
         seen_r.add(r)
 
-    assert len(fixtures) == 23
+    assert len(fixtures) == 27
     assert seen_orders >= {17, 20, 26, 29, 32, 36, 42}
     assert len(seen_r) >= 4
 
@@ -312,16 +306,8 @@ def test_every_published_apg_has_a_lex_leader_representative(tmp_path: Path) -> 
     still a model under the break -- is what turns the argument into a gate.
     """
 
-    fixtures: list[Path] = sorted(KNOWN.glob("*.json"))
-    for source in sorted((HERE / "certificates" / "census_sources").glob("*.plc")):
-        target = tmp_path / f"{source.stem}.json"
-        subprocess.run(
-            [sys.executable, str(HERE / "import_planar_code.py"), str(source), str(target)],
-            capture_output=True,
-            check=True,
-        )
-        fixtures.append(target)
-    assert len(fixtures) == 23
+    fixtures: list[Path] = sorted(KNOWN.glob("*.json")) + sorted(CENSUS.glob("*.json"))
+    assert len(fixtures) == 27
 
     moved = 0
     for fixture in fixtures:
@@ -371,6 +357,9 @@ def test_the_closed_lane_still_refuses_a_hexagon() -> None:
 
 
 def test_block_profile_matches_the_repository_constructor() -> None:
+    pytest.importorskip(
+        "z3", reason="z3-solver is an optional dependency; see requirements-optional.txt"
+    )
     from exact_map_sat import profile_block
 
     for order, r in ((21, 10), (28, 12), (29, 12), (31, 12)):
@@ -477,6 +466,16 @@ def test_the_cli_records_the_environment(tmp_path: Path) -> None:
         text=True,
         check=False,
     )
+    if platform.system() == "Darwin":
+        # The CLI refuses solver work here by design (project rules section 11),
+        # and `--allow-darwin` is not a way round it.  `--timeout` bounds the
+        # solve loop only: the encoding is built before the clock starts, and at
+        # order 20 that build does not finish -- a run left with `--timeout 3`
+        # was still alive after eight hours.  The refusal is the thing that is
+        # checkable on this platform, so check that.
+        assert not output.exists()
+        assert "refusing to run solver work on Darwin" in completed.stderr
+        return
     assert output.exists(), completed.stderr
     record = json.loads(output.read_text())
     assert record["environment"]["system"] == platform.system()

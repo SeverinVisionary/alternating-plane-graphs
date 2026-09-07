@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: >-
-  Settling Conjectures 10.1, 10.2 and 10.3 on alternating plane graphs
+  Alternating plane graphs: settling Conjectures 10.1 and 10.2, with witnesses for 10.3
 message: >-
   If you use this software or its certificates, please cite it, and cite the
   paper whose conjectures it settles.
@@ -13,15 +13,16 @@ authors:
 repository-code: https://github.com/SeverinVisionary/alternating-plane-graphs
 url: https://severinvisionary.github.io/alternating-plane-graphs/
 doi: "10.5281/zenodo.22269200"
-version: 1.0.2
-date-released: 2026-09-03
+version: 1.0.3
+date-released: 2026-09-05
 abstract: >-
   Machine-checked settlement of three of the four open problems in Section 10 of
   Althofer, Haugland, Scherer, Schneider and Van Cleemput, "Alternating plane
   graphs". Conjecture 10.2 is settled by 26 verified certificates together with
   a proved periodic capping lemma that generates a (3,4,5)-alternating plane
-  graph at order 48 and every order at least 50. Conjecture 10.3 is settled by a
-  3-connected witness at every order from 19 up. Conjecture 10.1 is proved,
+  graph at order 48 and every order at least 50. Conjecture 10.3 carries verified
+  3-connected witnesses at 54 orders; its infinite tail rests on a periodic
+  family whose induction is not established, and is not claimed as proved. Conjecture 10.1 is proved,
   without relying on the bridge convention: Definition 2.1 is silent about
   bridges and the paper rules them out a few lines later by asserting
   2-edge-connectivity, but the argument closes under the permissive reading

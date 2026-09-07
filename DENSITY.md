@@ -1,7 +1,7 @@
 # The fourth problem: the asymptotic degree distribution
 
-Section 10 of the source paper poses four open items. Three are settled in this
-repository. This one is not.
+Section 10 of the source paper poses four open items. Two are settled in this
+repository and a third is advanced but not closed. This one is untouched.
 
 ## The problem, verbatim
 

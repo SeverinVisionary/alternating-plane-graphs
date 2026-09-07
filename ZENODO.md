@@ -1,6 +1,6 @@
 # Three conjectures on alternating plane graphs — deposit summary
 
-**Settles three of the four open problems** in Section 10 of Althöfer, Haugland,
+**Settles two of the four open problems, and advances a third**, in Section 10 of Althöfer, Haugland,
 Scherer, Schneider & Van Cleemput, *Alternating plane graphs*,
 *Ars Mathematica Contemporanea* **8** (2015) 337–363,
 [doi:10.26493/1855-3974.584.09a](https://doi.org/10.26493/1855-3974.584.09a).
@@ -13,7 +13,7 @@ Scherer, Schneider & Van Cleemput, *Alternating plane graphs*,
 | --- | --- |
 | ✅ **Conjecture 10.1** | **Proved, and not resting on an interpretation.** Definition 2.1 is silent about bridges; the paper rules bridges out a few lines later, asserting that an alternating plane graph "is always at least 2-edge-connected, since plane graph with edge connectivity 1 contains a face that is adjacent to itself" (p. 339). The proof here does not use that sentence — it closes under the permissive reading too, in which bridges are allowed. |
 | ✅ **Conjecture 10.2** | **Settled**, and this deposit closes **every order ≥ 46 on its own** — the 26 certificates plus a *proved* periodic capping lemma giving order 48 and every order ≥ 50. Orders 20–45 remain the **source paper's** (its heuristic search and Section-8 construction); they are not re-established here. |
-| ✅ **Conjecture 10.3** | **Settled.** A verified 3-connected witness at **every** order ≥ 19. |
+| ⚠️ **Conjecture 10.3** | **Settled at 54 orders, not proved above them.** Verified 3-connected witnesses at 17, 19-56, 67-74, 88-92, 109-110. The remaining orders -- 57-66, 75-87, 93-108 and every n >= 111 -- rest either on the source paper's statement that its Section-8 constructions are 3-connected, or on a periodic family here whose infinite step was found **unproved** on 2026-09-05. Neither route is established in this deposit. |
 | ⬜ **Fourth problem** | **Open.** The asymptotic distribution of `v₄/v₃` on `[1, 1.5]`. Out of reach of these methods, and we say why. |
 
 **Also here:** a `(3,4,5)`-alternating plane graph on **46 vertices with a
@@ -48,7 +48,7 @@ make verify        # everything, ~11 minutes
 
 | measure | value |
 | --- | --- |
-| gates | **1257 passed, 13 skipped** |
+| gates | **1295 passed, 13 skipped** |
 | runtime | about 11 min (Python 3.9.6, macOS) |
 | dependencies | verifiers: **standard library only**. The test suite additionally needs `pytest` |
 | independent verifiers per certificate | **3** |
@@ -72,7 +72,7 @@ vacuous.
 | `*.py` | 74 | constructions, three verifiers, search lanes, tooling |
 | `test_*.py` | 77 | the gates |
 | `figures/` | 12 | SVG + TikZ, computed from the certificates |
-| `paper/` | 3 | manuscript: `apg.tex`, the compiled `apg.pdf` (11 pp.), and a README. **Draft — compiles, but unrefereed** |
+| `paper/` | 3 | manuscript: `apg.tex`, the compiled `apg.pdf` (13 pp.), and a README. **Draft — compiles, but unrefereed** |
 | `results/` | 614 | run artifacts, provenance only |
 
 ---

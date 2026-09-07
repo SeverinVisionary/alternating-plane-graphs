@@ -6,8 +6,8 @@ names findings rather than reviewers: the author is responsible for the
 content either way, and the value here is the list of things that turned out to
 be wrong.
 
-Nothing below is decorative. Three claims made in this repository were **false**
-and were withdrawn; each is retracted in place at the file that made it, rather
+Nothing below is decorative. Several claims made in this repository were
+**false** and were withdrawn; each is retracted in place at the file that made it, rather
 than quietly deleted.
 
 ## Conjecture 10.1, and the removal of (C2)
@@ -58,6 +58,39 @@ it. Now stated in Step 1.
 unqualified — one with three bridges carries none. The statement needed, and
 proved, is that a degree-3 vertex **incident with a non-bridge edge** has
 exactly one bridge and exactly two non-bridge edges.
+
+## Conjecture 10.3, and the withdrawal of the infinite tail
+
+### Retracted (2026-09-05): "3-connected at every order from 19 up"
+
+The strongest correction this repository has made, and the one that cost a
+theorem. `family_connectivity.py` set out an induction carrying 3-connectivity
+through the spliced family, and the manuscript stated Conjecture 10.3 itself as
+a theorem on the strength of it.
+
+**The induction is not established.** Its key step shows a freshly spliced copy
+is adjacent to the copies on either side and concludes that connectivity is
+preserved; what is required is that `S(n,d) - {u,v}` is connected, with the
+separating pair already removed, and that does not follow -- a replacement path
+could be forced through a removed vertex. A second step, that the splice point
+can always be placed clear of a pair occupying up to four consecutive copies
+inside a deep block of five, is an off-by-one asserted and never checked. A
+third, that type agreement at two consecutive sizes implies the type multiset
+never grows again, is evidence of stabilisation rather than proof of it.
+
+**What replaced it.** The manuscript's Theorem now states only the 54 orders
+carrying explicit witnesses -- 17, 19-56, 67-74, 88-92, 109-110 -- and says
+plainly that Conjecture 10.3 is not proved. Orders 57-66, 75-87, 93-108 and
+every `n >= 111` are open pending proof.
+
+**The obvious alternative does not repair it.** The source paper states in its
+concluding remarks that its Section-8 constructions are 3-connected, which would
+cover exactly those gaps. That is an assertion in a summary bullet rather than a
+theorem, and the same sentence hedges Section 6 with "most of". Routing the tail
+through it substitutes an inherited unproved claim for a local one.
+
+Found by an adversarial review pass whose brief was to attack the deposit. It
+was listed in that brief as *not* a known weakness; the review found it anyway.
 
 ## What was probed and held
 

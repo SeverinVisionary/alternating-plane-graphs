@@ -117,7 +117,11 @@ def test_every_face_stays_inside_a_short_window_of_copies(order: int) -> None:
         copies = [vertex[2] for vertex in walk if vertex[0] == "S"]
         if copies:
             spans.append(max(copies) - min(copies))
-    assert spans and max(spans) <= 3, max(spans)
+    # Measured over every spliceable order at d = 1, 2, 3, 5: the maximum is 2,
+    # attained at order 48.  The threshold used to be 3, which is slack enough
+    # to hide a regression; it is the measurement that the locality argument
+    # rests on, so the gate asserts the measurement.
+    assert spans and max(spans) <= 2, max(spans)
 
 
 # --------------------------------------------------------------------------

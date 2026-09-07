@@ -126,6 +126,27 @@ def family_orders(horizon: int = HORIZON) -> set[int]:
     return covered
 
 
+def verified_orders() -> set[int]:
+    """Orders with a 3-connected witness this repository actually checks.
+
+    Stored certificates plus the Section-8 closures composed at run time.  The
+    periodic family is deliberately excluded.  `family_orders` is arithmetic
+    over `FAMILY_FLOORS` and reads no file, so it reports coverage whether or
+    not any witness exists at those orders; and its 3-connectivity rests on the
+    induction in `family_connectivity.py`, which was found unproved on
+    2026-09-05.  Anything asserted about Conjecture 10.3's evidence has to be
+    asserted about this set, not about `residue`.
+    """
+
+    return stored_orders() | section8_orders()
+
+
+def verified_residue(horizon: int = HORIZON) -> list[int]:
+    """Orders from 19 up with no *checked* 3-connected witness in this repository."""
+
+    return sorted(set(range(19, horizon)) - verified_orders())
+
+
 def section8_orders() -> set[int]:
     """Orders closed by a Section-8 closure built at run time, not stored.
 
@@ -140,7 +161,14 @@ def section8_orders() -> set[int]:
 
 
 def residue(horizon: int = HORIZON) -> list[int]:
-    """Orders from 19 up with no 3-connected APG witness in this repository."""
+    """Orders from 19 up not claimed by any source, checked or theorem-derived.
+
+    **This is not a measurement of the evidence.**  Two of the three terms are
+    scans; `family_orders` is arithmetic, and it carries the orders whose
+    3-connectivity was withdrawn on 2026-09-05.  Deleting every stored witness
+    at 48 and at every order from 50 up leaves this function returning `[]`
+    unchanged.  Use `verified_residue` for what the repository establishes.
+    """
 
     covered = stored_orders() | family_orders(horizon) | section8_orders()
     return sorted(set(range(19, horizon)) - covered)

@@ -47,7 +47,7 @@ introduced errors as well as catching them.
 The mathematics does not rest on any model's say-so.
 
 * Every graph asserted here is an explicit rotation system, and every property
-  claimed of it is recomputed on each run by three independently written
+  claimed of it is recomputed on each run by four independently written
   decision procedures. See [`ARTIFACT.md`](ARTIFACT.md).
 * The proofs in Sections 3 to 5 of the manuscript are ordinary mathematics and
   can be checked by a reader with no computer.

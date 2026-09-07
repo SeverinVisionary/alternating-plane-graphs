@@ -15,7 +15,6 @@ from pathlib import Path
 import pytest
 
 import closed_map_search as cms
-import import_planar_code as ipc
 import pumping_splice as ps
 from certificate_tools import alpha_from_certificate, cycles_from_degrees
 
@@ -69,7 +68,9 @@ def test_the_profile_arithmetic_admits_every_published_witness() -> None:
 
 
 def test_the_census_sources_are_admitted_too() -> None:
-    for path in sorted((HERE / "certificates" / "census_sources").glob("*.plc")):
-        rotation = ipc.decode_first(path)
-        counts = collections.Counter(len(ring) for ring in rotation)
+    sources = sorted((HERE / "certificates" / "census_sources").glob("*.json"))
+    assert len(sources) == 19, "the census fixtures moved; this gate was reading nothing"
+    for path in sources:
+        degrees, _ = alpha_from_certificate(path)
+        counts = collections.Counter(degrees)
         assert counts[5] == counts[3] - 4

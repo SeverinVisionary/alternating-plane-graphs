@@ -64,18 +64,21 @@ verbatim, in quotation marks and attributed:
   rest on their certificates alone.
 * **The 26 certificates** at orders 46-56, 67-74, 88-92, 109 and 110 -- the
   previously open orders of Conjecture 10.2.
-* **Conjecture 10.3 settled**: a verified 3-connected witness at every order
-  from 19 up, with [`witness_coverage.py`](witness_coverage.py) deriving the
-  covered set from files rather than asserting it, and each source gated as
-  load-bearing.
+* **Conjecture 10.3 advanced, not settled**: verified 3-connected witnesses at
+  54 orders -- 17, 19-56, 67-74, 88-92, 109 and 110 -- with
+  [`witness_coverage.py`](witness_coverage.py) deriving that set from files
+  through `verified_orders()`, and each source gated as load-bearing. The tail
+  above 56 was withdrawn on 2026-09-05.
 * **Orders 37 and 38 by disk surgery**, which the Section-8 arithmetic cannot
   reach and the paper's own coverage list skips.
 * **The order-46 counterexample.** A `(3,4,5)`-APG with a separating pair,
   refuting "every `(3,4,5)`-APG is 3-connected" -- a claim this repository
   asserted and had to withdraw. See
   [`THREE_CONNECTIVITY_CLAIM.md`](THREE_CONNECTIVITY_CLAIM.md).
-* **The spliced family is 3-connected at every order**, proved in
-  [`family_connectivity.py`](family_connectivity.py), not sampled.
+* ~~**The spliced family is 3-connected at every order**~~ -- claimed in
+  [`family_connectivity.py`](family_connectivity.py) and **withdrawn on
+  2026-09-05**; the induction is not established. Kept here because the claim
+  was published.
 * **Conjecture 10.1**, both halves reduced to one symmetric per-edge
   inequality, and then freed of the (C2) reading by a counting argument that
   tethers the only edges able to exceed the budget to bridges, at most two per
@@ -88,7 +91,7 @@ verbatim, in quotation marks and attributed:
   which is what the (C2) question needs.
 * **The verification apparatus**: three independent decision procedures,
   [`export_planar_code.py`](export_planar_code.py), the format specification
-  with an executable reference reader, and 1257 gates.
+  with an executable reference reader, and 1308 gates.
 
 ## How it was produced
 

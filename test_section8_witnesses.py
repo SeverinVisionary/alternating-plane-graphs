@@ -45,15 +45,16 @@ def test_every_closure_is_three_connected(order: int) -> None:
     assert cn.is_three_connected(rotation)
 
 
-def test_nothing_is_left_open_once_these_closures_are_counted() -> None:
-    """The Section-8 closures are part of what makes the residue empty.
+def test_nothing_below_fifty_seven_is_left_open_once_these_closures_are_counted() -> None:
+    """The Section-8 closures are part of what closes 19 to 56.
 
     They are built at run time from `results/blocks/` rather than stored, so a
-    scan of certificate files cannot see them; `witness_coverage.residue` has to
-    ask for them explicitly.
+    scan of certificate files cannot see them; `witness_coverage` has to ask for
+    them explicitly.  Above 56 nothing is closed here: that range was carried by
+    the spliced family, withdrawn on 2026-09-05.
     """
 
-    assert wc.residue() == []
+    assert wc.verified_residue()[:3] == [57, 58, 59]
     assert set(s8.RECIPES) <= wc.section8_orders()
     # Load-bearing: without them, seven orders reopen.
     covered = wc.stored_orders() | wc.family_orders()

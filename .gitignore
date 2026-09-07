@@ -5,3 +5,9 @@ __pycache__/
 venv/
 *.egg-info/
 .DS_Store
+
+# Fetched from the AustMS for local builds of paper/apg_bams.tex; not ours to
+# redistribute, same rule as the graph corpus (see NOTICE.md).
+paper/baustms.cls
+paper/srtnumbered.bst
+paper/apg_bams.pdf

@@ -20,12 +20,16 @@ Two things the journal's own materials disagree on, so the stricter governs:
 
 The abstract is written to **147 words** to satisfy both (checked 2026-09-06). The compiled variant
 ran to **12 pages** when last built, exactly the journal's stated ceiling ("the
-paper should be relatively short (say, no more than 12 pages)"). **That figure
-is stale.** The withdrawal of Conjecture 10.3 (2026-09-05/06) added roughly a
-page to the main manuscript, and `baustms.cls` is not committed here, so this
-variant has not been rebuilt since. Recompile and check the length before
-submitting; any addition needs
-a matching cut.
+paper should be relatively short (say, no more than 12 pages)"). **Rebuilt 2026-09-06 with the
+fetched class file: it is now 13 pages**, one over the guidance, because the
+Conjecture 10.3 withdrawal added about a page. A cut of roughly one page is
+needed before submitting, or the length has to be argued for. Note the author
+guidelines state no hard maximum -- the 12 pages is the About page's wording,
+*"relatively short (say, no more than 12 pages)"*.
+
+`baustms.cls` and `srtnumbered.bst` are git-ignored here for the same reason
+they are not committed: they are the AustMS's. Fetch them with the commands
+above before building.
 
 ## The submission process, checked 2026-09-06
 

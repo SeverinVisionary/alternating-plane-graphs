@@ -127,7 +127,8 @@ what is being taken from a machine.
 We follow \cite{AHSSV2015} throughout.
 
 \begin{definition}[\cite{AHSSV2015}, Definition~2.1]\label{def:apg}
-An \emph{alternating plane graph} is a simple connected plane graph in which
+An \emph{alternating plane graph} is a simple connected plane graph in
+which
 \begin{enumerate}
   \item[(a)] every vertex has degree at least $3$;
   \item[(b)] every face, the unbounded one included, has size at least $3$;
@@ -331,8 +332,10 @@ only pairs of distinct faces, and bridges are permitted. We show that no
 $X,2$-alternating plane graph exists even so. Since such a graph would in
 particular be bridgeless, (C2) is a consequence of Definition~\ref{def:apg}
 rather than a reading of it, and Theorem~\ref{thm:101} holds under both
-readings. (The corresponding statement for $2,Y$ follows from a leaf-block
-argument, sketched at the end of the section.)
+readings. The corresponding statement for $2,Y$ is
+Proposition~\ref{prop:twoY-weak} at the end of the section, proved by the same
+per-edge count; an earlier draft claimed it followed from a leaf-block argument,
+which was unsound and is withdrawn.
 
 \begin{lemma}[parity]\label{lem:parity}
 Let $G$ be a plane graph whose faces admit a colouring by two colours that is
@@ -568,9 +571,11 @@ vertices for every $n \ge 20$.
 \end{corollary}
 
 \begin{proof}
-Orders below $46$ are the published witnesses of \cite{AHSSV2015}, decoded from the author-hosted
-corpus~\cite{APGcorpus}, together with
-the Section-8 closures of \S\ref{sec:103}. Orders $46$ through $56$, $67$
+Orders below $46$ are the published witnesses of \cite{AHSSV2015}, decoded from
+the author-hosted corpus~\cite{APGcorpus}, together with the Section-8 closures
+of \S\ref{sec:103} and, at orders $37$ and $38$, the disk surgery of this paper
+--- those two are out of reach of the Section-8 arithmetic and are skipped by
+the coverage list of \cite{AHSSV2015}. Orders $46$ through $56$, $67$
 through $74$, $88$ through $92$, and $109$, $110$ carry the certificates of this
 paper. Every remaining order is reached by Theorem~\ref{thm:pumping} from a
 certificate in its residue class modulo $3$, with the floors above.
@@ -617,7 +622,10 @@ an artefact of one alignment.
 \begin{theorem}\label{thm:103}
 There is a $3$-connected alternating plane graph on $n$ vertices for
 $$n \in \{17\} \cup [19,56] \cup [67,74] \cup [88,92] \cup \{109,110\},$$
-$54$ orders in all, each certified by an explicit witness.
+$54$ orders in all, each certified by an explicit witness. (Order $17$ is
+below the range of Conjecture~10.3; it is included because it is the smallest
+order at which any alternating plane graph exists, and its witness is
+$3$-connected.)
 \end{theorem}
 
 We state Theorem~\ref{thm:103} in this bounded form deliberately.
@@ -771,9 +779,13 @@ that each certificate is accepted by every verifier, and that each source in
 Theorem~\ref{thm:103} is necessary, in the sense that removing it reopens
 orders. Most gates are paired with a control that must fail, so that a check
 cannot pass by being vacuous. Not all: \texttt{test\_verifier\_mutations.py}
-lists $17$ verifier conditions with no negative control, and in September 2026
-three coverage gates were found to be iterating an empty set. Both are recorded
-in the artifact rather than corrected in silence.
+lists $17$ sites with no negative control, and in September 2026 three coverage
+gates were found to be iterating an empty set. Both are recorded in the artifact
+rather than corrected in silence. Of the $17$, six are the Theorem~3.2
+identities, two are the facial-walk restriction the definition does not impose,
+and the two alternation clauses are each controlled in the \emph{other}
+verifier, whose checks run in a different order; every certificate is run
+through both.
 
 The two computations that the proofs genuinely rest on are the finite hypotheses
 of Remark~\ref{rem:hypotheses}.
@@ -785,8 +797,8 @@ tool (a straight-line embedding after Tutte~\cite{Tutte1963}) and the export
 tools, and the complete test suite --- is archived at
 \cite{artifact}, under the MIT licence. The concept DOI
 \href{https://doi.org/10.5281/zenodo.22269200}{10.5281/zenodo.22269200} always
-resolves to the current version; the version this paper describes is~$1.0.2$,
-\href{https://doi.org/10.5281/zenodo.22294497}{10.5281/zenodo.22294497}.
+resolves to the current version; this paper describes version~$1.0.3$, which
+carries its own version DOI on that record.
 Reproduce with \texttt{make deps \&\& make verify}. No third-party \emph{files}
 are redistributed: no licence statement was found at the source of the published
 corpus~\cite{APGcorpus}, so each of its graphs is re-expressed in the artifact's

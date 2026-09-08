@@ -27,7 +27,7 @@
 <!-- Dublin Core -->
 <meta name="DC.title" content="Alternating plane graphs: settling Conjectures 10.1 and 10.2, with witnesses for 10.3">
 <meta name="DC.creator" content="Yang, Hanyu">
-<meta name="DC.date" content="2026-09-02">
+<meta name="DC.date" content="2026-09-06">
 <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.22269200">
 <meta name="DC.rights" content="MIT (code and certificates); CC BY 4.0 (prose)">
 
@@ -51,7 +51,7 @@
     "identifier": "https://orcid.org/0009-0005-0419-4070",
     "url": "https://orcid.org/0009-0005-0419-4070"
   },
-  "datePublished": "2026-09-02",
+  "datePublished": "2026-09-06",
   "inLanguage": "en",
   "identifier": "https://doi.org/10.5281/zenodo.22269200",
   "sameAs": [
@@ -135,7 +135,7 @@ machine-checked certificate; the fourth is not, and this page says why.</p>
   DOI <a href="https://doi.org/10.5281/zenodo.22269200">10.5281/zenodo.22269200</a> ·
   <a href="https://github.com/SeverinVisionary/alternating-plane-graphs">source repository</a> ·
   supplements <a href="https://doi.org/10.26493/1855-3974.584.09a">Ars Math. Contemp. <strong>8</strong> (2015) 337–363</a> ·
-  2 September 2026
+  6 September 2026
 </div>
 
 <h2>Abstract</h2>
@@ -299,9 +299,12 @@ records a claim that a graph <em>is</em> an alternating plane graph. Degrees,
 faces, face sizes, bridges, connectivity and both alternation conditions are
 recomputed on every run by <strong>four independently written decision
 procedures</strong>, and most gates are paired with a control that must fail.
-Not all: 17 verifier conditions have no negative control, and in September 2026
-three coverage gates were found to be reading an empty set. Both are recorded
-rather than fixed quietly.</p>
+Not all: 17 sites have no negative control, and in September 2026 three
+coverage gates were found to be reading an empty set. Both are recorded rather
+than fixed quietly. Of the 17, six are the Theorem 3.2 identities, two are a
+restriction the definition does not impose, and the two alternation clauses are
+each controlled in the <em>other</em> verifier — every certificate goes through
+both.</p>
 
 <h2>Reproducing it</h2>
 <pre>git clone https://github.com/SeverinVisionary/alternating-plane-graphs

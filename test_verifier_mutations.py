@@ -19,8 +19,41 @@ import pytest
 import verifier_mutations as vm
 
 
-# Sites with no negative control at the time of writing.  Two kinds, kept
-# apart deliberately.
+# Sites with no negative control at the time of writing.
+#
+# ---------------------------------------------------------------------------
+# What the 17 actually are, measured 2026-09-06.  An external review read this
+# list as "17 clauses of the definition could be deleted with the suite still
+# green".  That is not what it says, and the difference matters:
+#
+#   * 6   the Theorem 3.2 identity sites (see below).
+#   * 2   `face ... repeats a vertex`.  This is the *extra* restriction the
+#         verifiers impose beyond Definition 2.1 -- facial walks must be
+#         simple.  No input derived from a real certificate reaches it, which
+#         is exactly what one would expect of a condition the definition does
+#         not require.
+#   * 4   internal-consistency branches of the face traversal.
+#   * 3   structural (`names missing vertex` twice, `is asymmetric` once).  The
+#         corpus *does* contain `missing-vertex` and `asymmetric-edge`; these
+#         sites are shadowed by an earlier check that rejects the same input
+#         first, so removing them changes no verdict.
+#   * 2   the alternation clauses -- and these are the ones worth being precise
+#         about.  `verify.py`'s vertex-alternation site is uncontrolled, but
+#         `verify_darts.py`'s `joins equal degrees` is controlled.
+#         `verify_darts.py`'s face-alternation site is uncontrolled, but
+#         `verify.py`'s `separates two faces of size` is controlled.  The two
+#         verifiers order their checks differently, so the octahedron in the
+#         corpus reaches a different clause in each.  **Both conditions of
+#         Definition 2.1 therefore have a live negative control**, in one
+#         verifier each, and every certificate is run through both.
+#
+# What would close the last two properly is an input violating exactly one
+# clause: degrees and face sizes all in {3,4,5}, a sphere embedding, and either
+# vertex- or face-alternation broken alone.  A sweep of every two-edge switch
+# over six target certificates found none -- the same rigidity recorded in the
+# density section of the manuscript, where no switch of any certificate leaves
+# a valid APG either.  Recorded as an open item rather than papered over.
+# ---------------------------------------------------------------------------
 #
 # The six "Theorem 3.2" identity sites are the interesting ones.  Controlling
 # them needs an input that satisfies every clause of Definition 3.1 and still

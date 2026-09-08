@@ -3,6 +3,30 @@
 Versions are for the deposit, not for an API. A release is a state of the
 evidence: what is settled, and what a reader can check.
 
+## 1.0.4 — 2026-09-08
+
+**Two independent Extra High reviews of the Conjecture 10.1 proof, one told to
+assume it wrong and one to assume it sound. Neither could break it; both found
+the same false justification.**
+
+* **Step 0 of the bridge argument.** *"A walk of length 2 requires parallel
+  edges and one of length 1 a loop"* omits a case: a facial walk of length 2 can
+  be a single bridge traversed twice. The conclusion holds -- that forces the
+  component to be `K2`, excluded by `deg_A(u) >= 2` -- but the stated reason did
+  not cover it, and Step 0 feeds every numerical estimate in the bridge
+  argument. Now written out. Both reviews named this as *the* weakest point.
+* **The Eulerian remark was false.** The parity lemma is strictly weaker than
+  the classical face-2-colourable criterion, not a restatement of it: a triangle
+  with a pendant edge is a counterexample. Commentary, used nowhere.
+* **Convention (C1) carried a false "if and only if"** -- that a facial walk
+  repeats a vertex exactly when the graph is not 2-connected. False per face;
+  two triangles sharing a cut vertex show it.
+
+Both reviews would accept the proof as correct after these corrections, and
+neither could construct a `2,Y`- or `X,2`-alternating plane graph. (C1) remains
+the only theorem-level vulnerability, with one review supplying new evidence
+*for* it from the source paper's own Lemma 9.2. See `REVIEW.md`.
+
 ## 1.0.3 — 2026-09-06
 
 A second adversarial pass, run against the working tree rather than the public

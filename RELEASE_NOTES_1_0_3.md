@@ -48,4 +48,4 @@ witnesses for 10.3"**.
   two hours where the optional `python-sat` is installed.
 - Prior art re-checked 2026-09-06 across OpenAlex, Semantic Scholar, the arXiv
   and the authors' own page: no published or deposited settlement of any of the
-  three conjectures. Recorded in `PRIOR_ART.md`.
+  three conjectures. Recorded as a dated refresh in `PRIOR_ART.md`.

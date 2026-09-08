@@ -101,11 +101,13 @@ def test_the_deposit_alone_covers_every_order_from_46_up() -> None:
     construction -- and this deposit does not re-establish them.
 
     One honest qualification, carried from the manuscript's deletion remark: the
-    family's floor orders and 57, 58, 59, 61, 63 rest on machine-verified
+    family's floor orders and a short list of others rest on machine-verified
     splices rather than on the capping lemma *as stated*, because the locality
-    argument is written for insertion and `|D| >= 5` does not reach them that
-    way.  That is still this repository's own evidence rather than the paper's,
-    so the claim above stands -- but it is a mix of theorem and verified
+    argument is written for insertion.  That list is computed by
+    `test_which_orders_need_the_deletion_direction` below rather than asserted
+    here; an earlier version of this docstring named the wrong orders.  Either
+    way it is this repository's own evidence rather than the source paper's, so
+    the claim above stands -- but it is a mix of theorem and verified
     computation, not the theorem alone.
     """
 
@@ -148,3 +150,33 @@ def test_the_control_fails_without_the_capping_lemma() -> None:
     assert gap, "the certificates alone should not reach the horizon"
     assert min(gap) == 111
     assert set(range(20, 111)) <= without_lemma
+
+
+def test_which_orders_need_the_deletion_direction() -> None:
+    """Compute the qualification instead of restating it.
+
+    The capping lemma's locality argument is written for insertion: from a
+    spliceable certificate of order `n` it reaches `n + 3d` for `d >= 1`.  Any
+    order the deposit claims that has *no* such route, and no certificate of its
+    own, rests on the deletion direction -- through the floors 50 and 52, which
+    are themselves obtained by deletion.
+
+    A previous version of the manuscript named `57, 58, 59, 61, 63` here.  That
+    was wrong in both directions: 57, 59 and 63 do have insertion routes, and 64
+    was missing.  Deriving the set is what stops the next such error.
+    """
+
+    import test_pumping_splice as tps
+
+    spliceable = set(tps.SPLICEABLE)
+    by_insertion = {n + 3 * d for n in spliceable for d in range(1, HORIZON)}
+    stranded = sorted(
+        o for o in range(46, 121)
+        if o not in by_insertion and o not in spliceable
+    )
+    assert stranded == [46, 47, 49, 50, 52, 55, 58, 61, 64]
+
+    # Six of them carry a certificate of their own, so only three actually
+    # depend on the deletion direction.
+    with_certificate = _certificate_orders()
+    assert [o for o in stranded if o not in with_certificate] == [58, 61, 64]

@@ -145,7 +145,7 @@ lemma is load-bearing: without it, the certificates and the paper's finite
 constructions stop exactly at 110.
 
 **The qualification to check.** Per the manuscript's deletion remark
-(`rem:deletion`), the family's floor orders and **57, 58, 59, 61, 63** rest on
+(`rem:deletion`), the family's floor orders and **58, 61, 64** rest on
 machine-verified splices rather than on the capping lemma *as stated* — its
 locality argument is written for insertion, and the hypothesis `|D| >= 5` does
 not reach those orders that way. Still this deposit's own evidence rather than

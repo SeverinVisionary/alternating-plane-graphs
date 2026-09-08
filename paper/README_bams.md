@@ -20,12 +20,22 @@ Two things the journal's own materials disagree on, so the stricter governs:
 
 The abstract is written to **147 words** to satisfy both (checked 2026-09-06). The compiled variant
 ran to **12 pages** when last built, exactly the journal's stated ceiling ("the
-paper should be relatively short (say, no more than 12 pages)"). **Rebuilt 2026-09-06 with the
-fetched class file: it is now 13 pages**, one over the guidance, because the
-Conjecture 10.3 withdrawal added about a page. A cut of roughly one page is
-needed before submitting, or the length has to be argued for. Note the author
-guidelines state no hard maximum -- the 12 pages is the About page's wording,
-*"relatively short (say, no more than 12 pages)"*.
+paper should be relatively short (say, no more than 12 pages)"). **Rebuilt 2026-09-06 with the fetched class
+file: 13 pages.** It reached 12 after cutting the density section and the
+computation subsection, then went back to 13 when the capping lemma's locality
+argument was repaired (see below). Page 13 holds one bibliography entry and the
+address block, so it is barely over; the author guidelines state **no hard
+maximum**, and the 12 is the About page's wording, *"relatively short (say, no
+more than 12 pages)"*. Trim further only if you want to be strictly inside it.
+
+**This variant had drifted, and that is the real lesson.** It is kept in step by
+hand, and on 2026-09-06 it was found still carrying two things the main
+manuscript had corrected days earlier: the calibration sentence *"Any step that
+over-counted would have failed this test"*, which is **false** and was withdrawn
+on 2026-09-05, and a Theorem 7.1 source table still crediting the spliced
+family. Both are fixed. **Diff the two files before every submission** -- the
+submission variant is the one a referee reads, and it is the one that gets
+forgotten.
 
 `baustms.cls` and `srtnumbered.bst` are git-ignored here for the same reason
 they are not committed: they are the AustMS's. Fetch them with the commands

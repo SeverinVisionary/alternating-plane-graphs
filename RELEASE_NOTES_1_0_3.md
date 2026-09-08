@@ -49,3 +49,12 @@ witnesses for 10.3"**.
 - Prior art re-checked 2026-09-06 across OpenAlex, Semantic Scholar, the arXiv
   and the authors' own page: no published or deposited settlement of any of the
   three conjectures. Recorded as a dated refresh in `PRIOR_ART.md`.
+
+### The AI disclosure is narrowed to what is true
+
+It previously claimed the author *"has read and revised every sentence"* of the
+manuscript. That had not happened, so it is replaced by a claim that has: the
+author has verified the mathematical content and is answerable for it and for
+the disclosure, and the prose is not claimed to be the author's own sentence by
+sentence. This describes the AI use more precisely than the sentence it
+replaces, not less.

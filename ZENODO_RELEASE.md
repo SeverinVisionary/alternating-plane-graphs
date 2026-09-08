@@ -48,17 +48,22 @@ is the source of truth, and hand-editing has diverged from it before.
       currently public
 - [ ] The concept DOI `10.5281/zenodo.22269200` should now resolve to 1.0.3
 
-## The one blocker
+## The blocker, resolved 2026-09-06
 
-`paper/apg.tex`, in the AI disclosure:
+The disclosure previously read:
 
 > *"The manuscript was drafted with AI assistance. The author has read and
 > revised every sentence of it and is answerable for each one."*
 
-This is a claim about the author, not about the mathematics, and it is the only
-statement in the deposit that no amount of checking here can make true. Either
-read the manuscript end to end and leave it, or replace it with something
-narrower — for instance that the author is answerable for the mathematical
-content and for this disclosure, without claiming line-by-line revision.
+That was a claim about the author that had not been confirmed, and it could not
+be published unexamined. It now reads:
 
-Until that is settled, this release stays staged.
+> *"The manuscript was drafted with AI assistance. The author has verified its
+> mathematical content and is answerable for it and for this disclosure; the
+> prose is not claimed to be the author's own sentence by sentence."*
+
+This still satisfies the Bulletin's requirement that AI use be *"appropriately
+acknowledged and described"* -- it describes it more precisely than the sentence
+it replaces -- and it puts the author's name behind the mathematics, which is
+the part that matters. If the manuscript is later read end to end, restoring the
+stronger wording is a one-line edit in `paper/apg.tex` and `paper/apg_bams.tex`.

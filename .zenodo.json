@@ -28,5 +28,5 @@
   ],
   "notes": "Verification requires only Python and pytest. The manuscript compiles and ships as a PDF, but it is a draft with no peer review. AI assistance was substantial and is disclosed in AI_DISCLOSURE.md; no AI system is an author.",
   "version": "1.0.3",
-  "publication_date": "2026-09-06"
+  "publication_date": "2026-09-07"
 }

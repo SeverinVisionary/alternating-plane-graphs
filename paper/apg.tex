@@ -151,7 +151,11 @@ sizes.
 The \emph{size} of a face is the length of its boundary walk counted with
 multiplicity, that is, the number of edge-side incidences. It is not the number
 of distinct vertices on the face. The two differ exactly when the walk repeats a
-vertex, which happens if and only if the graph is not $2$-connected. In
+vertex. That is a statement about a single face, not about the graph: a
+connected plane graph is $2$-connected if and only if \emph{every} facial
+boundary walk is a cycle, so failing $2$-connectivity forces \emph{some} walk to
+repeat a vertex but not every one --- two triangles sharing a cut vertex have
+two faces that repeat nothing and an outer face that does. In
 particular a bridge contributes $2$ to the size of the single face carrying it.
 This is the reading used in \cite{AHSSV2015} at (3.1) and (9.2), both of which
 assert $\sum_s s\,f_s = 2e$.
@@ -358,9 +362,11 @@ number of changes is even, and that number is $\deg v$ minus the number of
 bridges at $v$.
 \end{proof}
 
-Lemma~\ref{lem:parity} is the classical fact that a plane graph is face
-$2$-colourable if and only if it is Eulerian, restated so that bridges are
-permitted rather than assumed away. In an $X,2$-alternating plane graph the face
+Lemma~\ref{lem:parity} is the bridge-tolerant replacement for the classical
+Eulerian criterion, and it is strictly weaker than that criterion rather than a
+restatement of it: a triangle with a pendant edge has its two faces properly
+coloured once self-adjacency across the bridge is ignored, yet is not Eulerian.
+When no vertex lies on a bridge the lemma reduces to the usual statement. In an $X,2$-alternating plane graph the face
 size supplies the colouring, so the lemma applies.
 
 \begin{corollary}\label{cor:evendeg}
@@ -380,11 +386,15 @@ bridges. Suppose first $B \ge 1$.
 \smallskip
 \emph{Step 0: $s_2 \ge 8$.} Let $a = uw$ be a bridge and let $A$ be the
 component of $G - a$ containing $u$. Then $\deg_A u = \deg u - 1 \ge 2$, so $A$
-has at least three vertices. A simple connected plane graph on at least three
-vertices has every facial walk of length at least $3$: a walk of length $2$
-requires parallel edges and one of length $1$ a loop. The face $F$ carrying $a$
-is traced as the outer walk of $A$, then $a$, then the outer walk of the other
-component, then $a$ again, so by Convention~\ref{conv:c1}
+has at least three vertices. Consider the facial boundary walk of $A$ incident
+with the corner formerly occupied by $a$. It cannot have length $1$, which needs
+a loop. Nor length $2$: that is either a digon of parallel edges, excluded by
+simplicity, or a single edge traversed twice, and for two darts alone to form a
+facial orbit both its endpoints have degree $1$, making the component $K_2$ ---
+whereas $\deg_A u \ge 2$. So the walk has length at least $3$, and the same
+holds on the other side. The face $F$ carrying $a$ is traced as that walk of
+$A$, then $a$, then the corresponding walk of the other component, then $a$
+again, so by Convention~\ref{conv:c1}
 \[
   |F| \;=\; |\partial A| + |\partial B| + 2 \;\ge\; 3 + 3 + 2 \;=\; 8 .
 \]

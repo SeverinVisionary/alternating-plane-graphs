@@ -66,6 +66,16 @@ parity lemma it turns on is in [`bridge_lemma.py`](bridge_lemma.py).
 
 ## Status
 
+**Two independent Extra High reviews on 2026-09-08** were given the whole proof
+and told to break it, one assuming it wrong and one assuming it sound. Neither
+could. Both would accept it as a correct proof of Conjecture 10.1 after
+corrections, and both named the same weakest point: Step 0 of the bridge
+argument justified its facial-length bound by ruling out loops and parallel
+edges, and never disposed of a **bridge traversed twice**. The conclusion holds
+-- that case forces the component to be `K2`, which `deg_A(u) >= 2` excludes --
+but the reason given did not cover it. Two further false statements were found,
+neither load-bearing. All three are corrected; see [`REVIEW.md`](REVIEW.md).
+
 **Reviewed in five independent AI review runs on 2026-09-02** -- not by any
 human mathematician, then or since (see [`FOR_REVIEWERS.md`](FOR_REVIEWERS.md)) -- each given the same
 brief and told to break it. All five returned sound, none raised a critical or

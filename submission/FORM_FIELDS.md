@@ -31,8 +31,15 @@ account, both roles ticked, or the submission option never appears.
       **True.**
 - [ ] Authorship complete and appropriate. **Sole author.** No AI system is an
       author; the assistance is described in the manuscript's disclosure.
-- [ ] Competing interests. **None known** — confirm this is still true for you.
+- [ ] No defamatory or unlawful statements, no third-party rights infringed.
+      **True** as far as I can establish — nothing is reproduced.
+- [ ] Written permission for copyright material. **Not applicable.**
+- [ ] AI tool use acknowledged and described. **True** — the disclosure section
+      names the systems, the period and the nature of the assistance.
 - [ ] Five-year public-access policy accepted. **Your decision.**
+
+The site's list has no competing-interests item; an earlier draft of this sheet
+invented one.
 
 **Comments for the Editor**: paste `COVER_LETTER.md` whole, minus its markdown
 heading and the blockquote at the top.

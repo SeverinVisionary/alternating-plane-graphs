@@ -3,9 +3,10 @@
 Tick before pressing submit. Sources for every requirement are in
 [`../paper/README_bams.md`](../paper/README_bams.md).
 
-**Field-by-field values for the form are in
-[`FORM_FIELDS.md`](FORM_FIELDS.md).** Work from that; this file is the
-gate list.
+**Step-by-step walkthrough, including registration:**
+[`SUBMISSION_STEPS.md`](SUBMISSION_STEPS.md).
+**Field-by-field values:** [`FORM_FIELDS.md`](FORM_FIELDS.md).
+This file is the gate list.
 
 ## The journal's own five-step form
 
@@ -21,17 +22,30 @@ gate list.
 
 - [ ] Author name and **ORCID 0009-0005-0419-4070** entered in the submission form
 - [ ] Keywords entered in the form
-- [ ] MSC codes entered in the form (primary 05C10, secondary 05C30)
+- [ ] MSC codes entered under **Subjects** (primary 05C10, secondary 05C30)
 
-## Attestations the form asks for
+## The Submission Preparation Checklist, in the site's own words
 
-- [ ] Not a replacement for an earlier submission still under consideration
-- [ ] Authorship is complete and appropriate — sole author, no omitted contributor
-- [ ] Five-year public-access policy accepted
-- [ ] Third-party rights, permissions and acknowledgements addressed (none apply:
-      no figure, table or quotation is reproduced from another source; the two
-      quoted phrases from the source paper are short and attributed)
-- [ ] Competing interests: none to declare — confirm this is still true
+Read off the live site 2026-09-09. These are declarations in your name.
+
+- [ ] "The article is an original work, has not been published before, and is
+      not currently under consideration for publication in another journal" —
+      true; the Zenodo deposit is a preprint, which green OA expressly permits
+- [ ] "This submission is **not** a revision of an earlier submission which is
+      still under consideration" — true
+- [ ] "The authors listed on the paper each contributed to the production of
+      the work" — sole author; no AI system is an author
+- [ ] "The authors are aware of and agree to the policy ... freely accessible
+      to the public five years after publication" — your decision
+- [ ] "The article contains no defamatory or unlawful statements and does not
+      infringe the right of any third party"
+- [ ] "Where necessary to reproduce copyright material, written permission has
+      been obtained" — not applicable; nothing is reproduced, and the two
+      quoted phrases from the source paper are short and attributed
+- [ ] "Any use of an artificial intelligence tool ... is appropriately
+      acknowledged and described" — the disclosure section names the systems,
+      the period and the nature of the assistance
+- [ ] "the submitted document is in Adobe pdf format" — true
 
 ## What must be true of the file
 

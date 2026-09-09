@@ -6,18 +6,18 @@ Tick before pressing submit. Sources for every requirement are in
 ## The journal's own five-step form
 
 - [ ] Registered at `journal.austms.org.au` as **both reader and author**
-- [ ] Submission is a **PDF** (`paper/apg101.pdf`, 7 pp.) — LaTeX source is
+- [ ] Submission is a **PDF** (`paper/apg101.pdf`, 8 pp.) — LaTeX source is
       wanted on acceptance or before review, not now
 - [ ] Confirmed: original work, not published, not under consideration elsewhere
-- [ ] Confirmed: AI use is acknowledged and described (§1 of the manuscript)
+- [ ] Confirmed: AI use is acknowledged and described (disclosure section, end of the manuscript)
 - [ ] Cover letter pasted from [`COVER_LETTER.md`](COVER_LETTER.md)
 - [ ] Green Open Access selected — **no fee**
 
 ## What must be true of the file
 
-- [x] Built with the AustMS `baustms` class — **7 pages**, well inside the
+- [x] Built with the AustMS `baustms` class — **8 pages**, well inside the
       stated preference for papers to be "relatively short"
-- [x] Abstract **146 words** — under both the 150 in the class template and
+- [x] Abstract **149 words** — under both the 150 in the class template and
       the 200 on the submissions page
 - [x] MSC 2020: primary `05C10`; secondary `05C30`
 - [x] Keywords present
@@ -27,7 +27,7 @@ Tick before pressing submit. Sources for every requirement are in
 
 ## Things to settle first
 
-- [ ] **Read `paper/apg101.pdf` end to end.** It is seven pages. The disclosure
+- [ ] **Read `paper/apg101.pdf` end to end.** It is eight pages. The disclosure
       currently claims only that the author has verified the mathematical
       content; if you read it in full, the stronger sentence is a one-line
       restore in `apg101.tex` and `apg.tex`.

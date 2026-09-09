@@ -333,3 +333,36 @@ mathematician checks whether the statement is the intended problem and whether
 the proof is new; an independent implementation checks whether the deposited
 objects satisfy the statement; a release check binds both to the archived bytes.
 Only the second is being done here, and only from one architecture.
+
+## 2026-09-09 — Pro readability review of `paper/apg101.tex`
+
+Model: ChatGPT Pro (`tierAtSend=Pro`, `modeAtSend=chat`), SID
+`5ee89859-6931-4464-aa34-b362acce4b02`, verified against the live conversation.
+Prompt: the three-layer exposition standard from `SeverinVisionary/imo-gold`
+`RESEARCH_GUIDELINES.md` (§7 layered exposition, §8 teach-back, §6 evidence
+boundaries), asking for (a) a checkable readability rubric with pass thresholds
+and (b) every improvement in one pass. Full text archived at
+[`submission/REVIEW_2026-09-09_readability_pro.md`](submission/REVIEW_2026-09-09_readability_pro.md).
+
+**Verdict on correctness: no gap found.** The bridge-face estimate, the parity
+argument, the assignment of positive edges to bridges, and the final inequality
+all survived. The two essential qualifications — "incident with a non-bridge
+edge", and "at most one degree-3 endpoint of a bridge" — were confirmed as
+essential and correctly handled.
+
+**Verdict on the disproportion worry: not the problem here.** Measured prose
+counts put Step 2, the genuine bottleneck, at 250 of the 526 words of the
+bridge proof (48%). The disproportion was elsewhere: the preliminaries were
+longer than the entire main theorem section, and much of that space was
+interpretative defence rather than orientation.
+
+All 37 items were executed except the release test, which is a human
+teach-back and cannot be closed by a model. The substantive changes are listed
+in [`paper/README_note.md`](paper/README_note.md).
+
+Two of the items were errors of source attribution, and both were checked
+directly against the article PDF rather than taken on the reviewer's word:
+(9.5) is the face bound `f <= 5e/12` (the `1/2` is in (9.8)); (9.2) is
+`r*f_r = sum_s e_{r,s}`. The prior-art paragraph now also names the two
+surviving degree pairs, {3,4} with order >= 25 and {3,5} with order >= 56,
+which the source establishes in its §3.2 for the 2,Y case only.

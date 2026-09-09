@@ -8,11 +8,11 @@
 Dear Editors,
 
 I submit **"No alternating plane graph has exactly two vertex degrees, or
-exactly two face sizes"** for consideration in the Bulletin. It is seven pages.
+exactly two face sizes"** for consideration in the Bulletin. It is eight pages.
 
-A plane graph is *alternating* if adjacent vertices have different degrees,
-adjacent faces have different sizes, and every vertex and every face has size at
-least three. Althöfer, Haugland, Scherer, Schneider and Van Cleemput introduced
+A plane graph is *alternating* if every vertex has degree at least three, every
+face has size at least three, adjacent vertices have different degrees, and
+adjacent faces have different sizes. Althöfer, Haugland, Scherer, Schneider and Van Cleemput introduced
 them (*Ars Math. Contemp.* **8** (2015) 337–363) and closed that paper with four
 open problems. This note settles the first: no such graph has exactly two
 distinct vertex degrees, and none has exactly two distinct face sizes.
@@ -21,8 +21,9 @@ The proof is short. Assign each edge the sum of the reciprocals of its two
 endpoint degrees and its two incident face sizes. Summing over edges returns the
 number of vertices plus the number of faces, so Euler's formula says the excess
 above one, totalled over all edges, is exactly two — some edge must exceed the
-budget. Alternation then caps every edge at one, in both halves, by the same
-inequality with vertices and faces exchanged.
+budget. In either of the two excluded configurations, parity and alternation
+force that sum to be at most one on every edge — the same inequality in both
+halves, with vertices and faces exchanged.
 
 The engine is the source paper's own. Its §9.1 bounds the face count of a weaker
 class by exactly this sum, and that derivation never uses the hypothesis it is
@@ -32,15 +33,17 @@ contribution. That the argument is short is the point of interest, not a
 weakness — but it does mean the value of the note lies in the connection, and I
 would welcome a referee's judgement on whether that connection is already known.
 
-The result is unconditional. Definition 2.1 of the source paper does not say how
-face size is read at a bridge; the paper rules bridges out a few lines later by
-asserting 2-edge-connectivity. Section 5 shows the conclusion holds under the
-permissive reading too, so the theorem does not depend on which reading is taken.
+Section 5 adds an extension rather than a repair. The source paper's definition
+excludes bridges, as it states on p. 339. With face size still counted by
+boundary-walk length, Section 5 proves both nonexistence statements again under
+the weaker requirement that face alternation hold only between *distinct*
+adjacent faces, so that bridges are admitted. That argument is the longer and
+harder half of the note, and its bottleneck — a bound on how many
+positive-excess edges can be assigned to each bridge — is identified as such.
 
 **Disclosure.** Large language models were used materially in this work,
-including the step that makes the result unconditional, and Section 1 describes
-that use. AI review also found and forced the correction of errors in earlier
-drafts. No AI system is an author. I confirm this satisfies the Bulletin's
+including the idea behind the Section 5 extension, and a disclosure section at
+the end of the manuscript describes that use. No AI system is an author. I confirm this satisfies the Bulletin's
 requirement that such use be acknowledged and described.
 
 This note has not been published elsewhere and is not under consideration by

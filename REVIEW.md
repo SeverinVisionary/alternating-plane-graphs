@@ -410,3 +410,57 @@ independently."
 
 **Version note.** This pass reviewed the 8-page text. The figures, tables and
 expanded bibliography were added afterwards and have not been reviewed.
+
+## 2026-09-09 — Pro review of the figures, tables and intuitive layer
+
+Model: ChatGPT Pro (`tierAtSend=Pro`), SID `37846e2d-f990-4b3c-876c-c8605861887c`,
+verified. Input: the 10-page `apg101.tex` with all five figures, both tables and
+the expanded bibliography — none of which the two earlier passes had seen. Full
+text at
+[`submission/REVIEW_2026-09-09_figures_pro.md`](submission/REVIEW_2026-09-09_figures_pro.md).
+
+It re-derived the combinatorics of both fully drawn graphs (facial walks, not
+just appearance) and the arithmetic of both tables, and found them correct. Two
+defects and one misallocation:
+
+* **Figure 3's caption contained a false sentence** — "at a cut vertex one face
+  may occupy several of these corners, but never two consecutive ones". Across
+  a bridge they *are* consecutive, which is exactly the case the parity lemma
+  exists to handle. This is the third instance of the same error in this
+  manuscript: the body text was corrected in the previous pass and the caption
+  was not. Figure 3 is now redrawn with the bridge marked and the corner
+  colours shown, so the picture teaches the parity argument rather than only
+  the notation.
+* **Figure 5 drew the shared vertex `z_2` twice** and asked the reader to
+  identify them. That identification is precisely what makes the two new
+  bridges have ends of different degrees; drawn as two vertices the
+  construction would fail degree alternation. Figure deleted, the point moved
+  into the remark's prose.
+* **The bottleneck had no picture and the closing remark had one.** Figure 5's
+  space now holds a diagram of the Step 2 assignment: the degree-3 end, its
+  unique bridge, its two assignable edges, and the degree condition at the far
+  end that stops the bridge receiving two more.
+
+Figure 4 moved inside the lemma's proof, where `A`, `C`, `W_A`, `W_C` are
+already defined, and gained traversal arrows; its caption now says the two
+arrows along the bridge are two traversals of one edge, not two edges.
+
+Four inline handholds added, all in the paper's own vocabulary rather than
+imported analogy, and all placed so that they cannot make the hard step read as
+routine: the unit-distribution reframing of the identity proof (with the
+explicit warning that 2 is the total *signed* excess); the definition of a
+corner with the count from Figure 1; the corrected statement of what bridge
+relaxation costs (Case 1 loses distinct face sizes too, not only Case 2's
+parity); and the `1/24`-units reading of the bridge deficit, deliberately
+placed *after* the capacity argument so it cannot suggest the compensation is
+automatic.
+
+The leg explicitly rejected metaphors for six further concepts on the ground
+that the plain statement is already clearest, and rejected "routing" and
+"matching" vocabulary for the assignment.
+
+Table captions now separate hypotheses from upper bounds, and Table 2 says the
+last row "permits, but does not assert, positive excess".
+
+11 pages, of which the last is the class's address block: 10 pages of content,
+inside the Bulletin's stated twelve.

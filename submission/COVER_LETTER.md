@@ -43,12 +43,14 @@ that use. AI review also found and forced the correction of errors in earlier
 drafts. No AI system is an author. I confirm this satisfies the Bulletin's
 requirement that such use be acknowledged and described.
 
-The note has not been published elsewhere and is not under consideration by
-another journal. A preprint and a machine-checkable artifact for related results
-are publicly deposited (concept DOI 10.5281/zenodo.22269200); I understand the
-Bulletin's Green Open Access policy permits this, and I am submitting on the
-Green route. Two further conjectures from the same source paper are treated in a
-separate manuscript, not submitted anywhere.
+This note has not been published elsewhere and is not under consideration by
+another journal. A preprint and a machine-checkable artifact are publicly
+deposited (concept DOI 10.5281/zenodo.22269200); I understand the Bulletin's
+Green Open Access policy permits this, and I am submitting on the Green route.
+
+For completeness: two further conjectures from the same source paper are treated
+in a separate manuscript, which I may submit elsewhere in due course. It shares
+no result with this note.
 
 I am an independent researcher, unaffiliated. ORCID 0009-0005-0419-4070.
 

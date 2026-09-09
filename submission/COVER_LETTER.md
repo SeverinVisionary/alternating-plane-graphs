@@ -1,69 +1,56 @@
 # Cover letter — Bulletin of the Australian Mathematical Society
 
-> Paste as the "Comments for the Editor" field, or attach. Replace the bracketed
-> line if you add an affiliation.
+> Paste into "Comments for the Editor", or attach. The submission file is
+> `paper/apg101.pdf`.
 
 ---
 
 Dear Editors,
 
-I submit **"Three conjectures on alternating plane graphs"** for consideration in
-the Bulletin.
+I submit **"No alternating plane graph has exactly two vertex degrees, or
+exactly two face sizes"** for consideration in the Bulletin. It is seven pages.
 
-Althöfer, Haugland, Scherer, Schneider and Van Cleemput introduced alternating
-plane graphs — plane graphs in which adjacent vertices differ in degree and
-adjacent faces differ in size — and closed their 2015 paper in this area (*Ars
-Math. Contemp.* **8**, 337–363) with four open problems. This paper settles two
-of them and makes partial progress on a third.
+A plane graph is *alternating* if adjacent vertices have different degrees,
+adjacent faces have different sizes, and every vertex and every face has size at
+least three. Althöfer, Haugland, Scherer, Schneider and Van Cleemput introduced
+them (*Ars Math. Contemp.* **8** (2015) 337–363) and closed that paper with four
+open problems. This note settles the first: no such graph has exactly two
+distinct vertex degrees, and none has exactly two distinct face sizes.
 
-The central result is **Conjecture 10.1**: there is no alternating plane graph
-with exactly two distinct vertex degrees, and none with exactly two distinct
-face sizes. The proof is short. A single per-edge identity — the reciprocals of
-the two endpoint degrees and the two incident face sizes, summed over edges,
-gives the vertex and face counts — turns Euler's formula into the statement that
-some edge must have "excess" above 1. Alternation then caps every edge at
-exactly 1, in both halves, by the same inequality with vertices and faces
-exchanged. The argument is the source paper's own machinery from its Section 9,
-which it applied only to a weaker class; the connection to the strong class
-appears not to have been made.
+The proof is short. Assign each edge the sum of the reciprocals of its two
+endpoint degrees and its two incident face sizes. Summing over edges returns the
+number of vertices plus the number of faces, so Euler's formula says the excess
+above one, totalled over all edges, is exactly two — some edge must exceed the
+budget. Alternation then caps every edge at one, in both halves, by the same
+inequality with vertices and faces exchanged.
 
-The result is unconditional. The 2015 paper's Definition 2.1 does not say how
+The engine is the source paper's own. Its §9.1 bounds the face count of a weaker
+class by exactly this sum, and that derivation never uses the hypothesis it is
+stated under; its §3.2 attacks the class of this conjecture with different
+machinery that never bounds the face count. Connecting the two is the
+contribution. That the argument is short is the point of interest, not a
+weakness — but it does mean the value of the note lies in the connection, and I
+would welcome a referee's judgement on whether that connection is already known.
+
+The result is unconditional. Definition 2.1 of the source paper does not say how
 face size is read at a bridge; the paper rules bridges out a few lines later by
 asserting 2-edge-connectivity. Section 5 shows the conclusion holds under the
-permissive reading too, so the theorem does not depend on which reading is
-taken.
-
-**Conjecture 10.2** — a (3,4,5)-alternating plane graph at every order n ≥ 20 —
-is settled by explicit certificates at the 26 orders the source paper left open,
-together with a periodic capping lemma reaching order 48 and every n ≥ 50.
-
-For **Conjecture 10.3** the paper is deliberately narrow: it certifies 54 orders
-by explicit witness and states plainly that the tail above 56 is open. An
-earlier version of this manuscript claimed the full conjecture; the induction
-carrying 3-connectivity through the periodic family did not survive scrutiny and
-was withdrawn, with the defects set out in a remark. The fourth problem is
-untouched.
-
-**Artifact.** Every graph asserted is supplied as an explicit rotation system,
-archived on Zenodo under the concept DOI 10.5281/zenodo.22269200. No file
-records the claim that a graph *is* an alternating plane graph: degrees, faces,
-face sizes, connectivity and both alternation conditions are recomputed on each
-run by four separately written decision procedures. Referees are welcome to
-check any certificate independently; they export to `planar_code` for `plantri`
-or House of Graphs.
+permissive reading too, so the theorem does not depend on which reading is taken.
 
 **Disclosure.** Large language models were used materially in this work,
-including the step that makes Theorem 3.1 unconditional, and the disclosure in
-Section 1 describes the use task by task. No AI system is an author. I confirm
-this satisfies the Bulletin's requirement that such use be acknowledged and
-described.
+including the step that makes the result unconditional, and Section 1 describes
+that use. AI review also found and forced the correction of errors in earlier
+drafts. No AI system is an author. I confirm this satisfies the Bulletin's
+requirement that such use be acknowledged and described.
 
-The manuscript is 12 pages, has not been published elsewhere, and is not under
-consideration by another journal. A preprint is publicly available in the
-artifact repository; I understand the Bulletin's Green Open Access policy
-permits this, and I am submitting on the Green route.
+The note has not been published elsewhere and is not under consideration by
+another journal. A preprint and a machine-checkable artifact for related results
+are publicly deposited (concept DOI 10.5281/zenodo.22269200); I understand the
+Bulletin's Green Open Access policy permits this, and I am submitting on the
+Green route. Two further conjectures from the same source paper are treated in a
+separate manuscript, not submitted anywhere.
 
-[I am an independent researcher, unaffiliated. ORCID 0009-0005-0419-4070.]
+I am an independent researcher, unaffiliated. ORCID 0009-0005-0419-4070.
 
 Yours sincerely,
 Hanyu Yang

@@ -152,31 +152,45 @@ def test_the_control_fails_without_the_capping_lemma() -> None:
     assert set(range(20, 111)) <= without_lemma
 
 
-def test_which_orders_need_the_deletion_direction() -> None:
-    """Compute the qualification instead of restating it.
+def test_which_orders_the_capping_theorem_does_not_reach() -> None:
+    """Compute the qualification, with the theorem's actual hypothesis.
 
-    The capping lemma's locality argument is written for insertion: from a
-    spliceable certificate of order `n` it reaches `n + 3d` for `d >= 1`.  Any
-    order the deposit claims that has *no* such route, and no certificate of its
-    own, rests on the deletion direction -- through the floors 50 and 52, which
-    are themselves obtained by deletion.
+    Theorem `thm:pumping` requires a deep block of at least five copies.  An
+    earlier version of this gate took every spliceable order as an insertion
+    seed, which is a weaker predicate than the theorem's, and named `58, 61, 64`
+    as the exceptions.  That was wrong: orders 48, 51, 53, 54 and 56 have deep
+    blocks of 1, 2, 2, 3 and 3 copies and are not eligible seeds at all.  A
+    review in September 2026 caught it -- the set was "computed rather than
+    asserted", but computed from the wrong eligibility test, which is exactly
+    the failure mode this file exists to prevent.
 
-    A previous version of the manuscript named `57, 58, 59, 61, 63` here.  That
-    was wrong in both directions: 57, 59 and 63 do have insertion routes, and 64
-    was missing.  Deriving the set is what stops the next such error.
+    With the hypothesis applied, the first eligible seeds are 67, 68 and 69, one
+    per residue class, so insertion reaches nothing below 70.  **All ten orders
+    57 to 66 are outside the theorem.**  They carry no stored certificate
+    either; what supports them is `test_the_family_verifies_from_the_floor_upwards`,
+    which builds successive splices from 90, 109 and 110 and runs each through
+    the APG checkers.  That is verified computation, not the theorem.
     """
 
+    import pumping_splice as ps
     import test_pumping_splice as tps
 
-    spliceable = set(tps.SPLICEABLE)
-    by_insertion = {n + 3 * d for n in spliceable for d in range(1, HORIZON)}
-    stranded = sorted(
-        o for o in range(46, 121)
-        if o not in by_insertion and o not in spliceable
-    )
-    assert stranded == [46, 47, 49, 50, 52, 55, 58, 61, 64]
+    eligible = {
+        order for order in tps.SPLICEABLE
+        if len(ps.deep_copies(ps.symbolic(order)[1])) >= 5
+    }
+    assert eligible == set(range(67, 75)) | set(range(88, 93)) | {109, 110}
+    assert not (eligible & {48, 51, 53, 54, 56}), "the short-block seeds are not eligible"
 
-    # Six of them carry a certificate of their own, so only three actually
-    # depend on the deletion direction.
+    by_insertion = {n + 3 * d for n in eligible for d in range(1, HORIZON)}
+    assert min(by_insertion) == 70
+
+    stranded = [
+        o for o in range(46, 121)
+        if o not in by_insertion and o not in eligible
+    ]
+    assert stranded == list(range(46, 67))
+
+    # Everything below 57 carries its own certificate; 57-66 carry none.
     with_certificate = _certificate_orders()
-    assert [o for o in stranded if o not in with_certificate] == [58, 61, 64]
+    assert [o for o in stranded if o not in with_certificate] == list(range(57, 67))

@@ -218,3 +218,118 @@ from the paper -- it belongs here, not in a publication.
 Not adopted: cutting Theorem 3.2 and the rotation-systems subsection, both
 suggested as unused. They are unused *in the excerpt reviewed* and load-bearing
 elsewhere in the paper.
+
+## Pro-tier breadth review, 2026-09-08
+
+One pass at ChatGPT Pro (`tierAtSend = Pro`, verified), given the full
+manuscript, this file, the reviewer guide and both files carrying the infinite
+claims, and asked to cover every angle at once so that later rounds are not
+needed. It consulted the source paper and the published v1.0.4 code externally.
+Its verdict: **do not submit the whole manuscript in its present form**;
+Conjecture 10.1 is sound and separable, and should go alone.
+
+Everything below was reproduced here before being acted on.
+
+### The finding that matters: a gate computed from the wrong predicate
+
+`test_conjecture_coverage.py` derived the capping theorem's insertion reach from
+`test_pumping_splice.SPLICEABLE`. The theorem's hypothesis is a **deep block of
+at least five copies**, which is not what `SPLICEABLE` means. Measured:
+
+| order | 48 | 51 | 53 | 54 | 56 |
+| --- | --- | --- | --- | --- | --- |
+| deep copies | 1 | 2 | 2 | 3 | 3 |
+
+Five of the twenty spliceable orders are not eligible seeds at all. With the
+hypothesis applied, the eligible seeds start at 67, 68, 69 and insertion reaches
+nothing below 70, so **all ten orders 57-66 lie outside the theorem** and none
+carries a stored certificate. They rest on the verified floor-upwards splices.
+
+This is the second time this set has been named wrongly. The first version said
+`57, 58, 59, 61, 63`; the correction said `58, 61, 64` and was justified on the
+grounds that it was *computed rather than asserted*. It was -- from the wrong
+eligibility test. **Deriving a number does not make it right if the predicate is
+wrong**, and that is now the gate's own docstring.
+
+### Availability counted as verification, again
+
+`witness_coverage.section8_orders()` returned `set(section8_witnesses.RECIPES)`
+-- the recipe *keys*. Breaking the builder would not have removed an order from
+a set named `verified_orders()`. It now constructs each closure, runs it through
+the general APG check and the 3-connectivity check, and returns only what
+survives (cached, since it is called throughout the suite). Separately,
+`witness_coverage.main()` still printed the withdrawn `residue()` as its
+headline; it now prints `verified_residue()` and labels the other.
+
+### Three mathematical scope errors
+
+* **The per-edge identity was stated for an unrestricted plane graph and is
+  false with isolated vertices** -- a triangle plus an isolated vertex gives
+  `sum c(a) = 5` against `v + f = 6`, and `K1` gives `0` against `2`. Minimum
+  degree 3 excludes both, so Conjecture 10.1 is untouched, but the lemma's
+  stated generality was wrong. Hypothesis added.
+* **"(C2) is a consequence of Definition 2.1" is false read generally.** The
+  review supplied a construction: join three copies of a (3,4,5)-APG by two
+  exterior bridges at a degree-5 vertex of each; degrees become 7, 6, 6, the
+  merged exterior face has size at least 13 and differs from every interior
+  face. That is a weak-reading APG *with bridges*. It has neither exactly two
+  degrees nor exactly two face sizes, so the theorem stands -- but the
+  commentary claimed more than the theorem. Scope now stated.
+* **Orders 37 and 38 were misattributed.** They are out of reach of the
+  Section-8 *arithmetic*, but `\cite{AHSSV2015}`'s heuristic search covers every
+  order from 20 to 42, including these. The paper slid from the narrow fact to
+  "skipped by the coverage list". Corrected in both places it appeared.
+
+### Cross-document drift, again
+
+* The **main manuscript's abstract still said "We settle three"** -- the BAMS
+  variant had been fixed on 2026-09-06 and the primary file had not. The exact
+  inverse of the drift caught two days earlier, in the other direction.
+* The bibliography named artifact version 1.0.2 while the data-availability
+  paragraph named 1.0.4.
+* `PUMPING_LEMMA_STATUS.md` still grounded locality in spans measured on the
+  splices -- the circular argument the manuscript had already replaced -- and
+  still said two finite facts where the manuscript says three. Now headed with a
+  superseding note.
+* "Each certificate is accepted by every verifier" cannot be literal: the three
+  (3,4,5) procedures correctly reject the order-19 general APGs. Narrowed.
+* `FOR_REVIEWERS.md` said nothing had been checked by a human while the
+  manuscript said the author verified the mathematics. Now: no independent human
+  specialist has checked it.
+* `FOR_REVIEWERS.md` called the infinite claims "not machine-checkable in
+  principle". False -- a formal proof or a finite-state invariant could do it.
+  What is true is that nothing here does.
+
+### Not yet acted on
+
+* **The insertion proof's window claim is still not fully discharged.** With
+  `d = 1` the guaranteed periodic band is `[cut-2, cut+3]`, but the five-copy
+  window `[cut+1, cut+5]` meets the fresh block and leaves it. Span four is also
+  not radius two about an arbitrary starting dart. A rigorous proof must pick
+  the counterpart dart and a region containing its whole trace.
+* **The deletion statement and the implementation disagree.** The theorem takes
+  an interior cut at distance >= 2 from both ends of `D`; the implementation
+  deletes copies immediately above the cut and defaults to the first deep copy
+  for negative `d`. Those are different operations. Insertion and deletion need
+  separate statements.
+* Three further obligations compressed into the word "local": faces routed
+  through caps have no copy index; transferring individual faces does not
+  transfer the *pair* incident to an edge, which is what face alternation needs;
+  and "every face is a translated face" does not count the face orbits.
+* The root `LICENSE` is a plain MIT notice with no carve-out, while the
+  manuscript says MIT is not asserted over the re-expressed graphs. A path-level
+  rights statement is wanted.
+
+### The blind spot, stated by the reviewer
+
+> *"The central blind spot is an internally consistent package built against the
+> wrong external specification or an incomplete account of prior work... No
+> further analysis restricted to these files can distinguish those situations.
+> Agreement among prose, tests and generated metadata may simply mean that all
+> three inherited the same assumption."*
+
+Three distinct assurance tasks, not substitutable: a literature-aware
+mathematician checks whether the statement is the intended problem and whether
+the proof is new; an independent implementation checks whether the deposited
+objects satisfy the statement; a release check binds both to the archived bytes.
+Only the second is being done here, and only from one architecture.

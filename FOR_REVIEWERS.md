@@ -1,6 +1,8 @@
 # For reviewers
 
-**Nothing in this repository has been checked by a human.** Four programs agree
+**No independent human specialist has checked any of this.** The author is
+answerable for the mathematical content; what has never happened is review by a
+mathematician other than the author. Four programs agree
 that every certificate obeys the definition, three independent review passes
 went over the arguments, and the whole thing is archived with a DOI — and not
 one mathematician has read it. That is the gap this file exists to close.
@@ -105,7 +107,10 @@ If you only have two hours, spend them here.**
 
 ## 3. The two infinite claims (~2–3 h, no computer)
 
-Neither is machine-checkable in principle; both are proofs about all orders.
+Neither is settled by the finite sweep this suite runs; both are statements
+about all orders. That is not the same as being unmachine-checkable in
+principle -- a formal proof or a proved finite-state invariant could
+establish either. What is true is that *nothing here does so*.
 
 - **Periodic capping lemma** ([`PUMPING_LEMMA_STATUS.md`](PUMPING_LEMMA_STATUS.md)). "cap + `t` periods +
   cap is a (3,4,5)-APG", for every `d ≥ −(|D|−1)`. The argument is *locality*: a

@@ -1,3 +1,10 @@
+> **Superseded in part, 2026-09-08.** The manuscript no longer grounds
+> locality in spans measured on the splices; it derives the bound on
+> `TARGET_n` and transfers traces, because measuring on the splice assumed
+> the conclusion. It also names *three* finite facts, not two. Where this
+> file and `paper/apg.tex` disagree, the manuscript is current. A review
+> found this file still citable and still describing the older argument.
+
 # The periodic capping lemma: proved, with the finite hypothesis machine-checked
 
 The construction's load-bearing step is "cap + `t` periods + cap is a

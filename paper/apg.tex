@@ -36,7 +36,7 @@ computer-assisted proof}
 \begin{abstract}
 Alth\"ofer, Haugland, Scherer, Schneider and Van Cleemput introduced
 \emph{alternating plane graphs} and closed their paper with four open problems.
-We settle three.
+We settle two and advance a third.
 
 Conjecture~10.1, that no alternating plane graph has exactly two distinct vertex
 degrees or exactly two distinct face sizes, is proved by one per-edge inequality
@@ -211,7 +211,8 @@ The following double count is the engine of \S\ref{sec:101}. It is the
 convention behind (9.2) of \cite{AHSSV2015}, isolated.
 
 \begin{lemma}\label{lem:identity}
-Let $G$ be a plane graph with $v$ vertices, $e$ edges and $f$ faces. For an edge
+Let $G$ be a finite plane graph with no isolated vertex, with $v$ vertices,
+$e$ edges and $f$ faces. For an edge
 $a$ with ends $u,w$ and face occurrences $F^-(a)$, $F^+(a)$ on its two sides,
 put
 \[
@@ -338,10 +339,17 @@ It rules out one failure mode and no others.
 Everything in this section is under the weak reading of
 Convention~\ref{conv:c2}: condition (d) of Definition~\ref{def:apg} constrains
 only pairs of distinct faces, and bridges are permitted. We show that no
-$X,2$-alternating plane graph exists even so. Since such a graph would in
-particular be bridgeless, (C2) is a consequence of Definition~\ref{def:apg}
-rather than a reading of it, and Theorem~\ref{thm:101} holds under both
-readings. The corresponding statement for $2,Y$ is
+$X,2$-alternating plane graph exists even so, and hence that
+Theorem~\ref{thm:101} holds under both readings. Note the scope: this does
+\emph{not} say that every weak-reading alternating plane graph is bridgeless.
+It is not --- join three copies of a $(3,4,5)$-alternating plane graph by two
+bridges drawn in the exterior, at a degree-$5$ vertex of each. The joined
+degrees become $7,6,6$, their old neighbours keep degree $3$ or $4$, the merged
+exterior face has size at least $13$ and so differs from every interior face,
+and the result is a weak-reading alternating plane graph with bridges. It has
+neither exactly two degrees nor exactly two face sizes, so it is no
+counterexample to Theorem~\ref{thm:101}. What is proved here is bridgelessness
+\emph{within the two-face-size class}. The corresponding statement for $2,Y$ is
 Proposition~\ref{prop:twoY-weak} at the end of the section, proved by the same
 per-edge count.
 
@@ -621,9 +629,10 @@ vertices for every $n \ge 20$.
 \begin{proof}
 Orders below $46$ are the published witnesses of \cite{AHSSV2015}, decoded from
 the author-hosted corpus~\cite{APGcorpus}, together with the Section-8 closures
-of \S\ref{sec:103} and, at orders $37$ and $38$, the disk surgery of this paper
---- those two are out of reach of the Section-8 arithmetic and are skipped by
-the coverage list of \cite{AHSSV2015}. Orders $46$ through $56$, $67$
+of \S\ref{sec:103}. Orders $37$ and $38$ are covered by the heuristic search of
+\cite{AHSSV2015}; the disk surgery of this paper supplies independently checked
+witnesses there, needed for \S\ref{sec:103} rather than to fill a gap in
+Conjecture~10.2. Orders $46$ through $56$, $67$
 through $74$, $88$ through $92$, and $109$, $110$ carry the certificates of this
 paper. Every remaining order is reached by Theorem~\ref{thm:pumping} from a
 certificate in its residue class modulo $3$, with the floors above.
@@ -638,16 +647,23 @@ the floor itself, where a three-copy window meets both cap collars and ``every
 window is a translated window'' is no longer literally true. The floor orders are therefore also carried by their own
 verified certificates.
 
-Which orders actually depend on this? Of $46,\dots,120$, exactly
-$46, 47, 49, 50, 52, 55, 58, 61, 64$ have no insertion route $n + 3d$, $d \ge 1$,
-from a spliceable certificate. Six of those --- $46, 47, 49, 50, 52, 55$ ---
-carry their own certificate, so only $58$, $61$ and $64$ rest on the deletion
-direction, through the floors $50$ and $52$, which are themselves obtained by
-deletion. This set is computed from the spliceable orders rather than asserted
-(\texttt{test\_conjecture\_coverage.py}). An earlier version of this remark
-listed $57, 58, 59, 61, 63$; that enumeration was wrong in both directions and
-is corrected here. Tightening the hypothesis to cover deletion uniformly is left
-open; nothing else in this paper depends on it.
+The reach must be measured against the hypothesis $|D| \ge 5$, not against the
+list of certificates. Of the twenty spliceable orders, five --- $48$, $51$, $53$,
+$54$ and $56$ --- have deep blocks of only $1, 2, 2, 3$ and $3$ copies and are
+therefore \emph{not} eligible seeds. The eligible ones begin at $67$, $68$ and
+$69$, one per residue class, so insertion reaches nothing below $70$, and
+\textbf{all ten orders $57$--$66$ lie outside Theorem~\ref{thm:pumping}}. None
+of them carries a stored certificate either. What supports them is the verified
+computation of \texttt{test\_pumping\_splice.py}, which builds successive
+splices from $90$, $109$ and $110$ and runs each through the decision
+procedures.
+
+Two earlier versions of this remark got the set wrong --- first $57,58,59,61,63$,
+then $58,61,64$ --- the second because it was computed from the spliceable
+orders rather than from the theorem's hypothesis. Being computed rather than
+asserted does not help if the predicate is the wrong one. It is now derived from
+$|D| \ge 5$ directly (\texttt{test\_conjecture\_coverage.py}). Stating and
+proving the deletion direction separately, with its own cut rule, is left open.
 \end{remark}
 
 This is an independent construction of (\cite{AHSSV2015}, Theorem~8.1), which
@@ -719,8 +735,11 @@ Definition~\ref{def:apg}. There are exactly five on $19$ vertices~\cite{HoG}, an
 five are $3$-connected. A single one would have sufficed.
 
 \emph{Orders $37$ and $38$} are out of reach of the Section-8 arithmetic
-$18a+19b+20c+21d+3$, because $34$ and $35$ are not sums of $18,19,20,21$; this
-is why the coverage list of \cite{AHSSV2015} skips them. They are obtained by
+$18a+19b+20c+21d+3$, because $34$ and $35$ are not sums of $18,19,20,21$. They
+are \emph{not} outside \cite{AHSSV2015} altogether --- its heuristic search
+reaches every order from $20$ to $42$ --- but its \emph{construction} misses
+them, so a witness built here is the first that is checkable from a stored
+rotation system. They are obtained by
 disk surgery: excise the star of a vertex, an edge or a face from a stored
 $(3,4,5)$-alternating plane graph, let the boundary degrees float, and refill
 the disk.
@@ -830,7 +849,9 @@ for checking by \texttt{plantri}~\cite{plantri} or House of Graphs~\cite{HoG}.
 The artifact runs $1308$ checks. The four decision procedures use the Python
 standard library alone; the automated suite that drives them additionally
 requires \texttt{pytest}, and nothing else. Two classes of check are load-bearing:
-that each certificate is accepted by every verifier, and that each source in
+that each certificate is accepted by every verifier of its class --- the
+order-$19$ witnesses are general alternating plane graphs and the three
+$(3,4,5)$ procedures correctly reject them --- and that each source in
 Theorem~\ref{thm:103} is necessary, in the sense that removing it reopens
 orders. Most gates are paired with a control that must fail, so that a check
 cannot pass by being vacuous. Not all: \texttt{test\_verifier\_mutations.py}
@@ -871,7 +892,7 @@ Ars Math. Contemp. \textbf{8} (2015), 337--363.
 
 \bibitem{artifact}
 H.~Yang, \emph{Alternating plane graphs: settling Conjectures 10.1 and 10.2,
-with witnesses for 10.3} --- certificates, verifiers and test suite, version 1.0.2, Zenodo, 2026.
+with witnesses for 10.3} --- certificates, verifiers and test suite, version 1.0.5, Zenodo, 2026.
 \href{https://doi.org/10.5281/zenodo.22269200}{doi:10.5281/zenodo.22269200}
 (concept).
 

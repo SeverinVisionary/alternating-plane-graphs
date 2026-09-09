@@ -147,7 +147,8 @@ def verified_residue(horizon: int = HORIZON) -> list[int]:
     return sorted(set(range(19, horizon)) - verified_orders())
 
 
-def section8_orders() -> set[int]:
+@lru_cache(maxsize=1)
+def section8_orders() -> frozenset[int]:
     """Orders closed by a Section-8 closure built at run time, not stored.
 
     `section8_witnesses.py` composes the strict blocks in `results/blocks/`
@@ -157,7 +158,30 @@ def section8_orders() -> set[int]:
 
     import section8_witnesses
 
-    return set(section8_witnesses.RECIPES)
+    built: set[int] = set()
+    for order in section8_witnesses.RECIPES:
+        try:
+            certificate = section8_witnesses.witness(order)
+        except Exception:
+            continue
+        rotation = {row["id"]: row["clockwise"] for row in certificate["vertices"]}
+        if len(rotation) != order:
+            continue
+        import json as _json
+        import tempfile as _tempfile
+        with _tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as handle:
+            _json.dump(certificate, handle)
+            path = Path(handle.name)
+        try:
+            degrees, alpha = alpha_from_certificate(path)
+        finally:
+            path.unlink(missing_ok=True)
+        if not general_apg.is_apg(degrees, alpha):
+            continue
+        if not cn.is_three_connected(rotation):
+            continue
+        built.add(order)
+    return frozenset(built)
 
 
 def residue(horizon: int = HORIZON) -> list[int]:
@@ -181,7 +205,8 @@ def main() -> int:
             print(f"{order:>4}  {'3-connected' if ok else 'NOT 3-connected':<16} {name}")
     print()
     print("stored orders:", sorted(stored_orders()))
-    print("residue for Conjecture 10.3:", residue())
+    print("verified residue for Conjecture 10.3:", verified_residue()[:12], "...")
+    print("  (the older residue() counts the withdrawn family and returns", residue(), ")")
     return 0
 
 

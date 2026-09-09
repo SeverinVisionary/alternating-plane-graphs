@@ -464,3 +464,47 @@ last row "permits, but does not assert, positive excess".
 
 11 pages, of which the last is the class's address block: 10 pages of content,
 inside the Bulletin's stated twelve.
+
+## 2026-09-09 — Two Extra High regression passes on the figures pass
+
+Model: ChatGPT Extra High. Pass 1 SID `3f765221-b1c9-4a81-b02b-3a7f47ad2f8c`,
+pass 2 SID `4861c03e-d7da-4372-8b9c-da8fb4331a53`; both verified. Texts at
+[`submission/REVIEW_2026-09-09_regression_xhigh.md`](submission/REVIEW_2026-09-09_regression_xhigh.md)
+and
+[`submission/REVIEW_2026-09-09_regression2_xhigh.md`](submission/REVIEW_2026-09-09_regression2_xhigh.md).
+
+Both returned NO-GO, and both were right to. The figures pass had introduced
+five new defects:
+
+* **Table 1's new caption misattributed the mechanism.** It said the two-valued
+  hypothesis "forces" the opposite side's values to be distinct and even. It
+  does not: alternation gives distinctness, and bipartiteness --- respectively
+  the parity lemma with no bridges --- gives evenness. The caption now names
+  each hypothesis where it is used.
+* **Figure 4's traversal arrows were not based at $u$ and $w$**, so they did not
+  form the traversal the caption claimed. Rebased. The separate dashed component
+  circles were then deleted, because the solid arcs drawn on top of them made the
+  figure read as solid outlines while the caption called them dashed; the arrowed
+  loops now *are* the facial walks, and the caption says so.
+* **Figure 5's dashed assignment arrows stopped short of the bridge** they were
+  said to point at. Twice: the first fix moved them to $y=\pm0.10$, still not on
+  $y=0$. They now terminate on the bridge at two different $x$-coordinates.
+* **"positive-eligible" had silently become "eligible"** in two places.
+* **The Lemma 3.1 caveat was false**, twice over. It first said $2$ "is not a
+  bound on any" positive excess; in that lemma's class $c(a) \le 3$, so
+  $x(a) \le 2$ always, with equality at $K_2$. The repair still asserted
+  categorically that $2$ is not the sum of the positive excesses --- but in
+  Example 3.2 every excess is positive and they do sum to $2$. It now says the
+  identity does not *in general* identify the two, and gives no bound on an
+  individual one.
+
+**One finding not accepted.** Pass 2 said Figure 5's caption overstates Step 2,
+because only one of $a_1,a_2$ is guaranteed positive-eligible. That is not so:
+"positive-eligible" is defined as membership of Table 2's third case --- a
+non-bridge edge with an end of degree $3$ --- and once $u$ has degree $3$ with
+exactly one bridge, both remaining edges at $u$ qualify. The caption now spells
+that implication out rather than leaving it to be re-derived, which is what
+prompted the objection.
+
+Also fixed in this round, found locally: Figure 1's caption said the exterior
+face occupies three corners; it occupies eight, three of which are labelled.

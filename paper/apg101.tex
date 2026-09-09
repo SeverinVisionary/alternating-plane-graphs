@@ -147,10 +147,10 @@ vertex count, that is forced to be even in a bipartite plane graph.
   \node[fill=none,draw=none] at (1.78,0.98) {\footnotesize $8$};
   \node[fill=none,draw=none] at (1.02,1.76) {\footnotesize $8$};
 \end{tikzpicture}
-\caption{Two quadrilaterals sharing the white cut vertex. The numbers indicate
-face sizes; the unbounded face is written at each of the three corners it
-occupies, two of them at the white vertex, which the exterior boundary walk
-therefore encounters twice. Its length is $8$, the number of edge-side
+\caption{Two quadrilaterals sharing the white cut vertex. The numbers are face
+sizes; the unbounded face is marked three times, once in each of the two corners
+it occupies at the white vertex and once further out. Its boundary walk
+therefore meets that vertex twice, and has length $8$, the number of edge-side
 incidences it carries, although only $7$ distinct vertices lie on it. This is a
 convention example, not an alternating plane graph.}\label{fig:conv}
 \end{figure}
@@ -209,8 +209,9 @@ is an end of exactly $d$ edges and pays out $1/d$ each time, hence $1$ in total;
 summing gives $v$. By Convention~\ref{conv:c1} a face of size $s$ occurs exactly
 $s$ times as a side of an edge and pays out $1/s$ each time, hence $1$ in total;
 summing gives $f$. So the edges receive $v+f$ units in all, and deducting one per
-edge leaves $v+f-e = 2$. Note that $2$ is the total \emph{signed} excess: it is
-neither the total of the positive excesses nor a bound on any of them.
+edge leaves $v+f-e = 2$. Note that $2$ is the total \emph{signed} excess. The
+identity does not in general identify it with the sum of the positive excesses,
+and on its own it gives no upper bound on an individual one.
 \end{proof}
 
 Neither count requires facial walks to be simple: repeated vertices, cut vertices
@@ -316,8 +317,8 @@ Figure~\ref{fig:corners} fixes the notation.
 $F_{i-1}$ and $F_{i}$ lie on opposite sides of $a_{i}$, and are occurrences of
 the same face exactly when $a_{i}$ is a bridge. Superscripts are the two corner
 colours, not face names: two non-consecutive corners of the same colour need not
-belong to the same face. Here $a_{1}$, drawn heavy, is the only bridge, so
-$F_{5}$ and $F_{1}$ are the same face and the colour is unchanged across it,
+belong to the same face. In this local configuration $a_{1}$, drawn heavy, is the
+only bridge, so $F_{5}$ and $F_{1}$ are the same face and the colour is unchanged across it,
 while it changes across each of the other four edges ---
 $\deg u - |\{\text{bridges at } u\}| = 4$, which is even.}\label{fig:corners}
 \end{figure}
@@ -380,10 +381,11 @@ two face sizes $s_1<s_2$
 \end{tabular}
 \caption{Upper bounds for the endpoint-degree and incident-face contributions to
 $c(a)$, and for their sum, at an edge $a=uw$ with incident face occurrences
-$F^-,F^+$. In each row the two-valued hypothesis bounds one side by
-$\tfrac7{12}$ at once, and forces the two values met at each edge on the other
-side to be distinct and even, hence at least $4$ and $6$; that side is then
-bounded by $\tfrac5{12}$. The roles of vertices and faces are exchanged between
+$F^-,F^+$. In each row the side carrying only two values is bounded by
+$\tfrac7{12}$ at once. On the other side, alternation makes the two values met
+at an edge distinct, and bipartiteness --- respectively the parity lemma, using
+that there are no bridges --- makes them even; being distinct and even they are
+at least $4$ and $6$, so that side is bounded by $\tfrac5{12}$. The roles of vertices and faces are exchanged between
 the rows.}\label{tab:budget}
 \end{table}
 
@@ -439,8 +441,8 @@ need not have even degree, so the parity step of Case~2 breaks down. The
 following lemma restores enough control. It says that a bridge is expensive --- its face is large --- and the
 proof of Theorem~\ref{thm:x2weak} then pays for the few edges that can have
 positive excess out of that expense. The essential step there, and the only place
-where real work is done, is to bound the number of positive edges assigned to
-each bridge.
+where real work is done, is to bound the number of edges of possibly positive
+excess assigned to each bridge.
 
 \begin{lemma}\label{lem:bridgeface}
 In a finite connected simple plane graph of minimum degree at least $3$, every
@@ -468,8 +470,6 @@ as $W_A$, then $a$, then $W_C$, then $a$ in the opposite direction
 \begin{figure}[ht]
 \centering
 \begin{tikzpicture}[scale=1.05,>=latex]
-  \draw[thick,dashed] (-0.95,0) circle (0.95);
-  \draw[thick,dashed] (3.45,0) circle (0.95);
   \node at (-0.95,0) {$A$};
   \node at (3.45,0) {$C$};
   \draw[very thick] (0,0) -- (2.5,0);
@@ -480,15 +480,15 @@ as $W_A$, then $a$, then $W_C$, then $a$ in the opposite direction
   \node at (1.25,0.28) {\footnotesize $a$};
   \draw[->,thick] (0.15,-0.13) -- (2.35,-0.13);
   \draw[->,thick] (2.35,0.13) -- (0.15,0.13);
-  \draw[->,thick] (-0.30,-0.90) arc (-70:250:0.95);
-  \draw[->,thick] (3.80,0.90) arc (110:-210:0.95);
+  \draw[->,thick] (0,0) arc (0:340:0.95);
+  \draw[->,thick] (2.5,0) arc (180:-160:0.95);
   \node at (-0.95,1.32) {\footnotesize $W_A$};
   \node at (3.45,1.32) {\footnotesize $W_C$};
   \node at (1.25,-1.30) {\footnotesize $F$};
 \end{tikzpicture}
-\caption{The dashed outlines represent the components $A$ and $C$ of $G-a$, with
-their internal edges omitted; $W_A$ and $W_C$ are their exposed facial walks,
-which need not be cycles. The face $F$ carrying the bridge $a=uw$ follows $W_A$,
+\caption{The arrowed loops are the exposed facial walks $W_A$ and $W_C$ of the
+two components $A$ and $C$ of $G-a$, whose internal edges are omitted; the loops
+are schematic and these walks need not be cycles. The face $F$ carrying the bridge $a=uw$ follows $W_A$,
 crosses $a$, follows $W_C$, and crosses $a$ again in the opposite direction ---
 the two arrows along $a$ are two traversals of one edge, not two edges. Hence
 $|F| = |W_A| + |W_C| + 2$, and under the hypotheses of
@@ -583,8 +583,8 @@ of $b$ have different degrees by Definition~\ref{def:apg}(c), so at most one of
 them has degree $3$; call it $u$ if it exists. Of the three edges at $u$ one is
 $b$ itself, leaving exactly two that can be assigned to $b$. Hence $P \le 2B$.
 
-In units of $\tfrac1{24}$ the bounds of Table~\ref{tab:cases} read $+1$ for an
-eligible edge and $-4$ for a bridge, so even a bridge carrying its full two
+In units of $\tfrac1{24}$ the bounds of Table~\ref{tab:cases} read $+1$ for a
+positive-eligible edge and $-4$ for a bridge, so even a bridge carrying its full two
 assignments has group total at most $-2$. These are upper bounds in those units;
 an individual charge need not be a multiple of $\tfrac1{24}$.
 
@@ -602,22 +602,27 @@ an individual charge need not be a multiple of $\tfrac1{24}$.
   \node[circle,fill=black,inner sep=1.6pt] at (w) {};
   \node[circle,draw=black,fill=white,inner sep=1.4pt] at (p) {};
   \node[circle,draw=black,fill=white,inner sep=1.4pt] at (q) {};
-  \node[below left=3pt] at (u) {\footnotesize $u$, $\deg u = 3$};
-  \node[below=2pt] at (w) {\footnotesize $w$, $\deg w \ne 3$};
+  \node[above=3pt] at (u) {\footnotesize $u$};
+  \node[above=3pt] at (w) {\footnotesize $w$};
+  \node at (0,-1.55) {\footnotesize $\deg u = 3$};
+  \node at (2.6,-1.55) {\footnotesize $\deg w \ne 3$};
   \node at (1.3,0.27) {\footnotesize $b$};
-  \draw[->,dashed] (-0.62,0.72) to[bend left=32] (1.15,0.52);
-  \draw[->,dashed] (-0.62,-0.72) to[bend right=32] (1.15,-0.52);
+  \draw[->,dashed] (-0.62,0.72) to[bend left=30] (1.12,0);
+  \draw[->,dashed] (-0.62,-0.72) to[bend right=30] (1.52,0);
   \draw[dotted] (w) -- (3.7,0.75);
   \draw[dotted] (w) -- (3.7,-0.75);
   \draw[dotted] (w) -- (3.85,0);
 \end{tikzpicture}
-\caption{The assignment at the degree-$3$ end $u$ of an eligible edge. Parity
-forces $u$ to lie on exactly one bridge $b=uw$, leaving exactly two non-bridge
-edges $a_1,a_2$ at $u$, both assigned to $b$ (dashed arrows, which are
-assignments and not edges of the graph). Alternation forbids $\deg w = 3$, so
-$b$ receives nothing through $w$; the further edges at $w$ are dotted. This is a
-local configuration in a hypothetical counterexample, not a graph in its own
-right.}\label{fig:assign}
+\caption{The assignment at the degree-$3$ end $u$ of a positive-eligible edge.
+Parity leaves $1$ or $3$ bridges at $u$, and the positive-eligible edge at $u$
+is itself a non-bridge, so there is exactly one bridge $b=uw$; the remaining two
+edges $a_1,a_2$ at $u$ are then non-bridges with an end of degree $3$, hence
+positive-eligible, and both are assigned to $b$ (dashed arrows, which are
+assignments and not edges of the graph); this is the worst case for the
+capacity bound. Alternation forbids
+$\deg w = 3$, so $b$ receives nothing through $w$; the further edges at $w$ are
+dotted. This is a local configuration in a hypothetical counterexample, not a
+graph in its own right.}\label{fig:assign}
 \end{figure}
 
 \smallskip
@@ -646,10 +651,10 @@ about two-valued graphs, not about bridge-relaxed alternating plane graphs in
 general, which need not be bridgeless. Take three copies $H_1,H_2,H_3$ of the
 $17$-vertex $(3,4,5)$-alternating plane graph Schneider-17 of
 (\cite{AHSSV2015}, Figure~2), each redrawn so that a face incident with a chosen
-degree-$5$ vertex $z_i$ is the exterior face, and join $z_2$ to $z_1$ and to
-$z_3$ by two bridges drawn in the exterior, both at the \emph{same} vertex $z_2$ ---
-that identification is what makes the two new bridges have ends of different
-degrees. Then $\deg z_2 = 7$ and
+degree-$5$ vertex $z_i$ is the exterior face, and join both $z_1$ and $z_3$ to
+the \emph{single} vertex $z_2$ by two bridges drawn in the exterior. That both
+bridges land on the same $z_2$ is what gives their ends different degrees:
+$\deg z_2 = 7$ and
 $\deg z_1 = \deg z_3 = 6$, while their neighbours keep degree $3$ or $4$, so
 (c) still holds. The merged exterior face has size
 $|F_1|+|F_2|+|F_3|+4 \ge 13$, which differs from every interior face size, so (d)

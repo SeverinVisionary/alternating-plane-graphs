@@ -8,7 +8,7 @@
 Dear Editors,
 
 I submit **"No alternating plane graph has exactly two vertex degrees, or
-exactly two face sizes"** for consideration in the Bulletin. It is ten pages.
+exactly two face sizes"** for consideration in the Bulletin. It is ten pages of content; the PDF runs to eleven, the last being the author-address page the AustMS class emits.
 
 A plane graph is *alternating* if every vertex has degree at least three, every
 face has size at least three, adjacent vertices have different degrees, and

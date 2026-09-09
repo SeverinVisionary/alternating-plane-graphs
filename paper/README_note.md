@@ -1,6 +1,6 @@
 # `apg101.tex` — the standalone Conjecture 10.1 note
 
-**This is the submission.** Ten pages, AustMS `baustms` class, for the
+**This is the submission.** Ten pages of content, AustMS `baustms` class, for the
 Bulletin of the Australian Mathematical Society.
 
 ## Why it exists

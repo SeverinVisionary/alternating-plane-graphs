@@ -6,7 +6,7 @@ Tick before pressing submit. Sources for every requirement are in
 ## The journal's own five-step form
 
 - [ ] Registered at `journal.austms.org.au` as **both reader and author**
-- [ ] Submission is a **PDF** (`paper/apg101.pdf`, 10 pp.) — LaTeX source is
+- [ ] Submission is a **PDF** (`paper/apg101.pdf`, 11 pp., the last being the class's address page) — LaTeX source is
       wanted on acceptance or before review, not now
 - [ ] Confirmed: original work, not published, not under consideration elsewhere
 - [ ] Confirmed: AI use is acknowledged and described (disclosure section, end of the manuscript)
@@ -31,7 +31,7 @@ Tick before pressing submit. Sources for every requirement are in
 
 ## What must be true of the file
 
-- [x] Built with the AustMS `baustms` class — **10 pages**, inside the
+- [x] Built with the AustMS `baustms` class — **10 pages of content**, inside the
       stated preference for papers to be "relatively short"
 - [x] Abstract **149 words** — under both the 150 in the class template and
       the 200 on the submissions page
@@ -43,7 +43,7 @@ Tick before pressing submit. Sources for every requirement are in
 
 ## Things to settle first
 
-- [ ] **Read `paper/apg101.pdf` end to end.** It is ten pages.
+- [ ] **Read `paper/apg101.pdf` end to end.** It is ten pages of content.
 - [ ] **Confirm the sentence already printed** in the disclosure: *"The author
       re-derived every argument independently."* That is a stronger claim than
       reading the PDF through. Keep it only if it is accurate; if it is not,

@@ -366,3 +366,47 @@ directly against the article PDF rather than taken on the reviewer's word:
 `r*f_r = sum_s e_{r,s}`. The prior-art paragraph now also names the two
 surviving degree pairs, {3,4} with order >= 25 and {3,5} with order >= 56,
 which the source establishes in its §3.2 for the 2,Y case only.
+
+## 2026-09-09 — Pro confirmation pass on the submission package
+
+Model: ChatGPT Pro (`tierAtSend=Pro`), SID `8e8c5530-e15f-411c-b038-f0c4d353ff30`,
+verified. Inputs: the revised `apg101.tex`, `COVER_LETTER.md`, `CHECKLIST.md`.
+Full text at
+[`submission/REVIEW_2026-09-09_package_pro.md`](submission/REVIEW_2026-09-09_package_pro.md).
+
+**Verdict: NO-GO as it stood, GO after a correction pass.** No proof-level
+reason to postpone. It re-derived and confirmed the four newly restructured
+pieces independently: the nine-vertex example's counts and its `f = 5e/12`
+sharpness, the promoted bridge-face lemma (noting the components in fact have
+minimum degree 2, stronger than the 1 the proof needs), the claim that a
+bridgeless bridge-relaxed graph satisfies Definition 2.1 outright, and the
+three-copy construction.
+
+Three explanatory errors it caught, all now fixed:
+
+* The pendant-triangle example said "although no vertex has even degree" — the
+  degrees are 3,2,2,1, so two of them are even. Now "not every vertex".
+* The sentence introducing the parity lemma claimed corners of one face at a
+  vertex are non-consecutive. Across a bridge they are consecutive; that is
+  precisely the case the lemma exists to handle. Rewritten.
+* The roadmap called both conventions ones "the source paper leaves implicit",
+  contradicting the paper's own correct statement that the source explicitly
+  excludes bridges.
+
+Cover letter: "never uses the hypothesis it is stated under" was too sweeping —
+the source's estimate does use bipartiteness and face alternation, just not the
+degree 2. Narrowed. The categorical "I confirm this satisfies the Bulletin's
+requirement" was removed; the disclosure now names the systems and the period of
+use, per Cambridge's guidance, rather than asserting compliance. The defensive
+"not a weakness" passage and the invitation to rule on prior art were cut.
+
+Checklist: submission-system metadata (ORCID, keywords, MSC) and the form's
+attestations were missing, since the checklist had only covered manuscript
+format. Added.
+
+Still open and not closable by any model: the human teach-back, and the author's
+own confirmation of the printed sentence "The author re-derived every argument
+independently."
+
+**Version note.** This pass reviewed the 8-page text. The figures, tables and
+expanded bibliography were added afterwards and have not been reviewed.

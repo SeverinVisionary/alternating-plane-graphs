@@ -8,7 +8,7 @@
 Dear Editors,
 
 I submit **"No alternating plane graph has exactly two vertex degrees, or
-exactly two face sizes"** for consideration in the Bulletin. It is eight pages.
+exactly two face sizes"** for consideration in the Bulletin. It is ten pages.
 
 A plane graph is *alternating* if every vertex has degree at least three, every
 face has size at least three, adjacent vertices have different degrees, and
@@ -25,13 +25,12 @@ budget. In either of the two excluded configurations, parity and alternation
 force that sum to be at most one on every edge — the same inequality in both
 halves, with vertices and faces exchanged.
 
-The engine is the source paper's own. Its §9.1 bounds the face count of a weaker
-class by exactly this sum, and that derivation never uses the hypothesis it is
+The counting is the source paper's own. Its §9.1 bounds the face count of a
+weaker class by the face-incidence half of this four-term charge, and that
+derivation uses bipartiteness and face alternation but not the degree 2 it is
 stated under; its §3.2 attacks the class of this conjecture with different
-machinery that never bounds the face count. Connecting the two is the
-contribution. That the argument is short is the point of interest, not a
-weakness — but it does mean the value of the note lies in the connection, and I
-would welcome a referee's judgement on whether that connection is already known.
+machinery that never bounds the face count. Combining the face-incidence count
+with the analogous count over vertices is the contribution.
 
 Section 5 adds an extension rather than a repair. The source paper's definition
 excludes bridges, as it states on p. 339. With face size still counted by

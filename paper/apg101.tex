@@ -1,4 +1,6 @@
 \documentclass{baustms}
+\usepackage{tikz}
+\usepackage{booktabs}
 \citesort
 \theoremstyle{cupthm}
 \newtheorem{theorem}{Theorem}[section]
@@ -56,7 +58,8 @@ three distinct vertex degrees and at least three distinct face sizes.
 What was known is this. Section~3.2 of \cite{AHSSV2015} shows that a
 $2,Y$-alternating plane graph has degrees $3$ and $4$, or degrees $3$ and $5$,
 and bounds its order below by $25$ in the first case and by $56$ in the second;
-the search of its \S4 reaches neither. Separately, its \S9.1 bounds the number of
+the exhaustive generation of its \S4, carried out with \texttt{plantri}
+\cite{BM2007}, reaches neither order. Separately, its \S9.1 bounds the number of
 faces of a \emph{weak} alternating plane graph --- one in which vertices of
 degree $2$ are permitted --- with degrees $2$ and $k$, by summing $1/r+1/s$ over
 the edges separating an $r$-face from an $s$-face. That face-incidence count
@@ -74,9 +77,21 @@ even, hence at least $4$ and $6$, and that contribution drops to
 $\frac14+\frac16=\frac5{12}$. The two sides then total exactly $1$, and Euler's
 formula is contradicted. Both halves of the conjecture are this one argument.
 
+Both estimates belong to a long tradition of deducing local structure in plane
+graphs from Euler's formula by assigning each edge, vertex or face a charge built
+from reciprocals of degrees and face sizes. Lebesgue's \cite{Lebesgue1940}
+inequalities on the face vector, and Kotzig's theorem \cite{Kotzig1955} that
+every $3$-connected plane graph has an edge whose endpoint degrees sum to at most
+$13$, are the classical instances; the modern form of the technique is
+discharging, surveyed in \cite{CW2017}, and the surrounding body of results on
+unavoidable light configurations is surveyed in \cite{JV2013}. What is unusual
+here is only how little is needed: the charge is not redistributed at all, and
+the whole argument is the observation that a single fixed bound holds on every
+edge. Alternation, an unusual hypothesis in that literature, is what makes so
+crude an estimate sufficient.
+
 The note is organised so that its two achievements stay separate.
-Section~\ref{sec:prelim} fixes the definitions and the two conventions that the
-source paper leaves implicit. Section~\ref{sec:identity} isolates the edge charge
+Section~\ref{sec:prelim} fixes the definitions and two conventions. Section~\ref{sec:identity} isolates the edge charge
 and the local parity lemma, with a worked example. Section~\ref{sec:101} proves
 Conjecture~10.1 as stated. Section~\ref{sec:c2} then proves an extension, not a
 prerequisite: both nonexistence statements survive when face alternation is
@@ -109,15 +124,35 @@ sizes.
 
 \begin{convention}[face size]\label{conv:c1}
 The \emph{size} of a face is the length of its boundary walk, that is, the number
-of edge-side incidences it carries. In particular a bridge, lying on one face
+of edge-side incidences it carries; this is the standard notion of facial walk
+length for plane graphs that need not be $2$-connected
+(\cite{MT2001}, \S3.3). In particular a bridge, lying on one face
 from both sides, contributes $2$ to that face's size.
 
-Boundary-walk length is not the number of distinct vertices on the boundary. Two
-quadrilaterals meeting in exactly one vertex have an exterior boundary walk of
-length $8$, although only $7$ distinct vertices lie on it. (This illustrates the
-convention; it is not an alternating plane graph.) The distinction matters
-because it is boundary-walk length, not the vertex count, that is forced to be
-even in a bipartite plane graph.
+Boundary-walk length is not the number of distinct vertices on the boundary.
+Figure~\ref{fig:conv} shows two quadrilaterals meeting in exactly one vertex:
+the exterior boundary walk has length $8$, although only $7$ distinct vertices
+lie on it. (This illustrates the convention; it is not an alternating plane
+graph.) The distinction matters because it is boundary-walk length, not the
+vertex count, that is forced to be even in a bipartite plane graph.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=0.95,every node/.style={circle,fill=black,inner sep=1.3pt}]
+  \draw (0,0) -- (1.4,0) -- (1.4,1.4) -- (0,1.4) -- cycle;
+  \draw (1.4,1.4) -- (2.8,1.4) -- (2.8,2.8) -- (1.4,2.8) -- cycle;
+  \node at (0,0) {}; \node at (1.4,0) {}; \node at (0,1.4) {};
+  \node at (2.8,1.4) {}; \node at (2.8,2.8) {}; \node at (1.4,2.8) {};
+  \node[fill=white,draw=black,inner sep=1.9pt] at (1.4,1.4) {};
+  \node[fill=none,draw=none] at (0.7,0.7) {\footnotesize $4$};
+  \node[fill=none,draw=none] at (2.1,2.1) {\footnotesize $4$};
+  \node[fill=none,draw=none] at (2.55,0.45) {\footnotesize $8$};
+\end{tikzpicture}
+\caption{Two quadrilaterals sharing the white cut vertex. The unbounded face has
+boundary-walk length $8$, the number of edge-side incidences it carries, but only
+$7$ distinct vertices lie on its boundary. Face sizes are shown inside the
+faces.}\label{fig:conv}
+\end{figure}
 
 \cite{AHSSV2015} does not define ``size'' separately, but its arguments use
 edge-side incidences: this is the count underlying its equation~(3.1) and its
@@ -178,7 +213,10 @@ contributing $2/|F|$ from its face side. This is what makes
 Lemma~\ref{lem:identity} usable in \S\ref{sec:c2}, where bridges are the object
 of study. We write $x(a) = c(a) - 1$ for the \emph{excess} of an edge, so
 that~\eqref{eq:identity} reads $\sum_a x(a) = 2$: some edge must have positive
-excess.
+excess. In the vocabulary of \cite{CW2017} this is an initial charge with total
+$2$ and no discharging rule; \S\ref{sec:101} shows the charge is nowhere
+positive, and \S\ref{sec:c2} adds a single rule that moves the positive charge
+onto bridges.
 
 \begin{example}\label{ex:worked}
 Start with a triangle and replace each of its three sides by two internally
@@ -193,12 +231,44 @@ on one quadrilateral and one hexagon. Hence every edge has
   \qquad
   \sum_a x(a) \;=\; 12 \cdot \tfrac16 \;=\; 2 ,
 \]
-as Lemma~\ref{lem:identity} requires. This graph satisfies both alternation
+as Lemma~\ref{lem:identity} requires. See Figure~\ref{fig:worked}.
+This graph satisfies both alternation
 conditions and fails to be an alternating plane graph only through its minimum
 degree. It also attains $f = \tfrac{5}{12}e$ with $f=5$ and $e=12$, so the face
 bound $f \le \tfrac5{12}e$ of (\cite{AHSSV2015}, (9.5)) is sharp and cannot be
 improved to any $\tfrac5{12}-\varepsilon$.
 \end{example}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=1.15,
+  corner/.style={circle,fill=black,inner sep=1.6pt},
+  inner/.style={circle,draw=black,fill=white,inner sep=1.5pt}]
+  \foreach \i/\a in {A/90,B/210,C/330}
+    \coordinate (\i) at (\a:1.70);
+  \foreach \p/\q/\m in {A/B/150,B/C/270,C/A/30}{
+    \coordinate (in\p\q) at (\m:0.72);
+    \coordinate (out\p\q) at (\m:1.55);
+    \draw (\p) -- (in\p\q) -- (\q);
+    \draw (\p) -- (out\p\q) -- (\q);
+  }
+  \foreach \i in {A,B,C} \node[corner] at (\i) {};
+  \foreach \p/\q in {A/B,B/C,C/A}{
+    \node[inner] at (in\p\q) {};
+    \node[inner] at (out\p\q) {};
+  }
+  \node at (0,0) {\footnotesize $6$};
+  \node at (270:2.15) {\footnotesize $6$};
+  \node at (150:1.08) {\footnotesize $4$};
+  \node at (270:1.08) {\footnotesize $4$};
+  \node at (30:1.08) {\footnotesize $4$};
+\end{tikzpicture}
+\caption{The graph of Example~\ref{ex:worked}: $9$ vertices, $12$ edges,
+$5$ faces. Filled vertices have degree $4$, white ones degree $2$; face sizes are
+shown inside the faces, the unbounded face having size $6$. Every edge joins a
+degree-$2$ vertex to a degree-$4$ vertex and separates a $4$-face from a
+$6$-face, so $c(a)=\tfrac76$ on all $12$ edges.}\label{fig:worked}
+\end{figure}
 
 \begin{remark}\label{rem:calibration}
 Run on the weak alternating plane graphs with degrees $2$ and $k$, $k \ge 3$,
@@ -213,8 +283,29 @@ which attains the bound, is the check that would detect a strengthening of it.
 
 The second local ingredient is a parity statement. Stating it over the corners at
 a vertex, rather than over ``the incident faces'', is what makes it correct at a
-cut vertex, where one face occupies several corners: those corners are
-non-consecutive, so the alternation below is undisturbed.
+cut vertex, where one face may occupy several corners. Two corners of one face
+at such a vertex are never separated by a single non-bridge edge, which is all
+the alternation below requires; across a bridge, consecutive corners do belong to
+the same face, and the lemma accounts for exactly that.
+Figure~\ref{fig:corners} fixes the notation.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=1.25]
+  \coordinate (u) at (0,0);
+  \foreach \i/\a in {1/90,2/162,3/234,4/306,5/18}
+    \draw (u) -- (\a:1.35) node[pos=1.14] {\footnotesize $a_{\i}$};
+  \foreach \i/\a in {1/126,2/198,3/270,4/342,5/54}
+    \node at (\a:0.72) {\footnotesize $F_{\i}$};
+  \node[circle,fill=black,inner sep=1.6pt] at (u) {};
+  \node[below left=1pt] at (u) {\footnotesize $u$};
+\end{tikzpicture}
+\caption{The edges at a vertex $u$ in cyclic order and the corner face
+occurrences between them: $F_{i-1}$ and $F_{i}$ are the two sides of $a_{i}$.
+They are occurrences of the same face exactly when $a_{i}$ is a bridge. At a cut
+vertex one face may occupy several of these corners, but never two consecutive
+ones.}\label{fig:corners}
+\end{figure}
 
 \begin{lemma}[parity]\label{lem:parity}
 Let $G$ be a plane graph whose faces admit a colouring by two colours that is
@@ -237,8 +328,8 @@ and that number is $\deg u$ minus the number of bridges at $u$.
 In particular, if no bridge is present at $u$ then $\deg u$ is even. What the
 lemma controls is degree minus bridge incidence, not degree itself: in a triangle
 with a pendant edge the four degrees are $3,2,2,1$, the numbers of incident
-bridges are $1,0,0,1$, and the differences $2,2,2,0$ are even, although no vertex
-has even degree. (That graph illustrates the lemma, not
+bridges are $1,0,0,1$, and the differences $2,2,2,0$ are even, although not every
+vertex has even degree. (That graph illustrates the lemma, not
 Definition~\ref{def:apg}.) In an $X,2$-alternating plane graph, and in a
 bridge-relaxed one, the face size supplies the required colouring.
 
@@ -249,11 +340,34 @@ There is no $2,Y$-alternating plane graph and no $X,2$-alternating plane graph.
 \end{theorem}
 
 The two cases are the same inequality with the roles of vertices and faces
-exchanged, but they are not formally dual and we prove both. Passing to the dual
+exchanged (Table~\ref{tab:budget}), but they are not formally dual and we prove
+both. Passing to the dual
 graph would need $3$-edge-connectivity (\cite{AHSSV2015}, Lemma~2.2): a
 $2$-edge cut produces parallel edges in the dual, which therefore need not lie in
 the simple-graph class we work in. We exchange the two local counting arguments
 instead.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lccc}
+\toprule
+ & vertex side & face side & $c(a)$ \\
+\midrule
+two degrees $d_1<d_2$
+ & $\tfrac1{d_1}+\tfrac1{d_2} \le \tfrac13+\tfrac14$
+ & $\tfrac1{|F^-|}+\tfrac1{|F^+|} \le \tfrac14+\tfrac16$
+ & $\le 1$ \\[2pt]
+two face sizes $s_1<s_2$
+ & $\tfrac1{\deg u}+\tfrac1{\deg w} \le \tfrac14+\tfrac16$
+ & $\tfrac1{s_1}+\tfrac1{s_2} \le \tfrac13+\tfrac14$
+ & $\le 1$ \\
+\bottomrule
+\end{tabular}
+\caption{The two cases of Theorem~\ref{thm:101}. In each row the two-valued
+hypothesis bounds one side by $\tfrac7{12}$ directly, and forces parity on the
+other side, which bounds it by $\tfrac5{12}$. The roles of vertices and faces
+are exchanged between the rows.}\label{tab:budget}
+\end{table}
 
 \begin{proof}
 \emph{Case 1: exactly two vertex degrees $3 \le d_1 < d_2$.}
@@ -310,6 +424,29 @@ positive excess out of that expense. The essential step there, and the only plac
 where real work is done, is to bound the number of positive edges assigned to
 each bridge.
 
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  \draw[thick] (-0.9,0) circle (0.9);
+  \draw[thick] (3.4,0) circle (0.9);
+  \node at (-0.9,0) {$A$};
+  \node at (3.4,0) {$C$};
+  \draw[very thick] (0,0) -- (2.5,0);
+  \node[circle,fill=black,inner sep=1.6pt] at (0,0) {};
+  \node[circle,fill=black,inner sep=1.6pt] at (2.5,0) {};
+  \node[below] at (0,-0.05) {\footnotesize $u$};
+  \node[below] at (2.5,-0.05) {\footnotesize $w$};
+  \node[above] at (1.25,0.05) {\footnotesize $a$};
+  \node at (-0.9,1.25) {\footnotesize $W_A$};
+  \node at (3.4,1.25) {\footnotesize $W_C$};
+  \node at (1.25,-1.35) {\footnotesize $F$};
+\end{tikzpicture}
+\caption{The face $F$ carrying a bridge $a=uw$ is traversed as $W_A$, then $a$,
+then $W_C$, then $a$ again in the opposite direction, so
+$|F| = |W_A| + |W_C| + 2$. Minimum degree $3$ forces $|W_A|,|W_C| \ge 3$, whence
+$|F| \ge 8$.}\label{fig:bridge}
+\end{figure}
+
 \begin{lemma}\label{lem:bridgeface}
 In a finite connected simple plane graph of minimum degree at least $3$, every
 face incident with a bridge has boundary-walk length at least $8$.
@@ -326,8 +463,8 @@ or a single edge traversed in both directions, and for those two darts to
 constitute the whole facial boundary both ends of that edge would have degree
 $1$, forcing $A = K_2$ against $\deg_A u \ge 2$. So $|W_A| \ge 3$, and likewise
 $|W_C| \ge 3$. The face $F$ of $G$ incident with both sides of $a$ is traversed
-as $W_A$, then $a$, then $W_C$, then $a$ in the opposite direction, so by
-Convention~\ref{conv:c1}
+as $W_A$, then $a$, then $W_C$, then $a$ in the opposite direction
+(Figure~\ref{fig:bridge}), so by Convention~\ref{conv:c1}
 \[
   |F| \;=\; |W_A| + |W_C| + 2 \;\ge\; 3 + 3 + 2 \;=\; 8 . \qedhere
 \]
@@ -371,18 +508,32 @@ gives $s_2 \ge 8$ as well. Every non-bridge edge separates an $s_1$-face from an
 $s_2$-face, so its face side is at most $\tfrac1{s_1}+\tfrac1{s_2} \le
 \tfrac13+\tfrac18$. Degrees at the two ends of an edge are distinct by
 Definition~\ref{def:apg}(c) and at least $3$. Three cases:
-\begin{itemize}
-  \item $a$ a bridge, its face of size at least $8$:
-        $c(a) \le \tfrac13+\tfrac14+\tfrac28 = \tfrac56$, so
-        $x(a) \le -\tfrac16$;
-  \item $a$ not a bridge, both ends of degree at least $4$:
-        $c(a) \le \tfrac14+\tfrac15+\tfrac13+\tfrac18 = \tfrac{109}{120}$, so
-        $x(a) \le -\tfrac{11}{120}$;
-  \item $a$ not a bridge, one end of degree $3$:
-        $c(a) \le \tfrac13+\tfrac14+\tfrac13+\tfrac18 = \tfrac{25}{24}$, so
-        $x(a) \le \tfrac1{24}$.
-\end{itemize}
-Only the third class can be positive. Call its members \emph{positive-eligible}
+Table~\ref{tab:cases} records the three resulting cases.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lccc}
+\toprule
+edge $a$ & vertex side $+$ face side & $c(a) \le$ & $x(a) \le$ \\
+\midrule
+a bridge
+ & $\tfrac13+\tfrac14 \;+\; \tfrac28$
+ & $\tfrac56$ & $-\tfrac16$ \\[2pt]
+not a bridge, both ends of degree $\ge 4$
+ & $\tfrac14+\tfrac15 \;+\; \tfrac13+\tfrac18$
+ & $\tfrac{109}{120}$ & $-\tfrac{11}{120}$ \\[2pt]
+not a bridge, one end of degree $3$
+ & $\tfrac13+\tfrac14 \;+\; \tfrac13+\tfrac18$
+ & $\tfrac{25}{24}$ & $+\tfrac1{24}$ \\
+\bottomrule
+\end{tabular}
+\caption{Step~1 of Theorem~\ref{thm:x2weak}. A bridge carries one face on both
+sides, of size at least $8$ by Lemma~\ref{lem:bridgeface}; every other edge
+separates an $s_1$-face from an $s_2$-face with $s_1 \ge 3$ and $s_2 \ge 8$.
+Only the last row can be positive.}\label{tab:cases}
+\end{table}
+
+Only the third case can be positive. Call its members \emph{positive-eligible}
 and let $P$ be their number.
 
 \smallskip
@@ -423,6 +574,32 @@ hence still contradict~\eqref{eq:identity}; the bound $P \le 2B$ supplies the
 margin $-B/12$ in~\eqref{eq:final}.
 \end{remark}
 
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=1.0]
+  \foreach \i/\x in {1/0,2/2.9,3/5.8}{
+    \draw[thick] (\x,0) circle (0.78);
+    \node at (\x,0) {$H_{\i}$};
+  }
+  \draw[very thick] (0.78,0) -- (2.12,0);
+  \draw[very thick] (3.68,0) -- (5.02,0);
+  \node[circle,fill=black,inner sep=1.5pt] at (0.78,0) {};
+  \node[circle,fill=black,inner sep=1.5pt] at (2.12,0) {};
+  \node[circle,fill=black,inner sep=1.5pt] at (3.68,0) {};
+  \node[circle,fill=black,inner sep=1.5pt] at (5.02,0) {};
+  \node[below] at (0.78,-0.05) {\footnotesize $z_1$};
+  \node[below] at (2.12,-0.05) {\footnotesize $z_2$};
+  \node[below] at (3.68,-0.05) {\footnotesize $z_2$};
+  \node[below] at (5.02,-0.05) {\footnotesize $z_3$};
+  \node at (2.9,-1.35) {\footnotesize merged exterior face};
+\end{tikzpicture}
+\caption{The construction of Remark~\ref{rem:bridged}: three copies of a
+$(3,4,5)$-alternating plane graph joined at chosen degree-$5$ vertices by two
+bridges drawn in the exterior. The two occurrences of $z_2$ are the same vertex,
+drawn twice for legibility. The result is a bridge-relaxed alternating plane
+graph with bridges.}\label{fig:bridged}
+\end{figure}
+
 \begin{remark}\label{rem:bridged}
 Theorem~\ref{thm:x2weak} and Proposition~\ref{prop:twoY-weak} are statements
 about two-valued graphs, not about bridge-relaxed alternating plane graphs in
@@ -430,7 +607,8 @@ general, which need not be bridgeless. Take three copies $H_1,H_2,H_3$ of the
 $17$-vertex $(3,4,5)$-alternating plane graph Schneider-17 of
 (\cite{AHSSV2015}, Figure~2), each redrawn so that a face incident with a chosen
 degree-$5$ vertex $z_i$ is the exterior face, and join $z_2$ to $z_1$ and to
-$z_3$ by two bridges drawn in the exterior. Then $\deg z_2 = 7$ and
+$z_3$ by two bridges drawn in the exterior (Figure~\ref{fig:bridged}). Then
+$\deg z_2 = 7$ and
 $\deg z_1 = \deg z_3 = 6$, while their neighbours keep degree $3$ or $4$, so
 (c) still holds. The merged exterior face has size
 $|F_1|+|F_2|+|F_3|+4 \ge 13$, which differs from every interior face size, so (d)
@@ -443,20 +621,27 @@ exactly two face sizes, and so is no counterexample above.
 
 Large language models were used in this work and the extent is material. They
 assisted with exploration, with adversarial review, and with drafting the
-manuscript; the idea of removing the bridge hypothesis, carried out in
-\S\ref{sec:c2}, was proposed by an AI reviewer. The author re-derived every
-argument independently, has verified the mathematical content, and is answerable
-for it and for this disclosure. No AI system is an author.
+manuscript; the idea of dropping the bridge hypothesis, carried out in
+\S\ref{sec:c2}, was proposed by an AI reviewer. The systems used, between
+February and September 2026, were Claude Opus~5 and Claude Fable~5.1
+(Anthropic), accessed through Claude Code; ChatGPT at its Pro reasoning tier
+(OpenAI), accessed at \texttt{chatgpt.com}; Codex \texttt{gpt-5.6-terra} and
+\texttt{gpt-5.6-sol} (OpenAI); and DeepSeek \texttt{v4-pro} and
+\texttt{v4-flash}. Providers do not publish stable version identifiers for all
+of these beyond the names given. The author re-derived every argument
+independently, has verified the mathematical content, and is answerable for it
+and for this disclosure. No AI system is an author.
 
 \section*{Computational support}
 
 The proofs above are self-contained and depend on no computation. A public
-repository accompanying this work contains exact-arithmetic checks of the
-inequalities used here and machine checks of explicit alternating plane graphs
-against Definition~\ref{def:apg}, including the boundary-walk convention of
-Convention~\ref{conv:c1}. Those checks are advisory and cover examples, not the
-universal statements proved here; no claim of formal verification is made, and a
-referee need not run them.
+repository archived at
+\href{https://doi.org/10.5281/zenodo.22269200}{doi:10.5281/zenodo.22269200}
+contains exact-arithmetic checks of the inequalities used here and machine checks
+of explicit alternating plane graphs against Definition~\ref{def:apg}, including
+the boundary-walk convention of Convention~\ref{conv:c1}. Those checks are
+advisory and cover examples, not the universal statements proved here; no claim
+of formal verification is made, and a referee need not run them.
 
 \begin{thebibliography}{9}
 
@@ -465,6 +650,32 @@ I.~Alth\"ofer, J.~K. Haugland, K.~Scherer, F.~Schneider and N.~Van Cleemput,
 \emph{Alternating plane graphs}, Ars Math. Contemp. \textbf{8} (2015),
 337--363.
 \href{https://doi.org/10.26493/1855-3974.584.09a}{doi:10.26493/1855-3974.584.09a}.
+
+\bibitem{BM2007}
+G.~Brinkmann and B.~D. McKay, \emph{Fast generation of planar graphs},
+MATCH Commun. Math. Comput. Chem. \textbf{58} (2007), 323--357.
+
+\bibitem{CW2017}
+D.~W. Cranston and D.~B. West, \emph{An introduction to the discharging method
+via graph coloring}, Discrete Math. \textbf{340} (2017), 766--793.
+\href{https://doi.org/10.1016/j.disc.2016.11.022}{doi:10.1016/j.disc.2016.11.022}.
+
+\bibitem{JV2013}
+S.~Jendrol' and H.-J. Voss, \emph{Light subgraphs of graphs embedded in the
+plane --- a survey}, Discrete Math. \textbf{313} (2013), 406--421.
+\href{https://doi.org/10.1016/j.disc.2012.11.007}{doi:10.1016/j.disc.2012.11.007}.
+
+\bibitem{Kotzig1955}
+A.~Kotzig, \emph{Contribution to the theory of Eulerian polyhedra},
+Mat.-Fyz. \v{C}asopis Slovensk. Akad. Vied \textbf{5} (1955), 101--113.
+
+\bibitem{Lebesgue1940}
+H.~Lebesgue, \emph{Quelques cons\'equences simples de la formule d'Euler},
+J. Math. Pures Appl. (9) \textbf{19} (1940), 27--43.
+
+\bibitem{MT2001}
+B.~Mohar and C.~Thomassen, \emph{Graphs on Surfaces}, Johns Hopkins University
+Press, Baltimore, 2001.
 
 \end{thebibliography}
 

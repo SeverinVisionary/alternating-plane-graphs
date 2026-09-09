@@ -24,8 +24,9 @@ Nearly all of it. Being specific is more useful than a general caveat:
   directly.
 * **The proofs.** The arguments in `CONJECTURE_10_1.md`, `bridge_lemma.py` and
   `PUMPING_LEMMA_STATUS.md` were developed in the same sessions. In particular
-  **the argument that removes the (C2) hypothesis from Conjecture 10.1 -- the
-  step that makes that result unconditional -- was supplied by an AI reviewer**,
+  **the argument that drops the bridge hypothesis from Conjecture 10.1 -- the
+  step that extends the result to bridge-relaxed graphs -- was supplied by an AI
+  reviewer**,
   not by the author, and was then verified independently before being adopted.
 * **The prose.** These documents and the manuscript in `paper/` were drafted
   with the same assistance.

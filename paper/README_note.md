@@ -1,6 +1,6 @@
 # `apg101.tex` — the standalone Conjecture 10.1 note
 
-**This is the submission.** Eight pages, AustMS `baustms` class, for the
+**This is the submission.** Ten pages, AustMS `baustms` class, for the
 Bulletin of the Australian Mathematical Society.
 
 ## Why it exists
@@ -73,6 +73,31 @@ What it did find, and what was fixed:
 * The AI disclosure moved from \S1 to endmatter and a separate computational
   support statement was added, saying plainly that the proofs depend on no
   computation and that the repository's checks are advisory.
+
+## Figures, tables and references (2026-09-09)
+
+The note previously carried one reference and no picture, which is not what a
+paper in this area looks like. The source paper itself cites nine items, and the
+counting tradition this argument sits in is well documented, so the sparse
+bibliography was an artifact of drafting, not of the subject.
+
+Added, each with a sentence in the text that actually uses it: Lebesgue (1940)
+and Kotzig (1955) as the classical Euler-formula charge arguments; Cranston and
+West (2017) for discharging, whose vocabulary the note now borrows explicitly
+("initial charge with total 2 and no discharging rule"); Jendrol' and Voss (2013)
+for the light-configuration literature; Mohar and Thomassen (2001) for the facial
+walk convention behind Convention 2.3; Brinkmann and McKay (2007) for the
+`plantri` generation behind the source's exhaustive search. All six were verified
+against primary records, not cited from memory. Note that the source paper's own
+citation of Brinkmann-McKay gives volume 42(4), 909-924; the article is in volume
+58, 323-357.
+
+Added five TikZ figures and two tables: the cut-vertex illustration of the
+face-size convention; the nine-vertex worked example; the corners-in-rotation
+diagram that makes the parity lemma readable; the bridge splice
+`|F| = |W_A| + |W_C| + 2`; the three-copy bridged construction; a table of the
+two cases of Theorem 4.1 side by side; and a table of the three-case local
+estimate in Step 1. Ten pages, still inside the Bulletin's stated preference.
 
 Not done: the leg's release test — one graph theorist unfamiliar with
 alternating plane graphs reading the revised note in at most 90 minutes and

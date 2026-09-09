@@ -3,6 +3,10 @@
 Tick before pressing submit. Sources for every requirement are in
 [`../paper/README_bams.md`](../paper/README_bams.md).
 
+**Field-by-field values for the form are in
+[`FORM_FIELDS.md`](FORM_FIELDS.md).** Work from that; this file is the
+gate list.
+
 ## The journal's own five-step form
 
 - [ ] Registered at `journal.austms.org.au` as **both reader and author**
@@ -56,8 +60,8 @@ Tick before pressing submit. Sources for every requirement are in
       the only people who would know of an unpublished settlement, and the
       artifact re-expresses graphs from their corpus. See
       [`../PRIOR_ART.md`](../PRIOR_ART.md).
-- [x] Zenodo is current at v1.0.5, DOI 10.5281/zenodo.22669418, verified
-      against the archived bytes.
+- [x] Zenodo refreshed to **v1.0.6** on 2026-09-09. Concept DOI
+      `10.5281/zenodo.22269200`, which the manuscript cites, resolves to it.
 - [x] **Diffed `apg101.tex` against `apg.tex` and `apg_bams.tex`, 2026-09-09.**
       Drift found, this time in the other direction: the three review passes had
       corrected `apg101.tex` and left the archival versions carrying the false

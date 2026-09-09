@@ -40,8 +40,9 @@ We settle two and advance a third.
 
 Conjecture~10.1, that no alternating plane graph has exactly two distinct vertex
 degrees or exactly two distinct face sizes, is proved by one per-edge inequality
-applied twice, and unconditionally: such a graph would be bridgeless however the
-definition is read at a bridge.
+applied twice. With face size counted by boundary-walk length throughout, the
+same conclusion is then proved again when face alternation is required only
+between distinct adjacent faces, so that bridges are admitted.
 
 Conjecture~10.2, that $(3,4,5)$-alternating plane graphs exist for every
 $n \ge 20$, is settled by verified certificates at the $26$ orders that were
@@ -66,7 +67,8 @@ Two are settled here, and the third is advanced but not closed.
 \subsection*{Results}
 
 \begin{itemize}
-  \item Conjecture~10.1 is proved, unconditionally (Theorem~\ref{thm:101}).
+  \item Conjecture~10.1 is proved (Theorem~\ref{thm:101}), and again for the
+        bridge-relaxed definition of \S\ref{sec:c2}.
   \item Conjecture~10.2 is settled, by certificates together with a proved
         construction (Theorem~\ref{thm:pumping}, Corollary~\ref{cor:102}).
   \item Conjecture~10.3 is \emph{not} settled here. Theorem~\ref{thm:103}
@@ -84,9 +86,9 @@ material. By task:
 \item \emph{Software.} The four decision procedures, the search programs that
   found the certificates, and the supporting tooling were written with AI
   assistance.
-\item \emph{Mathematics.} The step in \S\ref{sec:c2} that removes the (C2)
-  hypothesis, and so makes Theorem~\ref{thm:101} unconditional, was proposed by
-  an AI reviewer. The author re-derived it independently, and every bound it
+\item \emph{Mathematics.} The step in \S\ref{sec:c2} that drops the (C2)
+  hypothesis, extending Theorem~\ref{thm:101} to bridge-relaxed graphs, was
+  proposed by an AI reviewer. The author re-derived it independently, and every bound it
   uses is confirmed by exhaustive search over the relevant degree and face-size
   ranges in exact rational arithmetic.
 \item \emph{Adversarial review.} AI review found errors the author had missed,
@@ -306,8 +308,10 @@ $|F_1|,\dots,|F_d|$ alternates, and a cyclically alternating binary word has
 even length. Hence $d$ is even.
 
 Stating the argument over corners rather than over ``the incident faces'' is
-what makes it correct at a cut vertex, where one face occupies several corners:
-those corners are non-consecutive, so alternation is undisturbed.
+what makes it correct at a cut vertex, where one face may occupy several
+corners. Two such corners are never separated by a single non-bridge edge,
+which is all that is needed here; across a bridge, consecutive corners do belong
+to the same face, and there are no bridges under (C2).
 
 Degrees are at least $3$ and even, hence at least $4$; adjacent vertices have
 distinct even degrees, so the vertex side contributes at most

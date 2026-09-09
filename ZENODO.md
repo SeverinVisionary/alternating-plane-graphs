@@ -101,8 +101,8 @@ vacuous.
 - **The published corpus is not redistributed** — no licence statement was found
   at its source. Each graph is re-expressed in this repository's own format,
   with the digest of every original preserved for verification.
-- **AI assistance was substantial**, including the step that makes Conjecture
-  10.1 unconditional. No AI system is an author.
+- **AI assistance was substantial**, including the step that extends Conjecture
+  10.1 to bridge-relaxed graphs. No AI system is an author.
 
 ---
 

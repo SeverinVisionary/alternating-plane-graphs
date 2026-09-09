@@ -15,7 +15,7 @@ DOI [`10.26493/1855-3974.584.09a`](https://doi.org/10.26493/1855-3974.584.09a).
 
 | Section 10 item | status | where |
 | --- | --- | --- |
-| Conjecture 10.1 (no `2,Y`-, no `X,2`-APG) | **proved**, unconditionally | [`CONJECTURE_10_1.md`](CONJECTURE_10_1.md) |
+| Conjecture 10.1 (no `2,Y`-, no `X,2`-APG) | **proved**, and again for the bridge-relaxed definition | [`CONJECTURE_10_1.md`](CONJECTURE_10_1.md) |
 | asymptotic degree distribution | **open** | [`DENSITY.md`](DENSITY.md) |
 | Conjecture 10.2 (`(3,4,5)`-APG for all `n >= 20`) | **settled**; every `n >= 46` closed here, `20..45` inherited from the paper | [`PUMPING_LEMMA_STATUS.md`](PUMPING_LEMMA_STATUS.md) |
 | Conjecture 10.3 (3-connected APG for all `n >= 19`) | **witnesses at 54 orders; the infinite tail is not proved** | [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md) |
@@ -24,7 +24,7 @@ Attribution -- what is the source paper's, what is re-verified here, and what is
 new -- is collected in [`ATTRIBUTION.md`](ATTRIBUTION.md).
 
 **This work was produced with substantial AI assistance**, including the step
-that makes Conjecture 10.1 unconditional. The extent, and what was and was not
+that extends Conjecture 10.1 to bridge-relaxed graphs. The extent, and what was and was not
 taken on trust, is stated in [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
 
 The (C2) qualification on 10.1 was removed on 2026-09-02. It had been the

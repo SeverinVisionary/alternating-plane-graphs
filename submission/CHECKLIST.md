@@ -43,12 +43,11 @@ Tick before pressing submit. Sources for every requirement are in
 
 ## Things to settle first
 
-- [ ] **Read `paper/apg101.pdf` end to end.** It is ten pages of content.
-- [ ] **Confirm the sentence already printed** in the disclosure: *"The author
-      re-derived every argument independently."* That is a stronger claim than
-      reading the PDF through. Keep it only if it is accurate; if it is not,
-      weaken it before submitting. This is the one line in the note that a
-      referee cannot check and you can.
+- [x] **Read `paper/apg101.pdf` end to end** — done by the author 2026-09-09.
+- [x] **Confirmed by the author 2026-09-09**, the sentence printed in the
+      disclosure: *"The author re-derived every argument independently."* This
+      is the one line in the note a referee cannot check and the author can, and
+      it now stands on the author's own confirmation rather than on drafting.
 - [x] **Scope decided 2026-09-09: Conjecture 10.1 alone**, as `paper/apg101.tex`.
       Conjectures 10.2 and 10.3 go to a separate manuscript for another venue,
       after the capping lemma's deletion direction and window claim are
@@ -59,13 +58,22 @@ Tick before pressing submit. Sources for every requirement are in
       [`../PRIOR_ART.md`](../PRIOR_ART.md).
 - [x] Zenodo is current at v1.0.5, DOI 10.5281/zenodo.22669418, verified
       against the archived bytes.
-- [ ] **Diff `apg101.tex` against `apg.tex` on the shared sections.** The
-      hand-maintained variant has drifted twice before, each time carrying a
-      known-false statement into the file a referee reads.
+- [x] **Diffed `apg101.tex` against `apg.tex` and `apg_bams.tex`, 2026-09-09.**
+      Drift found, this time in the other direction: the three review passes had
+      corrected `apg101.tex` and left the archival versions carrying the false
+      "those corners are non-consecutive" sentence and the "unconditional"
+      framing the Pro review rejected. Both ported; `ARTIFACT.md`, `ZENODO.md`,
+      `docs/index.html` and `.zenodo.json` carried the same overclaim and are
+      corrected too. **The Zenodo deposit at v1.0.5 predates all of this and is
+      now behind** — the note's computational-support paragraph cites the
+      concept DOI, so refresh the deposit before or at submission.
 
 ## What you are told to expect
 
 *"Editorial decisions on acceptance or otherwise are taken quickly, often within
 a month of receipt."* The bar is *"new and interesting results"* with exposition
 *"in publishable form, without revision"* — that second clause is the real risk
-here, since no mathematician has read the proof.
+here. The author has now read the note end to end and confirmed the
+re-derivation, but no *other* mathematician has read the proof: the teach-back
+review of `RESEARCH_GUIDELINES.md` §8 is satisfied only in its
+responsible-author form, not by an independent reader.

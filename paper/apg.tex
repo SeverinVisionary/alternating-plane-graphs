@@ -151,14 +151,18 @@ sizes.
 The \emph{size} of a face is the length of its boundary walk counted with
 multiplicity, that is, the number of edge-side incidences. It is not the number
 of distinct vertices on the face. The two differ exactly when the walk repeats a
-vertex. That is a statement about a single face, not about the graph: a
-connected plane graph is $2$-connected if and only if \emph{every} facial
-boundary walk is a cycle, so failing $2$-connectivity forces \emph{some} walk to
-repeat a vertex but not every one --- two triangles sharing a cut vertex have
-two faces that repeat nothing and an outer face that does. In
-particular a bridge contributes $2$ to the size of the single face carrying it.
-This is the reading used in \cite{AHSSV2015} at (3.1) and (9.2), both of which
-assert $\sum_s s\,f_s = 2e$.
+vertex, which is a property of one face and not of the graph. In particular a
+bridge contributes $2$ to the size of the single face carrying it.
+
+\cite{AHSSV2015} does not separately define ``size''. This is nonetheless the
+reading its own arguments require, in three independent places. Equations~(3.1)
+and~(9.2) both assert $\sum_s s\,f_s = 2e$, which counts edge-side incidences.
+The proof of Lemma~9.2 states that, the graph being bipartite, $f_j = 0$ for
+every odd $j$ --- valid for boundary-walk length, and \emph{not} in general for
+the number of distinct boundary vertices, since a bipartite facial walk through
+a cut vertex can meet an odd number of them. And p.~339 treats a bridge as
+producing a face adjacent to itself, so the paper's face language is not
+confined to simple cycles. We use boundary-walk length throughout.
 \end{convention}
 
 Condition (d) of Definition~\ref{def:apg} does not mention bridges, and at a
@@ -310,26 +314,24 @@ $\tfrac14+\tfrac16 = \tfrac{5}{12}$. Again $c(a) \le 1$ for every edge and
 Lemma~\ref{lem:identity} is contradicted. \qed
 
 \begin{remark}
-Euler is used as $v - e + f = 2$. Disconnectedness only strengthens the
-contradiction: with $c$ components $v + f = e + 1 + c$.
+Euler is used as $v - e + f = 2$; alternating plane graphs are connected by
+Definition~\ref{def:apg}, and disconnectedness would only strengthen the
+contradiction.
 \end{remark}
 
 \subsection{Calibration}
 
-The chain can be run on the class \cite{AHSSV2015} settles, the weak $2,k$
-class, where it must exclude exactly $k \ge 12$, reproducing
-(\cite{AHSSV2015}, (9.10)), and must \emph{not} exclude $k \le 10$, for which
-\cite{AHSSV2015} exhibits weak $2,k$-alternating plane graphs (Table~5,
-Figures~8--9). It does both, which shows the contradiction turns on
-$d_1 \ge 3$ rather than on an over-count that would also have killed the
-small-$k$ weak graphs. The case $k = 11$ is left open by the chain, exactly as in
-\cite{AHSSV2015}, which needs its Lemma~9.4 for it.
+Run on the weak $2,k$ class that \cite{AHSSV2015} settles, the chain excludes
+exactly $k \ge 12$, reproducing (\cite{AHSSV2015}, (9.10)), and does not exclude
+$k \le 10$, where that paper exhibits weak $2,k$-alternating plane graphs; $k =
+11$ it leaves open, as does \cite{AHSSV2015} without its Lemma~9.4. So the
+contradiction turns on $d_1 \ge 3$ and not on an over-count, which would also
+have killed the small-$k$ graphs.
 
-This is emphatically \emph{not} a certification of the chain. A spuriously
-\emph{stronger} face bound such as $5/12 - 1/1000$ reproduces the same
-threshold exactly, so the calibration cannot detect an invalid strengthening ---
-which is the dangerous direction. It rules out one specific failure mode and no
-others.
+This is emphatically \emph{not} a certification. A spuriously \emph{stronger}
+face bound such as $5/12 - 1/1000$ reproduces the same threshold exactly, so the
+calibration cannot detect an invalid strengthening --- the dangerous direction.
+It rules out one failure mode and no others.
 
 \section{Removing the dependence on (C2)}\label{sec:c2}
 
@@ -341,8 +343,18 @@ particular be bridgeless, (C2) is a consequence of Definition~\ref{def:apg}
 rather than a reading of it, and Theorem~\ref{thm:101} holds under both
 readings. The corresponding statement for $2,Y$ is
 Proposition~\ref{prop:twoY-weak} at the end of the section, proved by the same
-per-edge count; an earlier draft claimed it followed from a leaf-block argument,
-which was unsound and is withdrawn.
+per-edge count.
+
+The weak reading introduces exactly one new difficulty: a bridge need not force
+a change of face size, so a vertex on a bridge need not have even degree. The
+lemma below controls that defect, and the proof then runs as a charge. If a
+bridge exists, the face carrying it has size at least $8$, which makes every
+bridge contribute excess at most $-\tfrac16$, while the only edges that can have
+\emph{positive} excess are non-bridge $3$--$4$ edges, each at most
+$\tfrac1{24}$. The lemma attaches every positive edge to a unique bridge at its
+degree-$3$ end, and each bridge receives at most two. The bridges' deficit then
+dominates every positive excess, contradicting $\sum_a x(a) = 2$. If there is no
+bridge, the even-degree argument of \S\ref{sec:halftwo} applies directly.
 
 \begin{lemma}[parity]\label{lem:parity}
 Let $G$ be a plane graph whose faces admit a colouring by two colours that is
@@ -366,7 +378,8 @@ Lemma~\ref{lem:parity} is the bridge-tolerant replacement for the classical
 Eulerian criterion, and it is strictly weaker than that criterion rather than a
 restatement of it: a triangle with a pendant edge has its two faces properly
 coloured once self-adjacency across the bridge is ignored, yet is not Eulerian.
-When no vertex lies on a bridge the lemma reduces to the usual statement. In an $X,2$-alternating plane graph the face
+With no bridges the lemma gives even degree at every vertex --- the direction
+of the usual Eulerian criterion needed here, and the only one it supplies. In an $X,2$-alternating plane graph the face
 size supplies the colouring, so the lemma applies.
 
 \begin{corollary}\label{cor:evendeg}
@@ -384,19 +397,19 @@ Let $G$ be one, with face sizes $s_1 < s_2$, and let $B$ be its number of
 bridges. Suppose first $B \ge 1$.
 
 \smallskip
-\emph{Step 0: $s_2 \ge 8$.} Let $a = uw$ be a bridge and let $A$ be the
-component of $G - a$ containing $u$. Then $\deg_A u = \deg u - 1 \ge 2$, so $A$
-has at least three vertices. Consider the facial boundary walk of $A$ incident
-with the corner formerly occupied by $a$. It cannot have length $1$, which needs
-a loop. Nor length $2$: that is either a digon of parallel edges, excluded by
-simplicity, or a single edge traversed twice, and for two darts alone to form a
-facial orbit both its endpoints have degree $1$, making the component $K_2$ ---
-whereas $\deg_A u \ge 2$. So the walk has length at least $3$, and the same
-holds on the other side. The face $F$ carrying $a$ is traced as that walk of
-$A$, then $a$, then the corresponding walk of the other component, then $a$
-again, so by Convention~\ref{conv:c1}
+\emph{Step 0: $s_2 \ge 8$.} Let $a = uw$ be a bridge, and let $A$ and $C$ be the
+components of $G - a$ containing $u$ and $w$. Then $\deg_A u = \deg u - 1 \ge 2$
+and likewise $\deg_C w \ge 2$, so both have at least three vertices. Let $W_A$
+be the facial boundary walk of $A$ through the corner exposed by deleting $a$.
+Its length is not $1$, which needs a loop. Nor $2$: that is either a digon of
+parallel edges, excluded by simplicity, or a single edge traversed in both
+directions, and for those two darts to form the whole facial boundary both
+endpoints of that edge have degree $1$, forcing $A = K_2$ against
+$\deg_A u \ge 2$. So $|W_A| \ge 3$, and likewise $|W_C| \ge 3$. The face $F$ of
+$G$ incident with both sides of $a$ is traversed as $W_A$, then $a$, then $W_C$,
+then $a$ in the opposite direction, so by Convention~\ref{conv:c1}
 \[
-  |F| \;=\; |\partial A| + |\partial B| + 2 \;\ge\; 3 + 3 + 2 \;=\; 8 .
+  |F| \;=\; |W_A| + |W_C| + 2 \;\ge\; 3 + 3 + 2 \;=\; 8 .
 \]
 As $|F| \in \{s_1,s_2\}$ and $s_1 < s_2$, we get $s_2 \ge 8$.
 
@@ -427,25 +440,29 @@ since already $\tfrac13+\tfrac15 = \tfrac{12.8}{24}$ falls short.
 
 Let $a$ be an edge of positive excess and let $u$ be its end of degree $3$,
 which is unique since adjacent vertices have different degrees. By
-Lemma~\ref{lem:parity} the
-number of bridges at $u$ has the same parity as $\deg u = 3$, so it is $1$ or
-$3$; it is not $3$, since $a$ itself is a non-bridge edge at $u$. So $u$ lies on
-exactly one bridge, hence on exactly two non-bridge edges, and we may send $a$
-to that bridge.
+Lemma~\ref{lem:parity} the number of bridges at $u$ has the same parity as
+$\deg u = 3$, so it is $1$ or $3$; it is not $3$, since $a$ itself is a
+non-bridge edge at $u$. So $u$ lies on exactly one bridge. Write $b(u)$ for it
+and \emph{charge} $a$ to $b(u)$: every positive edge thus has one, and only one,
+destination.
 
 The qualification matters: a vertex of degree $3$ need not carry two non-bridge
 edges, since one with three bridges carries none. What is proved, and what is
 needed, is that a vertex of degree $3$ \emph{incident with a non-bridge edge}
 lies on exactly one bridge and two non-bridge edges.
 
-Now let $b$ be a bridge. Its two ends have different degrees by
-Definition~\ref{def:apg}(c), so at most one of them has degree $3$. Hence at
-most two positive edges are sent to $b$, and writing $P$ for the number of
-positive edges, $P \le 2B$.
+Now fix a bridge $b$ and count the positive edges charged to it. Each such edge
+has its degree-$3$ end at a vertex whose unique bridge is $b$, so that vertex is
+an end of $b$. The two ends of $b$ have different degrees by
+Definition~\ref{def:apg}(c), so at most one of them has degree $3$; call it $u$
+if it exists. Of the three edges at $u$, one is $b$ itself, leaving exactly two
+that could be positive and charged to $b$. So each bridge receives at most two
+charges, and writing $P$ for the number of positive edges, $P \le 2B$.
 
 \smallskip
-\emph{Step 3.} Every non-positive edge has $x(a) \le 0$, so by
-Lemma~\ref{lem:identity},
+\emph{Step 3.} Partition the edges into the $P$ positive ones, the $B$ bridges,
+and the rest. By Steps~1 and~2 their excesses are at most $\tfrac1{24}$,
+$-\tfrac16$ and $0$ respectively, so by Lemma~\ref{lem:identity},
 \[
   2 \;=\; \sum_a x(a) \;\le\; \frac{P}{24} - \frac{B}{6}
      \;\le\; \frac{2B}{24} - \frac{B}{6} \;=\; -\frac{B}{12} \;<\; 0 ,

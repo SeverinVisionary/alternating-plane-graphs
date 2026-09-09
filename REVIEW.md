@@ -173,3 +173,48 @@ external vulnerability, and neither found new reason to doubt it. Leg A noted
 independently that the paper's own Lemma 9.2 proof -- *"since the graph is
 bipartite, all f_j for j odd are 0"* -- is false under a distinct-vertices
 reading, which is further evidence for (C1) rather than against it.
+
+### Exposition audit, 2026-09-08
+
+A third pass, on readability rather than correctness, framed around Terence
+Tao's observation that machine-assisted proofs tend to be *disproportioned*:
+routine steps get lavish text because they are easy to write about, and the hard
+step gets a sentence because the writer already believes it. The Step 0 error
+above is exactly that shape -- a clause each for the loop and the parallel-edge
+case, and **no words at all** for the bridge traversed twice.
+
+Both follow-up reviews first confirmed the three corrections land, and that
+apart from (C1) their acceptance is now unconditional. On (C1) they agreed,
+independently, that **contacting the original authors is not a prerequisite to
+submission**: the source paper's own mathematics operationally fixes the
+meaning, and the documentation should be phrased as *"the convention required
+by, and used in, (3.1), (9.2) and the proof of Lemma 9.2"* rather than as a
+claim about intention. This corrects the position taken in this repository
+earlier, that (C1) put author correspondence on the critical path.
+
+Acted on, in the manuscript:
+
+* **A symbol collision.** `B` was the number of bridges, and Step 0 then wrote
+  `|F| = |dA| + |dB| + 2` using `B` for a component. Not a mathematical gap, but
+  it stops a referee mid-read. The components are now `A` and `C`, with the
+  boundary walks named `W_A`, `W_C`.
+* **The charging map was hidden in a "Hence".** `P <= 2B` is the substantive
+  step of the bridge argument and got less text than the calibration remark.
+  Now written out: every positive edge has a unique degree-3 end, parity gives
+  that end a unique bridge, the charge is therefore well defined, and a bridge
+  has at most one degree-3 end with exactly two non-bridge edges at it.
+* **A roadmap before the weak-reading proof.** By Step 3 the reader was holding
+  seven facts at once. One paragraph now states the architecture first.
+* **(C1) spent its space on the wrong thing** -- five lines on a 2-connectivity
+  tangent, one clause on the documentary basis the proof actually rests on. The
+  proportions are reversed, and the Lemma 9.2 evidence is now stated where a
+  referee needs it.
+* **Step 3 names its partition** instead of leaving the reader to infer it.
+
+To pay for it: the calibration subsection and the disconnectedness remark are
+compressed, and the sentence recording the withdrawn leaf-block draft is cut
+from the paper -- it belongs here, not in a publication.
+
+Not adopted: cutting Theorem 3.2 and the rotation-systems subsection, both
+suggested as unused. They are unused *in the excerpt reviewed* and load-bearing
+elsewhere in the paper.

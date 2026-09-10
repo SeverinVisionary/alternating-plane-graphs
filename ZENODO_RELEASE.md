@@ -67,3 +67,39 @@ acknowledged and described"* -- it describes it more precisely than the sentence
 it replaces -- and it puts the author's name behind the mathematics, which is
 the part that matters. If the manuscript is later read end to end, restoring the
 stronger wording is a one-line edit in `paper/apg.tex` and `paper/apg_bams.tex`.
+
+---
+
+# v1.0.6 — what actually happened, 2026-09-09/10
+
+The tag and GitHub release fired cleanly and **no DOI was minted.** Zenodo was
+down; all three webhook deliveries returned `context deadline exceeded`,
+code 500, and GitHub gave up after one attempt each. The release page looked
+completely normal, so nothing on the GitHub side signals the failure.
+
+**Check the mint, never the release.** `gh release create` succeeding tells you
+nothing. Confirm with DataCite, which stays up when Zenodo does not:
+
+```sh
+curl -s https://api.datacite.org/dois/10.5281/zenodo.22269200 \
+  | python3 -c "import json,sys;print(json.load(sys.stdin)['data']['attributes']['version'])"
+```
+
+**Redelivering the webhook needs a scope `gh` does not have by default** —
+`admin:repo_hook`. Without it the redelivery API returns 404, which reads like a
+missing delivery rather than a missing permission. What worked instead, needing
+no new scope:
+
+```sh
+gh release delete v1.0.6 --yes --cleanup-tag=false
+gh release create v1.0.6 --title "v1.0.6" --notes-file RELEASE_NOTES_1_0_6.md
+```
+
+Deleting and recreating the release fires a fresh `release: published` event.
+The tag is untouched, so the archived bytes are identical. The mint landed
+within a minute: **10.5281/zenodo.22682657**.
+
+**Tag position is a real trap.** `v1.0.6` was tagged at `dd29640` and three
+further commits landed before the mint, so the deposit carries the cover letter
+as it stood at the tag, not at HEAD. Tag last, or accept that anything committed
+after the tag is not in the archive.

@@ -74,8 +74,16 @@ Read off the live site 2026-09-09. These are declarations in your name.
       the only people who would know of an unpublished settlement, and the
       artifact re-expresses graphs from their corpus. See
       [`../PRIOR_ART.md`](../PRIOR_ART.md).
-- [x] Zenodo refreshed to **v1.0.6** on 2026-09-09. Concept DOI
+- [x] Zenodo refreshed to **v1.0.6**, DOI `10.5281/zenodo.22682657`, minted
+      2026-09-10 after a failed first attempt (see below). Concept DOI
       `10.5281/zenodo.22269200`, which the manuscript cites, resolves to it.
+      Verified inside the archived bytes: `paper/apg101.pdf` in the deposit is
+      byte-identical to the submitted PDF, SHA-256
+      `25ec25c2…c0d8ba44`, and the description no longer says "unconditional".
+- [ ] **The deposit's `submission/COVER_LETTER.md` is three commits stale.**
+      Tag `v1.0.6` sits at `dd29640`; the compliance-claim removal landed later
+      at `75566e5`. The paper is unaffected. Fold into the next release, or cut
+      a v1.0.7 if you want the archive clean now.
 - [x] **Diffed `apg101.tex` against `apg.tex` and `apg_bams.tex`, 2026-09-09.**
       Drift found, this time in the other direction: the three review passes had
       corrected `apg101.tex` and left the archival versions carrying the false

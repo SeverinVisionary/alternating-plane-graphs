@@ -1,5 +1,13 @@
 # Submission checklist — BAMS
 
+> **SUBMITTED 2026-09-10 12:14:03 UTC.** Submission **ID 21117**, Bulletin of
+> the Australian Mathematical Society, section Articles. Verified against the
+> journal's own API: `dateSubmitted` set, `submissionProgress` 0, status
+> *Queued*, and the queue row moved from *Incomplete* to *Submission*. No editor
+> assigned yet. Expect a decision *"often within a month of receipt"*.
+> Author dashboard:
+> `https://journal.austms.org.au/ojs/index.php/Bulletin/authorDashboard/submission/21117`
+
 Tick before pressing submit. Sources for every requirement are in
 [`../paper/README_bams.md`](../paper/README_bams.md).
 
@@ -10,42 +18,42 @@ This file is the gate list.
 
 ## The journal's own five-step form
 
-- [ ] Registered at `journal.austms.org.au` as **both reader and author**
-- [ ] Submission is a **PDF** (`paper/apg101.pdf`, 11 pp., the last being the class's address page) — LaTeX source is
+- [x] Registered at `journal.austms.org.au` as **both reader and author**
+- [x] Submission is a **PDF** (`paper/apg101.pdf`, 11 pp., the last being the class's address page) — LaTeX source is
       wanted on acceptance or before review, not now
-- [ ] Confirmed: original work, not published, not under consideration elsewhere
-- [ ] Confirmed: AI use is acknowledged and described (disclosure section, end of the manuscript)
-- [ ] Cover letter pasted from [`COVER_LETTER.md`](COVER_LETTER.md)
-- [ ] Green Open Access selected — **no fee**
+- [x] Confirmed: original work, not published, not under consideration elsewhere
+- [x] Confirmed: AI use is acknowledged and described (disclosure section, end of the manuscript)
+- [x] Cover letter pasted from [`COVER_LETTER.md`](COVER_LETTER.md)
+- [x] Green Open Access selected — **no fee**
 
 ## Metadata to enter in the system (not just in the PDF)
 
-- [ ] Author name and **ORCID 0009-0005-0419-4070** entered in the submission form
-- [ ] Keywords entered in the form
-- [ ] MSC codes entered under **Subjects** (primary 05C10, secondary 05C30)
+- [x] Author name and **ORCID 0009-0005-0419-4070** entered in the submission form
+- [x] Keywords entered in the form
+- [x] MSC codes entered under **Subjects** (primary 05C10, secondary 05C30)
 
 ## The Submission Preparation Checklist, in the site's own words
 
 Read off the live site 2026-09-09. These are declarations in your name.
 
-- [ ] "The article is an original work, has not been published before, and is
+- [x] "The article is an original work, has not been published before, and is
       not currently under consideration for publication in another journal" —
       true; the Zenodo deposit is a preprint, which green OA expressly permits
-- [ ] "This submission is **not** a revision of an earlier submission which is
+- [x] "This submission is **not** a revision of an earlier submission which is
       still under consideration" — true
-- [ ] "The authors listed on the paper each contributed to the production of
+- [x] "The authors listed on the paper each contributed to the production of
       the work" — sole author; no AI system is an author
-- [ ] "The authors are aware of and agree to the policy ... freely accessible
+- [x] "The authors are aware of and agree to the policy ... freely accessible
       to the public five years after publication" — your decision
-- [ ] "The article contains no defamatory or unlawful statements and does not
+- [x] "The article contains no defamatory or unlawful statements and does not
       infringe the right of any third party"
-- [ ] "Where necessary to reproduce copyright material, written permission has
+- [x] "Where necessary to reproduce copyright material, written permission has
       been obtained" — not applicable; nothing is reproduced, and the two
       quoted phrases from the source paper are short and attributed
-- [ ] "Any use of an artificial intelligence tool ... is appropriately
+- [x] "Any use of an artificial intelligence tool ... is appropriately
       acknowledged and described" — the disclosure section names the systems,
       the period and the nature of the assistance
-- [ ] "the submitted document is in Adobe pdf format" — true
+- [x] "the submitted document is in Adobe pdf format" — true
 
 ## What must be true of the file
 
@@ -56,7 +64,7 @@ Read off the live site 2026-09-09. These are declarations in your name.
 - [x] MSC 2020: primary `05C10`; secondary `05C30`
 - [x] Keywords present
 - [x] References alphabetical by first author, cited numerically
-- [ ] Affiliation line reads as you want it — currently *"Independent
+- [x] Affiliation line reads as you want it — currently *"Independent
       researcher, California, USA"*; add a city or leave as is
 
 ## Things to settle first

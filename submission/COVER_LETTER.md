@@ -41,9 +41,10 @@ harder half of the note, and its bottleneck — a bound on how many
 positive-excess edges can be assigned to each bridge — is identified as such.
 
 **Disclosure.** Large language models were used materially in this work,
-including the idea behind the Section 5 extension, and a disclosure section at
-the end of the manuscript describes that use. No AI system is an author. I confirm this satisfies the Bulletin's
-requirement that such use be acknowledged and described.
+including the idea behind the Section 5 extension. A disclosure section at the
+end of the manuscript names the systems, the period of use and the nature of the
+assistance. No AI system is an author, and I take responsibility for every claim
+in the note.
 
 This note has not been published elsewhere and is not under consideration by
 another journal. A preprint and a machine-checkable artifact are publicly

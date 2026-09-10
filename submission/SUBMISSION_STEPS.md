@@ -116,9 +116,10 @@ peer review — not at submission.
      the Section 5 extension was proposed by an AI reviewer.
    - *"the submitted document is in Adobe pdf format"* — **true.**
 
-10. **Comments for the Editor**: paste the body of `COVER_LETTER.md` — everything
-    from "Dear Editors," to "Hanyu Yang". Leave out the markdown heading and the
-    blockquote note at the top of that file.
+10. **Comments for the Editor**: paste **`submission/COVER_LETTER_PLAINTEXT.txt`**
+    whole. Do **not** paste the `.md` — the field is a rich-text editor, so the
+    markdown `**bold**` markers survive as literal asterisks and the file's hard
+    line wraps become `<br>` mid-sentence.
 
 11. Continue.
 

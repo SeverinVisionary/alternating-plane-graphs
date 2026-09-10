@@ -41,8 +41,11 @@ account, both roles ticked, or the submission option never appears.
 The site's list has no competing-interests item; an earlier draft of this sheet
 invented one.
 
-**Comments for the Editor**: paste `COVER_LETTER.md` whole, minus its markdown
-heading and the blockquote at the top.
+**Comments for the Editor**: paste **`COVER_LETTER_PLAINTEXT.txt`**, not the
+`.md`. The field is a rich-text editor: pasting the markdown leaves literal
+`**` and `*` on the page and keeps the file's hard line wraps as `<br>` in the
+middle of sentences. The plaintext file is the same letter with the emphasis
+markers stripped and the paragraphs unwrapped.
 
 ## Step 2 — Upload
 

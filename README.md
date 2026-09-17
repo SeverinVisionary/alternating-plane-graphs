@@ -32,7 +32,7 @@ Section 10 of the source paper poses four items. Three are now settled here.
 | --- | --- |
 | **Conjecture 10.1** — no `2,Y`- and no `X,2`-APG | **proved**, and no longer conditional on (C2) ([`CONJECTURE_10_1.md`](CONJECTURE_10_1.md)) |
 | asymptotic degree distribution — the density of `v4/v3` on `[1, 1.5]` | **open**, and out of reach of these methods ([`DENSITY.md`](DENSITY.md)) |
-| **Conjecture 10.2** — `(3,4,5)`-APGs for all `n >= 20` | **settled** — 26 certificates plus a proved infinite family, closing every `n >= 46` here; `20..45` is the source paper's |
+| **Conjecture 10.2** — `(3,4,5)`-APGs for all `n >= 20` | **settled** — 26 certificates close the open orders `46..56`, `67..74`, `88..92`, `109`, `110`; the rest is the source paper's, and a proved infinite family re-proves every `n >= 67` |
 | **Conjecture 10.3** — 3-connected APG for all `n >= 19` | **witnesses at 54 orders; infinite tail not proved** ([`CONJECTURE_10_3.md`](CONJECTURE_10_3.md)) |
 
 ## Status
@@ -48,14 +48,17 @@ class as `(1,-1)`, not the `(2,3)` the search notes claimed. See
 
 **The pumping lemma is proved** (2026-09-01).
 [`pumping_splice.py`](pumping_splice.py) extracts the two caps as explicit
-patches and splices periods into the middle, so a single certificate generates
-a `(3,4,5)`-APG at every order `n + 3d` from an explicit floor upwards — orders
-48, 50, 52 by residue class, hence **every order `n >= 50`, plus 48**. Splicing
-`TARGET_110` down twenty periods reproduces `TARGET_50` up to isomorphism, and
-`TARGET_92` down fourteen gives the same graph, so the caps are canonical
-rather than one alignment's artefact. That is an independent construction of
-the paper's Theorem 8.1 and of 23 of the 26 target orders; 46, 47 and 49 rest
-on their certificates alone. Proof and its two machine-checked hypotheses:
+patches and inserts periods into the middle, so a certificate whose deep block
+has at least five copies generates a `(3,4,5)`-APG at every order `n + 3d`,
+`d >= 0`. The smallest such seeds are 67, 68 and 69, one per residue class,
+hence **every order `n >= 67`**. Deleting periods is not covered by the proof;
+those splices, including the ones at orders 57-66, are machine-checked only.
+Splicing `TARGET_110` down twenty periods reproduces `TARGET_50` up to
+isomorphism, and `TARGET_92` down fourteen gives the same graph, so the caps are
+canonical rather than one alignment's artefact. The lemma is a second
+construction of the paper's Theorem 8.1 and of the target orders 67-74, 88-92,
+109 and 110; 46-56 rest on their certificates alone. Proof and its three
+machine-checked hypotheses:
 [`PUMPING_LEMMA_STATUS.md`](PUMPING_LEMMA_STATUS.md).
 
 **Conjecture 10.3: witnesses at 54 orders, and an unproved tail** (downgraded
@@ -71,9 +74,9 @@ rest on that unproved step, or on the source paper's own unproved assertion
 about its Section-8 constructions. Order 19 needed a general APG (no `(3,4,5)`-APG exists there);
 all five 19-vertex APGs turn out to be 3-connected. Orders 37 and 38, out of
 reach of the Section-8 arithmetic, fell to disk surgery on graphs already held.
-The tail is carried by a theorem, not a sweep:
-[`family_connectivity.py`](family_connectivity.py) proves the spliced family is
-3-connected at every order it produces. See
+The tail is open: the induction in
+[`family_connectivity.py`](family_connectivity.py) that would make the spliced
+family 3-connected is not proved. See
 [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md).
 
 **The obvious shortcut is false.** Not every `(3,4,5)`-APG is 3-connected —

@@ -92,7 +92,7 @@ both halves rule that out. Check in particular:
 
 - **(C1)**, that face size counts edge-side incidences with multiplicity, so a
   bridge counts twice. The paper never defines "size"; this reading is inferred
-  from its (3.1) and (9.2), both asserting `Σ s·f_s = 2e`. *If (C1) is wrong the
+  from its (3.1), which asserts `Σ s·f_s = 2e`. *If (C1) is wrong the
   proof does not survive.*
 - The bridge case in `bridge_lemma.py`: the parity lemma
   `deg(v) − bridges_at(v)` even, the tether `P ≤ 2B`, and the final
@@ -113,8 +113,9 @@ principle -- a formal proof or a proved finite-state invariant could
 establish either. What is true is that *nothing here does so*.
 
 - **Periodic capping lemma** ([`PUMPING_LEMMA_STATUS.md`](PUMPING_LEMMA_STATUS.md)). "cap + `t` periods +
-  cap is a (3,4,5)-APG", for every `d ≥ −(|D|−1)`. The argument is *locality*: a
-  facial walk spans at most three consecutive copies, so every window around a
+  cap is a (3,4,5)-APG", for every `d ≥ 0` (insertion; deleting periods is not
+  proved). The argument is *locality*: every face of `TARGET_n` lies inside five
+  consecutive copies, so every window around a
   fresh copy is a translate of a window of `TARGET_n`, hence every face of the
   splice is a translated face of the original. Check the span bound and that
   each Definition 3.1 condition really is local.
@@ -141,22 +142,21 @@ measures the union twice, and the second measurement is the honest headline.
 **Union using only what this deposit establishes** — certificates plus the
 periodic capping lemma, no Theorem 8.1:
 
-- closes **every order n >= 46**;
-- leaves orders **20 to 45** inherited from the paper, not re-established here.
+- closes orders **46 to 56** and **every order n >= 67**;
+- leaves orders **20 to 45** and **57 to 66** to the paper (its heuristic search
+  and Section-8 construction), not re-established here.
 
-Gated by `test_the_deposit_alone_covers_every_order_from_46_up` and
-`test_orders_20_to_45_are_exactly_what_is_inherited`, with a control showing the
-lemma is load-bearing: without it, the certificates and the paper's finite
-constructions stop exactly at 110.
+A control shows the lemma is load-bearing: without it, the certificates and the
+paper's finite constructions stop exactly at 110.
 
 **The qualification to check.** Per the manuscript's deletion remark
-(`rem:deletion`), the family's floor orders and **58, 61, 64** rest on
-machine-verified splices rather than on the capping lemma *as stated* — its
-locality argument is written for insertion, and the hypothesis `|D| >= 5` does
-not reach those orders that way. Still this deposit's own evidence rather than
-the paper's, so the `n >= 46` claim stands, but it is theorem **plus** verified
-computation, not the theorem alone. **Satisfy yourself that those five orders
-are genuinely covered**; it is the softest joint in the coverage argument.
+(`rem:deletion`), the capping lemma is proved for insertion only, and its
+hypothesis `|D| >= 5` first holds at the seeds 67, 68 and 69. Orders 57 to 66
+are reached only by deleting periods, which `test_pumping_splice.py` checks by
+computation; that direction is not proved. The gates
+`test_the_deposit_alone_covers_every_order_from_46_up` and
+`test_orders_20_to_45_are_exactly_what_is_inherited` count those deletion
+splices as covered, so at 57 to 66 they record computation, not theorem.
 
 For **Conjecture 10.3**, [`CONJECTURE_10_3.md`](CONJECTURE_10_3.md) has the per-order source table and
 `witness_coverage.verified_orders()` derives the checked set from files and

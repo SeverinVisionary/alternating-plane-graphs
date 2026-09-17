@@ -20,12 +20,15 @@ independent verifiers accept.
 > **Periodic capping lemma.** Fix a target order `n` whose alignment against the
 > `(1,-1)` cover has a deep block `D` of at least five copies, and let
 > `cut` be a copy at distance at least two from each end of `D`. For every
-> integer `d >= -(|D| - 1)`, the rotation system `splice(n, d)` is a
+> integer `d >= 0`, the rotation system `splice(n, d)` is a
 > `(3,4,5)`-APG on `n + 3d` vertices.
 
-`d` is unbounded above. The floor is where deletion would consume a copy that is
-not deep, that is, where the two cap collars meet — the `t >= 2q + 1` of the
-2026-09-01 independent review, with `q = 2`: each collar is two copies wide.
+`d` is unbounded above. The lemma is proved for insertion only. `pumping_splice.py`
+also deletes periods (`d < 0`), down to a floor where deletion would consume a
+copy that is not deep, that is, where the two cap collars meet — the
+`t >= 2q + 1` of the 2026-09-01 independent review, with `q = 2`: each collar is
+two copies wide. **Deletion is not proved to preserve alternation**; the maps it
+builds are machine-checked, nothing more.
 
 ## The proof
 
@@ -79,28 +82,39 @@ vertex reaches the strip exactly as it did in `TARGET_n`.
 every face is a translated face — three faces, and `3 - 6 + 3 = 0`. So
 `V - E + F` is unchanged from `TARGET_n`, where it is `2`. QED
 
-Only two facts in that argument are not pure bookkeeping — the face span and the
-periodicity of the deep block — and both are finite checks on a single
-certificate, gated in [`test_pumping_splice.py`](test_pumping_splice.py).
+Only three facts in that argument are not pure bookkeeping — every face of
+`TARGET_n` has at most five darts, no strip edge joins copies more than two
+apart, and the deep-block rotations are translates of one another — and all
+three are finite checks on a single certificate, gated in
+[`test_pumping_splice.py`](test_pumping_splice.py).
 
 ## What the family reaches
 
-| residue of `n` mod 3 | floor order | family |
+The hypothesis `|D| >= 5` first holds at orders 67, 68 and 69, one per residue
+class:
+
+| residue of `n` mod 3 | seed | family |
 | --- | --- | --- |
-| 0 | **48** | 48, 51, 54, 57, ... |
-| 1 | **52** | 52, 55, 58, 61, ... |
-| 2 | **50** | 50, 53, 56, 59, ... |
+| 0 | **69** | 69, 72, 75, 78, ... |
+| 1 | **67** | 67, 70, 73, 76, ... |
+| 2 | **68** | 68, 71, 74, 77, ... |
 
-Every one of the twenty spliceable certificates in a residue class has the same
-floor order — 90 shortened by fourteen periods and 72 shortened by eight both
-land on 48. So the family is
+So the proved family is
 
-> every order `n >= 50`, together with `n = 48`.
+> every order `n >= 67`.
 
-That is an independent construction of the paper's Theorem 8.1 (`n >= 111`) and
-of twenty-three of the twenty-six target orders, from a single certificate per
-residue class. Orders **46, 47 and 49** are outside it and rest on their
-certificates alone.
+That is an independent construction of the paper's Theorem 8.1 (`n >= 111`), of
+its Section-8 orders 75-87 and 93-108, and of the target orders 67-74, 88-92,
+109 and 110. The certificates at 48, 51, 53, 54 and 56 have deep blocks of only
+1, 2, 2, 3 and 3 copies and are not eligible seeds. Orders **46-56** rest on
+their certificates alone, and orders **57-66** are the source paper's (its
+Section-8 construction).
+
+Deletion reaches further. Every spliceable certificate in a residue class has
+the same deletion floor — 90 shortened by fourteen periods and 72 shortened by
+eight both land on 48 — so deleting periods gives maps at 48 and every order
+from 50 up, including 57-66. Those maps pass the decision procedures, but
+deletion is unproved, and no order is claimed from it.
 
 ## Why this is a proof and not twenty-six more examples
 

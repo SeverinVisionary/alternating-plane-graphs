@@ -74,7 +74,7 @@ checked individually, so the residue — `19, 37, 38` — was unchanged **at the
 It also promotes [`family_connectivity.py`](family_connectivity.py) from a
 tidiness argument to a necessary one. That module *claimed* the spliced family is
 3-connected at *every* order it produces. With the general claim false, that
-theorem was the only thing standing between "48 and every `n >= 50`" and a
+theorem was the only thing standing between the orders the family produces and a
 per-order spot check — and **it was itself withdrawn on 2026-09-05**, so nothing
 now stands there. What follows describes the argument as it was written, because
 it argues from the family's

@@ -31,7 +31,7 @@ that each source is load-bearing: removing any one of them reopens orders.
 | 21–24, 39–45 | [`section8_witnesses.py`](section8_witnesses.py) | Section-8 closures built from `results/blocks/` |
 | **37, 38** | [`certificates/surgery/`](certificates/surgery/PROVENANCE.md) | disk surgery on graphs already held |
 | 46–56, 67–74, 88–92, 109, 110 | [`certificates/targets/`](certificates/targets/) | the Conjecture 10.2 certificates |
-| 48, and every `n >= 50` | [`pumping_splice.py`](pumping_splice.py) + [`family_connectivity.py`](family_connectivity.py) | the spliced family. **The infinite step is not established** -- see the gap note in `family_connectivity.py`. Orders here that also carry a stored certificate are verified directly and do not depend on it |
+| every `n >= 67`; 57–66 by deletion | [`pumping_splice.py`](pumping_splice.py) + [`family_connectivity.py`](family_connectivity.py) | the spliced family. Orders 57–66 come only from deleting periods, which is machine-checked, not proved. **The infinite step is not established** -- see the gap note in `family_connectivity.py`. Orders here that also carry a stored certificate are verified directly and do not depend on it |
 
 **The infinite tail is the weakest part of this file, and as of 2026-09-05 it is
 not proved.** `family_connectivity.py` sets out an induction intended to carry

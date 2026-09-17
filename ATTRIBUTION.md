@@ -58,10 +58,11 @@ verbatim, in quotation marks and attributed:
 
 * **The periodic capping lemma, proved.**
   [`pumping_splice.py`](pumping_splice.py) extracts the two caps as explicit
-  patches and splices periods, so one certificate per residue class generates a
-  `(3,4,5)`-APG at order 48 and every order from 50 up. This is an independent
-  construction of Theorem 8.1 and of 23 of the 26 target orders; 46, 47 and 49
-  rest on their certificates alone.
+  patches and inserts periods, so one certificate per residue class (orders 67,
+  68 and 69) generates a `(3,4,5)`-APG at every order from 67 up. This is a
+  second construction of Theorem 8.1 and of the Section-8 orders 75-87 and
+  93-108; the target orders 46-56 rest on their certificates alone. Deleting
+  periods is not proved to preserve alternation.
 * **The 26 certificates** at orders 46-56, 67-74, 88-92, 109 and 110 -- the
   previously open orders of Conjecture 10.2.
 * **Conjecture 10.3 advanced, not settled**: verified 3-connected witnesses at

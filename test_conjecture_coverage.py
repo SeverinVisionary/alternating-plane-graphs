@@ -19,16 +19,15 @@ repository's.**  That is a legitimate division of labour, but "settles" then
 means "settles, given the 2015 paper", which is a weaker claim than it sounds.
 So the union is measured twice: once as above, and once using only what this
 deposit establishes on its own -- the 26 certificates plus the periodic capping
-lemma, which yields order 48 and every order from 50 up without reference to
-Theorem 8.1.  The second measurement is the honest headline, and it is
-`test_the_deposit_alone_covers_every_order_from_46_up`.
+lemma, which is proved for insertion and yields every order from 67 up.  That
+leaves 57 to 66 to the source paper's Section 8, and
+`test_the_deposit_alone_leaves_exactly_57_to_66_above_45` pins it.
 """
 from __future__ import annotations
 
 import json
 from pathlib import Path
 
-import witness_coverage
 
 HERE = Path(__file__).resolve().parent
 TARGETS_DIR = HERE / "certificates" / "targets"
@@ -81,53 +80,54 @@ def test_the_control_fails_if_one_certificate_is_removed() -> None:
 
 # --- what this deposit establishes without leaning on the 2015 paper ---------
 #
-# `witness_coverage.family_orders` is the periodic capping lemma's reach: floors
-# at 48, 50 and 52 with step 3, i.e. {48} u [50, horizon).  It is proved in
-# `PUMPING_LEMMA_STATUS.md`, not sampled, so the horizon is a test bound rather
-# than a limit of the claim.
+# The capping lemma is proved for insertion only.  Its eligible seeds (a deep
+# block of at least five copies) are 67, 68 and 69, one per residue class, so
+# its proved reach is [67, horizon).  `witness_coverage.family_orders` counts the
+# deletion floors 48, 50 and 52 as well; deletion is checked by computation but
+# not proved, so it is not used here.  The horizon is a test bound, not a limit
+# of the claim; `test_which_orders_the_capping_theorem_does_not_reach` computes
+# the seeds.
 
 HORIZON = 400
+INSERTION_SEEDS = (67, 68, 69)
+
+
+def _lemma_orders() -> set[int]:
+    covered: set[int] = set()
+    for seed in INSERTION_SEEDS:
+        covered |= set(range(seed, HORIZON, 3))
+    return covered
 
 
 def _deposit_only_orders() -> set[int]:
-    return _certificate_orders() | witness_coverage.family_orders(HORIZON)
+    return _certificate_orders() | _lemma_orders()
 
 
-def test_the_deposit_alone_covers_every_order_from_46_up() -> None:
-    """The certificates and the capping lemma, with nothing inherited.
+def test_the_deposit_alone_leaves_exactly_57_to_66_above_45() -> None:
+    """The certificates and the proved capping lemma, with nothing inherited.
 
-    Everything from 46 up is closed by this repository on its own.  Orders 20
-    to 45 remain the source paper's -- its heuristic search and its Section-8
-    construction -- and this deposit does not re-establish them.
-
-    One honest qualification, carried from the manuscript's deletion remark: the
-    family's floor orders and a short list of others rest on machine-verified
-    splices rather than on the capping lemma *as stated*, because the locality
-    argument is written for insertion.  That list is computed by
-    `test_which_orders_need_the_deletion_direction` below rather than asserted
-    here; an earlier version of this docstring named the wrong orders.  Either
-    way it is this repository's own evidence rather than the source paper's, so
-    the claim above stands -- but it is a mix of theorem and verified
-    computation, not the theorem alone.
+    They close 46 to 56 and every order from 67 up.  Orders 57 to 66 are
+    reached only by deleting periods, which is checked by computation in
+    `test_pumping_splice.py` but not proved, so they stay the source paper's.
     """
 
-    covered = _deposit_only_orders()
-    assert set(range(46, HORIZON)) <= covered, sorted(set(range(46, HORIZON)) - covered)
+    gap = sorted(set(range(46, HORIZON)) - _deposit_only_orders())
+    assert gap == list(range(57, 67))
 
 
-def test_orders_20_to_45_are_exactly_what_is_inherited() -> None:
+def test_inherited_orders_are_exactly_20_to_45_and_57_to_66() -> None:
     """Name the debt precisely, so it cannot quietly grow or shrink."""
 
     inherited = sorted(set(range(20, HORIZON)) - _deposit_only_orders())
-    assert inherited == list(range(20, 46))
+    assert inherited == list(range(20, 46)) + list(range(57, 67))
+    assert set(inherited) <= HEURISTIC | SECTION_8
 
 
-def test_the_capping_lemma_makes_theorem_8_1_redundant_above_49() -> None:
+def test_the_capping_lemma_makes_theorem_8_1_redundant() -> None:
     """Without this, wiring the lemma in would be decoration.
 
     Theorem 8.1 is the paper's `n >= 111`.  Dropping it entirely must leave the
-    conjecture closed anyway, because the lemma already covers everything from
-    50 up.
+    conjecture closed anyway, because the lemma covers everything from 67 up.
     """
 
     without_8_1 = HEURISTIC | SECTION_8 | _deposit_only_orders()

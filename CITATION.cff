@@ -18,9 +18,9 @@ date-released: 2026-09-09
 abstract: >-
   Machine-checked settlement of three of the four open problems in Section 10 of
   Althofer, Haugland, Scherer, Schneider and Van Cleemput, "Alternating plane
-  graphs". Conjecture 10.2 is settled by 26 verified certificates together with
-  a proved periodic capping lemma that generates a (3,4,5)-alternating plane
-  graph at order 48 and every order at least 50. Conjecture 10.3 carries verified
+  graphs". Conjecture 10.2 is settled by 26 verified certificates at the orders
+  the paper left open, with a proved periodic capping lemma that generates a (3,4,5)-alternating plane
+  graph at every order at least 67. Conjecture 10.3 carries verified
   3-connected witnesses at 54 orders; its infinite tail rests on a periodic
   family whose induction is not established, and is not claimed as proved. Conjecture 10.1 is proved,
   without relying on the bridge convention: Definition 2.1 is silent about

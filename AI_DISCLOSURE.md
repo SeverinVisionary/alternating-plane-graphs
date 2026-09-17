@@ -52,7 +52,7 @@ The mathematics does not rest on any model's say-so.
   decision procedures. See [`ARTIFACT.md`](ARTIFACT.md).
 * The proofs in Sections 3 to 5 of the manuscript are ordinary mathematics and
   can be checked by a reader with no computer.
-* Where a result rests on computation, the computation is named: the two finite
+* Where a result rests on computation, the computation is named: the three finite
   hypotheses of the capping lemma, and the certificates themselves.
 * Claims made by a reviewer were re-derived before being adopted. The (C2)
   closure was re-checked here by exhaustive search over degrees to 39 and face

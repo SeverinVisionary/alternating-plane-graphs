@@ -3,6 +3,21 @@
 Versions are for the deposit, not for an API. A release is a state of the
 evidence: what is settled, and what a reader can check.
 
+## 1.0.7 — unreleased
+
+- Prose rewrite of `paper/apg.tex` and `paper/apg101.tex`; `apg101` moved to
+  `amsart`, with its title and abstract restored.
+- The capping lemma is restated for insertion only (`d >= 0`). Its seeds are the
+  certificates at 67, 68 and 69, so it reaches every `n >= 67`. Orders 57–66 are
+  attributed to the source paper's Section 8; deletion splices there are
+  machine-checked, not proved. Summaries across the deposit updated to match.
+- Equation attributions corrected in `apg.tex`: (9.5) is the face bound, the
+  `1/2` is in (9.8), (9.9) combines them, and (9.2) is not `sum_s s f_s = 2e`.
+- The artifact version is cited once, as a macro.
+- `test_conjecture_coverage.py` measures the deposit's own coverage with the
+  proved insertion reach, so it now pins 57–66 as inherited instead of counting
+  deletion splices.
+
 ## 1.0.5 — 2026-09-08
 
 **A Pro-tier breadth review found a coverage gate computing the right kind of

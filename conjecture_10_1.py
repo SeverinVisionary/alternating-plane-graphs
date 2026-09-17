@@ -17,7 +17,7 @@ Both halves are one inequality, applied twice.
 
 **(C1) Face size counts edge-side incidences** — the length of the boundary
 walk, with multiplicity, not the number of distinct vertices. The paper never
-defines it but uses this reading in `(3.1)` and `(9.2)`, both asserting
+defines it but uses this reading in `(3.1)`, which asserts
 `sum(s * f_s) = 2e`.
 
 **(C2) No edge has the same face on both sides.** The paper takes this as a
@@ -61,7 +61,8 @@ Degrees take exactly two values `d1 < d2`.
   least 6. The edge contributes `1/r + 1/s <= 1/4 + 1/6 = 5/12`.
 
 Every edge contributes at most `7/12 + 5/12 = 1`, so `v + f <= e`. **This
-contradicts Euler.** (This is the paper's `(9.5)` with `1/2` replaced by
+contradicts Euler.** (This is the paper's `(9.9)`, the face bound `(9.5)` added
+to the vertex count `(9.8)`, with the `1/2` of `(9.8)` replaced by
 `1/d1 <= 1/3`; the derivation of `(9.5)` never used the degree 2, and the two
 lines above reproduce it rather than cite it.)
 

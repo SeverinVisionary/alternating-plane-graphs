@@ -12,7 +12,7 @@ Scherer, Schneider & Van Cleemput, *Alternating plane graphs*,
 | | |
 | --- | --- |
 | ✅ **Conjecture 10.1** | **Proved, and not resting on an interpretation.** Definition 2.1 is silent about bridges; the paper rules bridges out a few lines later, asserting that an alternating plane graph "is always at least 2-edge-connected, since plane graph with edge connectivity 1 contains a face that is adjacent to itself" (p. 339). The proof here does not use that sentence — it closes under the permissive reading too, in which bridges are allowed. |
-| ✅ **Conjecture 10.2** | **Settled**, and this deposit closes **every order ≥ 46 on its own** — the 26 certificates plus a *proved* periodic capping lemma giving order 48 and every order ≥ 50. Orders 20–45 remain the **source paper's** (its heuristic search and Section-8 construction); they are not re-established here. |
+| ✅ **Conjecture 10.2** | **Settled.** The 26 certificates close every previously open order, and a *proved* periodic capping lemma gives every order ≥ 67. Orders 20–45 and 57–66 remain the **source paper's** (its heuristic search and Section-8 construction); they are not re-established here. |
 | ⚠️ **Conjecture 10.3** | **Settled at 54 orders, not proved above them.** Verified 3-connected witnesses at 17, 19-56, 67-74, 88-92, 109-110. The remaining orders -- 57-66, 75-87, 93-108 and every n >= 111 -- rest either on the source paper's statement that its Section-8 constructions are 3-connected, or on a periodic family here whose infinite step was found **unproved** on 2026-09-05. Neither route is established in this deposit. |
 | ⬜ **Fourth problem** | **Open.** The asymptotic distribution of `v₄/v₃` on `[1, 1.5]`. Out of reach of these methods, and we say why. |
 
@@ -34,7 +34,7 @@ Conjecture 10.2 was open at exactly 26 orders. All now carry certificates:
 | 109, 110 | 2 orders |
 
 And the capping lemma removes the need for a finite list: one certificate per
-residue class mod 3 generates the family from floors **48**, **50** and **52**.
+residue class mod 3 generates the family from seeds **67**, **68** and **69**.
 
 ---
 

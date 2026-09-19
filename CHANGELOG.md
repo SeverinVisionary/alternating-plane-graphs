@@ -3,7 +3,9 @@
 Versions are for the deposit, not for an API. A release is a state of the
 evidence: what is settled, and what a reader can check.
 
-## 1.0.7 — unreleased
+## 1.0.7 — 2026-09-18
+
+Version DOI [10.5281/zenodo.22840845](https://doi.org/10.5281/zenodo.22840845).
 
 - Prose rewrite of `paper/apg.tex` and `paper/apg101.tex`; `apg101` moved to
   `amsart`, with its title and abstract restored.

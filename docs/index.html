@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Three conjectures on alternating plane graphs | Althöfer et al., Section 10</title>
+<title>Alternating plane graphs: two settled conjectures and witnesses for a third</title>
 <link rel="canonical" href="https://severinvisionary.github.io/alternating-plane-graphs/">
-<meta name="description" content="Conjectures 10.1, 10.2 and 10.3 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput, Alternating plane graphs (2015), settled: 10.1 proved, and again for the bridge-relaxed definition, 10.2 closed at all 26 remaining orders plus a proved periodic capping lemma, 10.3 not closed — 3-connected witnesses at 54 orders, tail above 56 open. Every certificate is a rotation system re-verified by four independent decision procedures.">
+<meta name="description" content="Conjectures 10.1 and 10.2 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput, Alternating plane graphs (2015), settled, with finite witnesses for Conjecture 10.3: 10.1 proved, and again for the bridge-relaxed definition, 10.2 closed at all 26 remaining orders plus a proved periodic capping lemma, 10.3 not closed — 3-connected witnesses at 54 orders, tail above 56 open. Every certificate is a rotation system re-verified by four independent decision procedures.">
 <meta name="keywords" content="alternating plane graphs, APG, plane graphs, rotation systems, planar graphs, 3-connected, combinatorics, computer-assisted proof, certificate verification, Althofer, Ars Mathematica Contemporanea, Euler formula">
 <meta name="author" content="Hanyu Yang">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -33,7 +33,7 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="Three conjectures on alternating plane graphs, settled">
+<meta property="og:title" content="Alternating plane graphs: settling Conjectures 10.1 and 10.2, with witnesses for 10.3">
 <meta property="og:description" content="Conjectures 10.1 and 10.2 of Althöfer et al. (2015) settled, with machine-checked certificates; 10.3 carries witnesses at 54 orders and an open tail. The fourth problem stays open, and we say why.">
 <meta property="og:url" content="https://severinvisionary.github.io/alternating-plane-graphs/">
 <meta property="og:site_name" content="Alternating plane graphs">
@@ -51,7 +51,7 @@
     "identifier": "https://orcid.org/0009-0005-0419-4070",
     "url": "https://orcid.org/0009-0005-0419-4070"
   },
-  "datePublished": "2026-09-06",
+  "datePublished": "2026-09-18",
   "inLanguage": "en",
   "identifier": "https://doi.org/10.5281/zenodo.22269200",
   "sameAs": [
@@ -60,7 +60,7 @@
   ],
   "license": "https://opensource.org/licenses/MIT",
   "keywords": "alternating plane graphs, rotation systems, plane graphs, computer-assisted proof, certificate verification, combinatorics",
-  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved without relying on the bridge convention: Definition 2.1 is silent about bridges and the paper rules them out a few lines later by asserting 2-edge-connectivity (p. 339), but the counting argument closes under the permissive reading too. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating every order n >= 67; orders 20 to 45, 57 to 66, 75 to 87, 93 to 108 and every n >= 111 are the source paper's, from its heuristic search, its Section-8 construction and its Theorem 8.1. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, carries verified witnesses at 54 orders; its infinite tail rests on a periodic family whose induction was found unproved in September 2026 and is not claimed as established. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
+  "abstract": "An alternating plane graph is a plane graph of minimum degree 3 and minimum face size 3 in which adjacent vertices differ in degree and adjacent faces differ in size. Section 10 of Althöfer, Haugland, Scherer, Schneider and Van Cleemput (Ars Math. Contemp. 8, 2015, 337-363) leaves four problems open. Conjecture 10.1, that no 2,Y- and no X,2-alternating plane graph exists, is proved without relying on the bridge convention: Definition 2.1 is silent about bridges and the paper rules them out a few lines later by asserting 2-edge-connectivity (p. 339), but the counting argument closes under the permissive reading too. Conjecture 10.2, that a (3,4,5)-alternating plane graph exists at every order n >= 20, is settled by certificates at all 26 previously open orders together with a proved periodic capping lemma generating every order n >= 67; orders 20 to 45 and 57 to 66 remain the source paper's own heuristic and Section-8 coverage and are not re-established here. Conjecture 10.3, that a 3-connected alternating plane graph exists at every order n >= 19, carries verified witnesses at 54 orders; its infinite tail rests on a periodic family whose induction was found unproved in September 2026 and is not claimed as established. The fourth problem, the limiting distribution of v4/v3 on [1, 1.5], is left open.",
   "isBasedOn": {
     "@type": "SoftwareSourceCode",
     "codeRepository": "https://github.com/SeverinVisionary/alternating-plane-graphs",
@@ -125,17 +125,18 @@
 <body>
 <main>
 
-<h1>Three conjectures on alternating plane graphs, settled</h1>
+<h1>Alternating plane graphs: settling Conjectures 10.1 and 10.2, with witnesses for 10.3</h1>
 <p class="sub">Section 10 of Althöfer, Haugland, Scherer, Schneider and Van
-Cleemput leaves four problems open. Three are now closed, each with a
-machine-checked certificate; the fourth is not, and this page says why.</p>
+Cleemput leaves four problems open. This deposit settles two and advances a
+third with verified witnesses at 54 orders; the infinite tail of Conjecture 10.3
+is not proved, and the fourth problem remains open.</p>
 
 <div class="meta">
   <strong>Hanyu Yang</strong> · ORCID <a href="https://orcid.org/0009-0005-0419-4070">0009-0005-0419-4070</a><br>
   DOI <a href="https://doi.org/10.5281/zenodo.22269200">10.5281/zenodo.22269200</a> ·
   <a href="https://github.com/SeverinVisionary/alternating-plane-graphs">source repository</a> ·
   supplements <a href="https://doi.org/10.26493/1855-3974.584.09a">Ars Math. Contemp. <strong>8</strong> (2015) 337–363</a> ·
-  6 September 2026
+  18 September 2026
 </div>
 
 <h2>Abstract</h2>
